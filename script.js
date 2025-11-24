@@ -1,41 +1,57 @@
 async function loadDashboard() {
-  const container = document.getElementById("results");
+  const dataFolder = 'data/';
+  const container = document.getElementById('results');
+  container.innerHTML = '<p>Loading...</p>';
 
   try {
-    const indexHtml = await fetch("data/").then(r => r.text());
-    const repoNames = [...indexHtml.matchAll(/href="([^"]+)\/"/g)].map(m => m[1]);
+    // Fetch directory listing
+    const repoIndex = await fetch(dataFolder).then(r => r.text());
+    const repoMatches = [...repoIndex.matchAll(/href="([^"]+)\/"/g)].map(m => m[1]);
 
-    container.innerHTML = "";
+    container.innerHTML = '';
 
-    for (const repo of repoNames) {
+    for (const repo of repoMatches) {
       try {
-        const scanIndex = await fetch(`data/${repo}/`).then(r => r.text());
+        const scanIndex = await fetch(`${dataFolder}${repo}/`).then(r => r.text());
         const files = [...scanIndex.matchAll(/href="([^"]+\.json)"/g)].map(m => m[1]);
 
         if (files.length === 0) continue;
 
+        // Latest result.json
         const latest = files.sort().reverse()[0];
-        const scan = await fetch(`data/${repo}/${latest}`).then(r => r.json());
+        const scan = await fetch(`${dataFolder}${repo}/${latest}`).then(r => r.json());
 
-        const card = document.createElement("div");
-        card.style = "padding:12px;margin:10px;border:1px solid #ccc;border-radius:8px;";
+        // Create card
+        const card = document.createElement('div');
+        card.style = "padding:12px;margin:10px;border:1px solid #ddd;border-radius:6px;";
+
         card.innerHTML = `
           <h3>${repo}</h3>
-          <p><b>Latest Scan:</b> ${latest}</p>
-          <p><b>Total Violations:</b> ${scan.violations?.length || 0}</p>
-          <p><b>Critical:</b> ${scan.summary?.critical || 0} |
-             <b>High:</b> ${scan.summary?.high || 0} |
-             <b>Medium:</b> ${scan.summary?.medium || 0} |
-             <b>Low:</b> ${scan.summary?.low || 0}
+          <p><strong>Latest Scan:</strong> ${latest}</p>
+          <p><strong>Total Violations:</strong> 
+            ${(scan.violations?.length) || 
+              (scan.summary 
+                ? scan.summary.critical + scan.summary.high + scan.summary.medium + scan.summary.low
+                : 0)}
+          </p>
+          <p>
+            <strong>Critical:</strong> ${scan.summary?.critical || 0} &nbsp; 
+            <strong>High:</strong> ${scan.summary?.high || 0} &nbsp; 
+            <strong>Medium:</strong> ${scan.summary?.medium || 0} &nbsp; 
+            <strong>Low:</strong> ${scan.summary?.low || 0}
           </p>
         `;
+
         container.appendChild(card);
-      } catch (e) {
-        console.log("Error loading repo", repo, e);
+
+      } catch (innerError) {
+        console.error('Error loading repo:', repo, innerError);
       }
     }
-  } catch (e) {
-    container.innerHTML = "Error loading dashboard";
+
+  } catch (outerError) {
+    container.innerHTML = `<p>Error loading dashboard.</p>`;
+    console.error('Dashboard load error:', outerError);
   }
 }
 
