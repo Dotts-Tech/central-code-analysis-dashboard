@@ -1,83 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Central Code Analysis Dashboard</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Salesforce Code Analyzer Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<body>
+  <body>
 
-    <!-- Top Bar -->
+    <!-- Header -->
     <header class="top-bar">
-        <img src="dotts.png" class="logo" alt="Dotts Logo" />
-        <div class="header-text">
-            <h1>Salesforce Code Analyzer Dashboard</h1>
-            <p>identiscents</p>
-        </div>
+      <img src="dotts.png" alt="Dotts Logo" class="logo"/>
+      <h1>Salesforce Code Analyzer Dashboard</h1>
     </header>
 
-    <!-- Main Container -->
-    <main class="container">
-
-        <!-- Error Box -->
-        <div id="errorBox" class="error-box" style="display:none;">
-            Error loading data
-        </div>
-
-        <!-- KPI Section -->
-        <section class="kpi-grid">
-            <div class="kpi-card">
-                <h2>Total Violations</h2>
-                <p id="totalViolations" class="kpi-value">–</p>
-                <p class="kpi-sub">All severities</p>
-            </div>
-
-            <div class="kpi-card">
-                <h2>Critical</h2>
-                <p id="criticalCount" class="kpi-value">–</p>
-            </div>
-
-            <div class="kpi-card">
-                <h2>High</h2>
-                <p id="highCount" class="kpi-value">–</p>
-            </div>
-
-            <div class="kpi-card">
-                <h2>Medium</h2>
-                <p id="mediumCount" class="kpi-value">–</p>
-            </div>
-
-            <div class="kpi-card">
-                <h2>Low</h2>
-                <p id="lowCount" class="kpi-value">–</p>
-            </div>
-        </section>
-
-        <!-- Charts Section -->
-        <section class="mini-chart-row">
-
-            <div class="mini-chart">
-                <h3>Trend</h3>
-                <canvas id="trendChart"></canvas>
-            </div>
-
-            <div class="mini-chart">
-                <h3>Last 12 Scans</h3>
-                <canvas id="sparkChart"></canvas>
-            </div>
-
-            <div class="mini-chart">
-                <h3>Severity Spread</h3>
-                <canvas id="severityChart"></canvas>
-            </div>
-
-        </section>
-
+    <main id="results" class="card-grid">
+      <p>Loading...</p>
     </main>
 
     <script src="script.js"></script>
-</body>
+
+  </body>
 </html>
