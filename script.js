@@ -24,16 +24,16 @@ async function loadDashboard() {
         card.className = 'card';
         card.onclick = () => window.open(`data/${repo}.json`, '_blank');
 
-        card.innerHTML = `
-          <h3>${repo}</h3>
-          <div class="violation-counts">
-            <span class="critical">Critical: ${scan.summary?.critical || 0}</span>
-            <span class="high">High: ${scan.summary?.high || 0}</span>
-            <span class="medium">Medium: ${scan.summary?.medium || 0}</span>
-            <span class="low">Low: ${scan.summary?.low || 0}</span>
-          </div>
-          <button class="view-details">View Details</button>
-        `;
+      card.innerHTML = `
+  <h3>${repo}</h3>
+  <div class="violation-counts">
+    <span class="critical">Critical: ${scan.violationCounts.sev1 || 0}</span>
+    <span class="high">High: ${scan.violationCounts.sev2 || 0}</span>
+    <span class="medium">Medium: ${scan.violationCounts.sev3 || 0}</span>
+    <span class="low">Low: ${scan.violationCounts.sev5 || 0}</span>
+  </div>
+  <button class="view-details">View Details</button>
+`;
 
         container.appendChild(card);
 
