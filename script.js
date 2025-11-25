@@ -4,55 +4,32 @@ async function loadDashboard() {
 
   try {
     const index = await fetch('index.json').then(r => r.json());
-
     container.innerHTML = '';
 
-    for (const [repo, file] of Object.entries(index)) {
-      try {
-        const scan = await fetch(`data/${file}`).then(r => r.json());
+    for (const file of index.repos) {
+      const scan = await fetch(`data/${file}`).then(r => r.json());
+      
+      // create a card
+      const card = document.createElement('div');
+      card.style = "padding:12px;margin:10px;border:1px solid #ddd;border-radius:6px;background:#f9f9f9";
 
-        const card = document.createElement('div');
-        card.className = 'card';
+      card.innerHTML = `
+        <h3>${file.replace('.json','')}</h3>
+        <p><strong>Total Violations:</strong> ${scan.summary ? scan.summary.critical + scan.summary.high + scan.summary.medium + scan.summary.low : 0}</p>
+        <p>
+          <strong>Critical:</strong> ${scan.summary?.critical || 0} &nbsp;
+          <strong>High:</strong> ${scan.summary?.high || 0} &nbsp;
+          <strong>Medium:</strong> ${scan.summary?.medium || 0} &nbsp;
+          <strong>Low:</strong> ${scan.summary?.low || 0}
+        </p>
+      `;
 
-        // Compute total violations
-        const total = scan.summary
-          ? scan.summary.critical + scan.summary.high + scan.summary.medium + scan.summary.low
-          : (scan.violations?.length || 0);
-
-        // Create chart canvas
-        const canvas = document.createElement('canvas');
-        card.appendChild(canvas);
-
-        // Chart.js pie chart for severity
-        new Chart(canvas.getContext('2d'), {
-          type: 'doughnut',
-          data: {
-            labels: ['Critical', 'High', 'Medium', 'Low'],
-            datasets: [{
-              data: [
-                scan.summary?.critical || 0,
-                scan.summary?.high || 0,
-                scan.summary?.medium || 0,
-                scan.summary?.low || 0
-              ],
-              backgroundColor: ['#ff4d4f', '#faad14', '#1890ff', '#52c41a']
-            }]
-          },
-          options: {
-            plugins: { legend: { position: 'bottom' }, title: { display: true, text: `${repo} - Total Violations: ${total}` } }
-          }
-        });
-
-        container.appendChild(card);
-
-      } catch (innerError) {
-        console.error('Error loading repo:', repo, innerError);
-      }
+      container.appendChild(card);
     }
 
-  } catch (error) {
-    container.innerHTML = `<p>Error loading dashboard.</p>`;
-    console.error('Dashboard load error:', error);
+  } catch (err) {
+    container.innerHTML = '<p>Error loading dashboard.</p>';
+    console.error(err);
   }
 }
 
