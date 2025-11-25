@@ -42,14 +42,13 @@ main {
   transform: scale(1.03);
 }
 
-/* Connected color boxes */
 .violation-boxes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 10px;
-  border-radius: 10px;
   overflow: hidden;
   border: 1px solid #ddd;
+  border-radius: 0; /* <-- removed round corners */
 }
 
 .box {
@@ -58,7 +57,9 @@ main {
   font-size: 22px;
   color: white;
   font-weight: bold;
+  border-radius: 0 !important; /* <-- square corners */
 }
+
 
 /* Colors */
 .critical-box { background: #d9534f; } /* red */
