@@ -21,7 +21,7 @@ header {
 
 /* Right side logo */
 .header-right .logo {
-  height: 40px; /* reduced size */
+  height: 28px; /* reduced size */
   object-fit: contain;
 }
 
