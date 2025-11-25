@@ -13,27 +13,41 @@ async function loadDashboard() {
       try {
         const scan = await fetch(`data/${repo}.json`).then(r => r.json());
 
-        const totalViolations = scan.violations?.length ||
-          ((scan.summary?.critical || 0) +
-           (scan.summary?.high || 0) +
-           (scan.summary?.medium || 0) +
-           (scan.summary?.low || 0));
+        const template = document.getElementById('card-template');
+        const card = template.content.cloneNode(true).querySelector('.card');
 
-        // Create card
-        const card = document.createElement('div');
-        card.className = 'card';
-        card.onclick = () => window.open(`data/${repo}.json`, '_blank');
+        card.querySelector('.repo-name').textContent = repo;
+        card.querySelector('.critical').textContent = `Critical: ${scan.violationCounts.sev1 || 0}`;
+        card.querySelector('.high').textContent = `High: ${scan.violationCounts.sev2 || 0}`;
+        card.querySelector('.medium').textContent = `Medium: ${scan.violationCounts.sev3 || 0}`;
+        card.querySelector('.low').textContent = `Low: ${scan.violationCounts.sev5 || 0}`;
 
-      card.innerHTML = `
-  <h3>${repo}</h3>
-  <div class="violation-counts">
-    <span class="critical">Critical: ${scan.violationCounts.sev1 || 0}</span>
-    <span class="high">High: ${scan.violationCounts.sev2 || 0}</span>
-    <span class="medium">Medium: ${scan.violationCounts.sev3 || 0}</span>
-    <span class="low">Low: ${scan.violationCounts.sev5 || 0}</span>
-  </div>
-  <button class="view-details">View Details</button>
-`;
+        card.querySelector('.view-details').onclick = () => window.open(`data/${repo}.json`, '_blank');
+
+        // Add Pie Chart
+        const ctx = card.querySelector('.pie-chart').getContext('2d');
+        new Chart(ctx, {
+          type: 'pie',
+          data: {
+            labels: ['Critical', 'High', 'Medium', 'Low'],
+            datasets: [{
+              data: [
+                scan.violationCounts.sev1 || 0,
+                scan.violationCounts.sev2 || 0,
+                scan.violationCounts.sev3 || 0,
+                scan.violationCounts.sev5 || 0
+              ],
+              backgroundColor: ['#ff4c4c', '#ff914d', '#ffd14c', '#4caf50']
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: { position: 'bottom' },
+              tooltip: { enabled: true }
+            }
+          }
+        });
 
         container.appendChild(card);
 
