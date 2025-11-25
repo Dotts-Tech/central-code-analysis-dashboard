@@ -1,57 +1,57 @@
 async function loadDashboard() {
-  const dataFolder = 'data/';
-  const container = document.getElementById('results');
-  container.innerHTML = '<p>Loading...</p>';
+  const container = document.getElementById('dashboard');
+  container.innerHTML = 'Loading...';
 
   try {
-    // Fetch directory listing
-    const repoIndex = await fetch(dataFolder).then(r => r.text());
-    const repoMatches = [...repoIndex.matchAll(/href="([^"]+)\/"/g)].map(m => m[1]);
+    // Fetch index.json
+    const indexResp = await fetch('index.json');
+    const indexData = await indexResp.json();
 
     container.innerHTML = '';
 
-    for (const repo of repoMatches) {
-      try {
-        const scanIndex = await fetch(`${dataFolder}${repo}/`).then(r => r.text());
-        const files = [...scanIndex.matchAll(/href="([^"]+\.json)"/g)].map(m => m[1]);
+    for (const repo of Object.keys(indexData)) {
+      const fileName = indexData[repo];
+      const scanResp = await fetch(`data/${fileName}`);
+      const scan = await scanResp.json();
 
-        if (files.length === 0) continue;
+      // Calculate total violations
+      const summary = scan.summary || {};
+      const total = (summary.critical||0) + (summary.high||0) + (summary.medium||0) + (summary.low||0);
 
-        // Latest result.json
-        const latest = files.sort().reverse()[0];
-        const scan = await fetch(`${dataFolder}${repo}/${latest}`).then(r => r.json());
+      // Create card
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `<h2>${repo}</h2>
+        <p>Total Violations: <strong>${total}</strong></p>
+        <canvas id="chart-${repo}"></canvas>`;
 
-        // Create card
-        const card = document.createElement('div');
-        card.style = "padding:12px;margin:10px;border:1px solid #ddd;border-radius:6px;";
+      container.appendChild(card);
 
-        card.innerHTML = `
-          <h3>${repo}</h3>
-          <p><strong>Latest Scan:</strong> ${latest}</p>
-          <p><strong>Total Violations:</strong> 
-            ${(scan.violations?.length) || 
-              (scan.summary 
-                ? scan.summary.critical + scan.summary.high + scan.summary.medium + scan.summary.low
-                : 0)}
-          </p>
-          <p>
-            <strong>Critical:</strong> ${scan.summary?.critical || 0} &nbsp; 
-            <strong>High:</strong> ${scan.summary?.high || 0} &nbsp; 
-            <strong>Medium:</strong> ${scan.summary?.medium || 0} &nbsp; 
-            <strong>Low:</strong> ${scan.summary?.low || 0}
-          </p>
-        `;
-
-        container.appendChild(card);
-
-      } catch (innerError) {
-        console.error('Error loading repo:', repo, innerError);
-      }
+      // Chart
+      const ctx = card.querySelector(`#chart-${repo}`).getContext('2d');
+      new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: ['Critical', 'High', 'Medium', 'Low'],
+          datasets: [{
+            label: 'Violations',
+            data: [summary.critical||0, summary.high||0, summary.medium||0, summary.low||0],
+            backgroundColor: ['#ff4d4f','#fa8c16','#ffd666','#73d13d']
+          }]
+        },
+        options: {
+          plugins: {
+            legend: {
+              position: 'bottom'
+            }
+          }
+        }
+      });
     }
 
-  } catch (outerError) {
-    container.innerHTML = `<p>Error loading dashboard.</p>`;
-    console.error('Dashboard load error:', outerError);
+  } catch (err) {
+    container.innerHTML = 'Error loading dashboard.';
+    console.error(err);
   }
 }
 
