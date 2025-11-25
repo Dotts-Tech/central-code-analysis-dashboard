@@ -1,20 +1,47 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Salesforce Code Analyzer Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <img src="dotts.png" alt="Dotts Logo" class="logo"/>
-      <h1>Salesforce Code Analyzer Dashboard</h1>
-    </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Identiscents Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <main id="results">
-      <p>Loading...</p>
-    </main>
+  <h2 class="title">Identiscents</h2>
 
-    <script src="script.js"></script>
-  </body>
+  <div class="violation-container">
+    <div class="violation-boxes">
+      <div class="box sevCritical" id="sevCritical">0</div>
+      <div class="box sevHigh" id="sevHigh">0</div>
+      <div class="box sevMedium" id="sevMedium">0</div>
+      <div class="box sevLow" id="sevLow">0</div>
+    </div>
+
+    <div class="labels">
+      <span>CRITICAL</span>
+      <span>HIGH</span>
+      <span>MEDIUM</span>
+      <span>LOW</span>
+    </div>
+  </div>
+
+  <div class="summary-card">
+    <h3>Violation Summary</h3>
+    <table id="violationTable">
+      <thead>
+        <tr>
+          <th>Rule</th>
+          <th>Severity</th>
+          <th>Count</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="json-panel" id="jsonPanel"></div>
+
+  <script src="script.js"></script>
+</body>
 </html>
