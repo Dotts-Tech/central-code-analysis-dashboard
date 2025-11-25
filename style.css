@@ -6,20 +6,24 @@ body {
 
 header {
   display: flex;
+  justify-content: space-between; /* pushes logo to right */
   align-items: center;
   padding: 15px;
   background: white;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-header h1 {
+/* Left side title */
+.header-left h1 {
+  margin: 0;
   font-size: 22px;
-  font-weight: 600;
+  font-weight: bold;
 }
 
-.logo {
-  height: 40px;     /* smaller logo */
-  margin-left: auto; /* <-- pushes ONLY the logo to the right */
+/* Right side logo */
+.header-right .logo {
+  height: 40px; /* reduced size */
+  object-fit: contain;
 }
 
 
