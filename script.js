@@ -15,7 +15,7 @@ async function loadDashboard() {
 
         const card = document.createElement('div');
         card.className = 'card';
-        card.onclick = () => window.open(`data/${repo}.json`, '_blank');
+        card.onclick = () => window.open(`data/${repo}.html`, '_blank');
 
         card.innerHTML = `
           <h3>${repo}</h3>
