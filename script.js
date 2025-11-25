@@ -1,70 +1,79 @@
-async function loadIndex() {
-  try {
-    const r = await fetch("index.json");
-    if (!r.ok) throw new Error("index.json missing");
-    const data = await r.json();
-    return data.repos;
-  } catch (e) {
-    console.error(e);
-    document.getElementById("summary").innerHTML =
-      "<h2>Error loading index.json</h2>";
-    return [];
-  }
+async function loadData() {
+    try {
+        const res = await fetch("./data/identiscents.json");
+
+        if (!res.ok) throw new Error("Cannot load JSON");
+
+        const data = await res.json();
+
+        document.getElementById("errorBox").style.display = "none";
+
+        // Severity Mapping
+        const critical = data.violationCounts.sev1 || 0;
+        const high = data.violationCounts.sev2 || 0;
+        const medium = data.violationCounts.sev3 || 0;
+        const low = data.violationCounts.sev5 || 0;
+        const total = data.violationCounts.total || 0;
+
+        document.getElementById("totalViolations").innerText = total;
+        document.getElementById("criticalCount").innerText = critical;
+        document.getElementById("highCount").innerText = high;
+        document.getElementById("mediumCount").innerText = medium;
+        document.getElementById("lowCount").innerText = low;
+
+        buildCharts(critical, high, medium, low);
+
+    } catch (e) {
+        document.getElementById("errorBox").style.display = "block";
+    }
 }
 
-async function loadRepo(repo) {
-  try {
-    const res = await fetch(`data/${repo}.json`);
-    if (!res.ok) throw new Error(`${repo}.json missing`);
-    return await res.json();
-  } catch (err) {
-    console.warn("Missing JSON:", repo);
-    return null;
-  }
-}
+function buildCharts(c, h, m, l) {
 
-function makePieChart(canvasId, data) {
-  new Chart(document.getElementById(canvasId), {
-    type: "pie",
-    data: {
-      labels: ["sev2", "sev5"],
-      datasets: [
-        {
-          data: [data.violationCounts.sev2, data.violationCounts.sev5]
+    // 1. Trend Chart (Sample)
+    new Chart(document.getElementById("trendChart"), {
+        type: "bar",
+        data: {
+            labels: ["Scan 1", "Scan 2", "Scan 3", "Scan 4"],
+            datasets: [{
+                label: "Violations",
+                data: [4, 7, 5, 7],
+            }]
+        },
+        options: { responsive: true }
+    });
+
+    // 2. Sparkline Chart (Sample)
+    new Chart(document.getElementById("sparkChart"), {
+        type: "line",
+        data: {
+            labels: ["1","2","3","4","5","6","7","8","9","10","11","12"],
+            datasets: [{
+                data: [2,3,2,5,4,4,6,7,3,5,6,7],
+                fill: false
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: { legend: { display: false } },
+            scales: { x: { display: false }, y: { display: false } }
         }
-      ]
-    }
-  });
+    });
+
+    // 3. Severity Spread (No donut – simple bar)
+    new Chart(document.getElementById("severityChart"), {
+        type: "bar",
+        data: {
+            labels: ["Critical", "High", "Medium", "Low"],
+            datasets: [{
+                data: [c, h, m, l]
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: { legend: { display: false } }
+        }
+    });
 }
 
-async function init() {
-  const repos = await loadIndex();
-  const container = document.getElementById("repo-cards");
-
-  repos.forEach(async (repo) => {
-    const data = await loadRepo(repo);
-
-    const card = document.createElement("div");
-    card.className = "card";
-
-    if (!data) {
-      card.classList.add("error");
-      card.innerHTML = `<h3>${repo}</h3><p>Error loading data</p>`;
-      container.appendChild(card);
-      return;
-    }
-
-    const canvasId = `${repo}-chart`;
-
-    card.innerHTML = `
-      <h3>${repo}</h3>
-      <p><strong>Total:</strong> ${data.violationCounts.total}</p>
-      <canvas id="${canvasId}"></canvas>
-    `;
-
-    container.appendChild(card);
-    makePieChart(canvasId, data);
-  });
-}
-
-init();
+loadData();
