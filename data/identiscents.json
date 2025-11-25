@@ -1,0 +1,190 @@
+{
+  "runDir": "/home/runner/work/identiscents/identiscents/",
+  "violationCounts": {
+    "total": 7,
+    "sev1": 0,
+    "sev2": 2,
+    "sev3": 0,
+    "sev4": 0,
+    "sev5": 5
+  },
+  "versions": {
+    "code-analyzer": "0.39.0",
+    "retire-js": "0.28.0",
+    "regex": "0.29.0",
+    "eslint": "0.36.0",
+    "flow": "0.28.0",
+    "cpd": "0.32.0"
+  },
+  "violations": [
+    {
+      "rule": "AvoidTermsWithImplicitBias",
+      "engine": "regex",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "BestPractices"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/objects/Account/fields/Vendor_Status__c.field-meta.xml",
+          "startLine": 23,
+          "startColumn": 27,
+          "endLine": 23,
+          "endColumn": 38
+        }
+      ],
+      "message": "A term with implicit bias was found. Avoid using any of the following terms: [\"whitelist\",\"blacklist\",\"brownout\",\"blackout\",\"slave\"]",
+      "resources": [
+        "https://www.salesforce.com/news/stories/salesforce-updates-technical-language-in-ongoing-effort-to-address-implicit-bias/"
+      ]
+    },
+    {
+      "rule": "AvoidTermsWithImplicitBias",
+      "engine": "regex",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "BestPractices"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/objects/Account/fields/Vendor_Status__c.field-meta.xml",
+          "startLine": 25,
+          "startColumn": 24,
+          "endLine": 25,
+          "endColumn": 35
+        }
+      ],
+      "message": "A term with implicit bias was found. Avoid using any of the following terms: [\"whitelist\",\"blacklist\",\"brownout\",\"blackout\",\"slave\"]",
+      "resources": [
+        "https://www.salesforce.com/news/stories/salesforce-updates-technical-language-in-ongoing-effort-to-address-implicit-bias/"
+      ]
+    },
+    {
+      "rule": "AvoidTermsWithImplicitBias",
+      "engine": "regex",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "BestPractices"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/objects/Account/recordTypes/Client.recordType-meta.xml",
+          "startLine": 367,
+          "startColumn": 23,
+          "endLine": 367,
+          "endColumn": 34
+        }
+      ],
+      "message": "A term with implicit bias was found. Avoid using any of the following terms: [\"whitelist\",\"blacklist\",\"brownout\",\"blackout\",\"slave\"]",
+      "resources": [
+        "https://www.salesforce.com/news/stories/salesforce-updates-technical-language-in-ongoing-effort-to-address-implicit-bias/"
+      ]
+    },
+    {
+      "rule": "AvoidTermsWithImplicitBias",
+      "engine": "regex",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "BestPractices"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/objects/Account/recordTypes/Vendor.recordType-meta.xml",
+          "startLine": 367,
+          "startColumn": 23,
+          "endLine": 367,
+          "endColumn": 34
+        }
+      ],
+      "message": "A term with implicit bias was found. Avoid using any of the following terms: [\"whitelist\",\"blacklist\",\"brownout\",\"blackout\",\"slave\"]",
+      "resources": [
+        "https://www.salesforce.com/news/stories/salesforce-updates-technical-language-in-ongoing-effort-to-address-implicit-bias/"
+      ]
+    },
+    {
+      "rule": "AvoidTermsWithImplicitBias",
+      "engine": "regex",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "BestPractices"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/objects/Product_Preference__c/validationRules/Block_Inactive_Vendor.validationRule-meta.xml",
+          "startLine": 22,
+          "startColumn": 49,
+          "endLine": 22,
+          "endColumn": 60
+        }
+      ],
+      "message": "A term with implicit bias was found. Avoid using any of the following terms: [\"whitelist\",\"blacklist\",\"brownout\",\"blackout\",\"slave\"]",
+      "resources": [
+        "https://www.salesforce.com/news/stories/salesforce-updates-technical-language-in-ongoing-effort-to-address-implicit-bias/"
+      ]
+    },
+    {
+      "rule": "PreventPassingUserDataIntoElementWithoutSharing",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 1,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Lead_After_Save.flow-meta.xml",
+          "startLine": 1093,
+          "startColumn": 1,
+          "comment": "varUpdatedOpportunity.varUpdatedOpportunity: Initialization"
+        },
+        {
+          "file": "force-app/main/default/flows/Lead_After_Save.flow-meta.xml",
+          "startLine": 887,
+          "startColumn": 1,
+          "comment": "varUpdatedOpportunity.varUpdatedOpportunity influences Update_Project_Description_ID_Opportunity_Currency_and_Pricebook.Update_Project_Description_ID_Opportunity_Currency_and_Pricebook: flow into recordUpdates via influence over Update_Project_Description_ID_Opportunity_Currency_and_Pricebook in run mode SystemModeWithoutSharing"
+        }
+      ],
+      "message": "User controlled data flows into recordUpdates element data in run mode: SystemModeWithoutSharing",
+      "resources": []
+    },
+    {
+      "rule": "PreventPassingUserDataIntoElementWithoutSharing",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 1,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Lead_After_Save.flow-meta.xml",
+          "startLine": 1093,
+          "startColumn": 1,
+          "comment": "varUpdatedOpportunity.varUpdatedOpportunity: Initialization"
+        },
+        {
+          "file": "force-app/main/default/flows/Lead_After_Save.flow-meta.xml",
+          "startLine": 646,
+          "startColumn": 1,
+          "comment": "varUpdatedOpportunity.varUpdatedOpportunity influences Get_Price_Book_Entry.CurrencyIsoCode: flow into recordLookups via influence over CurrencyIsoCode in run mode SystemModeWithoutSharing"
+        }
+      ],
+      "message": "User controlled data flows into recordLookups element selector in run mode: SystemModeWithoutSharing",
+      "resources": []
+    }
+  ]
+}
