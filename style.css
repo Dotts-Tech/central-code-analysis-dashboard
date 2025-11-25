@@ -56,8 +56,8 @@ header {
 }
 
 .square {
-  width: 110px;        /* wider */
-  height: 35px;       /* normal height */
+  width: 70px;        /* wider */
+  height: 45px;       /* normal height */
   display: flex;
   align-items: center;
   justify-content: center;
