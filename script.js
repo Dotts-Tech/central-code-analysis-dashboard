@@ -26,13 +26,12 @@ async function loadDashboard() {
             <div class="box medium-box">${scan.violationCounts.sev3 || 0}</div>
             <div class="box low-box">${scan.violationCounts.sev5 || 0}</div>
           </div>
-
-          <div class="labels">
-            <span>Critical</span>
-            <span>High</span>
-            <span>Medium</span>
-            <span>Low</span>
-          </div>
+<div class="labels">
+  <span>CRITICAL</span>
+  <span>HIGH</span>
+  <span>MEDIUM</span>
+  <span>LOW</span>
+</div>
         `;
 
         container.appendChild(card);
