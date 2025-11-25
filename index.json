@@ -1,1 +1,3 @@
-["identiscents"]
+{
+  "identiscents": { "json": "identiscents.json", "html": "identiscents.html" }
+}
