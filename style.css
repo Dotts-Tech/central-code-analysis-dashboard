@@ -21,13 +21,14 @@ main {
   padding: 20px;
 }
 
+/* Card grid */
 #results {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
-/* Card */
+/* Card styling */
 .card {
   background: white;
   padding: 18px;
@@ -41,20 +42,20 @@ main {
   transform: scale(1.03);
 }
 
-/* Box container */
+/* Connected color boxes */
 .violation-boxes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 6px;
   margin-top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ddd;
 }
 
-/* Individual colored box */
 .box {
-  padding: 12px 0;
-  border-radius: 10px;
+  padding: 18px 0;
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   color: white;
   font-weight: bold;
 }
@@ -64,3 +65,13 @@ main {
 .high-box     { background: #f0ad4e; } /* orange */
 .medium-box   { background: #5bc0de; } /* blue */
 .low-box      { background: #5cb85c; } /* green */
+
+/* Labels under boxes */
+.labels {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 6px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
