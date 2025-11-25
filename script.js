@@ -4,6 +4,7 @@ async function loadDashboard() {
 
   try {
     const indexResp = await fetch('index.json');
+    if (!indexResp.ok) throw new Error('index.json not found');
     const reposObj = await indexResp.json();
     const repos = Array.isArray(reposObj) ? reposObj : Object.keys(reposObj);
 
@@ -11,6 +12,7 @@ async function loadDashboard() {
 
     for (const repo of repos) {
       try {
+        console.log(`Fetching data/${repo}.json`);
         const scan = await fetch(`data/${repo}.json`).then(r => r.json());
 
         const template = document.getElementById('card-template');
@@ -24,7 +26,7 @@ async function loadDashboard() {
 
         card.querySelector('.view-details').onclick = () => window.open(`data/${repo}.json`, '_blank');
 
-        // Add Pie Chart
+        // Pie chart
         const ctx = card.querySelector('.pie-chart').getContext('2d');
         new Chart(ctx, {
           type: 'pie',
