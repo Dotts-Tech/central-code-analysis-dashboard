@@ -44,20 +44,19 @@ main {
 
 .violation-boxes {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1.25fr); /* wider boxes */
   margin-top: 10px;
   overflow: hidden;
   border: 1px solid #ddd;
-  border-radius: 0; /* <-- removed round corners */
 }
 
 .box {
-  padding: 18px 0;
+  padding: 10px 0; /* reduced height */
+  font-size: 20px; /* optional smaller text */
   text-align: center;
-  font-size: 22px;
   color: white;
   font-weight: bold;
-  border-radius: 0 !important; /* <-- square corners */
+  border-radius: 0 !important;
 }
 
 
