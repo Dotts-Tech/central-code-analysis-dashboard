@@ -36,7 +36,7 @@ main {
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   cursor: pointer;
   transition: 0.2s;
-  text-align: center; /* center align repo name */
+  text-align: center;
 }
 
 .card:hover {
@@ -53,11 +53,14 @@ main {
   border-radius: 0;
 }
 
-/* Bigger square boxes */
+/* REVERTED SIZE:
+   - Shorter height (back to original)
+   - Wider squares (padding-left & right added)
+*/
 .box {
-  padding: 28px 0;
+  padding: 18px 20px;     /* normal height, more width */
   text-align: center;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: bold;
   color: white;
   border-right: 1px solid rgba(255,255,255,0.3);
@@ -67,23 +70,23 @@ main {
   border-right: none;
 }
 
-/* Darker colors */
-.critical-box { background: #b10000; }
-.high-box     { background: #c47a00; }
-.medium-box   { background: #0077a8; }
-.low-box      { background: #007f1a; }
+/* REVERTED LIGHT COLORS */
+.critical-box { background: #d9534f; } /* light red */
+.high-box     { background: #f0ad4e; } /* light orange */
+.medium-box   { background: #5bc0de; } /* light blue */
+.low-box      { background: #5cb85c; } /* light green */
 
-/* Labels under boxes */
+/* Labels */
 .labels {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 10px;
-  font-size: 15px;
+  font-size: 14px;
   text-align: center;
   color: #444;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .labels span {
-  text-transform: uppercase; /* makes CRITICAL HIGH MEDIUM LOW */
+  text-transform: uppercase;
 }
