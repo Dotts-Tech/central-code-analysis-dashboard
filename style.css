@@ -30,31 +30,21 @@ main {
 
 /* Card styling */
 .card {
-  position: relative;
   background: white;
-  padding: 18px 18px 18px 22px;
+  padding: 18px;
   border-radius: 12px;
-  border: 1px solid #eaeaea;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.06);
+  border: 1px solid #e6e6e6; /* soft outline */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+  cursor: pointer;
   transition: 0.25s ease;
 }
 
-.card::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(180deg, #6aaaff, #4676ff);
-  border-radius: 12px 0 0 12px;
-  opacity: 0.7;
+.card:hover {
+  border-color: #b3b3b3;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  transform: translateY(-3px);
 }
 
-.card:hover {
-  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
-  transform: translateY(-2px);
-}
 
 
 
