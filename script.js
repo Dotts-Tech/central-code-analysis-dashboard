@@ -18,7 +18,7 @@ async function loadDashboard() {
         card.onclick = () => window.open(`data/${repo}.json`, '_blank');
 
         card.innerHTML = `
-          <h3>${repo}</h3>
+          <h3 style="text-align:center">${repo}</h3>
 
           <div class="violation-boxes">
             <div class="box critical-box">${scan.violationCounts.sev1 || 0}</div>
