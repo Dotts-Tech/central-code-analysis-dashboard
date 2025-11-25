@@ -32,46 +32,58 @@ main {
 .card {
   background: white;
   padding: 18px;
-  border-radius: 12px;
+  border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   cursor: pointer;
   transition: 0.2s;
+  text-align: center; /* center align repo name */
 }
 
 .card:hover {
   transform: scale(1.03);
 }
 
-/* Connected color boxes */
+/* Connected boxes */
 .violation-boxes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 10px;
-  border-radius: 10px;
+  margin-top: 15px;
+  border: 1px solid #ccc;
   overflow: hidden;
-  border: 1px solid #ddd;
+  border-radius: 0;
 }
 
+/* Bigger square boxes */
 .box {
-  padding: 18px 0;
+  padding: 28px 0;
   text-align: center;
-  font-size: 22px;
-  color: white;
+  font-size: 26px;
   font-weight: bold;
+  color: white;
+  border-right: 1px solid rgba(255,255,255,0.3);
 }
 
-/* Colors */
-.critical-box { background: #d9534f; } /* red */
-.high-box     { background: #f0ad4e; } /* orange */
-.medium-box   { background: #5bc0de; } /* blue */
-.low-box      { background: #5cb85c; } /* green */
+.box:last-child {
+  border-right: none;
+}
+
+/* Darker colors */
+.critical-box { background: #b10000; }
+.high-box     { background: #c47a00; }
+.medium-box   { background: #0077a8; }
+.low-box      { background: #007f1a; }
 
 /* Labels under boxes */
 .labels {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 6px;
+  margin-top: 10px;
+  font-size: 15px;
   text-align: center;
-  font-size: 14px;
-  color: #333;
+  color: #444;
+  font-weight: 600;
+}
+
+.labels span {
+  text-transform: uppercase; /* makes CRITICAL HIGH MEDIUM LOW */
 }
