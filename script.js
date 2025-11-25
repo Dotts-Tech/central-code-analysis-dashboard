@@ -15,48 +15,44 @@ async function loadDashboard() {
 
         const card = document.createElement('div');
         card.className = 'card';
+        card.onclick = () => window.open(`data/${repo}.json`, '_blank');
 
         card.innerHTML = `
-          <h3>${repo.toUpperCase()}</h3>
+          <h3>${repo}</h3>
 
-          <div class="sev-boxes">
+          <div class="violation-boxes">
+            <div class="box critical-box">${scan.violationCounts.sev1 || 0}</div>
+            <div class="box high-box">${scan.violationCounts.sev2 || 0}</div>
+            <div class="box medium-box">${scan.violationCounts.sev3 || 0}</div>
+            <div class="box low-box">${scan.violationCounts.sev5 || 0}</div>
+          </div>
 
-            <div class="sev-item">
-              <div class="square cri-box">${scan.violationCounts.sev1 || 0}</div>
-              <div class="label">CRITICAL</div>
-            </div>
-
-            <div class="sev-item">
-              <div class="square hi-box">${scan.violationCounts.sev2 || 0}</div>
-              <div class="label">HIGH</div>
-            </div>
-
-            <div class="sev-item">
-              <div class="square med-box">${scan.violationCounts.sev3 || 0}</div>
-              <div class="label">MEDIUM</div>
-            </div>
-
-            <div class="sev-item">
-              <div class="square low-box">${scan.violationCounts.sev5 || 0}</div>
-              <div class="label">LOW</div>
-            </div>
-
+          <div class="labels">
+            <span>Critical</span>
+            <span>High</span>
+            <span>Medium</span>
+            <span>Low</span>
           </div>
         `;
 
-        card.onclick = () => window.open(`data/${repo}.json`, '_blank');
         container.appendChild(card);
 
       } catch (err) {
+        console.error('Error loading repo:', repo, err);
+
         const errorCard = document.createElement('div');
         errorCard.className = 'card';
-        errorCard.innerHTML = `<h3>${repo}</h3><p>Error loading data</p>`;
+        errorCard.innerHTML = `
+          <h3>${repo}</h3>
+          <p>Error loading data</p>
+        `;
         container.appendChild(errorCard);
       }
     }
 
   } catch (err) {
     container.innerHTML = '<p>Error loading dashboard.</p>';
+    console.error(err);
   }
 }
 
