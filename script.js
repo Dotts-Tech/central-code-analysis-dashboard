@@ -3,11 +3,8 @@ async function loadDashboard() {
   container.innerHTML = '<p>Loading...</p>';
 
   try {
-    // Fetch index.json
     const indexResp = await fetch('index.json');
     const reposObj = await indexResp.json();
-
-    // If index.json is an object, get its keys; otherwise use array directly
     const repos = Array.isArray(reposObj) ? reposObj : Object.keys(reposObj);
 
     container.innerHTML = '';
@@ -16,14 +13,11 @@ async function loadDashboard() {
       try {
         const scan = await fetch(`data/${repo}.json`).then(r => r.json());
 
-        // Calculate total violations safely
         const totalViolations = scan.violations?.length ||
           ((scan.summary?.critical || 0) +
            (scan.summary?.high || 0) +
            (scan.summary?.medium || 0) +
            (scan.summary?.low || 0));
-
-        const safeWidth = (count) => totalViolations ? (count / totalViolations * 100) : 0;
 
         // Create card
         const card = document.createElement('div');
@@ -32,11 +26,13 @@ async function loadDashboard() {
 
         card.innerHTML = `
           <h3>${repo}</h3>
-          <p>Total Violations: ${totalViolations}</p>
-          <div class="bar critical" style="width:${safeWidth(scan.summary?.critical || 0)}%"></div>
-          <div class="bar high" style="width:${safeWidth(scan.summary?.high || 0)}%"></div>
-          <div class="bar medium" style="width:${safeWidth(scan.summary?.medium || 0)}%"></div>
-          <div class="bar low" style="width:${safeWidth(scan.summary?.low || 0)}%"></div>
+          <div class="violation-counts">
+            <span class="critical">Critical: ${scan.summary?.critical || 0}</span>
+            <span class="high">High: ${scan.summary?.high || 0}</span>
+            <span class="medium">Medium: ${scan.summary?.medium || 0}</span>
+            <span class="low">Low: ${scan.summary?.low || 0}</span>
+          </div>
+          <button class="view-details">View Details</button>
         `;
 
         container.appendChild(card);
@@ -50,7 +46,6 @@ async function loadDashboard() {
       }
     }
 
-    // If no repos found
     if (repos.length === 0) {
       container.innerHTML = '<p>No repositories found in index.json</p>';
     }
@@ -61,5 +56,4 @@ async function loadDashboard() {
   }
 }
 
-// Load dashboard on page load
 loadDashboard();
