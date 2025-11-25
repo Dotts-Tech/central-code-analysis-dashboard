@@ -1,57 +1,58 @@
 async function loadDashboard() {
-  const container = document.getElementById('dashboard');
-  container.innerHTML = 'Loading...';
+  const container = document.getElementById('results');
+  container.innerHTML = '<p>Loading...</p>';
 
   try {
-    // Fetch index.json
-    const indexResp = await fetch('index.json');
-    const indexData = await indexResp.json();
+    const index = await fetch('index.json').then(r => r.json());
 
     container.innerHTML = '';
 
-    for (const repo of Object.keys(indexData)) {
-      const fileName = indexData[repo];
-      const scanResp = await fetch(`data/${fileName}`);
-      const scan = await scanResp.json();
+    for (const [repo, file] of Object.entries(index)) {
+      try {
+        const scan = await fetch(`data/${file}`).then(r => r.json());
 
-      // Calculate total violations
-      const summary = scan.summary || {};
-      const total = (summary.critical||0) + (summary.high||0) + (summary.medium||0) + (summary.low||0);
+        const card = document.createElement('div');
+        card.className = 'card';
 
-      // Create card
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.innerHTML = `<h2>${repo}</h2>
-        <p>Total Violations: <strong>${total}</strong></p>
-        <canvas id="chart-${repo}"></canvas>`;
+        // Compute total violations
+        const total = scan.summary
+          ? scan.summary.critical + scan.summary.high + scan.summary.medium + scan.summary.low
+          : (scan.violations?.length || 0);
 
-      container.appendChild(card);
+        // Create chart canvas
+        const canvas = document.createElement('canvas');
+        card.appendChild(canvas);
 
-      // Chart
-      const ctx = card.querySelector(`#chart-${repo}`).getContext('2d');
-      new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-          labels: ['Critical', 'High', 'Medium', 'Low'],
-          datasets: [{
-            label: 'Violations',
-            data: [summary.critical||0, summary.high||0, summary.medium||0, summary.low||0],
-            backgroundColor: ['#ff4d4f','#fa8c16','#ffd666','#73d13d']
-          }]
-        },
-        options: {
-          plugins: {
-            legend: {
-              position: 'bottom'
-            }
+        // Chart.js pie chart for severity
+        new Chart(canvas.getContext('2d'), {
+          type: 'doughnut',
+          data: {
+            labels: ['Critical', 'High', 'Medium', 'Low'],
+            datasets: [{
+              data: [
+                scan.summary?.critical || 0,
+                scan.summary?.high || 0,
+                scan.summary?.medium || 0,
+                scan.summary?.low || 0
+              ],
+              backgroundColor: ['#ff4d4f', '#faad14', '#1890ff', '#52c41a']
+            }]
+          },
+          options: {
+            plugins: { legend: { position: 'bottom' }, title: { display: true, text: `${repo} - Total Violations: ${total}` } }
           }
-        }
-      });
+        });
+
+        container.appendChild(card);
+
+      } catch (innerError) {
+        console.error('Error loading repo:', repo, innerError);
+      }
     }
 
-  } catch (err) {
-    container.innerHTML = 'Error loading dashboard.';
-    console.error(err);
+  } catch (error) {
+    container.innerHTML = `<p>Error loading dashboard.</p>`;
+    console.error('Dashboard load error:', error);
   }
 }
 
