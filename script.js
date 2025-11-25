@@ -26,15 +26,22 @@ async function loadDashboard() {
             <div class="box medium-box">${scan.violationCounts.sev3 || 0}</div>
             <div class="box low-box">${scan.violationCounts.sev5 || 0}</div>
           </div>
+
+          <div class="labels">
+            <span>Critical</span>
+            <span>High</span>
+            <span>Medium</span>
+            <span>Low</span>
+          </div>
         `;
 
         container.appendChild(card);
 
       } catch (err) {
-        console.error(`Error loading ${repo}`, err);
+        console.error('Error loading repo:', repo, err);
 
         const errorCard = document.createElement('div');
-        errorCard.className = 'card error';
+        errorCard.className = 'card';
         errorCard.innerHTML = `
           <h3>${repo}</h3>
           <p>Error loading data</p>
