@@ -30,21 +30,20 @@ main {
 
 /* Card styling */
 .card {
-  background: white;
-  padding: 18px;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(8px);
   border-radius: 12px;
-  border: 2px solid transparent;
-  background-image: linear-gradient(white, white), 
-                    linear-gradient(90deg, #6a8dff, #8ed0ff);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+  border: 1px solid rgba(200,200,200,0.4);
+  padding: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   transition: 0.25s ease;
 }
 
 .card:hover {
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  backdrop-filter: blur(12px);
+  border-color: rgba(160,160,160,0.6);
 }
+
 
 .violation-boxes {
   display: grid;
