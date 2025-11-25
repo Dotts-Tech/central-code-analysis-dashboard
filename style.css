@@ -1,92 +1,79 @@
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-  background: #f5f5f5;
+  background: #f3f3f3;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding: 15px;
+  text-align: center;
+  padding: 20px;
   background: white;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-bottom: 1px solid #ccc;
 }
 
 .logo {
-  height: 50px;
+  height: 60px;
+  margin-bottom: 10px;
 }
 
-main {
-  padding: 20px;
-}
-
-/* Card grid */
 #results {
+  padding: 20px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 20px;
 }
 
-/* Card styling */
+/* CARD */
 .card {
   background: white;
-  padding: 18px;
-  border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
   cursor: pointer;
-  transition: 0.2s;
+}
+
+.card h3 {
   text-align: center;
-}
-
-.card:hover {
-  transform: scale(1.03);
-}
-
-/* Connected boxes */
-.violation-boxes {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-top: 15px;
-  border: 1px solid #ccc;
-  overflow: hidden;
-  border-radius: 0;
-}
-
-/* REVERTED SIZE:
-   - Shorter height (back to original)
-   - Wider squares (padding-left & right added)
-*/
-.box {
-  padding: 18px 20px;     /* normal height, more width */
-  text-align: center;
-  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 20px;
   font-weight: bold;
-  color: white;
-  border-right: 1px solid rgba(255,255,255,0.3);
 }
 
-.box:last-child {
-  border-right: none;
-}
-
-/* REVERTED LIGHT COLORS */
-.critical-box { background: #d9534f; } /* light red */
-.high-box     { background: #f0ad4e; } /* light orange */
-.medium-box   { background: #5bc0de; } /* light blue */
-.low-box      { background: #5cb85c; } /* light green */
-
-/* Labels */
-.labels {
+/* SEVERITY BOXES */
+.sev-boxes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 10px;
-  font-size: 14px;
-  text-align: center;
-  color: #444;
-  font-weight: 700;
+  gap: 12px;
+  margin-top: 15px;
 }
 
-.labels span {
-  text-transform: uppercase;
+.sev-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.square {
+  width: 70px;        /* wider */
+  height: 45px;       /* normal height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 0;    /* sharp corners */
+}
+
+.label {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Colors (reverted to previous palette) */
+.cri-box { background: #ffcccc; color: #ffcccc; }
+.hi-box  { background: #ffe0b3; color: #ffe0b3; }
+.med-box { background: #fff5b3; color: #fff5b3; }
+.low-box { background: #cce5ff; color: #cce5ff; }
