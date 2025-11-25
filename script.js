@@ -1,79 +1,52 @@
-async function loadData() {
-    try {
-        const res = await fetch("./data/identiscents.json");
+async function loadDashboard() {
+  const container = document.getElementById('results');
+  container.innerHTML = '<p>Loading...</p>';
 
-        if (!res.ok) throw new Error("Cannot load JSON");
+  try {
+    const indexResp = await fetch('index.json');
+    const reposObj = await indexResp.json();
+    const repos = Array.isArray(reposObj) ? reposObj : Object.keys(reposObj);
 
-        const data = await res.json();
+    container.innerHTML = '';
 
-        document.getElementById("errorBox").style.display = "none";
+    for (const repo of repos) {
+      try {
+        const scan = await fetch(`data/${repo}.json`).then(r => r.json());
 
-        // Severity Mapping
-        const critical = data.violationCounts.sev1 || 0;
-        const high = data.violationCounts.sev2 || 0;
-        const medium = data.violationCounts.sev3 || 0;
-        const low = data.violationCounts.sev5 || 0;
-        const total = data.violationCounts.total || 0;
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.onclick = () => window.open(`data/${repo}.json`, '_blank');
 
-        document.getElementById("totalViolations").innerText = total;
-        document.getElementById("criticalCount").innerText = critical;
-        document.getElementById("highCount").innerText = high;
-        document.getElementById("mediumCount").innerText = medium;
-        document.getElementById("lowCount").innerText = low;
+        card.innerHTML = `
+          <h3>${repo}</h3>
+          <div class="violation-counts">
+            <span class="critical">Critical: ${scan.violationCounts.sev1 || 0}</span>
+            <span class="high">High: ${scan.violationCounts.sev2 || 0}</span>
+            <span class="medium">Medium: ${scan.violationCounts.sev3 || 0}</span>
+            <span class="low">Low: ${scan.violationCounts.sev5 || 0}</span>
+          </div>
+          <button class="view-details">View Details</button>
+        `;
 
-        buildCharts(critical, high, medium, low);
+        container.appendChild(card);
 
-    } catch (e) {
-        document.getElementById("errorBox").style.display = "block";
+      } catch (err) {
+        console.error('Error loading repo:', repo, err);
+        const errorCard = document.createElement('div');
+        errorCard.className = 'card error';
+        errorCard.innerHTML = `<h3>${repo}</h3><p>Error loading data</p>`;
+        container.appendChild(errorCard);
+      }
     }
+
+    if (repos.length === 0) {
+      container.innerHTML = '<p>No repositories found in index.json</p>';
+    }
+
+  } catch (err) {
+    container.innerHTML = '<p>Error loading dashboard.</p>';
+    console.error(err);
+  }
 }
 
-function buildCharts(c, h, m, l) {
-
-    // 1. Trend Chart (Sample)
-    new Chart(document.getElementById("trendChart"), {
-        type: "bar",
-        data: {
-            labels: ["Scan 1", "Scan 2", "Scan 3", "Scan 4"],
-            datasets: [{
-                label: "Violations",
-                data: [4, 7, 5, 7],
-            }]
-        },
-        options: { responsive: true }
-    });
-
-    // 2. Sparkline Chart (Sample)
-    new Chart(document.getElementById("sparkChart"), {
-        type: "line",
-        data: {
-            labels: ["1","2","3","4","5","6","7","8","9","10","11","12"],
-            datasets: [{
-                data: [2,3,2,5,4,4,6,7,3,5,6,7],
-                fill: false
-            }]
-        },
-        options: {
-            responsive: true,
-            plugins: { legend: { display: false } },
-            scales: { x: { display: false }, y: { display: false } }
-        }
-    });
-
-    // 3. Severity Spread (No donut – simple bar)
-    new Chart(document.getElementById("severityChart"), {
-        type: "bar",
-        data: {
-            labels: ["Critical", "High", "Medium", "Low"],
-            datasets: [{
-                data: [c, h, m, l]
-            }]
-        },
-        options: {
-            responsive: true,
-            plugins: { legend: { display: false } }
-        }
-    });
-}
-
-loadData();
+loadDashboard();
