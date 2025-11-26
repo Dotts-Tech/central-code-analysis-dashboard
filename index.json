@@ -3,6 +3,8 @@
 ,
   "aeon-and-trisl": { "json": "aeon-and-trisl.json", "html": "aeon-and-trisl.html" }
 ,
+  "arabian-estates": { "json": "arabian-estates.json", "html": "arabian-estates.html" }
+,
   "capstone-property": { "json": "capstone-property.json", "html": "capstone-property.html" }
 ,
   "elysian-brok": { "json": "elysian-brok.json", "html": "elysian-brok.html" }
