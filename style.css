@@ -87,7 +87,7 @@ main {
   grid-template-columns: repeat(5, 1fr);
   margin-top: 6px;
   text-align: center;
-  font-size: 14px;
+  font-size: 10px;
   color: #333;
   text-transform: uppercase; /* <-- Now labels are capital */
   font-weight: 600;
