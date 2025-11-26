@@ -74,8 +74,7 @@ main {
   border-radius: 0 !important;
 }
 .repo-name {
-  font-size: 18px;       /* Adjust the size as needed */
-  font-weight: 800;     /* Optional, for emphasis */
+  font-size: 16px;       /* Adjust the size as needed */
   text-transform: uppercase; /* Ensures uppercase text */
   color: #333;            /* Optional text color */
   margin: 5px 0;          /* Optional spacing */
