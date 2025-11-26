@@ -1,4 +1,6 @@
 {
+  "IFA": { "json": "IFA.json", "html": "IFA.html" }
+,
   "aeon-and-trisl": { "json": "aeon-and-trisl.json", "html": "aeon-and-trisl.html" }
 ,
   "elysian-brok": { "json": "elysian-brok.json", "html": "elysian-brok.html" }
