@@ -27,6 +27,8 @@
 ,
   "index": { "json": "index.json" }
 ,
+  "knight-frank": { "json": "knight-frank.json", "html": "knight-frank.html" }
+,
   "luxfolio": { "json": "luxfolio.json", "html": "luxfolio.html" }
 ,
   "mc-cone": { "json": "mc-cone.json", "html": "mc-cone.html" }
