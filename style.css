@@ -77,7 +77,7 @@ main {
 /* Colors */
 .critical-box { background: #d9534f; } /* red */
 .high-box     { background: #f0ad4e; } /* orange */
-.medium-box   { background: #f0ad4e ; } /* yellow */
+.medium-box   { background: #e3f04e ; } /* yellow */
 .low-box      { background: #5bc0de; } /* blue */
 .info-box      { background: #5cb85c; } /* green */
 
