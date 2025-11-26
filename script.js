@@ -18,7 +18,7 @@ async function loadDashboard() {
         card.onclick = () => window.open(`data/${repo}.html`, '_blank');
 
         card.innerHTML = `
-          <h3>${repo.toUpperCase()}</h3>
+          <div class="repo-name">${repo.toUpperCase()}</div>
 
           <div class="violation-boxes">
             <div class="box critical-box">${scan.violationCounts.sev1 || 0}</div>
