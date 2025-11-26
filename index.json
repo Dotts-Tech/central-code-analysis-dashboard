@@ -15,6 +15,8 @@
 ,
   "elysian-brok": { "json": "elysian-brok.json", "html": "elysian-brok.html" }
 ,
+  "elysian": { "json": "elysian.json", "html": "elysian.html" }
+,
   "equity": { "json": "equity.json", "html": "equity.html" }
 ,
   "gta-properties": { "json": "gta-properties.json", "html": "gta-properties.html" }
