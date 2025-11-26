@@ -67,7 +67,7 @@ main {
 
 .box {
   padding: 8px 0; /* reduced height */
-  font-size: 20px; /* optional smaller text */
+  font-size: 14px; /* optional smaller text */
   text-align: center;
   color: black;
   font-weight: bold;
