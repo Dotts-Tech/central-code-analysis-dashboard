@@ -4,4 +4,6 @@
   "index": { "json": "index.json" }
 ,
   "soueast": { "json": "soueast.json", "html": "soueast.html" }
+,
+  "white-and-co": { "json": "white-and-co.json", "html": "white-and-co.html" }
 }
