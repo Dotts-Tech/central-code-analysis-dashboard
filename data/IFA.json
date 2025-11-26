@@ -1,0 +1,43 @@
+{
+  "runDir": "/home/runner/work/IFA/IFA/",
+  "violationCounts": {
+    "total": 1,
+    "sev1": 0,
+    "sev2": 0,
+    "sev3": 0,
+    "sev4": 0,
+    "sev5": 1
+  },
+  "versions": {
+    "code-analyzer": "0.39.0",
+    "retire-js": "0.28.0",
+    "regex": "0.29.0",
+    "eslint": "0.36.0",
+    "cpd": "0.32.0"
+  },
+  "violations": [
+    {
+      "rule": "AvoidTermsWithImplicitBias",
+      "engine": "regex",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "BestPractices"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "manifest/package.xml",
+          "startLine": 235,
+          "startColumn": 15,
+          "endLine": 235,
+          "endColumn": 34
+        }
+      ],
+      "message": "A term with implicit bias was found. Avoid using any of the following terms: [\"whitelist\",\"blacklist\",\"brownout\",\"blackout\",\"slave\"]",
+      "resources": [
+        "https://www.salesforce.com/news/stories/salesforce-updates-technical-language-in-ongoing-effort-to-address-implicit-bias/"
+      ]
+    }
+  ]
+}
