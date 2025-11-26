@@ -1,4 +1,6 @@
 {
+  "equity": { "json": "equity.json", "html": "equity.html" }
+,
   "hyde": { "json": "hyde.json", "html": "hyde.html" }
 ,
   "identiscents": { "json": "identiscents.json", "html": "identiscents.html" }
