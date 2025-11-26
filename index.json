@@ -1,9 +1,13 @@
 {
+  "aeon-and-trisl": { "json": "aeon-and-trisl.json", "html": "aeon-and-trisl.html" }
+,
   "equity": { "json": "equity.json", "html": "equity.html" }
 ,
   "hyde": { "json": "hyde.json", "html": "hyde.html" }
 ,
   "identiscents": { "json": "identiscents.json", "html": "identiscents.html" }
+,
+  "index": { "json": "index.json" }
 ,
   "mc-cone": { "json": "mc-cone.json", "html": "mc-cone.html" }
 ,
