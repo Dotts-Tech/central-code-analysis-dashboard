@@ -5,6 +5,8 @@
 ,
   "arabian-estates": { "json": "arabian-estates.json", "html": "arabian-estates.html" }
 ,
+  "barnes": { "json": "barnes.json", "html": "barnes.html" }
+,
   "bw-real-estate": { "json": "bw-real-estate.json", "html": "bw-real-estate.html" }
 ,
   "capstone-property": { "json": "capstone-property.json", "html": "capstone-property.html" }
