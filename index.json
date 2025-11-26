@@ -27,6 +27,8 @@
 ,
   "octa": { "json": "octa.json", "html": "octa.html" }
 ,
+  "pangea": { "json": "pangea.json", "html": "pangea.html" }
+,
   "soueast": { "json": "soueast.json", "html": "soueast.html" }
 ,
   "strada": { "json": "strada.json", "html": "strada.html" }
