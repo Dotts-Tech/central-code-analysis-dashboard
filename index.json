@@ -1,4 +1,6 @@
 {
+  "hyde": { "json": "hyde.json", "html": "hyde.html" }
+,
   "identiscents": { "json": "identiscents.json", "html": "identiscents.html" }
 ,
   "index": { "json": "index.json" }
