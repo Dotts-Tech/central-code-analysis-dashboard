@@ -23,6 +23,8 @@
 ,
   "strada": { "json": "strada.json", "html": "strada.html" }
 ,
+  "tabeer": { "json": "tabeer.json", "html": "tabeer.html" }
+,
   "vivid-living": { "json": "vivid-living.json", "html": "vivid-living.html" }
 ,
   "white-and-co": { "json": "white-and-co.json", "html": "white-and-co.html" }
