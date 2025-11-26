@@ -84,7 +84,7 @@ main {
 /* Labels under boxes */
 .labels {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   margin-top: 6px;
   text-align: center;
   font-size: 14px;
