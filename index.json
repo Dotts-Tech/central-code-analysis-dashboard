@@ -1,5 +1,4 @@
 {
-  "IFA": { "json": "IFA.json", "html": "IFA.html" }
 ,
   "Maria-Morris-Global": { "json": "Maria-Morris-Global.json", "html": "Maria-Morris-Global.html" }
 ,
@@ -27,8 +26,6 @@
 ,
   "identiscents": { "json": "identiscents.json", "html": "identiscents.html" }
 ,
-  "index": { "json": "index.json" }
-,
   "knight-frank": { "json": "knight-frank.json", "html": "knight-frank.html" }
 ,
   "luxfolio": { "json": "luxfolio.json", "html": "luxfolio.html" }
@@ -41,13 +38,7 @@
 ,
   "puregold": { "json": "puregold.json", "html": "puregold.html" }
 ,
-  "saas": { "json": "saas.json", "html": "saas.html" }
-,
-  "soueast": { "json": "soueast.json", "html": "soueast.html" }
-,
   "strada": { "json": "strada.json", "html": "strada.html" }
-,
-  "tabeer": { "json": "tabeer.json", "html": "tabeer.html" }
 ,
   "tyron-ash-real-estate": { "json": "tyron-ash-real-estate.json", "html": "tyron-ash-real-estate.html" }
 ,
