@@ -1,5 +1,7 @@
 {
-  "identiscents": { "json": "identiscents.json", "html": "identiscents.html" },
-  "obg": { "json": "obg.json", "html": "obg.html" },
+  "identiscents": { "json": "identiscents.json", "html": "identiscents.html" }
+,
+  "index": { "json": "index.json" }
+,
   "soueast": { "json": "soueast.json", "html": "soueast.html" }
 }
