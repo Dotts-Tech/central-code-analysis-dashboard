@@ -19,6 +19,8 @@
 ,
   "index": { "json": "index.json" }
 ,
+  "luxfolio": { "json": "luxfolio.json", "html": "luxfolio.html" }
+,
   "mc-cone": { "json": "mc-cone.json", "html": "mc-cone.html" }
 ,
   "octa": { "json": "octa.json", "html": "octa.html" }
