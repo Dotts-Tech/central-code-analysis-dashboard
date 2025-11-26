@@ -73,7 +73,13 @@ main {
   font-weight: bold;
   border-radius: 0 !important;
 }
-
+.repo-name {
+  font-size: 18px;       /* Adjust the size as needed */
+  font-weight: bold;      /* Optional, for emphasis */
+  text-transform: uppercase; /* Ensures uppercase text */
+  color: #333;            /* Optional text color */
+  margin: 5px 0;          /* Optional spacing */
+}
 /* Colors */
 .critical-box { background: #d9534f; } /* red */
 .high-box     { background: #f0ad4e; } /* orange */
