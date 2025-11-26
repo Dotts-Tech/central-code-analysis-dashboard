@@ -59,14 +59,14 @@ main {
 
 .violation-boxes {
   display: grid;
-  grid-template-columns: repeat(4, 1.5fr); /* wider boxes */
+  grid-template-columns: repeat(5, 1.9fr); /* wider boxes */
   margin-top: 10px;
   overflow: hidden;
   border: 1px solid #ddd;
 }
 
 .box {
-  padding: 10px 0; /* reduced height */
+  padding: 8px 0; /* reduced height */
   font-size: 20px; /* optional smaller text */
   text-align: center;
   color: white;
