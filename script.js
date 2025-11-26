@@ -24,13 +24,15 @@ async function loadDashboard() {
             <div class="box critical-box">${scan.violationCounts.sev1 || 0}</div>
             <div class="box high-box">${scan.violationCounts.sev2 || 0}</div>
             <div class="box medium-box">${scan.violationCounts.sev3 || 0}</div>
-            <div class="box low-box">${scan.violationCounts.sev5 || 0}</div>
+            <div class="box low-box">${scan.violationCounts.sev4 || 0}</div>
+            <div class="box info-box">${scan.violationCounts.sev5 || 0}</div>
           </div>
 <div class="labels">
   <span>CRITICAL</span>
   <span>HIGH</span>
   <span>MEDIUM</span>
   <span>LOW</span>
+  <span>INFO</span>
 </div>
         `;
 
