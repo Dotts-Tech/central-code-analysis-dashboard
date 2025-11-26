@@ -5,8 +5,6 @@
 ,
   "identiscents": { "json": "identiscents.json", "html": "identiscents.html" }
 ,
-  "index": { "json": "index.json" }
-,
   "mc-cone": { "json": "mc-cone.json", "html": "mc-cone.html" }
 ,
   "soueast": { "json": "soueast.json", "html": "soueast.html" }
