@@ -37,6 +37,8 @@
 ,
   "pangea": { "json": "pangea.json", "html": "pangea.html" }
 ,
+  "puregold": { "json": "puregold.json", "html": "puregold.html" }
+,
   "soueast": { "json": "soueast.json", "html": "soueast.html" }
 ,
   "strada": { "json": "strada.json", "html": "strada.html" }
