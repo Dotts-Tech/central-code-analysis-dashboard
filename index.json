@@ -1,6 +1,8 @@
 {
   "aeon-and-trisl": { "json": "aeon-and-trisl.json", "html": "aeon-and-trisl.html" }
 ,
+  "elysian-brok": { "json": "elysian-brok.json", "html": "elysian-brok.html" }
+,
   "equity": { "json": "equity.json", "html": "equity.html" }
 ,
   "gta-properties": { "json": "gta-properties.json", "html": "gta-properties.html" }
