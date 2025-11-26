@@ -7,11 +7,15 @@
 ,
   "identiscents": { "json": "identiscents.json", "html": "identiscents.html" }
 ,
+  "index": { "json": "index.json" }
+,
   "mc-cone": { "json": "mc-cone.json", "html": "mc-cone.html" }
 ,
   "soueast": { "json": "soueast.json", "html": "soueast.html" }
 ,
   "strada": { "json": "strada.json", "html": "strada.html" }
+,
+  "vivid-living": { "json": "vivid-living.json", "html": "vivid-living.html" }
 ,
   "white-and-co": { "json": "white-and-co.json", "html": "white-and-co.html" }
 }
