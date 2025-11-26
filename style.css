@@ -78,7 +78,7 @@ main {
 .critical-box { background: #d9534f; } /* red */
 .high-box     { background: #f0ad4e; } /* orange */
 .medium-box   { background: #5bc0de; } /* blue */
-.low-box      { background: #5cb85c; } /* green */
+.low-box      { background: #f4c76a; } /* yellow */
 .info-box      { background: #5cb85c; } /* green */
 
 /* Labels under boxes */
