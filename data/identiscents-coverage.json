@@ -1,0 +1,12 @@
+{
+  "name": "NoDefaultEnvError",
+  "message": "No default environment found. Use -o or --target-org to specify an environment.",
+  "exitCode": 1,
+  "context": "DataSoqlQueryCommand",
+  "stack": "NoDefaultEnvError: No default environment found. Use -o or --target-org to specify an environment.\n    at SfCommandError.from (file:///opt/hostedtoolcache/node/24.11.1/x64/lib/node_modules/@salesforce/cli/node_modules/@salesforce/sf-plugins-core/lib/SfCommandError.js:48:16)\n    at DataSoqlQueryCommand.catch (file:///opt/hostedtoolcache/node/24.11.1/x64/lib/node_modules/@salesforce/cli/node_modules/@salesforce/sf-plugins-core/lib/sfCommand.js:332:47)\n    at DataSoqlQueryCommand._run (/opt/hostedtoolcache/node/24.11.1/x64/lib/node_modules/@salesforce/cli/node_modules/@oclif/core/lib/command.js:186:29)\n    at async Config.runCommand (/opt/hostedtoolcache/node/24.11.1/x64/lib/node_modules/@salesforce/cli/node_modules/@oclif/core/lib/config/config.js:456:25)\n    at async run (/opt/hostedtoolcache/node/24.11.1/x64/lib/node_modules/@salesforce/cli/node_modules/@oclif/core/lib/main.js:97:16)\n    at async file:///opt/hostedtoolcache/node/24.11.1/x64/lib/node_modules/@salesforce/cli/bin/run.js:15:1",
+  "cause": "undefined",
+  "warnings": [],
+  "code": "NoDefaultEnvError",
+  "status": 1,
+  "commandName": "DataSoqlQueryCommand"
+}
