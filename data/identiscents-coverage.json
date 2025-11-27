@@ -1,16 +1,1 @@
-{
-  "name": "INVALID_TYPE",
-  "message": "sObject type 'ApexCodeCoverageAggregate' is not supported.",
-  "exitCode": 1,
-  "context": "DataSoqlQueryCommand",
-  "data": {
-    "message": "sObject type 'ApexCodeCoverageAggregate' is not supported.",
-    "errorCode": "INVALID_TYPE"
-  },
-  "stack": "INVALID_TYPE: sObject type 'ApexCodeCoverageAggregate' is not supported.\n    at SfCommandError.from (file:///opt/hostedtoolcache/node/24.11.1/x64/lib/node_modules/@salesforce/cli/node_modules/@salesforce/sf-plugins-core/lib/SfCommandError.js:48:16)\n    at DataSoqlQueryCommand.catch (file:///opt/hostedtoolcache/node/24.11.1/x64/lib/node_modules/@salesforce/cli/node_modules/@salesforce/sf-plugins-core/lib/sfCommand.js:332:47)\n    at DataSoqlQueryCommand._run (/opt/hostedtoolcache/node/24.11.1/x64/lib/node_modules/@salesforce/cli/node_modules/@oclif/core/lib/command.js:186:29)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async Config.runCommand (/opt/hostedtoolcache/node/24.11.1/x64/lib/node_modules/@salesforce/cli/node_modules/@oclif/core/lib/config/config.js:456:25)\n    at async run (/opt/hostedtoolcache/node/24.11.1/x64/lib/node_modules/@salesforce/cli/node_modules/@oclif/core/lib/main.js:97:16)\n    at async file:///opt/hostedtoolcache/node/24.11.1/x64/lib/node_modules/@salesforce/cli/bin/run.js:15:1",
-  "cause": "INVALID_TYPE: sObject type 'ApexCodeCoverageAggregate' is not supported.\n    at HttpApi.getError (/opt/hostedtoolcache/node/24.11.1/x64/lib/node_modules/@salesforce/cli/node_modules/@jsforce/jsforce-node/lib/http-api.js:298:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async /opt/hostedtoolcache/node/24.11.1/x64/lib/node_modules/@salesforce/cli/node_modules/@jsforce/jsforce-node/lib/http-api.js:127:33\n    at async Query._execute (/opt/hostedtoolcache/node/24.11.1/x64/lib/node_modules/@salesforce/cli/node_modules/@jsforce/jsforce-node/lib/query.js:373:22)\n    at async /opt/hostedtoolcache/node/24.11.1/x64/lib/node_modules/@salesforce/cli/node_modules/@jsforce/jsforce-node/lib/query.js:305:17 {\n  data: {\n    message: \"sObject type 'ApexCodeCoverageAggregate' is not supported.\",\n    errorCode: 'INVALID_TYPE'\n  },\n  errorCode: 'INVALID_TYPE'\n}",
-  "warnings": [],
-  "code": "1",
-  "status": 1,
-  "commandName": "DataSoqlQueryCommand"
-}
+{"result":{"records":[]}}
