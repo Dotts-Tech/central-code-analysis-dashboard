@@ -9,6 +9,10 @@
 ,
   "azco": { "json": "azco.json", "html": "azco.html" }
 ,
+  "barnes-coverage": { "json": "barnes-coverage.json", "html": "barnes-coverage.html" }
+,
+  "barnes-test": { "json": "barnes-test.json", "html": "barnes-test.html" }
+,
   "barnes": { "json": "barnes.json", "html": "barnes.html" }
 ,
   "bw-real-estate": { "json": "bw-real-estate.json", "html": "bw-real-estate.html" }
