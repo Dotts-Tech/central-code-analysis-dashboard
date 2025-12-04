@@ -37,6 +37,8 @@
 ,
   "index": { "json": "index.json" }
 ,
+  "kgi": { "json": "kgi.json", "html": "kgi.html" }
+,
   "knight-frank": { "json": "knight-frank.json", "html": "knight-frank.html" }
 ,
   "luxfolio": { "json": "luxfolio.json", "html": "luxfolio.html" }
