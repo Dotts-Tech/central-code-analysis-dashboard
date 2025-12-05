@@ -1,0 +1,100 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;   /* pushes title left, logo right */
+  align-items: center;
+  padding: 15px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+/* Left side title */
+.header-left h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Right side logo */
+.header-right .logo {
+  height: 28px; /* reduced size */
+  object-fit: contain;
+}
+
+
+main {
+  padding: 20px;
+}
+
+/* Card grid */
+#results {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Card styling */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e6e6e6; /* soft outline */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  border-color: #b3b3b3;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  transform: translateY(-3px);
+}
+
+
+
+
+.violation-boxes {
+  display: grid;
+  grid-template-columns: repeat(5, 1.9fr); /* wider boxes */
+  margin-top: 10px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.box {
+  padding: 4px 0; /* reduced height */
+  font-size: 14px; /* optional smaller text */
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  border-radius: 0 !important;
+}
+.repo-name {
+  font-size: 16px;       /* Adjust the size as needed */
+  text-transform: uppercase; /* Ensures uppercase text */
+  color: #333;            /* Optional text color */
+  margin: 5px 0;          /* Optional spacing */
+}
+/* Colors */
+.critical-box { background: #d9534f; } /* red */
+.high-box     { background: #f0ad4e; } /* orange */
+.medium-box   { background: #e3f04e ; } /* yellow */
+.low-box      { background: #5bc0de; } /* blue */
+.info-box      { background: #5cb85c; } /* green */
+
+/* Labels under boxes */
+.labels {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 6px;
+  text-align: center;
+  font-size: 10px;
+  color: #333;
+  text-transform: uppercase; /* <-- Now labels are capital */
+  font-weight: 600;
+}
