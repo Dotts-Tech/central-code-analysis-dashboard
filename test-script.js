@@ -3,7 +3,7 @@ async function loadDashboard() {
   container.innerHTML = '<p>Loading...</p>';
 
   try {
-    const indexResp = await fetch('index.json');
+    const indexResp = await fetch('test-index.json');
     const reposObj = await indexResp.json();
     const repos = Array.isArray(reposObj) ? reposObj : Object.keys(reposObj);
 
