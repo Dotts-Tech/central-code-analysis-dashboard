@@ -1,7 +1,8 @@
 {
   "barnes": {
-    "json": "barnes-test.json",
-    "pass": "barnes-pass.html",
-    "fail": "barnes-fail.html",
-    "coverage": "barnes-coverage.html"
+    "json": "barnes.json",
+    "passHtml": "barnes-pass.html",
+    "failHtml": "barnes-fail.html",
+    "html": "barnes-coverage.html"
   }
+}
