@@ -15,8 +15,8 @@ fetch('test-index.json')
         const jsonLink = document.createElement('a');
         jsonLink.href = repoData.json;
         jsonLink.target = '_blank';
-        jsonLink.textContent = 'JSON';
-        jsonLink.className = 'json-link';
+        jsonLink.textContent = 'html';
+        jsonLink.className = 'html-link';
         card.appendChild(jsonLink);
       }
 
