@@ -7,6 +7,8 @@
 ,
   "apex-coverage": { "json": "apex-coverage.json", "html": "apex-coverage.html" }
 ,
+  "apex-results": { "json": "apex-results.json" }
+,
   "apex-test": { "json": "apex-test.json" }
 ,
   "arabian-estates": { "json": "arabian-estates.json", "html": "arabian-estates.html" }
