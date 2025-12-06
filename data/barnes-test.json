@@ -1,7 +1,890 @@
 {
-  "status": 0,
+  "status": 100,
   "result": {
-    "testRunId": "707Pg000027sJYa"
+    "summary": {
+      "failRate": "19%",
+      "failing": 11,
+      "hostname": "https://barnesdubai.my.salesforce.com",
+      "orgId": "00DHs000003X1uiMAC",
+      "outcome": "Failed",
+      "passRate": "81%",
+      "passing": 48,
+      "skipped": 0,
+      "testRunId": "707Pg000029g65c",
+      "testStartTime": "2025-12-06T17:16:31.000Z",
+      "testsRan": 59,
+      "userId": "005Hs00000DWcfUIAT",
+      "username": "barnes@pradeep.tv",
+      "commandTime": "98 ms",
+      "testExecutionTime": "58683 ms",
+      "testTotalTime": "62814 ms"
+    },
+    "tests": [
+      {
+        "Id": "07MPg00000BQJDZMA5",
+        "QueueItemId": "709Pg000007Tq8rIAC",
+        "StackTrace": "Class.Barnes_DealFeedFullTest.testGenerateFeed: line 19, column 1",
+        "Message": "System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Fill Mobile or Email to add a new contact: []",
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testGenerateFeed",
+        "Outcome": "Fail",
+        "ApexClass": {
+          "Id": "01pPg000009HSacIAG",
+          "Name": "Barnes_DealFeedFullTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 117,
+        "FullName": "Barnes_DealFeedFullTest.testGenerateFeed"
+      },
+      {
+        "Id": "07MPg00000BQ1tOMAT",
+        "QueueItemId": "709Pg000007Tq8sIAC",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testChangePasswordController",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjOgIAL",
+          "Name": "ChangePasswordControllerTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 19,
+        "FullName": "ChangePasswordControllerTest.testChangePasswordController"
+      },
+      {
+        "Id": "07MPg00000BQIuDMAX",
+        "QueueItemId": "709Pg000007Tq8tIAC",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testForgotPasswordController",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjOiIAL",
+          "Name": "ForgotPasswordControllerTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 14,
+        "FullName": "ForgotPasswordControllerTest.testForgotPasswordController"
+      },
+      {
+        "Id": "07MPg00000BQJBxMAP",
+        "QueueItemId": "709Pg000007Tq8uIAC",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testCalloutupload",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000LjXX4IAN",
+          "Name": "Test_Batch_PBImgaeMigration_OT",
+          "NamespacePrefix": null
+        },
+        "RunTime": 1888,
+        "FullName": "Test_Batch_PBImgaeMigration_OT.testCalloutupload"
+      },
+      {
+        "Id": "07MPg00000BQJ77MAH",
+        "QueueItemId": "709Pg000007Tq8vIAC",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testSiteLoginController",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjOcIAL",
+          "Name": "SiteLoginControllerTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 16,
+        "FullName": "SiteLoginControllerTest.testSiteLoginController"
+      },
+      {
+        "Id": "07MPg00000BQIqzMAH",
+        "QueueItemId": "709Pg000007Tq8wIAC",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testRegistration",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjOeIAL",
+          "Name": "SiteRegisterControllerTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 18,
+        "FullName": "SiteRegisterControllerTest.testRegistration"
+      },
+      {
+        "Id": "07MPg00000BQIsbMAH",
+        "QueueItemId": "709Pg000007Tq8yIAC",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testSave",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjOkIAL",
+          "Name": "MyProfilePageControllerTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 321,
+        "FullName": "MyProfilePageControllerTest.testSave"
+      },
+      {
+        "Id": "07MPg00000BQJLdMAP",
+        "QueueItemId": "709Pg000007Tq8zIAC",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "Test",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pPg000007tPY5IAM",
+          "Name": "Test_PFEmailLogAPICallout",
+          "NamespacePrefix": null
+        },
+        "RunTime": 3355,
+        "FullName": "Test_PFEmailLogAPICallout.Test"
+      },
+      {
+        "Id": "07MPg00000BQJLeMAP",
+        "QueueItemId": "709Pg000007Tq8zIAC",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testCreateCallEnquiry",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pPg000007tPY5IAM",
+          "Name": "Test_PFEmailLogAPICallout",
+          "NamespacePrefix": null
+        },
+        "RunTime": 1574,
+        "FullName": "Test_PFEmailLogAPICallout.testCreateCallEnquiry"
+      },
+      {
+        "Id": "07MPg00000BQJLfMAP",
+        "QueueItemId": "709Pg000007Tq8zIAC",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testExtractListingReference",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pPg000007tPY5IAM",
+          "Name": "Test_PFEmailLogAPICallout",
+          "NamespacePrefix": null
+        },
+        "RunTime": 5,
+        "FullName": "Test_PFEmailLogAPICallout.testExtractListingReference"
+      },
+      {
+        "Id": "07MPg00000BQJALMA5",
+        "QueueItemId": "709Pg000007Tq90IAC",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "PropMediaReorderTest",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjOXIA1",
+          "Name": "Test_ReorderController",
+          "NamespacePrefix": null
+        },
+        "RunTime": 1507,
+        "FullName": "Test_ReorderController.PropMediaReorderTest"
+      },
+      {
+        "Id": "07MPg00000BQIz3MAH",
+        "QueueItemId": "709Pg000007Tq91IAC",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testgetResults",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjOWIA1",
+          "Name": "Test_LookupSearchComponentController",
+          "NamespacePrefix": null
+        },
+        "RunTime": 847,
+        "FullName": "Test_LookupSearchComponentController.testgetResults"
+      },
+      {
+        "Id": "07MPg00000BQIvpMAH",
+        "QueueItemId": "709Pg000007Tq92IAC",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testQueryImages",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjOTIA1",
+          "Name": "Test_ListingImageDisplayList",
+          "NamespacePrefix": null
+        },
+        "RunTime": 328,
+        "FullName": "Test_ListingImageDisplayList.testQueryImages"
+      },
+      {
+        "Id": "07MPg00000BQJa9MAH",
+        "QueueItemId": "709Pg000007Tq93IAC",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testMoveFilesToPipelineBatch",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pPg000007fUfeIAE",
+          "Name": "Batch_MoveOfferFilesIntoDeals_Test",
+          "NamespacePrefix": null
+        },
+        "RunTime": 1732,
+        "FullName": "Batch_MoveOfferFilesIntoDeals_Test.testMoveFilesToPipelineBatch"
+      },
+      {
+        "Id": "07MPg00000BQJYXMA5",
+        "QueueItemId": "709Pg000007Tq94IAC",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "Test",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pPg000007tQXNIA2",
+          "Name": "Test_BayutCallApiCallout",
+          "NamespacePrefix": null
+        },
+        "RunTime": 4601,
+        "FullName": "Test_BayutCallApiCallout.Test"
+      },
+      {
+        "Id": "07MPg00000BQJYYMA5",
+        "QueueItemId": "709Pg000007Tq94IAC",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testCreateCallEnquiry",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pPg000007tQXNIA2",
+          "Name": "Test_BayutCallApiCallout",
+          "NamespacePrefix": null
+        },
+        "RunTime": 2201,
+        "FullName": "Test_BayutCallApiCallout.testCreateCallEnquiry"
+      },
+      {
+        "Id": "07MPg00000BQIxRMAX",
+        "QueueItemId": "709Pg000007Tq95IAC",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "createTaskTest",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjOSIA1",
+          "Name": "Test_EasySearchController",
+          "NamespacePrefix": null
+        },
+        "RunTime": 913,
+        "FullName": "Test_EasySearchController.createTaskTest"
+      },
+      {
+        "Id": "07MPg00000BQIxSMAX",
+        "QueueItemId": "709Pg000007Tq95IAC",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "getObjectNames",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjOSIA1",
+          "Name": "Test_EasySearchController",
+          "NamespacePrefix": null
+        },
+        "RunTime": 872,
+        "FullName": "Test_EasySearchController.getObjectNames"
+      },
+      {
+        "Id": "07MPg00000BQJVJMA5",
+        "QueueItemId": "709Pg000007Tq96IAC",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "ListingsForBD",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjOVIA1",
+          "Name": "Test_ListingsXMLForPortals",
+          "NamespacePrefix": null
+        },
+        "RunTime": 4185,
+        "FullName": "Test_ListingsXMLForPortals.ListingsForBD"
+      },
+      {
+        "Id": "07MPg00000BQJVKMA5",
+        "QueueItemId": "709Pg000007Tq96IAC",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "ListingsForPF",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjOVIA1",
+          "Name": "Test_ListingsXMLForPortals",
+          "NamespacePrefix": null
+        },
+        "RunTime": 1031,
+        "FullName": "Test_ListingsXMLForPortals.ListingsForPF"
+      },
+      {
+        "Id": "07MPg00000BQJIPMA5",
+        "QueueItemId": "709Pg000007Tq97IAC",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "ListingsPDFControllerTest",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjOUIA1",
+          "Name": "Test_ListingsPDFController",
+          "NamespacePrefix": null
+        },
+        "RunTime": 1311,
+        "FullName": "Test_ListingsPDFController.ListingsPDFControllerTest"
+      },
+      {
+        "Id": "07MPg00000BQJGoMAP",
+        "QueueItemId": "709Pg000007Tq98IAC",
+        "StackTrace": "Class.Test_Batch_LinkedListCreationFrmListing.ListingInsert: line 75, column 1",
+        "Message": "System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Please include the listing price, unit number, and address.: []",
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testListingInsert",
+        "Outcome": "Fail",
+        "ApexClass": {
+          "Id": "01pPg000007T7DQIA0",
+          "Name": "Test_Batch_LinkedListCreationFrmListing",
+          "NamespacePrefix": null
+        },
+        "RunTime": 0,
+        "FullName": "Test_Batch_LinkedListCreationFrmListing.testListingInsert"
+      },
+      {
+        "Id": "07MPg00000BQJFBMA5",
+        "QueueItemId": "709Pg000007Tq99IAC",
+        "StackTrace": "Class.EnquiryTriggerHandler_Test.handleEnquiryContactSharingTest: line 49, column 1",
+        "Message": "System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Phone number is required: [Phone]",
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "handleEnquiryContactSharingTest",
+        "Outcome": "Fail",
+        "ApexClass": {
+          "Id": "01pHs00000JBjOGIA1",
+          "Name": "EnquiryTriggerHandler_Test",
+          "NamespacePrefix": null
+        },
+        "RunTime": 916,
+        "FullName": "EnquiryTriggerHandler_Test.handleEnquiryContactSharingTest"
+      },
+      {
+        "Id": "07MPg00000BQJ3tMAH",
+        "QueueItemId": "709Pg000007Tq9AIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testAfterInsertCreatesContactShare",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjOJIA1",
+          "Name": "ListingTriggerHandler_Test",
+          "NamespacePrefix": null
+        },
+        "RunTime": 1069,
+        "FullName": "ListingTriggerHandler_Test.testAfterInsertCreatesContactShare"
+      },
+      {
+        "Id": "07MPg00000BQJ3uMAH",
+        "QueueItemId": "709Pg000007Tq9AIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testAfterUpdateWithOwnerChangeCreatesNewShare",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjOJIA1",
+          "Name": "ListingTriggerHandler_Test",
+          "NamespacePrefix": null
+        },
+        "RunTime": 895,
+        "FullName": "ListingTriggerHandler_Test.testAfterUpdateWithOwnerChangeCreatesNewShare"
+      },
+      {
+        "Id": "07MPg00000BQJ3vMAH",
+        "QueueItemId": "709Pg000007Tq9AIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testBeforeUpdatePriceReductionLogic",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjOJIA1",
+          "Name": "ListingTriggerHandler_Test",
+          "NamespacePrefix": null
+        },
+        "RunTime": 581,
+        "FullName": "ListingTriggerHandler_Test.testBeforeUpdatePriceReductionLogic"
+      },
+      {
+        "Id": "07MPg00000BQJ3wMAH",
+        "QueueItemId": "709Pg000007Tq9AIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testUnlinkInvalidMatch",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjOJIA1",
+          "Name": "ListingTriggerHandler_Test",
+          "NamespacePrefix": null
+        },
+        "RunTime": 1664,
+        "FullName": "ListingTriggerHandler_Test.testUnlinkInvalidMatch"
+      },
+      {
+        "Id": "07MPg00000BQJ3xMAH",
+        "QueueItemId": "709Pg000007Tq9AIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testValidMatchRemainsLinked",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjOJIA1",
+          "Name": "ListingTriggerHandler_Test",
+          "NamespacePrefix": null
+        },
+        "RunTime": 804,
+        "FullName": "ListingTriggerHandler_Test.testValidMatchRemainsLinked"
+      },
+      {
+        "Id": "07MPg00000BQJS5MAP",
+        "QueueItemId": "709Pg000007Tq9BIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "Test",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pPg000007tRBhIAM",
+          "Name": "Test_PFWhatsappAPICallout",
+          "NamespacePrefix": null
+        },
+        "RunTime": 4519,
+        "FullName": "Test_PFWhatsappAPICallout.Test"
+      },
+      {
+        "Id": "07MPg00000BQJ8jMAH",
+        "QueueItemId": "709Pg000007Tq9CIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "Test",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pPg000007tOH3IAM",
+          "Name": "Test_PFCallLogAPiCallout",
+          "NamespacePrefix": null
+        },
+        "RunTime": 2599,
+        "FullName": "Test_PFCallLogAPiCallout.Test"
+      },
+      {
+        "Id": "07MPg00000BQJQTMA5",
+        "QueueItemId": "709Pg000007Tq9DIAS",
+        "StackTrace": "Class.EnquiryRoutingHandler_Test.testEnquiryRouting: line 44, column 1",
+        "Message": "System.DmlException: Insert failed. First exception on row 0; first error: MIXED_DML_OPERATION, DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): Queue__c, original object: PermissionSetAssignment: []",
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testEnquiryRouting",
+        "Outcome": "Fail",
+        "ApexClass": {
+          "Id": "01pHs00000JBjOEIA1",
+          "Name": "EnquiryRoutingHandler_Test",
+          "NamespacePrefix": null
+        },
+        "RunTime": 1555,
+        "FullName": "EnquiryRoutingHandler_Test.testEnquiryRouting"
+      },
+      {
+        "Id": "07MPg00000BQJQUMA5",
+        "QueueItemId": "709Pg000007Tq9DIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testUnlinkInvalidMatchFromEnquiry",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjOEIA1",
+          "Name": "EnquiryRoutingHandler_Test",
+          "NamespacePrefix": null
+        },
+        "RunTime": 1710,
+        "FullName": "EnquiryRoutingHandler_Test.testUnlinkInvalidMatchFromEnquiry"
+      },
+      {
+        "Id": "07MPg00000BQJK1MAP",
+        "QueueItemId": "709Pg000007Tq9EIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testRunBatchEnquiry",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pPg00000VWYpWIAX",
+          "Name": "BatchLauncherTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 148,
+        "FullName": "BatchLauncherTest.testRunBatchEnquiry"
+      },
+      {
+        "Id": "07MPg00000BQJK2MAP",
+        "QueueItemId": "709Pg000007Tq9EIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testRunBatchListing",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pPg00000VWYpWIAX",
+          "Name": "BatchLauncherTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 132,
+        "FullName": "BatchLauncherTest.testRunBatchListing"
+      },
+      {
+        "Id": "07MPg00000BQJS7MAP",
+        "QueueItemId": "709Pg000007Tq9FIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testUpdateListings_Success",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBlSQIA1",
+          "Name": "Test_UpdateListingLongDescriptions",
+          "NamespacePrefix": null
+        },
+        "RunTime": 147,
+        "FullName": "Test_UpdateListingLongDescriptions.testUpdateListings_Success"
+      },
+      {
+        "Id": "07MPg00000BQJS8MAP",
+        "QueueItemId": "709Pg000007Tq9FIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "test_Error",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBlSQIA1",
+          "Name": "Test_UpdateListingLongDescriptions",
+          "NamespacePrefix": null
+        },
+        "RunTime": 15,
+        "FullName": "Test_UpdateListingLongDescriptions.test_Error"
+      },
+      {
+        "Id": "07MPg00000BQJ2HMAX",
+        "QueueItemId": "709Pg000007Tq9GIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testMoveFilesToPipeline",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pPg000007fU6AIAU",
+          "Name": "dealTriggerHandler_Test",
+          "NamespacePrefix": null
+        },
+        "RunTime": 1322,
+        "FullName": "dealTriggerHandler_Test.testMoveFilesToPipeline"
+      },
+      {
+        "Id": "07MPg00000BQJWvMAP",
+        "QueueItemId": "709Pg000007Tq9HIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "ListingsPDFControllerTest",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pPg000007fS7aIAE",
+          "Name": "ListingPDFreraController_Test",
+          "NamespacePrefix": null
+        },
+        "RunTime": 1367,
+        "FullName": "ListingPDFreraController_Test.ListingsPDFControllerTest"
+      },
+      {
+        "Id": "07MPg00000BQJNFMA5",
+        "QueueItemId": "709Pg000007Tq9IIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "fetchDocuments_Test",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjORIA1",
+          "Name": "Test_AWSFileUploadController",
+          "NamespacePrefix": null
+        },
+        "RunTime": 818,
+        "FullName": "Test_AWSFileUploadController.fetchDocuments_Test"
+      },
+      {
+        "Id": "07MPg00000BQJNGMA5",
+        "QueueItemId": "709Pg000007Tq9IIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testCalloutupload",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjORIA1",
+          "Name": "Test_AWSFileUploadController",
+          "NamespacePrefix": null
+        },
+        "RunTime": 1562,
+        "FullName": "Test_AWSFileUploadController.testCalloutupload"
+      },
+      {
+        "Id": "07MPg00000BQJNHMA5",
+        "QueueItemId": "709Pg000007Tq9IIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testController",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjORIA1",
+          "Name": "Test_AWSFileUploadController",
+          "NamespacePrefix": null
+        },
+        "RunTime": 117,
+        "FullName": "Test_AWSFileUploadController.testController"
+      },
+      {
+        "Id": "07MPg00000BQJNIMA5",
+        "QueueItemId": "709Pg000007Tq9IIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "test_extractFileName",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjORIA1",
+          "Name": "Test_AWSFileUploadController",
+          "NamespacePrefix": null
+        },
+        "RunTime": 2,
+        "FullName": "Test_AWSFileUploadController.test_extractFileName"
+      },
+      {
+        "Id": "07MPg00000BQJNJMA5",
+        "QueueItemId": "709Pg000007Tq9IIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "test_getZipFileUrl",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjORIA1",
+          "Name": "Test_AWSFileUploadController",
+          "NamespacePrefix": null
+        },
+        "RunTime": 378,
+        "FullName": "Test_AWSFileUploadController.test_getZipFileUrl"
+      },
+      {
+        "Id": "07MPg00000BQFwNMAX",
+        "QueueItemId": "709Pg000007Tq9JIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testNoDuplicates",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pPg00000UYcCsIAL",
+          "Name": "Test_ContactTriggerHandler",
+          "NamespacePrefix": null
+        },
+        "RunTime": 27,
+        "FullName": "Test_ContactTriggerHandler.testNoDuplicates"
+      },
+      {
+        "Id": "07MPg00000BQFwOMAX",
+        "QueueItemId": "709Pg000007Tq9JIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testWithDuplicates",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pPg00000UYcCsIAL",
+          "Name": "Test_ContactTriggerHandler",
+          "NamespacePrefix": null
+        },
+        "RunTime": 1150,
+        "FullName": "Test_ContactTriggerHandler.testWithDuplicates"
+      },
+      {
+        "Id": "07MPg00000BQJblMAH",
+        "QueueItemId": "709Pg000007Tq9KIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "Test",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pPg000007tSAzIAM",
+          "Name": "Test_Bayut_EmailLogAPI_Callout",
+          "NamespacePrefix": null
+        },
+        "RunTime": 2325,
+        "FullName": "Test_Bayut_EmailLogAPI_Callout.Test"
+      },
+      {
+        "Id": "07MPg00000BQJ5VMAX",
+        "QueueItemId": "709Pg000007Tq9LIAS",
+        "StackTrace": "Class.Test_PF_User_Callout.Test: line 18, column 1",
+        "Message": "System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Phone number is required: [Phone]",
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "Test",
+        "Outcome": "Fail",
+        "ApexClass": {
+          "Id": "01pPg000007tMLjIAM",
+          "Name": "Test_PF_User_Callout",
+          "NamespacePrefix": null
+        },
+        "RunTime": 77,
+        "FullName": "Test_PF_User_Callout.Test"
+      },
+      {
+        "Id": "07MPg00000BQJOsMAP",
+        "QueueItemId": "709Pg000007Tq9MIAS",
+        "StackTrace": "Class.CreateEnquiryWebLeads_Test.setup: line 48, column 1",
+        "Message": "System.DmlException: Insert failed. First exception on row 0; first error: CANNOT_EXECUTE_FLOW_TRIGGER, We can't save this record because the “Assign Einstein Activity Capture Permission Set” process failed. Give your Salesforce admin these details. This error occurred when the flow tried to create records: MIXED_DML_OPERATION: DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): PermissionSetAssignment, original object: Account. You can look up ExceptionCode values in the SOAP API Developer Guide.nt, original object: Account. You can look up ExceptionCode values in the SOAP API Developer Guide.: []",
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "createEnquiryWithListings",
+        "Outcome": "Fail",
+        "ApexClass": {
+          "Id": "01pPg000007iGugIAE",
+          "Name": "CreateEnquiryWebLeads_Test",
+          "NamespacePrefix": null
+        },
+        "RunTime": 0,
+        "FullName": "CreateEnquiryWebLeads_Test.createEnquiryWithListings"
+      },
+      {
+        "Id": "07MPg00000BQJOtMAP",
+        "QueueItemId": "709Pg000007Tq9MIAS",
+        "StackTrace": "Class.CreateEnquiryWebLeads_Test.setup: line 48, column 1",
+        "Message": "System.DmlException: Insert failed. First exception on row 0; first error: CANNOT_EXECUTE_FLOW_TRIGGER, We can't save this record because the “Assign Einstein Activity Capture Permission Set” process failed. Give your Salesforce admin these details. This error occurred when the flow tried to create records: MIXED_DML_OPERATION: DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): PermissionSetAssignment, original object: Account. You can look up ExceptionCode values in the SOAP API Developer Guide.nt, original object: Account. You can look up ExceptionCode values in the SOAP API Developer Guide.: []",
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "createEnquiryWithoutListings",
+        "Outcome": "Fail",
+        "ApexClass": {
+          "Id": "01pPg000007iGugIAE",
+          "Name": "CreateEnquiryWebLeads_Test",
+          "NamespacePrefix": null
+        },
+        "RunTime": 0,
+        "FullName": "CreateEnquiryWebLeads_Test.createEnquiryWithoutListings"
+      },
+      {
+        "Id": "07MPg00000BQIpOMAX",
+        "QueueItemId": "709Pg000007Tq9NIAS",
+        "StackTrace": "Class.ListingsControllerExtensionTest.setupData: line 27, column 1",
+        "Message": "System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Phone number is required: [Phone]",
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testListingsControllerExtension",
+        "Outcome": "Fail",
+        "ApexClass": {
+          "Id": "01pHs00000OKt5fIAD",
+          "Name": "ListingsControllerExtensionTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 0,
+        "FullName": "ListingsControllerExtensionTest.testListingsControllerExtension"
+      },
+      {
+        "Id": "07MPg00000BQJdNMAX",
+        "QueueItemId": "709Pg000007Tq9OIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "Test",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pPg000007tSULIA2",
+          "Name": "Test_BayutWhatsappAPICallout",
+          "NamespacePrefix": null
+        },
+        "RunTime": 5696,
+        "FullName": "Test_BayutWhatsappAPICallout.Test"
+      },
+      {
+        "Id": "07MPg00000BQJ0fMAH",
+        "QueueItemId": "709Pg000007Tq9PIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "insertTask",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pHs00000JBjOBIA1",
+          "Name": "CommissionTrigger_Test",
+          "NamespacePrefix": null
+        },
+        "RunTime": 772,
+        "FullName": "CommissionTrigger_Test.insertTask"
+      },
+      {
+        "Id": "07MPg00000BQJTiMAP",
+        "QueueItemId": "709Pg000007Tq9QIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testMatchingListing",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pPg000007T7F2IAK",
+          "Name": "Test_Batch_LinkedListingMatchingfromEnq",
+          "NamespacePrefix": null
+        },
+        "RunTime": 727,
+        "FullName": "Test_Batch_LinkedListingMatchingfromEnq.testMatchingListing"
+      },
+      {
+        "Id": "07MPg00000BQI30MAH",
+        "QueueItemId": "709Pg000007Tq9RIAS",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "707Pg000029g65cIAA",
+        "MethodName": "testCloneListing",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "Id": "01pPg000007CuNQIA0",
+          "Name": "CloneListingControllerTest",
+          "NamespacePrefix": null
+        },
+        "RunTime": 1829,
+        "FullName": "CloneListingControllerTest.testCloneListing"
+      }
+    ]
   },
   "warnings": []
 }

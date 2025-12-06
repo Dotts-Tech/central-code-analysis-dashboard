@@ -1,1 +1,130 @@
-<html><head><title>FAIL</title></head><body><h2>✗ Failed Tests</h2><table border="1"><tr><th>Class</th><th>Method</th><th>Message</th><th>StackTrace</th><th>Coverage %</th></tr><tr><td>Barnes_DealFeedFullTest</td><td>testGenerateFeed</td><td>System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Fill Mobile or Email to add a new contact: []</td><td>Class.Barnes_DealFeedFullTest.testGenerateFeed: line 19, column 1</td><td>0%</td></tr><tr><td>Test_Batch_LinkedListCreationFrmListing</td><td>testListingInsert</td><td>System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Please include the listing price, unit number, and address.: []</td><td>Class.Test_Batch_LinkedListCreationFrmListing.ListingInsert: line 75, column 1</td><td>0%</td></tr><tr><td>EnquiryTriggerHandler_Test</td><td>handleEnquiryContactSharingTest</td><td>System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Phone number is required: [Phone]</td><td>Class.EnquiryTriggerHandler_Test.handleEnquiryContactSharingTest: line 49, column 1</td><td>0%</td></tr><tr><td>EnquiryRoutingHandler_Test</td><td>testEnquiryRouting</td><td>System.DmlException: Insert failed. First exception on row 0; first error: MIXED_DML_OPERATION, DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): Queue__c, original object: PermissionSetAssignment: []</td><td>Class.EnquiryRoutingHandler_Test.testEnquiryRouting: line 44, column 1</td><td>0%</td></tr><tr><td>Test_PF_User_Callout</td><td>Test</td><td>System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Phone number is required: [Phone]</td><td>Class.Test_PF_User_Callout.Test: line 18, column 1</td><td>0%</td></tr><tr><td>CreateEnquiryWebLeads_Test</td><td>createEnquiryWithListings</td><td>System.DmlException: Insert failed. First exception on row 0; first error: CANNOT_EXECUTE_FLOW_TRIGGER, We can't save this record because the “Assign Einstein Activity Capture Permission Set” process failed. Give your Salesforce admin these details. This error occurred when the flow tried to create records: MIXED_DML_OPERATION: DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): PermissionSetAssignment, original object: Account. You can look up ExceptionCode values in the SOAP API Developer Guide.nt, original object: Account. You can look up ExceptionCode values in the SOAP API Developer Guide.: []</td><td>Class.CreateEnquiryWebLeads_Test.setup: line 48, column 1</td><td>0%</td></tr><tr><td>CreateEnquiryWebLeads_Test</td><td>createEnquiryWithoutListings</td><td>System.DmlException: Insert failed. First exception on row 0; first error: CANNOT_EXECUTE_FLOW_TRIGGER, We can't save this record because the “Assign Einstein Activity Capture Permission Set” process failed. Give your Salesforce admin these details. This error occurred when the flow tried to create records: MIXED_DML_OPERATION: DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): PermissionSetAssignment, original object: Account. You can look up ExceptionCode values in the SOAP API Developer Guide.nt, original object: Account. You can look up ExceptionCode values in the SOAP API Developer Guide.: []</td><td>Class.CreateEnquiryWebLeads_Test.setup: line 48, column 1</td><td>0%</td></tr><tr><td>ListingsControllerExtensionTest</td><td>testListingsControllerExtension</td><td>System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Phone number is required: [Phone]</td><td>Class.ListingsControllerExtensionTest.setupData: line 27, column 1</td><td>0%</td></tr></table></body></html>
+<html><body><h1>FAIL RESULTS</h1><pre>
+{
+  "Id": "07MPg00000BQJDZMA5",
+  "QueueItemId": "709Pg000007Tq8rIAC",
+  "StackTrace": "Class.Barnes_DealFeedFullTest.testGenerateFeed: line 19, column 1",
+  "Message": "System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Fill Mobile or Email to add a new contact: []",
+  "AsyncApexJobId": "707Pg000029g65cIAA",
+  "MethodName": "testGenerateFeed",
+  "Outcome": "Fail",
+  "ApexClass": {
+    "Id": "01pPg000009HSacIAG",
+    "Name": "Barnes_DealFeedFullTest",
+    "NamespacePrefix": null
+  },
+  "RunTime": 117,
+  "FullName": "Barnes_DealFeedFullTest.testGenerateFeed"
+}
+{
+  "Id": "07MPg00000BQJGoMAP",
+  "QueueItemId": "709Pg000007Tq98IAC",
+  "StackTrace": "Class.Test_Batch_LinkedListCreationFrmListing.ListingInsert: line 75, column 1",
+  "Message": "System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Please include the listing price, unit number, and address.: []",
+  "AsyncApexJobId": "707Pg000029g65cIAA",
+  "MethodName": "testListingInsert",
+  "Outcome": "Fail",
+  "ApexClass": {
+    "Id": "01pPg000007T7DQIA0",
+    "Name": "Test_Batch_LinkedListCreationFrmListing",
+    "NamespacePrefix": null
+  },
+  "RunTime": 0,
+  "FullName": "Test_Batch_LinkedListCreationFrmListing.testListingInsert"
+}
+{
+  "Id": "07MPg00000BQJFBMA5",
+  "QueueItemId": "709Pg000007Tq99IAC",
+  "StackTrace": "Class.EnquiryTriggerHandler_Test.handleEnquiryContactSharingTest: line 49, column 1",
+  "Message": "System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Phone number is required: [Phone]",
+  "AsyncApexJobId": "707Pg000029g65cIAA",
+  "MethodName": "handleEnquiryContactSharingTest",
+  "Outcome": "Fail",
+  "ApexClass": {
+    "Id": "01pHs00000JBjOGIA1",
+    "Name": "EnquiryTriggerHandler_Test",
+    "NamespacePrefix": null
+  },
+  "RunTime": 916,
+  "FullName": "EnquiryTriggerHandler_Test.handleEnquiryContactSharingTest"
+}
+{
+  "Id": "07MPg00000BQJQTMA5",
+  "QueueItemId": "709Pg000007Tq9DIAS",
+  "StackTrace": "Class.EnquiryRoutingHandler_Test.testEnquiryRouting: line 44, column 1",
+  "Message": "System.DmlException: Insert failed. First exception on row 0; first error: MIXED_DML_OPERATION, DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): Queue__c, original object: PermissionSetAssignment: []",
+  "AsyncApexJobId": "707Pg000029g65cIAA",
+  "MethodName": "testEnquiryRouting",
+  "Outcome": "Fail",
+  "ApexClass": {
+    "Id": "01pHs00000JBjOEIA1",
+    "Name": "EnquiryRoutingHandler_Test",
+    "NamespacePrefix": null
+  },
+  "RunTime": 1555,
+  "FullName": "EnquiryRoutingHandler_Test.testEnquiryRouting"
+}
+{
+  "Id": "07MPg00000BQJ5VMAX",
+  "QueueItemId": "709Pg000007Tq9LIAS",
+  "StackTrace": "Class.Test_PF_User_Callout.Test: line 18, column 1",
+  "Message": "System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Phone number is required: [Phone]",
+  "AsyncApexJobId": "707Pg000029g65cIAA",
+  "MethodName": "Test",
+  "Outcome": "Fail",
+  "ApexClass": {
+    "Id": "01pPg000007tMLjIAM",
+    "Name": "Test_PF_User_Callout",
+    "NamespacePrefix": null
+  },
+  "RunTime": 77,
+  "FullName": "Test_PF_User_Callout.Test"
+}
+{
+  "Id": "07MPg00000BQJOsMAP",
+  "QueueItemId": "709Pg000007Tq9MIAS",
+  "StackTrace": "Class.CreateEnquiryWebLeads_Test.setup: line 48, column 1",
+  "Message": "System.DmlException: Insert failed. First exception on row 0; first error: CANNOT_EXECUTE_FLOW_TRIGGER, We can't save this record because the “Assign Einstein Activity Capture Permission Set” process failed. Give your Salesforce admin these details. This error occurred when the flow tried to create records: MIXED_DML_OPERATION: DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): PermissionSetAssignment, original object: Account. You can look up ExceptionCode values in the SOAP API Developer Guide.nt, original object: Account. You can look up ExceptionCode values in the SOAP API Developer Guide.: []",
+  "AsyncApexJobId": "707Pg000029g65cIAA",
+  "MethodName": "createEnquiryWithListings",
+  "Outcome": "Fail",
+  "ApexClass": {
+    "Id": "01pPg000007iGugIAE",
+    "Name": "CreateEnquiryWebLeads_Test",
+    "NamespacePrefix": null
+  },
+  "RunTime": 0,
+  "FullName": "CreateEnquiryWebLeads_Test.createEnquiryWithListings"
+}
+{
+  "Id": "07MPg00000BQJOtMAP",
+  "QueueItemId": "709Pg000007Tq9MIAS",
+  "StackTrace": "Class.CreateEnquiryWebLeads_Test.setup: line 48, column 1",
+  "Message": "System.DmlException: Insert failed. First exception on row 0; first error: CANNOT_EXECUTE_FLOW_TRIGGER, We can't save this record because the “Assign Einstein Activity Capture Permission Set” process failed. Give your Salesforce admin these details. This error occurred when the flow tried to create records: MIXED_DML_OPERATION: DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): PermissionSetAssignment, original object: Account. You can look up ExceptionCode values in the SOAP API Developer Guide.nt, original object: Account. You can look up ExceptionCode values in the SOAP API Developer Guide.: []",
+  "AsyncApexJobId": "707Pg000029g65cIAA",
+  "MethodName": "createEnquiryWithoutListings",
+  "Outcome": "Fail",
+  "ApexClass": {
+    "Id": "01pPg000007iGugIAE",
+    "Name": "CreateEnquiryWebLeads_Test",
+    "NamespacePrefix": null
+  },
+  "RunTime": 0,
+  "FullName": "CreateEnquiryWebLeads_Test.createEnquiryWithoutListings"
+}
+{
+  "Id": "07MPg00000BQIpOMAX",
+  "QueueItemId": "709Pg000007Tq9NIAS",
+  "StackTrace": "Class.ListingsControllerExtensionTest.setupData: line 27, column 1",
+  "Message": "System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Phone number is required: [Phone]",
+  "AsyncApexJobId": "707Pg000029g65cIAA",
+  "MethodName": "testListingsControllerExtension",
+  "Outcome": "Fail",
+  "ApexClass": {
+    "Id": "01pHs00000OKt5fIAD",
+    "Name": "ListingsControllerExtensionTest",
+    "NamespacePrefix": null
+  },
+  "RunTime": 0,
+  "FullName": "ListingsControllerExtensionTest.testListingsControllerExtension"
+}
+</pre></body></html>
