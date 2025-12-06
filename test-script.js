@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Load test and coverage data
-fetch('data/apex-results.json')
+fetch('data/barnes-results.json')
   .then(r => r.json())
   .then(json => {
     renderSummary(json);
