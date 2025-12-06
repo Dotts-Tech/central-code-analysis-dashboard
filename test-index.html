@@ -1,26 +1,300 @@
-<!doctype html>
+
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Salesforce Code Analyzer Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-    
-  </head>
-  <body>
-   <header>
-  <div class="header-left">
-    <h1>Salesforce Code  Dashboard</h1>
-  </div>
+<head><title>Test Dashboard</title>
+<style>
+  body { font-family: Arial; padding: 20px; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #ccc; padding: 10px; }
+  th { background: #000; color: #fff; }
+</style>
+</head><body>
+<h2>📊 All Projects – Test Dashboard</h2>
+<table>
+  <tr>
+    <th>Repository</th>
+    <th>JSON</th>
+    <th>Pass</th>
+    <th>Fail</th>
+    <th>Coverage</th>
+  </tr>
 
-  <div class="header-right">
-    <img src="dotts.png" class="logo" />
-  </div>
-</header>
-
-    <main id="results">
-      <p>Loading...</p>
-    </main>
-
-    <script src="script.js"></script>
-  </body>
-</html>
+    <tr>
+      <td>IFA</td>
+      <td><a href="data/IFA.json">JSON</a></td>
+      <td><a href="data/IFA-pass.html">PASS</a></td>
+      <td><a href="data/IFA-fail.html">FAIL</a></td>
+      <td><a href="data/IFA-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>Maria-Morris-Global</td>
+      <td><a href="data/Maria-Morris-Global.json">JSON</a></td>
+      <td><a href="data/Maria-Morris-Global-pass.html">PASS</a></td>
+      <td><a href="data/Maria-Morris-Global-fail.html">FAIL</a></td>
+      <td><a href="data/Maria-Morris-Global-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>aeon-and-trisl</td>
+      <td><a href="data/aeon-and-trisl.json">JSON</a></td>
+      <td><a href="data/aeon-and-trisl-pass.html">PASS</a></td>
+      <td><a href="data/aeon-and-trisl-fail.html">FAIL</a></td>
+      <td><a href="data/aeon-and-trisl-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>arabian-estates</td>
+      <td><a href="data/arabian-estates.json">JSON</a></td>
+      <td><a href="data/arabian-estates-pass.html">PASS</a></td>
+      <td><a href="data/arabian-estates-fail.html">FAIL</a></td>
+      <td><a href="data/arabian-estates-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>azco</td>
+      <td><a href="data/azco.json">JSON</a></td>
+      <td><a href="data/azco-pass.html">PASS</a></td>
+      <td><a href="data/azco-fail.html">FAIL</a></td>
+      <td><a href="data/azco-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>barnes-coverage</td>
+      <td><a href="data/barnes-coverage.json">JSON</a></td>
+      <td><a href="data/barnes-coverage-pass.html">PASS</a></td>
+      <td><a href="data/barnes-coverage-fail.html">FAIL</a></td>
+      <td><a href="data/barnes-coverage-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>barnes-test</td>
+      <td><a href="data/barnes-test.json">JSON</a></td>
+      <td><a href="data/barnes-test-pass.html">PASS</a></td>
+      <td><a href="data/barnes-test-fail.html">FAIL</a></td>
+      <td><a href="data/barnes-test-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>barnes</td>
+      <td><a href="data/barnes.json">JSON</a></td>
+      <td><a href="data/barnes-pass.html">PASS</a></td>
+      <td><a href="data/barnes-fail.html">FAIL</a></td>
+      <td><a href="data/barnes-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>bw-real-estate</td>
+      <td><a href="data/bw-real-estate.json">JSON</a></td>
+      <td><a href="data/bw-real-estate-pass.html">PASS</a></td>
+      <td><a href="data/bw-real-estate-fail.html">FAIL</a></td>
+      <td><a href="data/bw-real-estate-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>capstone-property</td>
+      <td><a href="data/capstone-property.json">JSON</a></td>
+      <td><a href="data/capstone-property-pass.html">PASS</a></td>
+      <td><a href="data/capstone-property-fail.html">FAIL</a></td>
+      <td><a href="data/capstone-property-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>elysian-brok</td>
+      <td><a href="data/elysian-brok.json">JSON</a></td>
+      <td><a href="data/elysian-brok-pass.html">PASS</a></td>
+      <td><a href="data/elysian-brok-fail.html">FAIL</a></td>
+      <td><a href="data/elysian-brok-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>elysian</td>
+      <td><a href="data/elysian.json">JSON</a></td>
+      <td><a href="data/elysian-pass.html">PASS</a></td>
+      <td><a href="data/elysian-fail.html">FAIL</a></td>
+      <td><a href="data/elysian-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>equity</td>
+      <td><a href="data/equity.json">JSON</a></td>
+      <td><a href="data/equity-pass.html">PASS</a></td>
+      <td><a href="data/equity-fail.html">FAIL</a></td>
+      <td><a href="data/equity-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>gta-properties</td>
+      <td><a href="data/gta-properties.json">JSON</a></td>
+      <td><a href="data/gta-properties-pass.html">PASS</a></td>
+      <td><a href="data/gta-properties-fail.html">FAIL</a></td>
+      <td><a href="data/gta-properties-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>hyde</td>
+      <td><a href="data/hyde.json">JSON</a></td>
+      <td><a href="data/hyde-pass.html">PASS</a></td>
+      <td><a href="data/hyde-fail.html">FAIL</a></td>
+      <td><a href="data/hyde-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>identiscents-coverage</td>
+      <td><a href="data/identiscents-coverage.json">JSON</a></td>
+      <td><a href="data/identiscents-coverage-pass.html">PASS</a></td>
+      <td><a href="data/identiscents-coverage-fail.html">FAIL</a></td>
+      <td><a href="data/identiscents-coverage-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>identiscents-test</td>
+      <td><a href="data/identiscents-test.json">JSON</a></td>
+      <td><a href="data/identiscents-test-pass.html">PASS</a></td>
+      <td><a href="data/identiscents-test-fail.html">FAIL</a></td>
+      <td><a href="data/identiscents-test-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>identiscents</td>
+      <td><a href="data/identiscents.json">JSON</a></td>
+      <td><a href="data/identiscents-pass.html">PASS</a></td>
+      <td><a href="data/identiscents-fail.html">FAIL</a></td>
+      <td><a href="data/identiscents-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>index</td>
+      <td><a href="data/index.json">JSON</a></td>
+      <td><a href="data/index-pass.html">PASS</a></td>
+      <td><a href="data/index-fail.html">FAIL</a></td>
+      <td><a href="data/index-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>kgi</td>
+      <td><a href="data/kgi.json">JSON</a></td>
+      <td><a href="data/kgi-pass.html">PASS</a></td>
+      <td><a href="data/kgi-fail.html">FAIL</a></td>
+      <td><a href="data/kgi-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>knight-frank</td>
+      <td><a href="data/knight-frank.json">JSON</a></td>
+      <td><a href="data/knight-frank-pass.html">PASS</a></td>
+      <td><a href="data/knight-frank-fail.html">FAIL</a></td>
+      <td><a href="data/knight-frank-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>luxfolio</td>
+      <td><a href="data/luxfolio.json">JSON</a></td>
+      <td><a href="data/luxfolio-pass.html">PASS</a></td>
+      <td><a href="data/luxfolio-fail.html">FAIL</a></td>
+      <td><a href="data/luxfolio-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>mc-cone</td>
+      <td><a href="data/mc-cone.json">JSON</a></td>
+      <td><a href="data/mc-cone-pass.html">PASS</a></td>
+      <td><a href="data/mc-cone-fail.html">FAIL</a></td>
+      <td><a href="data/mc-cone-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>octa</td>
+      <td><a href="data/octa.json">JSON</a></td>
+      <td><a href="data/octa-pass.html">PASS</a></td>
+      <td><a href="data/octa-fail.html">FAIL</a></td>
+      <td><a href="data/octa-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>pangea</td>
+      <td><a href="data/pangea.json">JSON</a></td>
+      <td><a href="data/pangea-pass.html">PASS</a></td>
+      <td><a href="data/pangea-fail.html">FAIL</a></td>
+      <td><a href="data/pangea-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>puregold</td>
+      <td><a href="data/puregold.json">JSON</a></td>
+      <td><a href="data/puregold-pass.html">PASS</a></td>
+      <td><a href="data/puregold-fail.html">FAIL</a></td>
+      <td><a href="data/puregold-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>saas</td>
+      <td><a href="data/saas.json">JSON</a></td>
+      <td><a href="data/saas-pass.html">PASS</a></td>
+      <td><a href="data/saas-fail.html">FAIL</a></td>
+      <td><a href="data/saas-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>soueast</td>
+      <td><a href="data/soueast.json">JSON</a></td>
+      <td><a href="data/soueast-pass.html">PASS</a></td>
+      <td><a href="data/soueast-fail.html">FAIL</a></td>
+      <td><a href="data/soueast-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>strada</td>
+      <td><a href="data/strada.json">JSON</a></td>
+      <td><a href="data/strada-pass.html">PASS</a></td>
+      <td><a href="data/strada-fail.html">FAIL</a></td>
+      <td><a href="data/strada-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>tabeer</td>
+      <td><a href="data/tabeer.json">JSON</a></td>
+      <td><a href="data/tabeer-pass.html">PASS</a></td>
+      <td><a href="data/tabeer-fail.html">FAIL</a></td>
+      <td><a href="data/tabeer-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>tyron-ash-real-estate</td>
+      <td><a href="data/tyron-ash-real-estate.json">JSON</a></td>
+      <td><a href="data/tyron-ash-real-estate-pass.html">PASS</a></td>
+      <td><a href="data/tyron-ash-real-estate-fail.html">FAIL</a></td>
+      <td><a href="data/tyron-ash-real-estate-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>vivid-living</td>
+      <td><a href="data/vivid-living.json">JSON</a></td>
+      <td><a href="data/vivid-living-pass.html">PASS</a></td>
+      <td><a href="data/vivid-living-fail.html">FAIL</a></td>
+      <td><a href="data/vivid-living-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>we-are-propoerty</td>
+      <td><a href="data/we-are-propoerty.json">JSON</a></td>
+      <td><a href="data/we-are-propoerty-pass.html">PASS</a></td>
+      <td><a href="data/we-are-propoerty-fail.html">FAIL</a></td>
+      <td><a href="data/we-are-propoerty-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>white-and-co</td>
+      <td><a href="data/white-and-co.json">JSON</a></td>
+      <td><a href="data/white-and-co-pass.html">PASS</a></td>
+      <td><a href="data/white-and-co-fail.html">FAIL</a></td>
+      <td><a href="data/white-and-co-coverage.html">COVERAGE</a></td>
+    </tr>
+  
+    <tr>
+      <td>xoxo</td>
+      <td><a href="data/xoxo.json">JSON</a></td>
+      <td><a href="data/xoxo-pass.html">PASS</a></td>
+      <td><a href="data/xoxo-fail.html">FAIL</a></td>
+      <td><a href="data/xoxo-coverage.html">COVERAGE</a></td>
+    </tr>
+  </table></body></html>
