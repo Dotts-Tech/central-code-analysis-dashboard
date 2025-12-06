@@ -1,8 +1,75 @@
 {
-  "barnes": {
-    "json": "barnes.json",
-    "passHtml": "barnes-pass.html",
-    "failHtml": "barnes-fail.html",
-    "html": "barnes-coverage.html"
-  }
+  "IFA": { "json": "IFA.json", "html": "IFA.html" }
+,
+  "Maria-Morris-Global": { "json": "Maria-Morris-Global.json", "html": "Maria-Morris-Global.html" }
+,
+  "aeon-and-trisl": { "json": "aeon-and-trisl.json", "html": "aeon-and-trisl.html" }
+,
+  "apex-coverage": { "json": "apex-coverage.json", "html": "apex-coverage.html" }
+,
+  "apex-test": { "json": "apex-test.json" }
+,
+  "arabian-estates": { "json": "arabian-estates.json", "html": "arabian-estates.html" }
+,
+  "azco": { "json": "azco.json", "html": "azco.html" }
+,
+  "barnes-coverage": { "json": "barnes-coverage.json", "html": "barnes-coverage.html" }
+,
+  "barnes-test": { "json": "barnes-test.json", "html": "barnes-test.html" }
+,
+  "barnes": { "json": "barnes.json", "html": "barnes.html" }
+,
+  "bw-real-estate": { "json": "bw-real-estate.json", "html": "bw-real-estate.html" }
+,
+  "capstone-property": { "json": "capstone-property.json", "html": "capstone-property.html" }
+,
+  "elysian-brok": { "json": "elysian-brok.json", "html": "elysian-brok.html" }
+,
+  "elysian": { "json": "elysian.json", "html": "elysian.html" }
+,
+  "equity": { "json": "equity.json", "html": "equity.html" }
+,
+  "gta-properties": { "json": "gta-properties.json", "html": "gta-properties.html" }
+,
+  "hyde": { "json": "hyde.json", "html": "hyde.html" }
+,
+  "identiscents-coverage": { "json": "identiscents-coverage.json", "html": "identiscents-coverage.html" }
+,
+  "identiscents-test": { "json": "identiscents-test.json", "html": "identiscents-test.html" }
+,
+  "identiscents": { "json": "identiscents.json", "html": "identiscents.html" }
+,
+  "index": { "json": "index.json" }
+,
+  "kgi": { "json": "kgi.json", "html": "kgi.html" }
+,
+  "knight-frank": { "json": "knight-frank.json", "html": "knight-frank.html" }
+,
+  "luxfolio": { "json": "luxfolio.json", "html": "luxfolio.html" }
+,
+  "mc-cone": { "json": "mc-cone.json", "html": "mc-cone.html" }
+,
+  "octa": { "json": "octa.json", "html": "octa.html" }
+,
+  "pangea": { "json": "pangea.json", "html": "pangea.html" }
+,
+  "puregold": { "json": "puregold.json", "html": "puregold.html" }
+,
+  "saas": { "json": "saas.json", "html": "saas.html" }
+,
+  "soueast": { "json": "soueast.json", "html": "soueast.html" }
+,
+  "strada": { "json": "strada.json", "html": "strada.html" }
+,
+  "tabeer": { "json": "tabeer.json", "html": "tabeer.html" }
+,
+  "tyron-ash-real-estate": { "json": "tyron-ash-real-estate.json", "html": "tyron-ash-real-estate.html" }
+,
+  "vivid-living": { "json": "vivid-living.json", "html": "vivid-living.html" }
+,
+  "we-are-propoerty": { "json": "we-are-propoerty.json", "html": "we-are-propoerty.html" }
+,
+  "white-and-co": { "json": "white-and-co.json", "html": "white-and-co.html" }
+,
+  "xoxo": { "json": "xoxo.json", "html": "xoxo.html" }
 }
