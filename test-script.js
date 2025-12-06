@@ -1,60 +1,54 @@
-async function loadDashboard() {
-  const container = document.getElementById('results');
-  container.innerHTML = '<p>Loading...</p>';
+// Load test-index.json and generate cards
+fetch('data/test-index.json')
+    .then(response => response.json())
+    .then(data => {
+        const container = document.getElementById('card-container');
+        for (const repo in data) {
+            const repoData = data[repo];
+            const card = document.createElement('div');
+            card.className = 'card';
+            
+            const title = document.createElement('h3');
+            title.textContent = repo;
+            card.appendChild(title);
+            
+            if (repoData.json) {
+                const jsonLink = document.createElement('a');
+                jsonLink.href = `data/${repoData.json}`;
+                jsonLink.target = '_blank';
+                jsonLink.textContent = 'JSON';
+                jsonLink.className = 'json-link';
+                card.appendChild(jsonLink);
+            }
 
-  try {
-    const indexResp = await fetch('test-index.json');
-    const reposObj = await indexResp.json();
-    const repos = Array.isArray(reposObj) ? reposObj : Object.keys(reposObj);
+            if (repoData.pass) {
+                const passLink = document.createElement('a');
+                passLink.href = `data/${repoData.pass}`;
+                passLink.target = '_blank';
+                passLink.textContent = 'PASS';
+                passLink.className = 'pass';
+                card.appendChild(passLink);
+            }
 
-    container.innerHTML = '';
+            if (repoData.fail) {
+                const failLink = document.createElement('a');
+                failLink.href = `data/${repoData.fail}`;
+                failLink.target = '_blank';
+                failLink.textContent = 'FAIL';
+                failLink.className = 'fail';
+                card.appendChild(failLink);
+            }
 
-    for (const repo of repos) {
-      try {
-        const scan = await fetch(`data/${repo}.json`).then(r => r.json());
+            if (repoData.coverage) {
+                const coverageLink = document.createElement('a');
+                coverageLink.href = `data/${repoData.coverage}`;
+                coverageLink.target = '_blank';
+                coverageLink.textContent = 'COVERAGE';
+                coverageLink.className = 'coverage';
+                card.appendChild(coverageLink);
+            }
 
-        const card = document.createElement('div');
-        card.className = 'card';
-        card.onclick = () => window.open(`data/${repo}.html`, '_blank');
-
-        card.innerHTML = `
-          <div class="repo-name">${repo.toUpperCase()}</div>
-
-          <div class="violation-boxes">
-            <div class="box critical-box">${scan.violationCounts.sev1 || 0}</div>
-            <div class="box high-box">${scan.violationCounts.sev2 || 0}</div>
-            <div class="box medium-box">${scan.violationCounts.sev3 || 0}</div>
-            <div class="box low-box">${scan.violationCounts.sev4 || 0}</div>
-            <div class="box info-box">${scan.violationCounts.sev5 || 0}</div>
-          </div>
-<div class="labels">
-  <span>CRITICAL</span>
-  <span>HIGH</span>
-  <span>MEDIUM</span>
-  <span>LOW</span>
-  <span>INFO</span>
-</div>
-        `;
-
-        container.appendChild(card);
-
-      } catch (err) {
-        console.error('Error loading repo:', repo, err);
-
-        const errorCard = document.createElement('div');
-        errorCard.className = 'card';
-        errorCard.innerHTML = `
-          <h3>${repo}</h3>
-          <p>Error loading data</p>
-        `;
-        container.appendChild(errorCard);
-      }
-    }
-
-  } catch (err) {
-    container.innerHTML = '<p>Error loading dashboard.</p>';
-    console.error(err);
-  }
-}
-
-loadDashboard();
+            container.appendChild(card);
+        }
+    })
+    .catch(err => console.error('Error loading test-index.json:', err));
