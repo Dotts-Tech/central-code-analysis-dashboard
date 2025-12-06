@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Salesforce Test Dashboard</title>
-    <link rel="stylesheet" href="test-style.css">
+  <meta charset="utf-8" />
+  <title>📊 Test Dashboard</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="test-style.css">
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <h1>📊 Salesforce Yogesh Test Dashboard</h1>
-    <div class="card-container" id="card-container">
-        <!-- Cards will be injected by JS -->
+  <header class="header">
+    <h1>📊 Salesforce Test Dashboard</h1>
+    <p class="subtitle">Aggregated test & coverage results — click a card to open reports</p>
+  </header>
+
+  <main>
+    <div id="controls" class="controls">
+      <input id="search" placeholder="Search repo..." />
     </div>
-    <script src="test-script.js"></script>
+
+    <div id="card-container" class="card-container" aria-live="polite"></div>
+  </main>
+
+  <footer class="footer">
+    <small>Last update: <span id="last-updated">—</span></small>
+  </footer>
+
+  <script src="test-script.js" defer></script>
 </body>
 </html>
