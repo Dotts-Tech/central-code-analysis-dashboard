@@ -1,4 +1,10 @@
-fetch('test-index.json')
+// Theme toggle
+document.getElementById('theme-toggle').addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+});
+
+// Load test-index.json
+fetch('data/test-index.json')
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('card-container');
@@ -10,41 +16,30 @@ fetch('test-index.json')
       const title = document.createElement('h3');
       title.textContent = repo;
       card.appendChild(title);
-      
+
+      // JSON link
       if (repoData.json) {
         const jsonLink = document.createElement('a');
-        jsonLink.href = repoData.json;
+        jsonLink.href = 'data/' + repoData.json;
         jsonLink.target = '_blank';
-        jsonLink.textContent = 'html';
-        jsonLink.className = 'html-link';
+        jsonLink.textContent = 'JSON';
+        jsonLink.className = 'json-link';
         card.appendChild(jsonLink);
       }
 
-      if (repoData.pass) {
-        const passLink = document.createElement('a');
-        passLink.href = repoData.pass;
-        passLink.target = '_blank';
-        passLink.textContent = 'PASS';
-        passLink.className = 'pass';
-        card.appendChild(passLink);
-      }
+      // HTML link (dynamic label)
+      if (repoData.html) {
+        let label = 'HTML';
+        if (repoData.html.toLowerCase().includes('pass')) label = 'PASS';
+        else if (repoData.html.toLowerCase().includes('fail')) label = 'FAIL';
+        else if (repoData.html.toLowerCase().includes('coverage')) label = 'COVERAGE';
 
-      if (repoData.fail) {
-        const failLink = document.createElement('a');
-        failLink.href = repoData.fail;
-        failLink.target = '_blank';
-        failLink.textContent = 'FAIL';
-        failLink.className = 'fail';
-        card.appendChild(failLink);
-      }
-
-      if (repoData.coverage) {
-        const coverageLink = document.createElement('a');
-        coverageLink.href = repoData.coverage;
-        coverageLink.target = '_blank';
-        coverageLink.textContent = 'COVERAGE';
-        coverageLink.className = 'coverage';
-        card.appendChild(coverageLink);
+        const htmlLink = document.createElement('a');
+        htmlLink.href = 'data/' + repoData.html;
+        htmlLink.target = '_blank';
+        htmlLink.textContent = label;
+        htmlLink.className = label.toLowerCase();
+        card.appendChild(htmlLink);
       }
 
       container.appendChild(card);
