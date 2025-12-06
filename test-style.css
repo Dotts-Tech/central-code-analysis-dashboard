@@ -1,60 +1,53 @@
+:root {
+  --bg: #f9f9f9;
+  --text: #333;
+  --card: #fff;
+  --border: #ccc;
+  --primary: #3498db;
+  --pass: #2ecc71;
+  --fail: #e74c3c;
+  --medium: #f1c40f;
+}
+
 body {
   font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
   padding: 20px;
-  background: #f9f9f9;
-  color: #333;
   transition: background 0.3s, color 0.3s;
 }
 
 body.dark {
-  background: #1e1e1e;
-  color: #f9f9f9;
+  --bg: #1e1e1e;
+  --text: #f9f9f9;
+  --card: #2a2a2a;
+  --border: #444;
+  --primary: #4aa3ff;
 }
 
-h1 {
-  margin-bottom: 20px;
+header h1 { margin: 0 0 8px; }
+.summary { margin: 8px 0 16px; font-weight: 600; }
+
+.actions { display: flex; gap: 10px; margin-bottom: 12px; }
+button#theme-toggle, a.download-btn {
+  padding: 8px 12px; border: none; border-radius: 4px; cursor: pointer; text-decoration: none;
+}
+button#theme-toggle { background: var(--primary); color: #fff; }
+a.download-btn { background: #34495e; color: #fff; }
+
+.filters { display: flex; gap: 10px; margin-bottom: 20px; }
+.filters input, .filters select {
+  padding: 6px 8px; border: 1px solid var(--border); border-radius: 4px; background: var(--card); color: var(--text);
 }
 
-#theme-toggle {
-  margin-bottom: 20px;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  background: #3498db;
-  color: #fff;
-}
+section { margin-bottom: 28px; }
+table { width: 100%; border-collapse: collapse; background: var(--card); }
+th, td { border: 1px solid var(--border); padding: 8px; text-align: left; }
+th { background: var(--primary); color: #fff; }
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.card {
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 15px;
-  width: 220px;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
-  transition: background 0.3s, color 0.3s;
-}
-
-.card h3 {
-  margin-top: 0;
-}
-
-.card a {
-  display: block;
-  margin: 5px 0;
-  padding: 6px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 4px;
-  color: #fff;
-}
-
-.json-link { background: #34495e; }
-.pass { background: #2ecc71; }
-.fail { background: #e74c3c; }
-.coverage { background: #f1c40f; color: #000; }
+tr.pass td { background: var(--pass); color: #fff; }
+tr.fail td { background: var(--fail); color: #fff; }
+tr.high td { background: var(--pass); color: #fff; }
+tr.medium td { background: var(--medium); color: #000; }
+tr.low td { background: var(--fail); color: #fff; }
