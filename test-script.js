@@ -3,7 +3,7 @@
 // Requires Chart.js loaded in the page (CDN in HTML)
 
 (async function(){
-  const indexPath = 'data/test-index.json';
+  const indexPath = 'test-index.json';
   const container = document.getElementById('card-container');
   const search = document.getElementById('search');
   const lastUpdatedEl = document.getElementById('last-updated');
