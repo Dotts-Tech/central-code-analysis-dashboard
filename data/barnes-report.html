@@ -1,0 +1,148 @@
+<html><head><title>barnes APEX REPORT</title>
+      <style>
+      body{font-family:Arial;padding:20px;}
+      table{border-collapse:collapse;width:100%;}
+      th,td{border:1px solid #ccc;padding:8px;}
+      th{background:#3498db;color:#fff;}
+      .pass{background:#2ecc71;color:#fff;}
+      .fail{background:#e74c3c;color:#fff;}
+      .high{background:#2ecc71;color:#fff;}
+      .medium{background:#f1c40f;color:#000;}
+      .low{background:#e74c3c;color:#fff;}
+      </style></head><body>
+      <h1>🧪 barnes APEX TEST & COVERAGE REPORT</h1>
+<h2>Test Results</h2><table><tr><th>Class</th><th>Method</th><th>Outcome</th><th>Message</th><th>StackTrace</th></tr>
+<tr class="fail"><td>Barnes_DealFeedFullTest</td><td>testGenerateFeed</td><td>Fail</td><td>System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Fill Mobile or Email to add a new contact: []</td><td>Class.Barnes_DealFeedFullTest.testGenerateFeed: line 19, column 1</td></tr>
+<tr class="pass"><td>ChangePasswordControllerTest</td><td>testChangePasswordController</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>ForgotPasswordControllerTest</td><td>testForgotPasswordController</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_Batch_PBImgaeMigration_OT</td><td>testCalloutupload</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>SiteLoginControllerTest</td><td>testSiteLoginController</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>SiteRegisterControllerTest</td><td>testRegistration</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>MyProfilePageControllerTest</td><td>testSave</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_PFEmailLogAPICallout</td><td>Test</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_PFEmailLogAPICallout</td><td>testCreateCallEnquiry</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_PFEmailLogAPICallout</td><td>testExtractListingReference</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_ReorderController</td><td>PropMediaReorderTest</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_LookupSearchComponentController</td><td>testgetResults</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_ListingImageDisplayList</td><td>testQueryImages</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Batch_MoveOfferFilesIntoDeals_Test</td><td>testMoveFilesToPipelineBatch</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_BayutCallApiCallout</td><td>Test</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_BayutCallApiCallout</td><td>testCreateCallEnquiry</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_EasySearchController</td><td>createTaskTest</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_EasySearchController</td><td>getObjectNames</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_ListingsXMLForPortals</td><td>ListingsForBD</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_ListingsXMLForPortals</td><td>ListingsForPF</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_ListingsPDFController</td><td>ListingsPDFControllerTest</td><td>Pass</td><td></td><td></td></tr>
+<tr class="fail"><td>Test_Batch_LinkedListCreationFrmListing</td><td>testListingInsert</td><td>Fail</td><td>System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Please include the listing price, unit number, and address.: []</td><td>Class.Test_Batch_LinkedListCreationFrmListing.ListingInsert: line 75, column 1</td></tr>
+<tr class="fail"><td>EnquiryTriggerHandler_Test</td><td>handleEnquiryContactSharingTest</td><td>Fail</td><td>System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Phone number is required: [Phone]</td><td>Class.EnquiryTriggerHandler_Test.handleEnquiryContactSharingTest: line 49, column 1</td></tr>
+<tr class="pass"><td>ListingTriggerHandler_Test</td><td>testAfterInsertCreatesContactShare</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>ListingTriggerHandler_Test</td><td>testAfterUpdateWithOwnerChangeCreatesNewShare</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>ListingTriggerHandler_Test</td><td>testBeforeUpdatePriceReductionLogic</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>ListingTriggerHandler_Test</td><td>testUnlinkInvalidMatch</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>ListingTriggerHandler_Test</td><td>testValidMatchRemainsLinked</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_PFWhatsappAPICallout</td><td>Test</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_PFCallLogAPiCallout</td><td>Test</td><td>Pass</td><td></td><td></td></tr>
+<tr class="fail"><td>EnquiryRoutingHandler_Test</td><td>testEnquiryRouting</td><td>Fail</td><td>System.DmlException: Insert failed. First exception on row 0; first error: MIXED_DML_OPERATION, DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): Queue__c, original object: PermissionSetAssignment: []</td><td>Class.EnquiryRoutingHandler_Test.testEnquiryRouting: line 44, column 1</td></tr>
+<tr class="pass"><td>EnquiryRoutingHandler_Test</td><td>testUnlinkInvalidMatchFromEnquiry</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>BatchLauncherTest</td><td>testRunBatchEnquiry</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>BatchLauncherTest</td><td>testRunBatchListing</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_UpdateListingLongDescriptions</td><td>testUpdateListings_Success</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_UpdateListingLongDescriptions</td><td>test_Error</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>dealTriggerHandler_Test</td><td>testMoveFilesToPipeline</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>ListingPDFreraController_Test</td><td>ListingsPDFControllerTest</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_AWSFileUploadController</td><td>fetchDocuments_Test</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_AWSFileUploadController</td><td>testCalloutupload</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_AWSFileUploadController</td><td>testController</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_AWSFileUploadController</td><td>test_extractFileName</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_AWSFileUploadController</td><td>test_getZipFileUrl</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_ContactTriggerHandler</td><td>testNoDuplicates</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_ContactTriggerHandler</td><td>testWithDuplicates</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_Bayut_EmailLogAPI_Callout</td><td>Test</td><td>Pass</td><td></td><td></td></tr>
+<tr class="fail"><td>Test_PF_User_Callout</td><td>Test</td><td>Fail</td><td>System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Phone number is required: [Phone]</td><td>Class.Test_PF_User_Callout.Test: line 18, column 1</td></tr>
+<tr class="fail"><td>CreateEnquiryWebLeads_Test</td><td>createEnquiryWithListings</td><td>Fail</td><td>System.DmlException: Insert failed. First exception on row 0; first error: CANNOT_EXECUTE_FLOW_TRIGGER, We can't save this record because the “Assign Einstein Activity Capture Permission Set” process failed. Give your Salesforce admin these details. This error occurred when the flow tried to create records: MIXED_DML_OPERATION: DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): PermissionSetAssignment, original object: Account. You can look up ExceptionCode values in the SOAP API Developer Guide.nt, original object: Account. You can look up ExceptionCode values in the SOAP API Developer Guide.: []</td><td>Class.CreateEnquiryWebLeads_Test.setup: line 48, column 1</td></tr>
+<tr class="fail"><td>CreateEnquiryWebLeads_Test</td><td>createEnquiryWithoutListings</td><td>Fail</td><td>System.DmlException: Insert failed. First exception on row 0; first error: CANNOT_EXECUTE_FLOW_TRIGGER, We can't save this record because the “Assign Einstein Activity Capture Permission Set” process failed. Give your Salesforce admin these details. This error occurred when the flow tried to create records: MIXED_DML_OPERATION: DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): PermissionSetAssignment, original object: Account. You can look up ExceptionCode values in the SOAP API Developer Guide.nt, original object: Account. You can look up ExceptionCode values in the SOAP API Developer Guide.: []</td><td>Class.CreateEnquiryWebLeads_Test.setup: line 48, column 1</td></tr>
+<tr class="fail"><td>ListingsControllerExtensionTest</td><td>testListingsControllerExtension</td><td>Fail</td><td>System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Phone number is required: [Phone]</td><td>Class.ListingsControllerExtensionTest.setupData: line 27, column 1</td></tr>
+<tr class="pass"><td>Test_BayutWhatsappAPICallout</td><td>Test</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>CommissionTrigger_Test</td><td>insertTask</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>Test_Batch_LinkedListingMatchingfromEnq</td><td>testMatchingListing</td><td>Pass</td><td></td><td></td></tr>
+<tr class="pass"><td>CloneListingControllerTest</td><td>testCloneListing</td><td>Pass</td><td></td><td></td></tr>
+</table>
+<h2>Coverage Results</h2><table><tr><th>Class/Trigger</th><th>Covered</th><th>Uncovered</th><th>Coverage %</th></tr>
+<tr class="low"><td>EasySearchController</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>LookupSearchComponentController</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Schedule_BatchPortalXMLGeneratorBD</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>filterConditionWrapper</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>ListingImageDisplayList</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>AWSFileUploadController</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>ListingTriggerHandler</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Schedule_BatchPortalXMLGeneratorPF</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>ListingsXMLForPortals</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Batch_PortalXMLGeneratorBD</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Batch_PortalXMLGenerator</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>EnquiryTriggerHandler</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>AWSS3Controller</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>ReorderController</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>MockGoogledriverespupload</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>ListingTrigger</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>CommissionsTrigger</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>EnquiryTrigger</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>ChangePasswordController</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>SiteRegisterController</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>MyProfilePageController</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>SiteLoginController</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>ForgotPasswordController</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>UpdateListingLongDescriptions</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Sch_Batch_WebsiteXMLGenerator</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Batch_WebsiteXMLGenerator</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Schedule_BatchLuxuryPortalXMLGenerator</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Batch_LuxuryRealEstatePortalXMLGenerator</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Batch_PBImageMigration_OT</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Batch_InternationalPortalXMLGenerator</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Sch_Batch_InternationPortalXMLGenerator</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Batch_BarnesDocumentMigration_OT</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>CloneListingController</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Scheduled_ApplicantToListingMatchingJob</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Batch_LinkedListCreationfromEnquiry</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>LinkedListEnquiryHandler</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>LinkedListingHandler</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Batch_LinkedListCreationFromListing</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>ListingsPDFControllerExtension</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>ListingPDFreraController</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>dealTriggerHandler</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>dealTrigger</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Batch_MoveOfferFilesIntoDeals_OT</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>PF_GenerateAccessTokenController</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>PF_CallLogRecord_Helper</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>PF_CallLog_Callout</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Scheduled_PFCallLogImportJob</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>PFAPICallLogTriggerController</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>PFAPICallLogTrigger</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>PF_EmailApi_Log_Helper</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Scheduled_PFEmailLogImportJob</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>PFAPIEmailLogTriggerController</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>PF_EmailApi_Callout_Controller</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>PF_Email_API_Log_Trigger</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Bayut_CallLog_Callout</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Bayut_CallLogRecordHelper</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Scheduled_BayutCallLogImportJob</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>BayutCallLogController</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>BayutCallLogTrigger</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>PF_Whatsapp_Log_Trigger_Controller</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>PF_Whatsapp_API_Callout</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Scheduled_PFWhatsappImportJOb</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>PF_Whatsapp_Log_Helper</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>PF_WhatsappLead_Trigger</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Bayut_Email_Log_Callout</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Bayut_EmailLogRecordHelper</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Scheduled_BayutEmailLogJob</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>BayutEmailLogTriggerHandler</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>BayutEmailLogTrigger</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Bayut_WhatsLogRecordHelper</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Scheduled_BayutWhatsappLogJob</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>Bayut_Whatspp_Log_Callout</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>BayutWhatsappLogTriggerHandler</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>BayutWhatsappLog_Trigger</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>ContactTriggerHandler</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>ContactTrigger</td><td>0</td><td>0</td><td>0%</td></tr>
+<tr class="low"><td>BatchLauncher</td><td>0</td><td>0</td><td>0%</td></tr>
+</table></body></html>

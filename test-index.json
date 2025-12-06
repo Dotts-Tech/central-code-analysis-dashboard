@@ -1,77 +1,79 @@
 {
-  "IFA": { "json": "IFA.json", "html": "IFA.html" }
+  "IFA": { "json": "IFA.json" }
 ,
-  "Maria-Morris-Global": { "json": "Maria-Morris-Global.json", "html": "Maria-Morris-Global.html" }
+  "Maria-Morris-Global": { "json": "Maria-Morris-Global.json" }
 ,
-  "aeon-and-trisl": { "json": "aeon-and-trisl.json", "html": "aeon-and-trisl.html" }
+  "aeon-and-trisl": { "json": "aeon-and-trisl.json" }
 ,
-  "apex-coverage": { "json": "apex-coverage.json", "html": "apex-coverage.html" }
+  "apex-coverage": { "json": "apex-coverage.json" }
 ,
   "apex-results": { "json": "apex-results.json" }
 ,
   "apex-test": { "json": "apex-test.json" }
 ,
-  "arabian-estates": { "json": "arabian-estates.json", "html": "arabian-estates.html" }
+  "arabian-estates": { "json": "arabian-estates.json" }
 ,
-  "azco": { "json": "azco.json", "html": "azco.html" }
+  "azco": { "json": "azco.json" }
 ,
-  "barnes-coverage": { "json": "barnes-coverage.json", "html": "barnes-coverage.html" }
+  "barnes-coverage": { "json": "barnes-coverage.json" }
 ,
-  "barnes-test": { "json": "barnes-test.json", "html": "barnes-test.html" }
+  "barnes-results": { "json": "barnes-results.json" }
 ,
-  "barnes": { "json": "barnes.json", "html": "barnes.html" }
+  "barnes-test": { "json": "barnes-test.json" }
 ,
-  "bw-real-estate": { "json": "bw-real-estate.json", "html": "bw-real-estate.html" }
+  "barnes": { "json": "barnes.json", "html": "barnes-report.html" }
 ,
-  "capstone-property": { "json": "capstone-property.json", "html": "capstone-property.html" }
+  "bw-real-estate": { "json": "bw-real-estate.json" }
 ,
-  "elysian-brok": { "json": "elysian-brok.json", "html": "elysian-brok.html" }
+  "capstone-property": { "json": "capstone-property.json" }
 ,
-  "elysian": { "json": "elysian.json", "html": "elysian.html" }
+  "elysian-brok": { "json": "elysian-brok.json" }
 ,
-  "equity": { "json": "equity.json", "html": "equity.html" }
+  "elysian": { "json": "elysian.json" }
 ,
-  "gta-properties": { "json": "gta-properties.json", "html": "gta-properties.html" }
+  "equity": { "json": "equity.json" }
 ,
-  "hyde": { "json": "hyde.json", "html": "hyde.html" }
+  "gta-properties": { "json": "gta-properties.json" }
 ,
-  "identiscents-coverage": { "json": "identiscents-coverage.json", "html": "identiscents-coverage.html" }
+  "hyde": { "json": "hyde.json" }
 ,
-  "identiscents-test": { "json": "identiscents-test.json", "html": "identiscents-test.html" }
+  "identiscents-coverage": { "json": "identiscents-coverage.json" }
 ,
-  "identiscents": { "json": "identiscents.json", "html": "identiscents.html" }
+  "identiscents-test": { "json": "identiscents-test.json" }
+,
+  "identiscents": { "json": "identiscents.json" }
 ,
   "index": { "json": "index.json" }
 ,
-  "kgi": { "json": "kgi.json", "html": "kgi.html" }
+  "kgi": { "json": "kgi.json" }
 ,
-  "knight-frank": { "json": "knight-frank.json", "html": "knight-frank.html" }
+  "knight-frank": { "json": "knight-frank.json" }
 ,
-  "luxfolio": { "json": "luxfolio.json", "html": "luxfolio.html" }
+  "luxfolio": { "json": "luxfolio.json" }
 ,
-  "mc-cone": { "json": "mc-cone.json", "html": "mc-cone.html" }
+  "mc-cone": { "json": "mc-cone.json" }
 ,
-  "octa": { "json": "octa.json", "html": "octa.html" }
+  "octa": { "json": "octa.json" }
 ,
-  "pangea": { "json": "pangea.json", "html": "pangea.html" }
+  "pangea": { "json": "pangea.json" }
 ,
-  "puregold": { "json": "puregold.json", "html": "puregold.html" }
+  "puregold": { "json": "puregold.json" }
 ,
-  "saas": { "json": "saas.json", "html": "saas.html" }
+  "saas": { "json": "saas.json" }
 ,
-  "soueast": { "json": "soueast.json", "html": "soueast.html" }
+  "soueast": { "json": "soueast.json" }
 ,
-  "strada": { "json": "strada.json", "html": "strada.html" }
+  "strada": { "json": "strada.json" }
 ,
-  "tabeer": { "json": "tabeer.json", "html": "tabeer.html" }
+  "tabeer": { "json": "tabeer.json" }
 ,
-  "tyron-ash-real-estate": { "json": "tyron-ash-real-estate.json", "html": "tyron-ash-real-estate.html" }
+  "tyron-ash-real-estate": { "json": "tyron-ash-real-estate.json" }
 ,
-  "vivid-living": { "json": "vivid-living.json", "html": "vivid-living.html" }
+  "vivid-living": { "json": "vivid-living.json" }
 ,
-  "we-are-propoerty": { "json": "we-are-propoerty.json", "html": "we-are-propoerty.html" }
+  "we-are-propoerty": { "json": "we-are-propoerty.json" }
 ,
-  "white-and-co": { "json": "white-and-co.json", "html": "white-and-co.html" }
+  "white-and-co": { "json": "white-and-co.json" }
 ,
-  "xoxo": { "json": "xoxo.json", "html": "xoxo.html" }
+  "xoxo": { "json": "xoxo.json" }
 }
