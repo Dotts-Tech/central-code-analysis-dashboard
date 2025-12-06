@@ -1,31 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8" />
-  <title>📊 Test Dashboard</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Salesforce Test Dashboard</title>
   <link rel="stylesheet" href="test-style.css">
-  <!-- Chart.js CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <header class="header">
-    <h1>📊 Salesforce Test Dashboard</h1>
-    <p class="subtitle">Aggregated test & coverage results — click a card to open reports</p>
-  </header>
+  <h1>📊 Salesforce Apex Test Dashboard</h1>
+  <div id="card-container" class="card-container"></div>
 
-  <main>
-    <div id="controls" class="controls">
-      <input id="search" placeholder="Search repo..." />
-    </div>
-
-    <div id="card-container" class="card-container" aria-live="polite"></div>
-  </main>
-
-  <footer class="footer">
-    <small>Last update: <span id="last-updated">—</span></small>
-  </footer>
-
-  <script src="test-script.js" defer></script>
+  <script src="test-script.js"></script>
 </body>
 </html>
