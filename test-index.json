@@ -18,5 +18,14 @@
       "json": "data/elysian-analyzer.json",
       "html": "data/elysian-analyzer.html"
     }
+  },
+  "aeon-and-trisl": {
+    "apex": {
+      "json": "data/aeon-and-trisl-apex.json"
+    },
+    "analyzer": {
+      "json": "data/aeon-and-trisl-analyzer.json",
+      "html": "data/aeon-and-trisl-analyzer.html"
+    }
   }
 }
