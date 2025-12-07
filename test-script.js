@@ -57,8 +57,8 @@ function renderCoverage(coverageEntries, summary) {
   if (coverageEntries.length > 0) {
     let totalC = 0, totalU = 0;
     coverageEntries.forEach(c => {
-      const covered = c.numLinesCovered ?? 0;
-      const uncovered = c.numLinesUncovered ?? 0;
+      const covered = c.NumLinesCovered ?? 0;
+      const uncovered = c.NumLinesUncovered ?? 0;
       const total = covered + uncovered;
       const pct = total === 0 ? 0 : Math.round((covered * 100) / total);
 
