@@ -8,18 +8,18 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.toggle('dark');
     localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
   });
-});
 
-// Load test and coverage data
-fetch('data/barnes-results.json')
-  .then(r => r.json())
-  .then(json => {
-    renderSummary(json);
-    renderTests(json.result?.tests || []);
-    renderCoverage(json.result?.coverage?.coverage || [], json.result?.summary);
-    initFilters();
-  })
-  .catch(err => console.error('Error loading apex-results.json:', err));
+  // Load test and coverage data
+  fetch('data/barnes-results.json')
+    .then(r => r.json())
+    .then(json => {
+      renderSummary(json);
+      renderTests(json.result?.tests || []);
+      renderCoverage(json.result?.coverage?.coverage || [], json.result?.summary);
+      initFilters();
+    })
+    .catch(err => console.error('Error loading barnes-results.json:', err));
+});
 
 // Summary header
 function renderSummary(json) {
@@ -100,4 +100,43 @@ function renderCoverage(coverageEntries, summary) {
 }
 
 // Filters
-function
+function initFilters() {
+  const classInput = document.getElementById('filter-class');
+  const outcomeSelect = document.getElementById('filter-outcome');
+  const coverageSelect = document.getElementById('filter-coverage');
+
+  const applyFilters = () => {
+    const classTerm = classInput.value.trim().toLowerCase();
+    const outcome = outcomeSelect.value;
+    const coverageBucket = coverageSelect.value;
+
+    // Filter tests
+    document.querySelectorAll('#tests-body tr').forEach(tr => {
+      const matchesClass = !classTerm || tr.dataset.class.includes(classTerm);
+      const matchesOutcome = !outcome || tr.dataset.outcome === outcome;
+      tr.style.display = (matchesClass && matchesOutcome) ? '' : 'none';
+    });
+
+    // Filter coverage
+    document.querySelectorAll('#coverage-body tr').forEach(tr => {
+      if (!tr.dataset) return;
+      const matchesClass = !classTerm || (tr.dataset.class || '').includes(classTerm);
+      const matchesBucket = !coverageBucket || (tr.dataset.coverageBucket || '') === coverageBucket;
+      if (!tr.dataset.class && !tr.dataset.coverageBucket) { tr.style.display = ''; return; }
+      tr.style.display = (matchesClass && matchesBucket) ? '' : 'none';
+    });
+  };
+
+  classInput.addEventListener('input', applyFilters);
+  outcomeSelect.addEventListener('change', applyFilters);
+  coverageSelect.addEventListener('change', applyFilters);
+}
+
+// Safe text helper
+function safe(val) {
+  if (!val) return '';
+  return String(val)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
