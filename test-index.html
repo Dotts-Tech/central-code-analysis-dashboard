@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Test Yogesh Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="test-style.css">
 </head>
 <body>
@@ -11,9 +12,10 @@
     <div class="summary" id="summary"></div>
     <div class="actions">
       <button id="theme-toggle">🌙 Toggle Light/Dark</button>
-      <a id="download-report" class="download-btn" href="data/apex-report.html" download>⬇️ Download HTML Report</a>
+      <!-- Download link will be set dynamically in test-script.js -->
+      <a id="download-report" class="download-btn">⬇️ Download HTML Report</a>
     </div>
-    <div class="filters">
+    <form class="filters">
       <input type="text" id="filter-class" placeholder="Filter by class name…" />
       <select id="filter-outcome">
         <option value="">All outcomes</option>
@@ -24,9 +26,9 @@
         <option value="">All coverage</option>
         <option value="high">≥ 90%</option>
         <option value="medium">50–89%</option>
-        <option value="low">< 50%</option>
+        <option value="low">Below 50%</option>
       </select>
-    </div>
+    </form>
   </header>
 
   <main>
@@ -58,3 +60,4 @@
   <script src="test-script.js"></script>
 </body>
 </html>
+
