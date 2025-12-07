@@ -49,20 +49,23 @@ function renderTests(tests) {
   });
 }
 
-// Coverage table
+// Coverage table (using totalCovered + coveredPercent)
 function renderCoverage(coverageEntries, summary) {
   const body = document.getElementById('coverage-body');
   body.innerHTML = '';
 
   if (coverageEntries.length > 0) {
-    let totalC = 0, totalU = 0;
-    coverageEntries.forEach(c => {
-      const covered = c.NumLinesCovered;
-      const uncovered = c.NumLinesUncovered;
-      const total = covered + uncovered;
-      const pct = total === 0 ? 0 : Math.round((covered * 100) / total);
+    let totalC = 0;
+    let totalPct = 0;
+    let count = 0;
 
-      totalC += covered; totalU += uncovered;
+    coverageEntries.forEach(c => {
+      const covered = c.totalCovered ?? 0;
+      const pct = c.coveredPercent ?? 0;
+
+      totalC += covered;
+      totalPct += pct;
+      count++;
 
       const tr = document.createElement('tr');
       tr.className = pct >= 90 ? 'high' : (pct >= 50 ? 'medium' : 'low');
@@ -72,19 +75,19 @@ function renderCoverage(coverageEntries, summary) {
       tr.innerHTML = `
         <td>${safe(c.name)}</td>
         <td>${covered}</td>
-        <td>${uncovered}</td>
+        <td>-</td>
         <td>${pct}%</td>
       `;
       body.appendChild(tr);
     });
 
+    // Overall coverage row (average percent)
     const overall = document.createElement('tr');
-    const total = totalC + totalU;
-    const overallPct = total === 0 ? 0 : Math.round((totalC * 100) / total);
+    const overallPct = count === 0 ? 0 : Math.round(totalPct / count);
     overall.innerHTML = `
       <td><b>Overall Coverage</b></td>
       <td>${totalC}</td>
-      <td>${totalU}</td>
+      <td>-</td>
       <td>${overallPct}%</td>
     `;
     body.appendChild(overall);
