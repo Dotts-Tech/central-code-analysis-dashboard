@@ -1,63 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Test Yogesh Dashboard</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="test-style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Central Code Analysis Dashboard</title>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <link rel="stylesheet" href="test-style.css" />
 </head>
-<body>
-  <header>
-    <h1>🧪 APEX TEST & COVERAGE REPORT</h1>
-    <div class="summary" id="summary"></div>
-    <div class="actions">
-      <button id="theme-toggle">🌙 Toggle Light/Dark</button>
-      <!-- Download link will be set dynamically in test-script.js -->
-      <a id="download-report" class="download-btn">⬇️ Download HTML Report</a>
+<body data-theme="dark">
+
+  <header class="topbar">
+    <div class="brand">Central Dotts Saleforce Orgs Reports</div>
+    <div class="controls">
+      <input id="search" placeholder="Search projects…" />
+      <button id="themeToggle">Theme</button>
     </div>
-    <form class="filters">
-      <input type="text" id="filter-class" placeholder="Filter by class name…" />
-      <select id="filter-outcome">
-        <option value="">All outcomes</option>
-        <option value="Pass">Pass</option>
-        <option value="Fail">Fail</option>
-      </select>
-      <select id="filter-coverage">
-        <option value="">All coverage</option>
-        <option value="high">≥ 90%</option>
-        <option value="medium">50–89%</option>
-        <option value="low">Below 50%</option>
-      </select>
-    </form>
   </header>
 
-  <main>
-    <section>
-      <h2>Test results</h2>
-      <table id="tests-table">
-        <thead>
-          <tr>
-            <th>Class</th><th>Method</th><th>Outcome</th><th>Message</th><th>StackTrace</th>
-          </tr>
-        </thead>
-        <tbody id="tests-body"></tbody>
-      </table>
-    </section>
-
-    <section>
-      <h2>Coverage results</h2>
-      <table id="coverage-table">
-        <thead>
-          <tr>
-            <th>Class/Trigger</th><th>Covered</th><th>Uncovered</th><th>Coverage %</th>
-          </tr>
-        </thead>
-        <tbody id="coverage-body"></tbody>
-      </table>
-    </section>
+  <main class="container">
+    <section id="grid" class="grid"></section>
   </main>
+
+  <!-- Modal -->
+  <div id="modalBackdrop" class="modal-backdrop" aria-hidden="true">
+    <div class="modal">
+      <div class="modal-head">
+        <div>
+          <div id="modalTitle" class="modal-title"></div>
+          <div id="modalSub" class="modal-sub"></div>
+        </div>
+        <div class="modal-actions">
+          <button id="openNew" class="btn small" title="Open raw report" style="display:none">Open</button>
+          <button id="closeModal" class="btn small">Close</button>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="report">Report</button>
+        <button class="tab" data-tab="summary">Summary</button>
+        <button class="tab" data-tab="charts">Charts</button>
+      </div>
+
+      <div class="tab-content" data-tab-content="report">
+        <iframe id="reportFrame" class="report-frame" title="Report viewer"></iframe>
+      </div>
+
+      <div class="tab-content" data-tab-content="summary">
+        <div id="summaryContent" class="summary-area"></div>
+      </div>
+
+      <div class="tab-content" data-tab-content="charts">
+        <canvas id="passFailChart" class="chart-canvas"></canvas>
+        <canvas id="coverageChart" class="chart-canvas"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    Dashboard reads <code>test-index.json</code> and <code>data/*</code> created by yogesh.
+  </footer>
 
   <script src="test-script.js"></script>
 </body>
 </html>
-

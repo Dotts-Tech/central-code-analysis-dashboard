@@ -1,145 +1,269 @@
-// Theme toggle
-document.addEventListener('DOMContentLoaded', () => {
-  const toggleBtn = document.getElementById('theme-toggle');
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark') document.body.classList.add('dark');
+// test-script.js
+// Dynamic dashboard client for test-index.json and data/* artifacts
+// - tries test-index.json then data/test-index.json
+// - card shows fullName if present or key uppercase
+// - modal with tabs: report / summary / charts
+// - uses Chart.js (CDN included in HTML)
 
-  toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-    localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
-  });
+const grid = document.getElementById('grid');
+const searchEl = document.getElementById('search');
+const themeToggle = document.getElementById('themeToggle');
 
-  // Load test and coverage data
-  fetch('data/barnes-results.json')
-    .then(r => r.json())
-    .then(json => {
-      renderSummary(json);
-      renderTests(json.result?.tests || []);
-      renderCoverage(json.result?.coverage?.coverage || [], json.result?.summary);
-      initFilters();
-    })
-    .catch(err => console.error('Error loading barnes-results.json:', err));
-});
+const modalBackdrop = document.getElementById('modalBackdrop');
+const modalTitle = document.getElementById('modalTitle');
+const modalSub = document.getElementById('modalSub');
+const openNew = document.getElementById('openNew');
+const closeModal = document.getElementById('closeModal');
 
-// Summary header
-function renderSummary(json) {
-  const s = json.result?.summary || {};
-  const el = document.getElementById('summary');
-  el.textContent = `Tests Ran: ${s.testsRan ?? '-'} | Pass Rate: ${s.passRate ?? '-'} | Fail Rate: ${s.failRate ?? '-'} | Org Coverage: ${s.orgWideCoverage ?? '-'} | Test Run Coverage: ${s.testRunCoverage ?? '-'}`;
+const tabs = document.querySelectorAll('.tab');
+const contents = document.querySelectorAll('.tab-content');
+const reportFrame = document.getElementById('reportFrame');
+const summaryContent = document.getElementById('summaryContent');
+const passFailCtx = document.getElementById('passFailChart');
+const coverageCtx = document.getElementById('coverageChart');
+
+let indexData = {};
+let passFailChart = null;
+let coverageChart = null;
+
+// --- Load index ---
+async function loadIndex() {
+  const candidates = ['test-index.json', 'data/test-index.json'];
+  for (const url of candidates) {
+    try {
+      const r = await fetch(url, {cache: 'no-cache'});
+      if (!r.ok) continue;
+      indexData = await r.json();
+      console.log('Loaded index from', url);
+      renderCards();
+      return;
+    } catch (e) { /* continue */ }
+  }
+  grid.innerHTML = '<div class="card"><div class="fullname">No index found</div><div class="muted">Place test-index.json or data/test-index.json in the repo root.</div></div>';
 }
 
-// Tests table
-function renderTests(tests) {
-  const body = document.getElementById('tests-body');
-  body.innerHTML = '';
-  tests.forEach(t => {
-    const tr = document.createElement('tr');
-    tr.className = (t.Outcome === 'Pass' ? 'pass' : 'fail');
-    tr.dataset.outcome = t.Outcome;
-    tr.dataset.class = t.ApexClass?.Name?.toLowerCase() || '';
+// --- Render cards ---
+function renderCards() {
+  grid.innerHTML = '';
+  const q = (searchEl.value || '').toLowerCase();
 
-    tr.innerHTML = `
-      <td>${safe(t.ApexClass?.Name)}</td>
-      <td>${safe(t.MethodName)}</td>
-      <td>${safe(t.Outcome)}</td>
-      <td>${safe(t.Message)}</td>
-      <td>${safe(t.StackTrace)}</td>
-    `;
-    body.appendChild(tr);
+  Object.keys(indexData).sort().forEach(key => {
+    const entry = indexData[key];
+    const fullName = entry.fullName || entry.name || key.toUpperCase();
+
+    if (q && !fullName.toLowerCase().includes(q) && !key.toLowerCase().includes(q)) return;
+
+    const card = document.createElement('div');
+    card.className = 'card';
+
+    const head = document.createElement('div');
+    head.className = 'card-head';
+    const nameEl = document.createElement('div');
+    nameEl.className = 'fullname';
+    nameEl.textContent = fullName;
+    head.appendChild(nameEl);
+
+    const short = document.createElement('div');
+    short.className = 'muted';
+    short.textContent = key;
+    head.appendChild(short);
+
+    card.appendChild(head);
+
+    // actions
+    const actions = document.createElement('div');
+    actions.className = 'actions';
+
+    //if (entry.json) actions.appendChild(createBtn('General JSON', 'json', () => openJsonSummary(entry.json, fullName, key)));
+    if (entry.apex?.html) actions.appendChild(createBtn('Apex Report', 'html', () => openModal(entry.apex.html, fullName, key)));
+    else if (entry.apex?.json) actions.appendChild(createBtn('Apex Reports', 'json', () => openJsonSummary(entry.apex.json, fullName, key)));
+
+    if (entry.analyzer?.html) actions.appendChild(createBtn('Analyzer Report', 'html', () => openModal(entry.analyzer.html, fullName, key)));
+    else if (entry.analyzer?.json) actions.appendChild(createBtn('Analyzer JSON', 'json', () => openJsonSummary(entry.analyzer.json, fullName, key)));
+
+    card.appendChild(actions);
+    grid.appendChild(card);
   });
 }
 
-// Coverage table (using totalCovered + coveredPercent)
-function renderCoverage(coverageEntries, summary) {
-  const body = document.getElementById('coverage-body');
-  body.innerHTML = '';
+// --- Button helper ---
+function createBtn(label, kind, onClick) {
+  const b = document.createElement('button');
+  b.className = 'action-btn ' + (kind === 'html' ? 'html' : 'json');
+  b.textContent = label;
+  b.onclick = (e) => { e.stopPropagation(); onClick(); };
+  return b;
+}
 
-  if (coverageEntries.length > 0) {
-    let totalC = 0;
-    let totalPct = 0;
-    let count = 0;
+// --- Open modal (HTML report) ---
+function openModal(path, title, repoKey) {
+  modalTitle.textContent = title;
+  modalSub.textContent = repoKey || '';
+  openNew.style.display = 'inline-block';
+  openNew.onclick = () => window.open(path, '_blank');
 
-    coverageEntries.forEach(c => {
-      const covered = c.totalCovered ?? 0;
-      const pct = c.coveredPercent ?? 0;
+  reportFrame.src = path;
+  showTabName('report');
+  modalBackdrop.style.display = 'grid';
+  document.body.classList.add('modal-open');
+}
 
-      totalC += covered;
-      totalPct += pct;
-      count++;
+// --- Open modal (JSON summary + charts) ---
+async function openJsonSummary(jsonPath, title, repoKey) {
+  modalTitle.textContent = title;
+  modalSub.textContent = repoKey || '';
+  openNew.style.display = 'none';
+  showTabName('summary');
+  modalBackdrop.style.display = 'grid';
+  document.body.classList.add('modal-open');
 
-      const tr = document.createElement('tr');
-      tr.className = pct >= 90 ? 'high' : (pct >= 50 ? 'medium' : 'low');
-      tr.dataset.coverageBucket = tr.className;
-      tr.dataset.class = (c.name || '').toLowerCase();
-
-      tr.innerHTML = `
-        <td>${safe(c.name)}</td>
-        <td>${covered}</td>
-        <td>-</td>
-        <td>${pct}%</td>
-      `;
-      body.appendChild(tr);
-    });
-
-    // Overall coverage row (average percent)
-    const overall = document.createElement('tr');
-    const overallPct = count === 0 ? 0 : Math.round(totalPct / count);
-    overall.innerHTML = `
-      <td><b>Overall Coverage</b></td>
-      <td>${totalC}</td>
-      <td>-</td>
-      <td>${overallPct}%</td>
-    `;
-    body.appendChild(overall);
-  } else {
-    const orgRow = document.createElement('tr');
-    orgRow.innerHTML = `<td><b>Org Wide Coverage</b></td><td colspan="3">${safe(summary?.orgWideCoverage)}</td>`;
-    body.appendChild(orgRow);
-
-    const runRow = document.createElement('tr');
-    runRow.innerHTML = `<td><b>Test Run Coverage</b></td><td colspan="3">${safe(summary?.testRunCoverage)}</td>`;
-    body.appendChild(runRow);
+  try {
+    const r = await fetch(jsonPath, {cache:'no-cache'});
+    if (!r.ok) throw new Error('Failed to load JSON: ' + r.status);
+    const j = await r.json();
+    renderSummary(j);
+    renderCharts(j);
+  } catch (e) {
+    summaryContent.innerHTML = `<div class="card"><div class="fullname">Error</div><div class="muted">${e.message}</div></div>`;
+    showTabName('summary');
   }
 }
 
-// Filters
-function initFilters() {
-  const classInput = document.getElementById('filter-class');
-  const outcomeSelect = document.getElementById('filter-outcome');
-  const coverageSelect = document.getElementById('filter-coverage');
+// --- Summary renderer ---
+function renderSummary(json) {
+  const result = json.result || {};
+  const testsArr = result.tests || result.testsRan || result.testResults || result.summary?.tests || [];
+  const tests = Array.isArray(testsArr) ? testsArr : [];
 
-  const applyFilters = () => {
-    const classTerm = classInput.value.trim().toLowerCase();
-    const outcome = outcomeSelect.value;
-    const coverageBucket = coverageSelect.value;
+  const pass = tests.filter(t => t.Outcome === 'Pass').length;
+  const fail = tests.length - pass;
 
-    // Filter tests
-    document.querySelectorAll('#tests-body tr').forEach(tr => {
-      const matchesClass = !classTerm || tr.dataset.class.includes(classTerm);
-      const matchesOutcome = !outcome || tr.dataset.outcome === outcome;
-      tr.style.display = (matchesClass && matchesOutcome) ? '' : 'none';
-    });
+  const covList = result.coverage?.coverage || result.coverage || result.codeCoverage || [];
+  let pctSum = 0;
+  for (const c of covList) pctSum += (c.coveredPercent ?? c.coveragePercent ?? 0);
+  const avgCoverage = covList.length ? Math.round(pctSum / covList.length) : 0;
 
-    // Filter coverage
-    document.querySelectorAll('#coverage-body tr').forEach(tr => {
-      if (!tr.dataset) return;
-      const matchesClass = !classTerm || (tr.dataset.class || '').includes(classTerm);
-      const matchesBucket = !coverageBucket || (tr.dataset.coverageBucket || '') === coverageBucket;
-      if (!tr.dataset.class && !tr.dataset.coverageBucket) { tr.style.display = ''; return; }
-      tr.style.display = (matchesClass && matchesBucket) ? '' : 'none';
-    });
-  };
+  // colorful summary cards
+  const summaryHtml = `
+    <div class="summary-grid">
+      <div class="card" style="background:#e0f7fa"><div class="fullname">Total Tests</div><div class="muted">${tests.length}</div></div>
+      <div class="card" style="background:#d1fae5"><div class="fullname">Passed</div><div class="muted">${pass}</div></div>
+      <div class="card" style="background:#ffe4e6"><div class="fullname">Failed</div><div class="muted">${fail}</div></div>
+      <div class="card" style="background:#e0e7ff"><div class="fullname">Avg Coverage</div><div class="muted">${avgCoverage}%</div></div>
+    </div>
+  `;
 
-  classInput.addEventListener('input', applyFilters);
-  outcomeSelect.addEventListener('change', applyFilters);
-  coverageSelect.addEventListener('change', applyFilters);
+  const coverageHtml = covList.map(c => {
+    const name = c.name || c.ApexClassName || c.className || '-';
+    const pct = (c.coveredPercent ?? c.coveragePercent ?? 0);
+    const covered = (c.totalCovered ?? c.NumLinesCovered ?? 0);
+    const uncovered = (c.totalUncovered ?? c.NumLinesUncovered ?? 0);
+    const color = pct > 90 ? '#d1fae5' : pct > 70 ? '#fef3c7' : '#571828ff';
+    return `<div class="card" style="margin-bottom:6px; background:${color}; padding:8px; border-radius:6px">
+      <strong>${name}</strong> — ${pct}% (${covered} / ${uncovered})
+    </div>`;
+  }).join('');
+
+  const failedHtml = tests.filter(t => t.Outcome !== 'Pass').map(t => {
+    const className = t.ApexClass?.Name || t.testClassName || t.className || '-';
+    const method = t.MethodName || t.methodName || t.name || '-';
+    const msg = (t.Message || t.message || t.failureMessage || '').toString().replace(/\n/g,'<br>');
+    return `<div style="margin-bottom:10px; padding:8px; border-radius:8px; background:rgba(0,0,0,0.04)">
+      <strong>${className} → ${method}</strong><div class="muted">${msg}</div></div>`;
+  }).join('') || '<div class="muted">No failed tests</div>';
+
+  summaryContent.innerHTML = `
+    ${summaryHtml}
+    <h4 style="margin-top:12px">Coverage per Class</h4>
+    <div>${coverageHtml}</div>
+    <h4 style="margin-top:12px">Failed Tests</h4>
+    <div>${failedHtml}</div>
+  `;
 }
 
-// Safe text helper
-function safe(val) {
-  if (!val) return '';
-  return String(val)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;');
+// --- Charts renderer ---
+function renderCharts(json) {
+  const result = json.result || {};
+  const testsArr = result.tests || result.testsRan || result.testResults || result.summary?.tests || [];
+  const tests = Array.isArray(testsArr) ? testsArr : [];
+
+  const pass = tests.filter(t => t.Outcome === 'Pass').length;
+  const fail = tests.length - pass;
+
+  const covList = result.coverage?.coverage || result.coverage || result.codeCoverage || [];
+  const labels = covList.map(c => c.name || c.ApexClassName || c.className || 'Unknown');
+  const values = covList.map(c => Number(c.coveredPercent ?? c.coveragePercent ?? 0));
+
+  // --- Pass/Fail chart ---
+  if (passFailChart) passFailChart.destroy();
+  passFailChart = new Chart(passFailCtx.getContext('2d'), {
+    type: 'bar',
+    data: {
+      labels: ['Pass', 'Fail'],
+      datasets: [{
+        label: 'Tests',
+        data: [pass, fail],
+        backgroundColor: [
+          getComputedStyle(document.documentElement).getPropertyValue('--green') || '#22c55e',
+          getComputedStyle(document.documentElement).getPropertyValue('--red') || '#ef4444'
+        ]
+      }]
+    },
+    options: { responsive:true, plugins:{legend:{display:false}}, scales:{y:{beginAtZero:true}} }
+  });
+
+  // --- Coverage chart ---
+  if (coverageChart) coverageChart.destroy();
+  const barColors = values.map(v => v > 90 ? '#d1fae5' : v > 70 ? '#fef3c7' : '#ffe4e6');
+
+  coverageChart = new Chart(coverageCtx.getContext('2d'), {
+    type: 'bar',
+    data: {
+      labels: labels,
+      datasets: [{ label:'Coverage %', data: values, backgroundColor: barColors }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive:true,
+      scales: { x: { beginAtZero:true, max:100 } },
+      plugins: { legend:{display:false} }
+    }
+  });
+
+  showTabName('charts');
 }
+
+// --- Tabs ---
+tabs.forEach(t => t.addEventListener('click', () => {
+  tabs.forEach(x => x.classList.remove('active'));
+  t.classList.add('active');
+  showTabName(t.dataset.tab);
+}));
+
+function showTabName(name) {
+  contents.forEach(c => c.classList.remove('active'));
+  const el = document.querySelector(`[data-tab-content="${name}"]`);
+  if (el) el.classList.add('active');
+}
+
+// --- Modal close ---
+closeModal.addEventListener('click', () => {
+  modalBackdrop.style.display = 'none';
+  reportFrame.src = '';
+  document.body.classList.remove('modal-open');
+});
+
+modalBackdrop.addEventListener('click', (e) => {
+  if (e.target === modalBackdrop) closeModal.click();
+});
+
+// --- Search ---
+searchEl.addEventListener('input', renderCards);
+
+// --- Theme toggle ---
+themeToggle.addEventListener('click', () => {
+  document.body.dataset.theme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
+});
+
+// --- Bootstrap ---
+loadIndex();
