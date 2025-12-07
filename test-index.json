@@ -1,5 +1,4 @@
 {
-  
   "barnes": {
     "json": "barnes.json",
     "html": "barnes-report.html",
@@ -10,7 +9,14 @@
       "json": "data/barnes-analyzer.json",
       "html": "data/barnes-analyzer.html"
     }
+  },
+  "elysian": {
+    "apex": {
+      "json": "data/elysian-apex.json"
+    },
+    "analyzer": {
+      "json": "data/elysian-analyzer.json",
+      "html": "data/elysian-analyzer.html"
+    }
   }
-  
- 
 }
