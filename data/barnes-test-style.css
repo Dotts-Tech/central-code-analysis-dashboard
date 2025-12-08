@@ -1,0 +1,11 @@
+body { background-color: #f8f9fa; padding: 20px; font-family: Arial, sans-serif; }
+.dashboard-card { transition: transform 0.3s; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 8px; }
+.dashboard-card:hover { transform: translateY(-5px); }
+.card-header { font-weight: bold; background-color: #f1f3f5; }
+.status-success { border-left: 5px solid #28a745; }
+.status-warning { border-left: 5px solid #ffc107; }
+.status-danger { border-left: 5px solid #dc3545; }
+.repo-title { color: #495057; margin-bottom: 30px; }
+.last-updated { font-size: 0.8rem; color: #6c757d; margin-top: 20px; }
+.metric-value { font-size: 2rem; font-weight: bold; }
+.metric-label { font-size: 0.9rem; color: #6c757d; }

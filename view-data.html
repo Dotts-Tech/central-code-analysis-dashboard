@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Collection Data Viewer</title>
+<style>
+    body { font-family: monospace; background-color: #f4f4f4; padding:20px; }
+    pre { background-color: #fff; border: 1px solid #ddd; padding: 15px; border-radius: 5px; white-space: pre-wrap; word-wrap: break-word; }
+    a { color: #007bff; text-decoration: none; margin-bottom: 20px; display: inline-block; }
+    a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<h1>Collection Data (test-index.json)</h1>
+<p><a href="test-index.html">&larr; Back to Main Dashboard</a></p>
+<pre id="data-content">Loading data...</pre>
+<script>
+    fetch('test-index.json')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('data-content').textContent = JSON.stringify(data, null, 2);
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+            document.getElementById('data-content').textContent = 'Error loading data.';
+        });
+</script>
+</body>
+</html>
