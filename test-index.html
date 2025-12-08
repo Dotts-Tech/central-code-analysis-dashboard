@@ -1,68 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Central Code Analysis Dashboard</title>
 
-  <!-- Chart.js CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<meta charset="UTF-8">
 
-  <link rel="stylesheet" href="test-style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Central Code Analysis Dashboard</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+<style>
+    body { background-color: #f8f9fa; padding: 20px; }
+    .dashboard-card { transition: transform 0.3s; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    .dashboard-card:hover { transform: translateY(-5px); }
+    .card-header { font-weight: bold; }
+    .repo-title { color: #495057; margin-bottom: 30px; }
+    .last-updated { font-size: 0.8rem; color: #6c757d; margin-top: 20px; }
+</style>
+
 </head>
-<body data-theme="dark">
 
-  <header class="topbar">
-    <div class="brand">Central Dotts Saleforce Orgs Reports</div>
-    <div class="controls">
-      <input id="search" placeholder="Search projects…" />
-      <button id="themeToggle">Theme</button>
+<body>
+
+<div class="container">
+    <h1 class="text-center repo-title">Central Code Analysis Dashboard</h1>
+    <div class="row" id="repositories"></div>
+    <div class="text-center last-updated" id="lastUpdated">Loading...</div>
+    <div class="text-center mt-3">
+        <a href="view-data.html" id="view-data-btn" class="btn btn-sm btn-secondary" style="display:none;">View Raw Data</a>
     </div>
-  </header>
+</div>
 
-  <main class="container">
-    <section id="grid" class="grid"></section>
-  </main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Modal -->
-  <div id="modalBackdrop" class="modal-backdrop" aria-hidden="true">
-    <div class="modal">
-      <div class="modal-head">
-        <div>
-          <div id="modalTitle" class="modal-title"></div>
-          <div id="modalSub" class="modal-sub"></div>
-        </div>
-        <div class="modal-actions">
-          <button id="openNew" class="btn small" title="Open raw report" style="display:none">Open</button>
-          <button id="closeModal" class="btn small">Close</button>
-        </div>
-      </div>
+<script>
+    fetch('test-index.json')
+        .then(response => response.json())
+        .then(data => {
+            const repositoriesContainer = document.getElementById('repositories');
+            const lastUpdatedElement = document.getElementById('lastUpdated');
+            repositoriesContainer.innerHTML = '';
+            const currentDate = new Date().toLocaleString();
+            lastUpdatedElement.textContent = 'Last updated: ' + currentDate;
+            
+            if (Object.keys(data).length > 0) {
+                document.getElementById('view-data-btn').style.display = 'inline-block';
+            }
+            
+            Object.keys(data).forEach(repoName => {
+                const repo = data[repoName];
+                const repoCard = document.createElement('div');
+                repoCard.className = 'col-md-4';
+                repoCard.innerHTML = '<div class="card dashboard-card"><div class="card-header"><span><i class="bi bi-folder"></i> ' + repoName + '</span></div><div class="card-body text-center"><p>View detailed analysis results for ' + repoName + '</p><a href="' + repo.dashboard.html + '" class="btn btn-primary"><i class="bi bi-bar-chart"></i> View Dashboard</a></div></div>';
+                repositoriesContainer.appendChild(repoCard);
+            });
+            
+            if (Object.keys(data).length === 0) {
+                repositoriesContainer.innerHTML = '<div class="col-12 text-center"><div class="alert alert-info"><i class="bi bi-info-circle"></i> No repository data available yet.</div></div>';
+            }
+        })
+        .catch(error => {
+            console.error('Error loading repository data:', error);
+            document.getElementById('repositories').innerHTML = '<div class="col-12 text-center"><div class="alert alert-danger"><i class="bi bi-exclamation-triangle"></i> Error loading repository data.</div></div>';
+        });
+</script>
 
-      <div class="tabs">
-        <button class="tab active" data-tab="report">Report</button>
-        <button class="tab" data-tab="summary">Summary</button>
-        <button class="tab" data-tab="charts">Charts</button>
-      </div>
-
-      <div class="tab-content" data-tab-content="report">
-        <iframe id="reportFrame" class="report-frame" title="Report viewer"></iframe>
-      </div>
-
-      <div class="tab-content" data-tab-content="summary">
-        <div id="summaryContent" class="summary-area"></div>
-      </div>
-
-      <div class="tab-content" data-tab-content="charts">
-        <canvas id="passFailChart" class="chart-canvas"></canvas>
-        <canvas id="coverageChart" class="chart-canvas"></canvas>
-      </div>
-    </div>
-  </div>
-
-  <footer class="footer">
-    Dashboard reads <code>test-index.json</code> and <code>data/*</code> created by yogesh.
-  </footer>
-
-  <script src="test-script.js"></script>
 </body>
+
 </html>
