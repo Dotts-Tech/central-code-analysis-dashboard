@@ -1,8 +1,8 @@
 <html><head><title>barnes APEX REPORT</title>
       <style>
-      body{font-family:Arial;padding:20px;}
-      table{border-collapse:collapse;width:100%;}
-      th,td{border:1px solid #ccc;padding:8px;}
+      body{font-family:Arial;padding:20px;background:#f5f7fa;}
+      table{border-collapse:collapse;width:100%;margin-bottom:20px;}
+      th,td{border:1px solid #ccc;padding:8px;font-size:14px;}
       th{background:#3498db;color:#fff;}
       .pass{background:#2ecc71;color:#fff;}
       .fail{background:#e74c3c;color:#fff;}
@@ -11,7 +11,8 @@
       .low{background:#e74c3c;color:#fff;}
       </style></head><body>
       <h1>🧪 barnes APEX TEST & COVERAGE REPORT</h1>
-<h2>Test Results</h2><table><tr><th>Class</th><th>Method</th><th>Outcome</th><th>Message</th><th>StackTrace</th></tr>
+<h2>Test Results</h2>
+<table><tr><th>Class</th><th>Method</th><th>Outcome</th><th>Message</th><th>StackTrace</th></tr>
 <tr class="fail"><td>Barnes_DealFeedFullTest</td><td>testGenerateFeed</td><td>Fail</td><td>System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Fill Mobile or Email to add a new contact: []</td><td>Class.Barnes_DealFeedFullTest.testGenerateFeed: line 19, column 1</td></tr>
 <tr class="pass"><td>ChangePasswordControllerTest</td><td>testChangePasswordController</td><td>Pass</td><td></td><td></td></tr>
 <tr class="pass"><td>ForgotPasswordControllerTest</td><td>testForgotPasswordController</td><td>Pass</td><td></td><td></td></tr>
@@ -67,82 +68,85 @@
 <tr class="pass"><td>Test_Batch_LinkedListingMatchingfromEnq</td><td>testMatchingListing</td><td>Pass</td><td></td><td></td></tr>
 <tr class="pass"><td>CloneListingControllerTest</td><td>testCloneListing</td><td>Pass</td><td></td><td></td></tr>
 </table>
-<h2>Coverage Results</h2><table><tr><th>Class/Trigger</th><th>Covered</th><th>Uncovered</th><th>Coverage %</th></tr>
-<tr class="low"><td>EasySearchController</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>LookupSearchComponentController</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Schedule_BatchPortalXMLGeneratorBD</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>filterConditionWrapper</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>ListingImageDisplayList</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>AWSFileUploadController</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>ListingTriggerHandler</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Schedule_BatchPortalXMLGeneratorPF</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>ListingsXMLForPortals</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Batch_PortalXMLGeneratorBD</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Batch_PortalXMLGenerator</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>EnquiryTriggerHandler</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>AWSS3Controller</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>ReorderController</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>MockGoogledriverespupload</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>ListingTrigger</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>CommissionsTrigger</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>EnquiryTrigger</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>ChangePasswordController</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>SiteRegisterController</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>MyProfilePageController</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>SiteLoginController</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>ForgotPasswordController</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>UpdateListingLongDescriptions</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Sch_Batch_WebsiteXMLGenerator</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Batch_WebsiteXMLGenerator</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Schedule_BatchLuxuryPortalXMLGenerator</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Batch_LuxuryRealEstatePortalXMLGenerator</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Batch_PBImageMigration_OT</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Batch_InternationalPortalXMLGenerator</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Sch_Batch_InternationPortalXMLGenerator</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Batch_BarnesDocumentMigration_OT</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>CloneListingController</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Scheduled_ApplicantToListingMatchingJob</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Batch_LinkedListCreationfromEnquiry</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>LinkedListEnquiryHandler</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>LinkedListingHandler</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Batch_LinkedListCreationFromListing</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>ListingsPDFControllerExtension</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>ListingPDFreraController</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>dealTriggerHandler</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>dealTrigger</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Batch_MoveOfferFilesIntoDeals_OT</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>PF_GenerateAccessTokenController</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>PF_CallLogRecord_Helper</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>PF_CallLog_Callout</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Scheduled_PFCallLogImportJob</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>PFAPICallLogTriggerController</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>PFAPICallLogTrigger</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>PF_EmailApi_Log_Helper</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Scheduled_PFEmailLogImportJob</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>PFAPIEmailLogTriggerController</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>PF_EmailApi_Callout_Controller</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>PF_Email_API_Log_Trigger</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Bayut_CallLog_Callout</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Bayut_CallLogRecordHelper</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Scheduled_BayutCallLogImportJob</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>BayutCallLogController</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>BayutCallLogTrigger</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>PF_Whatsapp_Log_Trigger_Controller</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>PF_Whatsapp_API_Callout</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Scheduled_PFWhatsappImportJOb</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>PF_Whatsapp_Log_Helper</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>PF_WhatsappLead_Trigger</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Bayut_Email_Log_Callout</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Bayut_EmailLogRecordHelper</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Scheduled_BayutEmailLogJob</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>BayutEmailLogTriggerHandler</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>BayutEmailLogTrigger</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Bayut_WhatsLogRecordHelper</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Scheduled_BayutWhatsappLogJob</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>Bayut_Whatspp_Log_Callout</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>BayutWhatsappLogTriggerHandler</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>BayutWhatsappLog_Trigger</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>ContactTriggerHandler</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>ContactTrigger</td><td>0</td><td>0</td><td>0%</td></tr>
-<tr class="low"><td>BatchLauncher</td><td>0</td><td>0</td><td>0%</td></tr>
-</table></body></html>
+<h2>Class & Trigger Coverage</h2>
+<table>
+<tr><th>Name</th><th>Covered %</th></tr>
+<tr class="high"><td>EasySearchController</td><td>90%</td></tr>
+<tr class="medium"><td>LookupSearchComponentController</td><td>79%</td></tr>
+<tr class="medium"><td>Schedule_BatchPortalXMLGeneratorBD</td><td>75%</td></tr>
+<tr class="medium"><td>filterConditionWrapper</td><td>83%</td></tr>
+<tr class="high"><td>ListingImageDisplayList</td><td>100%</td></tr>
+<tr class="medium"><td>AWSFileUploadController</td><td>87%</td></tr>
+<tr class="medium"><td>ListingTriggerHandler</td><td>80%</td></tr>
+<tr class="medium"><td>Schedule_BatchPortalXMLGeneratorPF</td><td>75%</td></tr>
+<tr class="high"><td>ListingsXMLForPortals</td><td>100%</td></tr>
+<tr class="high"><td>Batch_PortalXMLGeneratorBD</td><td>90%</td></tr>
+<tr class="high"><td>Batch_PortalXMLGenerator</td><td>93%</td></tr>
+<tr class="medium"><td>EnquiryTriggerHandler</td><td>67%</td></tr>
+<tr class="high"><td>AWSS3Controller</td><td>90%</td></tr>
+<tr class="high"><td>ReorderController</td><td>100%</td></tr>
+<tr class="high"><td>MockGoogledriverespupload</td><td>100%</td></tr>
+<tr class="high"><td>ListingTrigger</td><td>100%</td></tr>
+<tr class="high"><td>CommissionsTrigger</td><td>100%</td></tr>
+<tr class="high"><td>EnquiryTrigger</td><td>100%</td></tr>
+<tr class="high"><td>ChangePasswordController</td><td>100%</td></tr>
+<tr class="medium"><td>SiteRegisterController</td><td>81%</td></tr>
+<tr class="medium"><td>MyProfilePageController</td><td>88%</td></tr>
+<tr class="high"><td>SiteLoginController</td><td>100%</td></tr>
+<tr class="medium"><td>ForgotPasswordController</td><td>89%</td></tr>
+<tr class="high"><td>UpdateListingLongDescriptions</td><td>91%</td></tr>
+<tr class="medium"><td>Sch_Batch_WebsiteXMLGenerator</td><td>75%</td></tr>
+<tr class="high"><td>Batch_WebsiteXMLGenerator</td><td>93%</td></tr>
+<tr class="high"><td>Schedule_BatchLuxuryPortalXMLGenerator</td><td>100%</td></tr>
+<tr class="high"><td>Batch_LuxuryRealEstatePortalXMLGenerator</td><td>91%</td></tr>
+<tr class="high"><td>Batch_PBImageMigration_OT</td><td>96%</td></tr>
+<tr class="high"><td>Batch_InternationalPortalXMLGenerator</td><td>93%</td></tr>
+<tr class="medium"><td>Sch_Batch_InternationPortalXMLGenerator</td><td>75%</td></tr>
+<tr class="high"><td>Batch_BarnesDocumentMigration_OT</td><td>95%</td></tr>
+<tr class="medium"><td>CloneListingController</td><td>88%</td></tr>
+<tr class="high"><td>Scheduled_ApplicantToListingMatchingJob</td><td>100%</td></tr>
+<tr class="medium"><td>Batch_LinkedListCreationfromEnquiry</td><td>79%</td></tr>
+<tr class="high"><td>LinkedListEnquiryHandler</td><td>94%</td></tr>
+<tr class="medium"><td>LinkedListingHandler</td><td>52%</td></tr>
+<tr class="low"><td>Batch_LinkedListCreationFromListing</td><td>22%</td></tr>
+<tr class="medium"><td>ListingsPDFControllerExtension</td><td>83%</td></tr>
+<tr class="high"><td>ListingPDFreraController</td><td>91%</td></tr>
+<tr class="high"><td>dealTriggerHandler</td><td>96%</td></tr>
+<tr class="high"><td>dealTrigger</td><td>100%</td></tr>
+<tr class="high"><td>Batch_MoveOfferFilesIntoDeals_OT</td><td>100%</td></tr>
+<tr class="high"><td>PF_GenerateAccessTokenController</td><td>100%</td></tr>
+<tr class="high"><td>PF_CallLogRecord_Helper</td><td>100%</td></tr>
+<tr class="high"><td>PF_CallLog_Callout</td><td>96%</td></tr>
+<tr class="high"><td>Scheduled_PFCallLogImportJob</td><td>100%</td></tr>
+<tr class="medium"><td>PFAPICallLogTriggerController</td><td>80%</td></tr>
+<tr class="high"><td>PFAPICallLogTrigger</td><td>100%</td></tr>
+<tr class="high"><td>PF_EmailApi_Log_Helper</td><td>100%</td></tr>
+<tr class="high"><td>Scheduled_PFEmailLogImportJob</td><td>100%</td></tr>
+<tr class="medium"><td>PFAPIEmailLogTriggerController</td><td>75%</td></tr>
+<tr class="high"><td>PF_EmailApi_Callout_Controller</td><td>95%</td></tr>
+<tr class="high"><td>PF_Email_API_Log_Trigger</td><td>100%</td></tr>
+<tr class="high"><td>Bayut_CallLog_Callout</td><td>99%</td></tr>
+<tr class="high"><td>Bayut_CallLogRecordHelper</td><td>100%</td></tr>
+<tr class="high"><td>Scheduled_BayutCallLogImportJob</td><td>100%</td></tr>
+<tr class="medium"><td>BayutCallLogController</td><td>87%</td></tr>
+<tr class="high"><td>BayutCallLogTrigger</td><td>100%</td></tr>
+<tr class="medium"><td>PF_Whatsapp_Log_Trigger_Controller</td><td>80%</td></tr>
+<tr class="high"><td>PF_Whatsapp_API_Callout</td><td>93%</td></tr>
+<tr class="high"><td>Scheduled_PFWhatsappImportJOb</td><td>100%</td></tr>
+<tr class="high"><td>PF_Whatsapp_Log_Helper</td><td>100%</td></tr>
+<tr class="high"><td>PF_WhatsappLead_Trigger</td><td>100%</td></tr>
+<tr class="high"><td>Bayut_Email_Log_Callout</td><td>98%</td></tr>
+<tr class="high"><td>Bayut_EmailLogRecordHelper</td><td>100%</td></tr>
+<tr class="high"><td>Scheduled_BayutEmailLogJob</td><td>100%</td></tr>
+<tr class="medium"><td>BayutEmailLogTriggerHandler</td><td>77%</td></tr>
+<tr class="high"><td>BayutEmailLogTrigger</td><td>100%</td></tr>
+<tr class="high"><td>Bayut_WhatsLogRecordHelper</td><td>100%</td></tr>
+<tr class="high"><td>Scheduled_BayutWhatsappLogJob</td><td>100%</td></tr>
+<tr class="high"><td>Bayut_Whatspp_Log_Callout</td><td>98%</td></tr>
+<tr class="medium"><td>BayutWhatsappLogTriggerHandler</td><td>81%</td></tr>
+<tr class="high"><td>BayutWhatsappLog_Trigger</td><td>100%</td></tr>
+<tr class="high"><td>ContactTriggerHandler</td><td>95%</td></tr>
+<tr class="high"><td>ContactTrigger</td><td>100%</td></tr>
+<tr class="high"><td>BatchLauncher</td><td>100%</td></tr>
+</table>
+</body></html>
