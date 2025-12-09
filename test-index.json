@@ -49,6 +49,14 @@
     "html": "barnes-report.html",
     "dashboard": {
       "html": "data/barnes-test-index.html"
+    },
+    "apex": {
+      "json": "data/barnes-apex.json",
+      "html": "data/barnes-apex.html"
+    },
+    "analyzer": {
+      "json": "data/barnes-analyzer.json",
+      "html": "data/barnes-analyzer.html"
     }
   },
   "bw-real-estate": {
