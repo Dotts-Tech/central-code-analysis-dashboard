@@ -1,4 +1,55 @@
-<html><head><title>Apex Report</title><style>body{font-family:Arial}table{border-collapse:collapse;width:100%}th,td{border:1px solid #999;padding:8px}th{background:#eee}</style></head><body><h1>Apex Tests</h1>
-<h2>Summary</h2><table><tr><th>Total</th><td>0</td></tr><tr><th>Passed</th><td>0</td></tr><tr><th>Failed</th><td>0</td></tr></table>
-<h2>Test Results</h2><table><tr><th>Class</th><th>Method</th><th>Status</th><th>Message</th></tr>
-</table></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Apex Test Results - barnes</title>
+<style>
+ body { font-family: Arial; margin: 20px; }
+.summary { background: #f4f4f4; padding: 10px; }
+.pass { color: green; font-weight: bold; }
+.fail { color: red; font-weight: bold; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { border: 1px solid #ddd; padding: 8px; }
+th { background: #eee; }
+</style>
+</head>
+<body>
+<h1>Apex Test Results – barnes</h1>
+  <div class="summary">
+  <h2>Summary</h2>
+  <p>Total Tests: 59</p>
+  <p>Passed: <span class="pass">48</span></p>
+  <p>Failed: <span class="fail">11</span></p>
+  <p>Code Coverage: 84%%</p>
+  </div>
+
+  <h2>Test Details</h2>
+  <table>
+  <tr>
+  <th>Test Class</th>
+  <th>Method</th>
+  <th>Result</th>
+  <th>Message</th>
+  </tr>
+  EOF
+
+  jq -r '
+    .result.tests[]? |
+    "<tr>
+       <td>\(.ApexClass.Name)</td>
+       <td>\(.MethodName)</td>
+       <td class=\"" + (if .Outcome=="Pass" then "pass" else "fail" end) + "\">\(.Outcome)</td>
+       <td>\(.Message // "")</td>
+     </tr>"
+  ' "analysis_results/barnes-apex.json" >> "analysis_results/barnes-apex.html"
+
+  echo "</table>" >> "analysis_results/barnes-apex.html"
+
+else
+
+  cat <<EOF >> "analysis_results/barnes-apex.html"
+<div class="summary">
+<h2>No test results available</h2>
+<p>No JSON found or test run failed.</p>
+</div>
+</body>
+</html>
