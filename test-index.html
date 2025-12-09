@@ -3,160 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Analysis Dashboard</title>
+    <title>Salesforce Code Analysis Dashboard</title>
     <link rel="stylesheet" href="test-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="dashboard-container">
-        <!-- Header -->
-        <header class="dashboard-header">
-            <div class="header-content">
-                <div class="logo">
-                    <i class="fas fa-chart-line"></i>
-                    <h1>Code Analysis Dashboard</h1>
-                </div>
-                <div class="last-updated">
-                    <span id="lastUpdatedTime">Loading...</span>
-                </div>
-            </div>
-            <p class="subtitle">Centralized Salesforce Apex & Code Analyzer Reports</p>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-chart-line"></i> Salesforce Analysis Dashboard</h1>
+            <p class="subtitle">Monitor Apex tests and Code Analyzer results across all repositories</p>
         </header>
-
-        <!-- Stats Cards -->
-        <div class="stats-section" id="statsSection">
-            <div class="stat-card stat-card-blue">
-                <div class="stat-icon">
-                    <i class="fas fa-database"></i>
-                </div>
-                <div class="stat-content">
-                    <h3 id="totalRepos">0</h3>
-                    <p>Total Repositories</p>
-                </div>
+        
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-value" id="totalRepos">0</div>
+                <div class="stat-label">Total Repositories</div>
             </div>
-            <div class="stat-card stat-card-green">
-                <div class="stat-icon">
-                    <i class="fas fa-flask"></i>
-                </div>
-                <div class="stat-content">
-                    <h3 id="apexReports">0</h3>
-                    <p>Apex Reports</p>
-                </div>
+            <div class="stat-item">
+                <div class="stat-value" id="apexRepos">0</div>
+                <div class="stat-label">With Apex Reports</div>
             </div>
-            <div class="stat-card stat-card-purple">
-                <div class="stat-icon">
-                    <i class="fas fa-search"></i>
-                </div>
-                <div class="stat-content">
-                    <h3 id="analyzerReports">0</h3>
-                    <p>Analyzer Reports</p>
-                </div>
+            <div class="stat-item">
+                <div class="stat-value" id="analyzerRepos">0</div>
+                <div class="stat-label">With Analyzer Reports</div>
             </div>
-            <div class="stat-card stat-card-orange">
-                <div class="stat-icon">
-                    <i class="fas fa-chart-pie"></i>
-                </div>
-                <div class="stat-content">
-                    <h3 id="healthScore">0%</h3>
-                    <p>Health Score</p>
-                </div>
+            <div class="stat-item">
+                <div class="stat-value" id="allReportsRepos">0</div>
+                <div class="stat-label">Complete Reports</div>
             </div>
         </div>
-
-        <!-- Search and Filters -->
-        <div class="controls-section">
-            <div class="search-box">
-                <i class="fas fa-search"></i>
-                <input type="text" id="searchInput" placeholder="Search repositories...">
-            </div>
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="apex">
-                    <i class="fas fa-flask"></i> Apex
-                </button>
-                <button class="filter-btn" data-filter="analyzer">
-                    <i class="fas fa-search"></i> Analyzer
-                </button>
-                <button class="filter-btn" data-filter="passing">
-                    <i class="fas fa-check-circle"></i> Passing
-                </button>
-                <button class="filter-btn" data-filter="failing">
-                    <i class="fas fa-times-circle"></i> Failing
-                </button>
-            </div>
-            <button class="refresh-btn" id="refreshBtn">
-                <i class="fas fa-sync-alt"></i> Refresh
-            </button>
+        
+        <div class="filters">
+            <button id="filterAll" class="filter-btn active">All Repositories</button>
+            <button id="filterApex" class="filter-btn">With Apex Reports</button>
+            <button id="filterAnalyzer" class="filter-btn">With Analyzer Reports</button>
         </div>
-
-        <!-- Repositories Grid -->
-        <div class="repos-grid" id="reposGrid">
-            <div class="loading-spinner">
-                <div class="spinner"></div>
-                <p>Loading dashboard data...</p>
-            </div>
+        
+        <div id="loading" class="loading" style="display: none;">
+            <i class="fas fa-spinner fa-spin"></i> Loading dashboard data...
         </div>
-
-        <!-- Footer -->
-        <footer class="dashboard-footer">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <p><i class="fas fa-info-circle"></i> Powered by Salesforce CLI & GitHub Actions</p>
-                    <p class="version">Dashboard v2.0</p>
-                </div>
-                <div class="footer-stats">
-                    <span id="reposCount">0 repositories</span>
-                    <span id="lastUpdate">Last updated: --</span>
-                </div>
-            </div>
-        </footer>
-    </div>
-
-    <!-- Report Modal -->
-    <div class="modal-overlay" id="reportModal">
-        <div class="modal-container">
-            <div class="modal-header">
-                <h2 id="modalTitle">Report Details</h2>
-                <button class="modal-close" id="closeModal">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="modal-content">
-                <div class="modal-tabs" id="modalTabs">
-                    <!-- Tabs will be dynamically added here -->
-                </div>
-                <div class="modal-body" id="modalBody">
-                    <!-- Content will be loaded here -->
-                </div>
-                <div class="modal-actions">
-                    <button class="btn btn-secondary" id="openFullReport">
-                        <i class="fas fa-external-link-alt"></i> Open Full Report
-                    </button>
-                    <button class="btn btn-primary" id="closeModalBtn">
-                        <i class="fas fa-times"></i> Close
-                    </button>
-                </div>
-            </div>
+        
+        <div id="dashboardGrid" class="dashboard-grid">
+            <!-- Cards will be inserted here by JavaScript -->
         </div>
     </div>
-
-    <!-- Repository Detail Modal -->
-    <div class="modal-overlay" id="detailModal">
-        <div class="modal-container detail-modal">
-            <div class="modal-header">
-                <h2 id="detailTitle">Repository Details</h2>
-                <button class="modal-close" id="closeDetailModal">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="modal-content">
-                <div class="detail-content" id="detailContent">
-                    <!-- Detail content will be loaded here -->
-                </div>
-            </div>
-        </div>
-    </div>
-
+    
+    <button id="refreshBtn" class="refresh-btn" title="Refresh Dashboard">
+        <i class="fas fa-sync-alt"></i>
+    </button>
+    
     <script src="test-script.js"></script>
 </body>
 </html>
