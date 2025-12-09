@@ -1,54 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Apex Test Results - barnes</title>
-<style>
-body { font-family: Arial; margin: 20px; }
-.summary { background: #f4f4f4; padding: 10px; }
-.pass { color: green; font-weight: bold; }
-.fail { color: red; font-weight: bold; }
-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-th, td { border: 1px solid #ddd; padding: 8px; }
-th { background: #eee; }
-</style>
+  <title>Apex Test Results - barnes</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .summary { background: #f5f5f5; padding: 20px; border-radius: 5px; margin-bottom: 20px; }
+    .pass { color: green; font-weight: bold; }
+    .fail { color: red; font-weight: bold; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background-color: #f2f2f2; }
+    tr:hover { background-color: #f5f5f5; }
+  </style>
 </head>
 <body>
-<h1>Apex Test Results – barnes</h1>
+  <h1>Apex Test Results - barnes</h1>
   <div class="summary">
-  <h2>Summary</h2>
-  <p>Total Tests: 59</p>
-  <p>Passed: <span class="pass">48</span></p>
-  <p>Failed: <span class="fail">11</span></p>
-  <p>Code Coverage: N/A%</p>
+    <h2>Summary</h2>
+    <p>Total Tests: 59</p>
+    <p>Passed: <span class="pass">48</span></p>
+    <p>Failed: <span class="fail">11</span></p>
+    <p>Code Coverage: 84%%</p>
   </div>
-
   <h2>Test Details</h2>
   <table>
-  <tr>
-  <th>Test Class</th>
-  <th>Method</th>
-  <th>Result</th>
-  <th>Message</th>
-  </tr>
-  EOF
-
-  jq -r '
-    .result.tests[]? |
-    "<tr>
-       <td>.ApexClass.Name</td>
-       <td>.MethodName</td>
-       <td class=if.Outcome=="Pass" then "pass" else "fail" end + "\">.Outcome</td>
-       <td>.Message // ""</td>
-     </tr>"
-  ' "analysis_results/barnes-apex.json" >> "analysis_results/barnes-apex.html"
-
-  echo "</table>" >> "analysis_results/barnes-apex.html"
-else
-  cat <<EOF >> "analysis_results/barnes-apex.html"
-<div class="summary">
-<h2>No test results available</h2>
-<p>No JSON found or test run failed.</p>
-</div>
-  </body>
-  </html>
-  EOF
+    <tr><th>Test Class</th><th>Method</th><th>Status</th><th>Message</th><th>Run Time (ms)</th></tr>
+<tr><td>Barnes_DealFeedFullTest</td><td>testGenerateFeed</td><td class="fail">Fail</td><td>System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Fill Mobile or Email to add a new contact: []</td><td>135</td></tr>
+<tr><td>ChangePasswordControllerTest</td><td>testChangePasswordController</td><td class="pass">Pass</td><td></td><td>22</td></tr>
+<tr><td>ForgotPasswordControllerTest</td><td>testForgotPasswordController</td><td class="pass">Pass</td><td></td><td>17</td></tr>
+<tr><td>Test_Batch_PBImgaeMigration_OT</td><td>testCalloutupload</td><td class="pass">Pass</td><td></td><td>2953</td></tr>
+<tr><td>SiteLoginControllerTest</td><td>testSiteLoginController</td><td class="pass">Pass</td><td></td><td>17</td></tr>
+<tr><td>SiteRegisterControllerTest</td><td>testRegistration</td><td class="pass">Pass</td><td></td><td>25</td></tr>
+<tr><td>MyProfilePageControllerTest</td><td>testSave</td><td class="pass">Pass</td><td></td><td>370</td></tr>
+<tr><td>Test_PFEmailLogAPICallout</td><td>Test</td><td class="pass">Pass</td><td></td><td>5101</td></tr>
+<tr><td>Test_PFEmailLogAPICallout</td><td>testCreateCallEnquiry</td><td class="pass">Pass</td><td></td><td>3338</td></tr>
+<tr><td>Test_PFEmailLogAPICallout</td><td>testExtractListingReference</td><td class="pass">Pass</td><td></td><td>9</td></tr>
+<tr><td>Test_ReorderController</td><td>PropMediaReorderTest</td><td class="pass">Pass</td><td></td><td>1483</td></tr>
+<tr><td>Test_LookupSearchComponentController</td><td>testgetResults</td><td class="pass">Pass</td><td></td><td>668</td></tr>
+<tr><td>Test_ListingImageDisplayList</td><td>testQueryImages</td><td class="pass">Pass</td><td></td><td>580</td></tr>
+<tr><td>Batch_MoveOfferFilesIntoDeals_Test</td><td>testMoveFilesToPipelineBatch</td><td class="pass">Pass</td><td></td><td>3259</td></tr>
+<tr><td>Test_BayutCallApiCallout</td><td>Test</td><td class="pass">Pass</td><td></td><td>2751</td></tr>
+<tr><td>Test_BayutCallApiCallout</td><td>testCreateCallEnquiry</td><td class="pass">Pass</td><td></td><td>2062</td></tr>
+<tr><td>Test_EasySearchController</td><td>createTaskTest</td><td class="pass">Pass</td><td></td><td>1221</td></tr>
+<tr><td>Test_EasySearchController</td><td>getObjectNames</td><td class="pass">Pass</td><td></td><td>1219</td></tr>
+<tr><td>Test_ListingsXMLForPortals</td><td>ListingsForBD</td><td class="pass">Pass</td><td></td><td>5057</td></tr>
+<tr><td>Test_ListingsXMLForPortals</td><td>ListingsForPF</td><td class="pass">Pass</td><td></td><td>1315</td></tr>
+<tr><td>Test_ListingsPDFController</td><td>ListingsPDFControllerTest</td><td class="pass">Pass</td><td></td><td>2262</td></tr>
+<tr><td>Test_Batch_LinkedListCreationFrmListing</td><td>testListingInsert</td><td class="fail">Fail</td><td>System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Please include the listing price, unit number, and address.: []</td><td>0</td></tr>
+<tr><td>EnquiryTriggerHandler_Test</td><td>handleEnquiryContactSharingTest</td><td class="fail">Fail</td><td>System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Phone number is required: [Phone]</td><td>1008</td></tr>
+<tr><td>ListingTriggerHandler_Test</td><td>testAfterInsertCreatesContactShare</td><td class="pass">Pass</td><td></td><td>1492</td></tr>
+<tr><td>ListingTriggerHandler_Test</td><td>testAfterUpdateWithOwnerChangeCreatesNewShare</td><td class="pass">Pass</td><td></td><td>1163</td></tr>
+<tr><td>ListingTriggerHandler_Test</td><td>testBeforeUpdatePriceReductionLogic</td><td class="pass">Pass</td><td></td><td>771</td></tr>
+<tr><td>ListingTriggerHandler_Test</td><td>testUnlinkInvalidMatch</td><td class="pass">Pass</td><td></td><td>1489</td></tr>
+<tr><td>ListingTriggerHandler_Test</td><td>testValidMatchRemainsLinked</td><td class="pass">Pass</td><td></td><td>1114</td></tr>
+<tr><td>Test_PFWhatsappAPICallout</td><td>Test</td><td class="pass">Pass</td><td></td><td>5036</td></tr>
+<tr><td>Test_PFCallLogAPiCallout</td><td>Test</td><td class="pass">Pass</td><td></td><td>2447</td></tr>
+<tr><td>EnquiryRoutingHandler_Test</td><td>testEnquiryRouting</td><td class="fail">Fail</td><td>System.DmlException: Insert failed. First exception on row 0; first error: MIXED_DML_OPERATION, DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): Queue__c, original object: PermissionSetAssignment: []</td><td>1533</td></tr>
+<tr><td>EnquiryRoutingHandler_Test</td><td>testUnlinkInvalidMatchFromEnquiry</td><td class="pass">Pass</td><td></td><td>2565</td></tr>
+<tr><td>BatchLauncherTest</td><td>testRunBatchEnquiry</td><td class="pass">Pass</td><td></td><td>176</td></tr>
+<tr><td>BatchLauncherTest</td><td>testRunBatchListing</td><td class="pass">Pass</td><td></td><td>145</td></tr>
+<tr><td>Test_UpdateListingLongDescriptions</td><td>testUpdateListings_Success</td><td class="pass">Pass</td><td></td><td>204</td></tr>
+<tr><td>Test_UpdateListingLongDescriptions</td><td>test_Error</td><td class="pass">Pass</td><td></td><td>23</td></tr>
+<tr><td>dealTriggerHandler_Test</td><td>testMoveFilesToPipeline</td><td class="pass">Pass</td><td></td><td>1632</td></tr>
+<tr><td>ListingPDFreraController_Test</td><td>ListingsPDFControllerTest</td><td class="pass">Pass</td><td></td><td>1840</td></tr>
+<tr><td>Test_AWSFileUploadController</td><td>fetchDocuments_Test</td><td class="pass">Pass</td><td></td><td>2034</td></tr>
+<tr><td>Test_AWSFileUploadController</td><td>testCalloutupload</td><td class="pass">Pass</td><td></td><td>2722</td></tr>
+<tr><td>Test_AWSFileUploadController</td><td>testController</td><td class="pass">Pass</td><td></td><td>207</td></tr>
+<tr><td>Test_AWSFileUploadController</td><td>test_extractFileName</td><td class="pass">Pass</td><td></td><td>3</td></tr>
+<tr><td>Test_AWSFileUploadController</td><td>test_getZipFileUrl</td><td class="pass">Pass</td><td></td><td>629</td></tr>
+<tr><td>Test_ContactTriggerHandler</td><td>testNoDuplicates</td><td class="pass">Pass</td><td></td><td>38</td></tr>
+<tr><td>Test_ContactTriggerHandler</td><td>testWithDuplicates</td><td class="pass">Pass</td><td></td><td>1321</td></tr>
+<tr><td>Test_Bayut_EmailLogAPI_Callout</td><td>Test</td><td class="pass">Pass</td><td></td><td>3270</td></tr>
+<tr><td>Test_PF_User_Callout</td><td>Test</td><td class="fail">Fail</td><td>System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Phone number is required: [Phone]</td><td>91</td></tr>
+<tr><td>CreateEnquiryWebLeads_Test</td><td>createEnquiryWithListings</td><td class="fail">Fail</td><td>System.DmlException: Insert failed. First exception on row 0; first error: CANNOT_EXECUTE_FLOW_TRIGGER, We can't save this record because the “Assign Einstein Activity Capture Permission Set” process failed. Give your Salesforce admin these details. This error occurred when the flow tried to create records: MIXED_DML_OPERATION: DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): PermissionSetAssignment, original object: Account. You can look up ExceptionCode values in the SOAP API Developer Guide.nt, original object: Account. You can look up ExceptionCode values in the SOAP API Developer Guide.: []</td><td>0</td></tr>
+<tr><td>CreateEnquiryWebLeads_Test</td><td>createEnquiryWithoutListings</td><td class="fail">Fail</td><td>System.DmlException: Insert failed. First exception on row 0; first error: CANNOT_EXECUTE_FLOW_TRIGGER, We can't save this record because the “Assign Einstein Activity Capture Permission Set” process failed. Give your Salesforce admin these details. This error occurred when the flow tried to create records: MIXED_DML_OPERATION: DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): PermissionSetAssignment, original object: Account. You can look up ExceptionCode values in the SOAP API Developer Guide.nt, original object: Account. You can look up ExceptionCode values in the SOAP API Developer Guide.: []</td><td>0</td></tr>
+<tr><td>ListingsControllerExtensionTest</td><td>testListingsControllerExtension</td><td class="fail">Fail</td><td>System.DmlException: Insert failed. First exception on row 0; first error: FIELD_CUSTOM_VALIDATION_EXCEPTION, Phone number is required: [Phone]</td><td>0</td></tr>
+<tr><td>Test_BayutWhatsappAPICallout</td><td>Test</td><td class="pass">Pass</td><td></td><td>3865</td></tr>
+<tr><td>CommissionTrigger_Test</td><td>insertTask</td><td class="pass">Pass</td><td></td><td>386</td></tr>
+<tr><td>Test_Batch_LinkedListingMatchingfromEnq</td><td>testMatchingListing</td><td class="pass">Pass</td><td></td><td>1453</td></tr>
+<tr><td>CloneListingControllerTest</td><td>testCloneListing</td><td class="pass">Pass</td><td></td><td>1856</td></tr>
+  </table>
+</body>
+</html>
