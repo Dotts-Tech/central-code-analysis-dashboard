@@ -35,10 +35,10 @@ th { background: #eee; }
   jq -r '
     .result.tests[]? |
     "<tr>
-       <td>\(.ApexClass.Name)</td>
-       <td>\(.MethodName)</td>
-       <td class=\"" + (if .Outcome=="Pass" then "pass" else "fail" end) + "\">\(.Outcome)</td>
-       <td>\(.Message // "")</td>
+       <td>.ApexClass.Name</td>
+       <td>.MethodName</td>
+       <td class=if.Outcome=="Pass" then "pass" else "fail" end + "\">.Outcome</td>
+       <td>.Message // ""</td>
      </tr>"
   ' "analysis_results/barnes-apex.json" >> "analysis_results/barnes-apex.html"
 
