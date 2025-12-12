@@ -1,6 +1,6 @@
 {
   "aeon-and-trisl": {
-    "updated": "2025-12-12T12:59:50+00:00",
+    "updated": "2025-12-12T13:06:31+00:00",
     "apex": {
       "json": "data/aeon-and-trisl-apex.json",
       "html": "data/aeon-and-trisl-apex.html"
@@ -12,7 +12,7 @@
   }
 ,
   "barnes": {
-    "updated": "2025-12-12T12:59:50+00:00",
+    "updated": "2025-12-12T13:06:31+00:00",
     "apex": {
       "json": "data/barnes-apex.json",
       "html": "data/barnes-apex.html"
@@ -24,7 +24,7 @@
   }
 ,
   "elysian": {
-    "updated": "2025-12-12T12:59:50+00:00",
+    "updated": "2025-12-12T13:06:31+00:00",
     "apex": {
       "json": "data/elysian-apex.json",
       "html": "data/elysian-apex.html"
@@ -32,6 +32,18 @@
     "analyzer": {
       "json": "data/elysian-analyzer.json",
       "html": "data/elysian-analyzer.html"
+    }
+  }
+,
+  "strada": {
+    "updated": "2025-12-12T13:06:31+00:00",
+    "apex": {
+      "json": "data/strada-apex.json",
+      "html": "data/strada-apex.html"
+    },
+    "analyzer": {
+      "json": "data/strada-analyzer.json",
+      "html": "data/strada-analyzer.html"
     }
   }
 }
