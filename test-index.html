@@ -3,55 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salesforce Code Analysis Dashboard</title>
+    <title>Salesforce Analysis Dashboard</title>
     <link rel="stylesheet" href="test-style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
     <div class="container">
-        <header>
-            <h1><i class="fas fa-chart-line"></i> Salesforce Analysis Dashboard</h1>
-            <p class="subtitle">Monitor Apex tests and Code Analyzer results across all repositories</p>
-        </header>
+        <h1>Salesforce Analysis Dashboard</h1>
         
-        <div class="stats-bar">
-            <div class="stat-item">
-                <div class="stat-value" id="totalRepos">0</div>
-                <div class="stat-label">Total Repositories</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-value" id="apexRepos">0</div>
-                <div class="stat-label">With Apex Reports</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-value" id="analyzerRepos">0</div>
-                <div class="stat-label">With Analyzer Reports</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-value" id="allReportsRepos">0</div>
-                <div class="stat-label">Complete Reports</div>
-            </div>
+        <!-- NEW: Debug View Toggle Button -->
+        <div class="debug-toggle-container">
+            <button id="debug-toggle-btn">Show Debug View</button>
         </div>
-        
-        <div class="filters">
-            <button id="filterAll" class="filter-btn active">All Repositories</button>
-            <button id="filterApex" class="filter-btn">With Apex Reports</button>
-            <button id="filterAnalyzer" class="filter-btn">With Analyzer Reports</button>
+
+        <div id="dashboard-content" class="loading">
+            Loading analysis results...
         </div>
-        
-        <div id="loading" class="loading" style="display: none;">
-            <i class="fas fa-spinner fa-spin"></i> Loading dashboard data...
-        </div>
-        
-        <div id="dashboardGrid" class="dashboard-grid">
-            <!-- Cards will be inserted here by JavaScript -->
+
+        <!-- NEW: Debug Information Container -->
+        <div id="debug-view" class="debug-view" style="display: none;">
+            <h2>Debug Information</h2>
+            <p><strong>Data Source URL:</strong> <code id="debug-url"></code></p>
+            <p><strong>Raw test-index.json content:</strong></p>
+            <pre id="debug-json"></pre>
         </div>
     </div>
-    
-    <button id="refreshBtn" class="refresh-btn" title="Refresh Dashboard">
-        <i class="fas fa-sync-alt"></i>
-    </button>
-    
+
+    <!-- Modal for viewing reports -->
+    <div id="report-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <iframe id="report-frame" src="" title="Analysis Report"></iframe>
+        </div>
+    </div>
+
     <script src="test-script.js"></script>
 </body>
 </html>
