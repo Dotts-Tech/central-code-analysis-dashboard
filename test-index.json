@@ -1,13 +1,1 @@
-{
-  "barnse": {
-    "updated": "2024-12-10T14:30:25+00:00",
-    "apex": {
-      "json": "data/barnes-apex.json",
-      "html": "data/barnes-apex.html"
-    },
-    "analyzer": {
-      "json": "data/barnes-analyzer.json",
-      "html": "data/barnes-analyzer.html"
-    }
-  }
 
