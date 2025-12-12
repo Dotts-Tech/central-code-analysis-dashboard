@@ -1,16 +1,4 @@
-{
-  "aeon-and-trisl": {
-    "updated": "2025-12-12T13:06:31+00:00",
-    "apex": {
-      "json": "data/aeon-and-trisl-apex.json",
-      "html": "data/aeon-and-trisl-apex.html"
-    },
-    "analyzer": {
-      "json": "data/aeon-and-trisl-analyzer.json",
-      "html": "data/aeon-and-trisl-analyzer.html"
-    }
-  }
-,
+
   "barnes": {
     "updated": "2025-12-12T13:06:31+00:00",
     "apex": {
