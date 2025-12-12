@@ -1,6 +1,6 @@
 {
   "aeon-and-trisl": {
-    "updated": "2025-12-12T11:24:18+00:00",
+    "updated": "2025-12-12T12:51:48+00:00",
     "apex": {
       "json": "data/aeon-and-trisl-apex.json",
       "html": "data/aeon-and-trisl-apex.html"
@@ -12,7 +12,7 @@
   }
 ,
   "barnes": {
-    "updated": "2025-12-12T11:24:18+00:00",
+    "updated": "2025-12-12T12:51:48+00:00",
     "apex": {
       "json": "data/barnes-apex.json",
       "html": "data/barnes-apex.html"
@@ -24,7 +24,7 @@
   }
 ,
   "elysian": {
-    "updated": "2025-12-12T11:24:18+00:00",
+    "updated": "2025-12-12T12:51:48+00:00",
     "apex": {
       "json": "data/elysian-apex.json",
       "html": "data/elysian-apex.html"
