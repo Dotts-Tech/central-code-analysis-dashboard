@@ -1,53 +1,89 @@
-<!DOCTYPE html><html><head><title>Apex Tests - elysian</title>
-<style>
-  body{font-family:Arial;margin:20px}
-  table{width:100%;border-collapse:collapse}
-  th,td{border:1px solid #ddd;padding:8px}
-  .pass{color:green}
-  .fail{color:red}
-  .summary{background:#f5f5f5;padding:20px;border-radius:5px;margin-bottom:20px}
-</style>
-</head><body><h1>Apex Test Results - elysian</h1>
-<div class="summary"><h2>Summary</h2>
-  <p>Tests: 42 | Passed: <span class="pass">42</span> | Failed: <span class="fail">0</span></p>
-  <p>Coverage: 0%</p></div>
-  <table><tr><th>Class</th><th>Method</th><th>Status</th><th>Time</th></tr>
-<tr><td>GoogleDriveController_Test</td><td>fetchDocuments_Test</td><td class="pass">Pass</td><td>159ms</td></tr>
-<tr><td>GoogleDriveController_Test</td><td>testCallout</td><td class="pass">Pass</td><td>39ms</td></tr>
-<tr><td>GoogleDriveController_Test</td><td>testCalloutupload</td><td class="pass">Pass</td><td>1281ms</td></tr>
-<tr><td>GoogleDriveController_Test</td><td>updateGoogleDriveDocs_Test</td><td class="pass">Pass</td><td>63ms</td></tr>
-<tr><td>PFTokenCacheHelperTest</td><td>testGetTokenWhenNotPresent</td><td class="pass">Pass</td><td>54ms</td></tr>
-<tr><td>PFTokenCacheHelperTest</td><td>testStoreAndRetrieveToken</td><td class="pass">Pass</td><td>8ms</td></tr>
-<tr><td>Test_ErrorLogger</td><td>testErrorLoggerMethod</td><td class="pass">Pass</td><td>289ms</td></tr>
-<tr><td>ListingTriggerHandler_Test</td><td>insertTask</td><td class="pass">Pass</td><td>1378ms</td></tr>
-<tr><td>Test_PFUserIntegration</td><td>testDataCallout</td><td class="pass">Pass</td><td>260ms</td></tr>
-<tr><td>Test_PFUserIntegration</td><td>testPfUserTriggerHandler_AfterInsert</td><td class="pass">Pass</td><td>326ms</td></tr>
-<tr><td>Test_PFUserIntegration</td><td>testScheduledGetPFUserCountJob</td><td class="pass">Pass</td><td>146ms</td></tr>
-<tr><td>Test_PFUserIntegration</td><td>testWrapperDeserialization</td><td class="pass">Pass</td><td>12ms</td></tr>
-<tr><td>Test_PFComplianceBatchAndJobs</td><td>test1Integrationlog</td><td class="pass">Pass</td><td>46ms</td></tr>
-<tr><td>Test_PFComplianceBatchAndJobs</td><td>testElsePathCovered</td><td class="pass">Pass</td><td>911ms</td></tr>
-<tr><td>Test_PFComplianceBatchAndJobs</td><td>testPermitValidation_ExcludesIsValid</td><td class="pass">Pass</td><td>571ms</td></tr>
-<tr><td>Test_PFComplianceBatchAndJobs</td><td>testPermitValidation_ExcludesIsValid2</td><td class="pass">Pass</td><td>358ms</td></tr>
-<tr><td>Test_PFComplianceBatchAndJobs</td><td>testScheduleExecution</td><td class="pass">Pass</td><td>1381ms</td></tr>
-<tr><td>Test_PFComplianceBatchAndJobs</td><td>testServiceQueueable_ErrorHandling</td><td class="pass">Pass</td><td>13780ms</td></tr>
-<tr><td>Test_PFComplianceBatchAndJobs</td><td>testServiceQueueable_ErrorHandling1</td><td class="pass">Pass</td><td>752ms</td></tr>
-<tr><td>Test_PFService</td><td>testPFService2</td><td class="pass">Pass</td><td>1519ms</td></tr>
-<tr><td>Test_ContactTriggerHandler</td><td>testNoDuplicates</td><td class="pass">Pass</td><td>55ms</td></tr>
-<tr><td>Test_ContactTriggerHandler</td><td>testWithDuplicates</td><td class="pass">Pass</td><td>451ms</td></tr>
-<tr><td>Test_PropertyMediaTriggerHandler</td><td>createListing</td><td class="pass">Pass</td><td>2994ms</td></tr>
-<tr><td>Test_AWSFileUploadController</td><td>testCalloutupload</td><td class="pass">Pass</td><td>2728ms</td></tr>
-<tr><td>Test_AWSFileUploadController</td><td>testController</td><td class="pass">Pass</td><td>1890ms</td></tr>
-<tr><td>Test_AWSFileUploadController</td><td>testDeleteAll</td><td class="pass">Pass</td><td>1293ms</td></tr>
-<tr><td>ListingDetailImport_Test</td><td>testMainCallout</td><td class="pass">Pass</td><td>148ms</td></tr>
-<tr><td>PropertyFinderLocationService_Test</td><td>testBatch_PropertyFinderIdmatching_Success</td><td class="pass">Pass</td><td>472ms</td></tr>
-<tr><td>PropertyFinderLocationService_Test</td><td>testFetchExternalId_Success</td><td class="pass">Pass</td><td>7ms</td></tr>
-<tr><td>Test_ReorderController</td><td>PropMediaReorderTest</td><td class="pass">Pass</td><td>4266ms</td></tr>
-<tr><td>CommissionTriggerTest</td><td>testAfterInsert</td><td class="pass">Pass</td><td>14ms</td></tr>
-<tr><td>CommissionTriggerTest</td><td>testAfterUpdate</td><td class="pass">Pass</td><td>96ms</td></tr>
-<tr><td>LocationTriggerHandler_Test</td><td>insertTask</td><td class="pass">Pass</td><td>194ms</td></tr>
-<tr><td>Test_ListingImageDisplayList</td><td>testQueryImages</td><td class="pass">Pass</td><td>1143ms</td></tr>
-<tr><td>ListingSinglePagePDFController_Test</td><td>testMehod1</td><td class="pass">Pass</td><td>4726ms</td></tr>
-<tr><td>UserTriggerHandler_Test</td><td>testhandleUserIdChange</td><td class="pass">Pass</td><td>498ms</td></tr>
-<tr><td>Test_ListingsXMLForPortals</td><td>ListingsForBD</td><td class="pass">Pass</td><td>11851ms</td></tr>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Apex Tests - elysian</title>
+  <style>
+    body { font-family: Arial; margin: 20px }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 30px }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left }
+    th { background-color: #f0f0f0 }
+    .pass { color: green; font-weight: bold }
+    .fail { color: red; font-weight: bold }
+    .summary {
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .coverage-good { color: green; font-weight: bold }
+    .coverage-warning { color: orange; font-weight: bold }
+    .coverage-bad { color: red; font-weight: bold }
+  </style>
+</head>
+<body>
+<h1>Apex Test Results - elysian</h1>
+<div class="summary">
+    <h2>Summary</h2>
+    <p>
+      Tests: 42 |
+      Passed: <span class="pass">42</span> |
+      Failed: <span class="fail">0</span>
+    </p>
+    <p><strong>Overall Code Coverage:</strong> 0%</p>
+  </div>
+<h2>Test Method Results</h2>
+  <table>
+    <tr>
+      <th>Class</th>
+      <th>Method</th>
+      <th>Status</th>
+      <th>Time (ms)</th>
+    </tr>
+<tr><td>UserTriggerHandler_Test</td><td>testhandleUserIdChange</td><td class="pass">Pass</td><td>285</td></tr>
+<tr><td>PFTokenCacheHelperTest</td><td>testGetTokenWhenNotPresent</td><td class="pass">Pass</td><td>86</td></tr>
+<tr><td>PFTokenCacheHelperTest</td><td>testStoreAndRetrieveToken</td><td class="pass">Pass</td><td>8</td></tr>
+<tr><td>ListingDetailImport_Test</td><td>testMainCallout</td><td class="pass">Pass</td><td>231</td></tr>
+<tr><td>Test_PFUserIntegration</td><td>testDataCallout</td><td class="pass">Pass</td><td>137</td></tr>
+<tr><td>Test_PFUserIntegration</td><td>testPfUserTriggerHandler_AfterInsert</td><td class="pass">Pass</td><td>139</td></tr>
+<tr><td>Test_PFUserIntegration</td><td>testScheduledGetPFUserCountJob</td><td class="pass">Pass</td><td>75</td></tr>
+<tr><td>Test_PFUserIntegration</td><td>testWrapperDeserialization</td><td class="pass">Pass</td><td>3</td></tr>
+<tr><td>Test_PFService</td><td>testPFService2</td><td class="pass">Pass</td><td>1886</td></tr>
+<tr><td>Test_ListingImageDisplayList</td><td>testQueryImages</td><td class="pass">Pass</td><td>813</td></tr>
+<tr><td>Test_PropertyMediaTriggerHandler</td><td>createListing</td><td class="pass">Pass</td><td>15513</td></tr>
+<tr><td>Test_PFComplianceBatchAndJobs</td><td>test1Integrationlog</td><td class="pass">Pass</td><td>19</td></tr>
+<tr><td>Test_PFComplianceBatchAndJobs</td><td>testElsePathCovered</td><td class="pass">Pass</td><td>350</td></tr>
+<tr><td>Test_PFComplianceBatchAndJobs</td><td>testPermitValidation_ExcludesIsValid</td><td class="pass">Pass</td><td>278</td></tr>
+<tr><td>Test_PFComplianceBatchAndJobs</td><td>testPermitValidation_ExcludesIsValid2</td><td class="pass">Pass</td><td>181</td></tr>
+<tr><td>Test_PFComplianceBatchAndJobs</td><td>testScheduleExecution</td><td class="pass">Pass</td><td>741</td></tr>
+<tr><td>Test_PFComplianceBatchAndJobs</td><td>testServiceQueueable_ErrorHandling</td><td class="pass">Pass</td><td>13447</td></tr>
+<tr><td>Test_PFComplianceBatchAndJobs</td><td>testServiceQueueable_ErrorHandling1</td><td class="pass">Pass</td><td>1651</td></tr>
+<tr><td>Test_ErrorLogger</td><td>testErrorLoggerMethod</td><td class="pass">Pass</td><td>245</td></tr>
+<tr><td>PropertyFinderLocationService_Test</td><td>testBatch_PropertyFinderIdmatching_Success</td><td class="pass">Pass</td><td>945</td></tr>
+<tr><td>PropertyFinderLocationService_Test</td><td>testFetchExternalId_Success</td><td class="pass">Pass</td><td>13</td></tr>
+<tr><td>GoogleDriveController_Test</td><td>fetchDocuments_Test</td><td class="pass">Pass</td><td>180</td></tr>
+<tr><td>GoogleDriveController_Test</td><td>testCallout</td><td class="pass">Pass</td><td>41</td></tr>
+<tr><td>GoogleDriveController_Test</td><td>testCalloutupload</td><td class="pass">Pass</td><td>946</td></tr>
+<tr><td>GoogleDriveController_Test</td><td>updateGoogleDriveDocs_Test</td><td class="pass">Pass</td><td>63</td></tr>
+<tr><td>Test_ListingsXMLForPortals</td><td>ListingsForBD</td><td class="pass">Pass</td><td>11453</td></tr>
+<tr><td>Test_ReorderController</td><td>PropMediaReorderTest</td><td class="pass">Pass</td><td>15457</td></tr>
+<tr><td>Test_ContactTriggerHandler</td><td>testNoDuplicates</td><td class="pass">Pass</td><td>28</td></tr>
+<tr><td>Test_ContactTriggerHandler</td><td>testWithDuplicates</td><td class="pass">Pass</td><td>303</td></tr>
+<tr><td>ListingSinglePagePDFController_Test</td><td>testMehod1</td><td class="pass">Pass</td><td>15491</td></tr>
+<tr><td>LocationTriggerHandler_Test</td><td>insertTask</td><td class="pass">Pass</td><td>316</td></tr>
+<tr><td>CommissionTriggerTest</td><td>testAfterInsert</td><td class="pass">Pass</td><td>12</td></tr>
+<tr><td>CommissionTriggerTest</td><td>testAfterUpdate</td><td class="pass">Pass</td><td>71</td></tr>
+<tr><td>ListingTriggerHandler_Test</td><td>insertTask</td><td class="pass">Pass</td><td>984</td></tr>
+<tr><td>Test_AWSFileUploadController</td><td>testCalloutupload</td><td class="pass">Pass</td><td>2285</td></tr>
+<tr><td>Test_AWSFileUploadController</td><td>testController</td><td class="pass">Pass</td><td>13871</td></tr>
+<tr><td>Test_AWSFileUploadController</td><td>testDeleteAll</td><td class="pass">Pass</td><td>1127</td></tr>
+</table>
+<h2>Class-wise Code Coverage</h2>
+  <table>
+    <tr>
+      <th>Class Name</th>
+      <th>Lines Covered</th>
+      <th>Lines Uncovered</th>
+      <th>Coverage %</th>
+    </tr>
 </table>
 </body></html>
