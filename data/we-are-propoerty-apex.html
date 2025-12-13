@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Apex Tests - we-are-propoerty</title>
+  <style>
+    body { font-family: Arial; margin: 20px }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 30px }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left }
+    th { background-color: #f0f0f0 }
+    .pass { color: green; font-weight: bold }
+    .fail { color: red; font-weight: bold }
+    .summary {
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .coverage-good { color: green; font-weight: bold }
+    .coverage-warning { color: orange; font-weight: bold }
+    .coverage-bad { color: red; font-weight: bold }
+  </style>
+</head>
+<body>
+<h1>Apex Test Results - we-are-propoerty</h1>
+<div class="summary">
+    <h2>Summary</h2>
+    <p>
+      Tests: 23 |
+      Passed: <span class="pass">15</span> |
+      Failed: <span class="fail">8</span>
+    </p>
+    <p><strong>Overall Code Coverage:</strong> 0%</p>
+  </div>
+<h2>Test Method Results</h2>
+  <table>
+    <tr>
+      <th>Class</th>
+      <th>Method</th>
+      <th>Status</th>
+      <th>Time (ms)</th>
+    </tr>
+<tr><td>SiteRegisterControllerTest</td><td>testRegistration</td><td class="pass">Pass</td><td>32</td></tr>
+<tr><td>Test_ListingsXMLForPortals</td><td>ListingsForBD</td><td class="fail">Fail</td><td>790</td></tr>
+<tr><td>Test_ListingsXMLForPortals</td><td>ListingsForPF</td><td class="fail">Fail</td><td>30</td></tr>
+<tr><td>MyProfilePageControllerTest</td><td>testSave</td><td class="pass">Pass</td><td>214</td></tr>
+<tr><td>ForgotPasswordControllerTest</td><td>testForgotPasswordController</td><td class="pass">Pass</td><td>25</td></tr>
+<tr><td>Test_AWSFileUploadController</td><td>fetchDocuments_Test</td><td class="fail">Fail</td><td>472</td></tr>
+<tr><td>Test_AWSFileUploadController</td><td>testCalloutupload</td><td class="fail">Fail</td><td>51</td></tr>
+<tr><td>Test_AWSFileUploadController</td><td>testController</td><td class="fail">Fail</td><td>51</td></tr>
+<tr><td>Test_ListingSinglePagePDF</td><td>ListingsPDFControllerTest</td><td class="fail">Fail</td><td>746</td></tr>
+<tr><td>Test_LookupSearchComponentController</td><td>testgetResults</td><td class="pass">Pass</td><td>335</td></tr>
+<tr><td>Test_ListingImageDisplayList</td><td>testQueryImages</td><td class="pass">Pass</td><td>827</td></tr>
+<tr><td>SiteLoginControllerTest</td><td>testSiteLoginController</td><td class="pass">Pass</td><td>23</td></tr>
+<tr><td>Test_EasySearchController</td><td>createTaskTest</td><td class="pass">Pass</td><td>784</td></tr>
+<tr><td>Test_EasySearchController</td><td>getObjectNames</td><td class="pass">Pass</td><td>488</td></tr>
+<tr><td>Test_ReorderController</td><td>PropMediaReorderTest</td><td class="fail">Fail</td><td>387</td></tr>
+<tr><td>Test_Bayut_EmailLogAPI_Callout</td><td>Test</td><td class="pass">Pass</td><td>1418</td></tr>
+<tr><td>ListingTriggerHandler_Test</td><td>insertTask</td><td class="fail">Fail</td><td>1207</td></tr>
+<tr><td>EnquiryTriggerHandler_Test</td><td>handleEnquiryContactSharingTest</td><td class="pass">Pass</td><td>2368</td></tr>
+<tr><td>Test_BayutWhatsappAPICallout</td><td>Test</td><td class="pass">Pass</td><td>3018</td></tr>
+<tr><td>Test_BayutWhatsappAPICallout</td><td>testFullCoverage</td><td class="pass">Pass</td><td>3900</td></tr>
+<tr><td>Test_BayutCallApiCallout</td><td>Test</td><td class="pass">Pass</td><td>4374</td></tr>
+<tr><td>Test_BayutCallApiCallout</td><td>testCreateCallEnquiry</td><td class="pass">Pass</td><td>2144</td></tr>
+<tr><td>ChangePasswordControllerTest</td><td>testChangePasswordController</td><td class="pass">Pass</td><td>15</td></tr>
+</table>
+<h2>Class-wise Code Coverage</h2>
+  <table>
+    <tr>
+      <th>Class Name</th>
+      <th>Coverage %</th>
+    </tr>
+<tr><td>LookupSearchComponentController</td><td class="coverage-good">79%</td></tr>
+<tr><td>ListingTriggerHandler</td><td class="coverage-good">100%</td></tr>
+<tr><td>EasySearchController</td><td class="coverage-good">80%</td></tr>
+<tr><td>ListingTriggerUtility</td><td class="coverage-good">77%</td></tr>
+<tr><td>ListingImageDisplayList</td><td class="coverage-good">100%</td></tr>
+<tr><td>EnquiryTriggerUtility</td><td class="coverage-good">100%</td></tr>
+<tr><td>filterConditionWrapper</td><td class="coverage-good">82%</td></tr>
+<tr><td>TriggerDispatcher</td><td class="coverage-good">88%</td></tr>
+<tr><td>EnquiryTriggerHandler</td><td class="coverage-good">100%</td></tr>
+<tr><td>ListingTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>EnquiryTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>ChangePasswordController</td><td class="coverage-good">100%</td></tr>
+<tr><td>SiteRegisterController</td><td class="coverage-good">81%</td></tr>
+<tr><td>ForgotPasswordController</td><td class="coverage-good">89%</td></tr>
+<tr><td>MyProfilePageController</td><td class="coverage-good">88%</td></tr>
+<tr><td>SiteLoginController</td><td class="coverage-good">100%</td></tr>
+<tr><td>Scheduled_BayutCallLogImportJob</td><td class="coverage-good">100%</td></tr>
+<tr><td>BayutCallLogController</td><td class="coverage-good">87%</td></tr>
+<tr><td>Bayut_CallLog_Callout</td><td class="coverage-good">99%</td></tr>
+<tr><td>Bayut_CallLogRecordHelper</td><td class="coverage-good">100%</td></tr>
+<tr><td>BayutCallLogTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>Bayut_EmailLogRecordHelper</td><td class="coverage-good">100%</td></tr>
+<tr><td>Scheduled_BayutEmailLogJob</td><td class="coverage-good">100%</td></tr>
+<tr><td>Bayut_Email_Log_Callout</td><td class="coverage-good">98%</td></tr>
+<tr><td>BayutEmailLogTriggerHandler</td><td class="coverage-good">81%</td></tr>
+<tr><td>BayutEmailLogTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>Bayut_Whatspp_Log_Callout</td><td class="coverage-good">98%</td></tr>
+<tr><td>Bayut_WhatsLogRecordHelper</td><td class="coverage-good">100%</td></tr>
+<tr><td>BayutWhatsappLogTriggerHandler</td><td class="coverage-good">76%</td></tr>
+<tr><td>Scheduled_BayutWhatsappLogJob</td><td class="coverage-good">100%</td></tr>
+<tr><td>BayutWhatsappLog_Trigger</td><td class="coverage-good">100%</td></tr>
+</table>
+</body></html>
