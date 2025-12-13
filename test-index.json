@@ -1,6 +1,6 @@
 {
   "aeon-and-trisl": {
-    "updated": "2025-12-13T18:16:47+00:00",
+    "updated": "2025-12-13T18:28:53+00:00",
     "apex": {
       "json": "data/aeon-and-trisl-apex.json",
       "html": "data/aeon-and-trisl-apex.html"
@@ -12,7 +12,7 @@
   }
 ,
   "barnes": {
-    "updated": "2025-12-13T18:16:47+00:00",
+    "updated": "2025-12-13T18:28:53+00:00",
     "apex": {
       "json": "data/barnes-apex.json",
       "html": "data/barnes-apex.html"
@@ -24,7 +24,7 @@
   }
 ,
   "elysian": {
-    "updated": "2025-12-13T18:16:47+00:00",
+    "updated": "2025-12-13T18:28:53+00:00",
     "apex": {
       "json": "data/elysian-apex.json",
       "html": "data/elysian-apex.html"
@@ -36,7 +36,7 @@
   }
 ,
   "strada": {
-    "updated": "2025-12-13T18:16:47+00:00",
+    "updated": "2025-12-13T18:28:53+00:00",
     "apex": {
       "json": "data/strada-apex.json",
       "html": "data/strada-apex.html"
@@ -44,6 +44,18 @@
     "analyzer": {
       "json": "data/strada-analyzer.json",
       "html": "data/strada-analyzer.html"
+    }
+  }
+,
+  "we-are-propoerty": {
+    "updated": "2025-12-13T18:28:53+00:00",
+    "apex": {
+      "json": "data/we-are-propoerty-apex.json",
+      "html": "data/we-are-propoerty-apex.html"
+    },
+    "analyzer": {
+      "json": "data/we-are-propoerty-analyzer.json",
+      "html": "data/we-are-propoerty-analyzer.html"
     }
   }
 }
