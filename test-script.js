@@ -1,166 +1,134 @@
-document.addEventListener('DOMContentLoaded', function () {
-
-    /* =========================
-       DOM ELEMENTS
-    ========================== */
+document.addEventListener('DOMContentLoaded', function() {
     const dashboardContent = document.getElementById('dashboard-content');
     const modal = document.getElementById('report-modal');
     const reportFrame = document.getElementById('report-frame');
     const closeButton = document.querySelector('.close-button');
 
-    /* =========================
-       MODAL FUNCTIONS
-    ========================== */
+    // --- MODAL FUNCTIONS ---
     function openModal(reportUrl) {
-        if (!reportUrl) return;
         reportFrame.src = reportUrl;
         modal.style.display = 'block';
     }
 
     function closeModal() {
         modal.style.display = 'none';
-        reportFrame.src = '';
+        reportFrame.src = ''; // Clear the iframe src
     }
 
-    // Close button click
-    if (closeButton) {
-        closeButton.addEventListener('click', closeModal);
-    }
-
-    // Close modal on outside click
-    window.addEventListener('click', function (event) {
-        if (event.target === modal) {
+    closeButton.onclick = closeModal;
+    window.onclick = function(event) {
+        if (event.target == modal) {
             closeModal();
         }
-    });
+    };
 
-    // Close modal on ESC key
-    window.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape') {
-            closeModal();
-        }
-    });
-
-    /* =========================
-       DASHBOARD RENDER
-    ========================== */
+    // --- DASHBOARD RENDERING ---
     function renderDashboard() {
+        dashboardContent.innerHTML = '<div class="loading">Loading analysis results...</div>';
         dashboardContent.className = 'loading';
-        dashboardContent.innerHTML =
-            '<div class="loading">Loading analysis results...</div>';
 
+        // Use cache-busting to get the latest data
         const cacheBust = new Date().getTime();
         const indexUrl = `test-index.json?t=${cacheBust}`;
 
         fetch(indexUrl)
             .then(response => {
                 if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}`);
+                    throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 return response.json();
             })
             .then(data => {
-                dashboardContent.innerHTML = '';
+                dashboardContent.innerHTML = ''; // Clear loading message
                 dashboardContent.className = 'dashboard-grid';
 
-                const repos = Object.keys(data || {});
+                const repos = Object.keys(data);
                 if (repos.length === 0) {
-                    dashboardContent.innerHTML =
-                        '<p style="grid-column:1/-1;text-align:center;">No analysis results found.</p>';
+                    dashboardContent.innerHTML = '<p style="text-align:center; grid-column: 1/-1;">No analysis results found.</p>';
                     return;
                 }
 
+                // Sort repositories alphabetically
                 repos.sort();
 
                 repos.forEach(repoName => {
-                    const card = createRepoCard(repoName, data[repoName]);
+                    const repoData = data[repoName];
+                    const card = createRepoCard(repoName, repoData);
                     dashboardContent.appendChild(card);
                 });
             })
             .catch(error => {
-                console.error(error);
+                console.error('Error fetching or parsing test-index.json:', error);
                 dashboardContent.className = 'error';
-                dashboardContent.innerHTML = `
-                    <p>Failed to load <code>test-index.json</code></p>
-                    <details>
-                        <summary>Error details</summary>
-                        <pre>${error.message}</pre>
-                    </details>
-                `;
+                dashboardContent.innerHTML = `Failed to load dashboard data. Please ensure <code>test-index.json</code> exists and is valid JSON. <br><br> <details> <summary>Error Details</summary> <pre>${error.message}</pre> </details>`;
             });
     }
 
-    /* =========================
-       CREATE REPO CARD
-    ========================== */
-    function createRepoCard(repoName, repoData = {}) {
+    function createRepoCard(repoName, repoData) {
         const card = document.createElement('div');
         card.className = 'repo-card';
 
-        const updated = repoData.updated
-            ? new Date(repoData.updated).toLocaleString()
-            : 'Unknown';
-
-        card.innerHTML = `
+        // Title and subtitle
+        card.innerHTML += `
             <h2>${repoName}</h2>
-            <p>Last Updated: ${updated}</p>
+            <p>Last Updated: ${new Date(repoData.updated).toLocaleString()}</p>
         `;
 
-        /* ----- Stats ----- */
+        // Summary stats container
         const statsDiv = document.createElement('div');
         statsDiv.className = 'summary-stats';
-        statsDiv.innerHTML = '<strong>Quick Stats:</strong> Loading...';
+        statsDiv.innerHTML = `<strong>Quick Stats:</strong> Loading...`;
         card.appendChild(statsDiv);
 
-        /* ----- Links ----- */
-        const linksDiv = document.createElement('div');
-        linksDiv.className = 'links';
+        // Links container
+        const linksContainer = document.createElement('div');
+        linksContainer.className = 'links';
 
-        if (repoData.apex?.html) {
-            const apexBtn = document.createElement('button');
-            apexBtn.className = 'view-button';
-            apexBtn.textContent = 'View Apex Tests';
-            apexBtn.onclick = () => openModal(repoData.apex.html);
-            linksDiv.appendChild(apexBtn);
+        // Create buttons for viewing reports
+        if (repoData.apex && repoData.apex.html) {
+            const apexButton = document.createElement('button');
+            apexButton.className = 'view-button';
+            apexButton.textContent = 'View Apex Tests';
+            apexButton.onclick = () => openModal(repoData.apex.html);
+            linksContainer.appendChild(apexButton);
         }
 
-        if (repoData.analyzer?.html) {
-            const analyzerBtn = document.createElement('button');
-            analyzerBtn.className = 'view-button analyzer';
-            analyzerBtn.textContent = 'View Code Analysis';
-            analyzerBtn.onclick = () => openModal(repoData.analyzer.html);
-            linksDiv.appendChild(analyzerBtn);
+        if (repoData.analyzer && repoData.analyzer.html) {
+            const analyzerButton = document.createElement('button');
+            analyzerButton.className = 'view-button analyzer';
+            analyzerButton.textContent = 'View Code Analysis';
+            analyzerButton.onclick = () => openModal(repoData.analyzer.html);
+            linksContainer.appendChild(analyzerButton);
         }
 
-        card.appendChild(linksDiv);
+        card.appendChild(linksContainer);
 
-        /* ----- Fetch Apex Stats ----- */
-        if (repoData.apex?.json) {
+        // Fetch summary stats asynchronously to display on the card
+        if (repoData.apex && repoData.apex.json) {
             const cacheBust = new Date().getTime();
-            fetch(`${repoData.apex.json}?t=${cacheBust}`)
-                .then(res => res.ok ? res.json() : Promise.reject())
-                .then(json => {
-                    const summary = json?.result?.summary || {};
+            const apexUrl = `${repoData.apex.json}?t=${cacheBust}`;
+
+            fetch(apexUrl)
+                .then(res => res.ok ? res.json() : Promise.reject('Apex JSON not found'))
+                .then(apexJson => {
+                    const summary = apexJson.result.summary;
                     statsDiv.innerHTML = `
-                        <strong>Quick Stats:</strong>
-                        <span class="pass">${summary.passing || 0} Passed</span> |
-                        <span class="fail">${summary.failing || 0} Failed</span>
+                        <strong>Quick Stats:</strong> <span class="pass">${summary.passing || 0} Passed</span> | 
+                        <span class="fail">${summary.failing || 0} Failed</span> | 
+                        
                     `;
                 })
-                .catch(() => {
-                    statsDiv.innerHTML =
-                        '<strong>Quick Stats:</strong> Not available';
+                .catch(err => {
+                    console.warn(`Could not fetch Apex summary for ${repoName}:`, err);
+                    statsDiv.innerHTML = '<strong>Quick Stats:</strong> Not available';
                 });
         } else {
-            statsDiv.innerHTML =
-                '<strong>Quick Stats:</strong> Not available';
+            statsDiv.innerHTML = '<strong>Quick Stats:</strong> Not available';
         }
 
         return card;
     }
 
-    /* =========================
-       INIT
-    ========================== */
+    // Initial render
     renderDashboard();
 });
