@@ -1,16 +1,5 @@
 {
-  "aeon-and-trisl": {
-    "updated": "2025-12-15T04:44:35+00:00",
-    "apex": {
-      "json": "data/aeon-and-trisl-apex.json",
-      "html": "data/aeon-and-trisl-apex.html"
-    },
-    "analyzer": {
-      "json": "data/aeon-and-trisl-analyzer.json",
-      "html": "data/aeon-and-trisl-analyzer.html"
-    }
-  }
-,
+  
   "arabian-estates": {
     "updated": "2025-12-15T04:44:35+00:00",
     "apex": {
