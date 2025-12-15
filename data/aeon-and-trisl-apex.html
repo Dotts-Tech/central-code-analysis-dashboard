@@ -1,70 +1,181 @@
-<!DOCTYPE html><html><head><title>Apex Tests - aeon-and-trisl</title>
-<style>
-  body{font-family:Arial;margin:20px}
-  table{width:100%;border-collapse:collapse}
-  th,td{border:1px solid #ddd;padding:8px}
-  .pass{color:green}
-  .fail{color:red}
-  .summary{background:#f5f5f5;padding:20px;border-radius:5px;margin-bottom:20px}
-</style>
-</head><body><h1>Apex Test Results - aeon-and-trisl</h1>
-<div class="summary"><h2>Summary</h2>
-  <p>Tests: 59 | Passed: <span class="pass">48</span> | Failed: <span class="fail">11</span></p>
-  <p>Coverage: 0%</p></div>
-  <table><tr><th>Class</th><th>Method</th><th>Status</th><th>Time</th></tr>
-<tr><td>Barnes_DealFeedFullTest</td><td>testGenerateFeed</td><td class="fail">Fail</td><td>85ms</td></tr>
-<tr><td>ChangePasswordControllerTest</td><td>testChangePasswordController</td><td class="pass">Pass</td><td>9ms</td></tr>
-<tr><td>ForgotPasswordControllerTest</td><td>testForgotPasswordController</td><td class="pass">Pass</td><td>13ms</td></tr>
-<tr><td>Test_Batch_PBImgaeMigration_OT</td><td>testCalloutupload</td><td class="pass">Pass</td><td>2236ms</td></tr>
-<tr><td>SiteLoginControllerTest</td><td>testSiteLoginController</td><td class="pass">Pass</td><td>14ms</td></tr>
-<tr><td>SiteRegisterControllerTest</td><td>testRegistration</td><td class="pass">Pass</td><td>20ms</td></tr>
-<tr><td>MyProfilePageControllerTest</td><td>testSave</td><td class="pass">Pass</td><td>173ms</td></tr>
-<tr><td>Test_PFEmailLogAPICallout</td><td>Test</td><td class="pass">Pass</td><td>2396ms</td></tr>
-<tr><td>Test_PFEmailLogAPICallout</td><td>testCreateCallEnquiry</td><td class="pass">Pass</td><td>2049ms</td></tr>
-<tr><td>Test_PFEmailLogAPICallout</td><td>testExtractListingReference</td><td class="pass">Pass</td><td>6ms</td></tr>
-<tr><td>Test_ReorderController</td><td>PropMediaReorderTest</td><td class="pass">Pass</td><td>1392ms</td></tr>
-<tr><td>Test_LookupSearchComponentController</td><td>testgetResults</td><td class="pass">Pass</td><td>520ms</td></tr>
-<tr><td>Test_ListingImageDisplayList</td><td>testQueryImages</td><td class="pass">Pass</td><td>487ms</td></tr>
-<tr><td>Batch_MoveOfferFilesIntoDeals_Test</td><td>testMoveFilesToPipelineBatch</td><td class="pass">Pass</td><td>2557ms</td></tr>
-<tr><td>Test_BayutCallApiCallout</td><td>Test</td><td class="pass">Pass</td><td>2644ms</td></tr>
-<tr><td>Test_BayutCallApiCallout</td><td>testCreateCallEnquiry</td><td class="pass">Pass</td><td>2206ms</td></tr>
-<tr><td>Test_EasySearchController</td><td>createTaskTest</td><td class="pass">Pass</td><td>970ms</td></tr>
-<tr><td>Test_EasySearchController</td><td>getObjectNames</td><td class="pass">Pass</td><td>1145ms</td></tr>
-<tr><td>Test_ListingsXMLForPortals</td><td>ListingsForBD</td><td class="pass">Pass</td><td>3364ms</td></tr>
-<tr><td>Test_ListingsXMLForPortals</td><td>ListingsForPF</td><td class="pass">Pass</td><td>887ms</td></tr>
-<tr><td>Test_ListingsPDFController</td><td>ListingsPDFControllerTest</td><td class="pass">Pass</td><td>1522ms</td></tr>
-<tr><td>Test_Batch_LinkedListCreationFrmListing</td><td>testListingInsert</td><td class="fail">Fail</td><td>0ms</td></tr>
-<tr><td>EnquiryTriggerHandler_Test</td><td>handleEnquiryContactSharingTest</td><td class="fail">Fail</td><td>951ms</td></tr>
-<tr><td>ListingTriggerHandler_Test</td><td>testAfterInsertCreatesContactShare</td><td class="pass">Pass</td><td>1026ms</td></tr>
-<tr><td>ListingTriggerHandler_Test</td><td>testAfterUpdateWithOwnerChangeCreatesNewShare</td><td class="pass">Pass</td><td>634ms</td></tr>
-<tr><td>ListingTriggerHandler_Test</td><td>testBeforeUpdatePriceReductionLogic</td><td class="pass">Pass</td><td>446ms</td></tr>
-<tr><td>ListingTriggerHandler_Test</td><td>testUnlinkInvalidMatch</td><td class="pass">Pass</td><td>882ms</td></tr>
-<tr><td>ListingTriggerHandler_Test</td><td>testValidMatchRemainsLinked</td><td class="pass">Pass</td><td>640ms</td></tr>
-<tr><td>Test_PFWhatsappAPICallout</td><td>Test</td><td class="pass">Pass</td><td>2370ms</td></tr>
-<tr><td>Test_PFCallLogAPiCallout</td><td>Test</td><td class="pass">Pass</td><td>2075ms</td></tr>
-<tr><td>EnquiryRoutingHandler_Test</td><td>testEnquiryRouting</td><td class="fail">Fail</td><td>970ms</td></tr>
-<tr><td>EnquiryRoutingHandler_Test</td><td>testUnlinkInvalidMatchFromEnquiry</td><td class="pass">Pass</td><td>1079ms</td></tr>
-<tr><td>BatchLauncherTest</td><td>testRunBatchEnquiry</td><td class="pass">Pass</td><td>134ms</td></tr>
-<tr><td>BatchLauncherTest</td><td>testRunBatchListing</td><td class="pass">Pass</td><td>117ms</td></tr>
-<tr><td>Test_UpdateListingLongDescriptions</td><td>testUpdateListings_Success</td><td class="pass">Pass</td><td>172ms</td></tr>
-<tr><td>Test_UpdateListingLongDescriptions</td><td>test_Error</td><td class="pass">Pass</td><td>21ms</td></tr>
-<tr><td>dealTriggerHandler_Test</td><td>testMoveFilesToPipeline</td><td class="pass">Pass</td><td>2085ms</td></tr>
-<tr><td>ListingPDFreraController_Test</td><td>ListingsPDFControllerTest</td><td class="pass">Pass</td><td>1199ms</td></tr>
-<tr><td>Test_AWSFileUploadController</td><td>fetchDocuments_Test</td><td class="pass">Pass</td><td>1007ms</td></tr>
-<tr><td>Test_AWSFileUploadController</td><td>testCalloutupload</td><td class="pass">Pass</td><td>2113ms</td></tr>
-<tr><td>Test_AWSFileUploadController</td><td>testController</td><td class="pass">Pass</td><td>160ms</td></tr>
-<tr><td>Test_AWSFileUploadController</td><td>test_extractFileName</td><td class="pass">Pass</td><td>3ms</td></tr>
-<tr><td>Test_AWSFileUploadController</td><td>test_getZipFileUrl</td><td class="pass">Pass</td><td>533ms</td></tr>
-<tr><td>Test_ContactTriggerHandler</td><td>testNoDuplicates</td><td class="pass">Pass</td><td>47ms</td></tr>
-<tr><td>Test_ContactTriggerHandler</td><td>testWithDuplicates</td><td class="pass">Pass</td><td>849ms</td></tr>
-<tr><td>Test_Bayut_EmailLogAPI_Callout</td><td>Test</td><td class="pass">Pass</td><td>2143ms</td></tr>
-<tr><td>Test_PF_User_Callout</td><td>Test</td><td class="fail">Fail</td><td>81ms</td></tr>
-<tr><td>CreateEnquiryWebLeads_Test</td><td>createEnquiryWithListings</td><td class="fail">Fail</td><td>0ms</td></tr>
-<tr><td>CreateEnquiryWebLeads_Test</td><td>createEnquiryWithoutListings</td><td class="fail">Fail</td><td>0ms</td></tr>
-<tr><td>ListingsControllerExtensionTest</td><td>testListingsControllerExtension</td><td class="fail">Fail</td><td>0ms</td></tr>
-<tr><td>Test_BayutWhatsappAPICallout</td><td>Test</td><td class="pass">Pass</td><td>3605ms</td></tr>
-<tr><td>CommissionTrigger_Test</td><td>insertTask</td><td class="pass">Pass</td><td>156ms</td></tr>
-<tr><td>Test_Batch_LinkedListingMatchingfromEnq</td><td>testMatchingListing</td><td class="pass">Pass</td><td>833ms</td></tr>
-<tr><td>CloneListingControllerTest</td><td>testCloneListing</td><td class="pass">Pass</td><td>1310ms</td></tr>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Apex Tests - aeon-and-trisl</title>
+  <style>
+    body { font-family: Arial; margin: 20px }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 30px }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left }
+    th { background-color: #f0f0f0 }
+    .pass { color: green; font-weight: bold }
+    .fail { color: red; font-weight: bold }
+    .summary {
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .coverage-good { color: green; font-weight: bold }
+    .coverage-warning { color: orange; font-weight: bold }
+    .coverage-bad { color: red; font-weight: bold }
+  </style>
+</head>
+<body>
+<h1>Apex Test Results - aeon-and-trisl</h1>
+<div class="summary">
+    <h2>Summary</h2>
+    <p>
+      Tests: 59 |
+      Passed: <span class="pass">48</span> |
+      Failed: <span class="fail">11</span>
+    </p>
+    <p><strong>Overall Code Coverage:</strong> 0%</p>
+  </div>
+<h2>Test Method Results</h2>
+  <table>
+    <tr>
+      <th>Class</th>
+      <th>Method</th>
+      <th>Status</th>
+      <th>Time (ms)</th>
+    </tr>
+<tr><td>Barnes_DealFeedFullTest</td><td>testGenerateFeed</td><td class="fail">Fail</td><td>77</td></tr>
+<tr><td>ChangePasswordControllerTest</td><td>testChangePasswordController</td><td class="pass">Pass</td><td>51</td></tr>
+<tr><td>ForgotPasswordControllerTest</td><td>testForgotPasswordController</td><td class="pass">Pass</td><td>35</td></tr>
+<tr><td>Test_Batch_PBImgaeMigration_OT</td><td>testCalloutupload</td><td class="pass">Pass</td><td>1854</td></tr>
+<tr><td>SiteLoginControllerTest</td><td>testSiteLoginController</td><td class="pass">Pass</td><td>29</td></tr>
+<tr><td>SiteRegisterControllerTest</td><td>testRegistration</td><td class="pass">Pass</td><td>27</td></tr>
+<tr><td>MyProfilePageControllerTest</td><td>testSave</td><td class="pass">Pass</td><td>302</td></tr>
+<tr><td>Test_PFEmailLogAPICallout</td><td>Test</td><td class="pass">Pass</td><td>2420</td></tr>
+<tr><td>Test_PFEmailLogAPICallout</td><td>testCreateCallEnquiry</td><td class="pass">Pass</td><td>1794</td></tr>
+<tr><td>Test_PFEmailLogAPICallout</td><td>testExtractListingReference</td><td class="pass">Pass</td><td>6</td></tr>
+<tr><td>Test_ReorderController</td><td>PropMediaReorderTest</td><td class="pass">Pass</td><td>940</td></tr>
+<tr><td>Test_LookupSearchComponentController</td><td>testgetResults</td><td class="pass">Pass</td><td>415</td></tr>
+<tr><td>Test_ListingImageDisplayList</td><td>testQueryImages</td><td class="pass">Pass</td><td>320</td></tr>
+<tr><td>Batch_MoveOfferFilesIntoDeals_Test</td><td>testMoveFilesToPipelineBatch</td><td class="pass">Pass</td><td>1501</td></tr>
+<tr><td>Test_BayutCallApiCallout</td><td>Test</td><td class="pass">Pass</td><td>2513</td></tr>
+<tr><td>Test_BayutCallApiCallout</td><td>testCreateCallEnquiry</td><td class="pass">Pass</td><td>2256</td></tr>
+<tr><td>Test_EasySearchController</td><td>createTaskTest</td><td class="pass">Pass</td><td>950</td></tr>
+<tr><td>Test_EasySearchController</td><td>getObjectNames</td><td class="pass">Pass</td><td>1232</td></tr>
+<tr><td>Test_ListingsXMLForPortals</td><td>ListingsForBD</td><td class="pass">Pass</td><td>4485</td></tr>
+<tr><td>Test_ListingsXMLForPortals</td><td>ListingsForPF</td><td class="pass">Pass</td><td>1017</td></tr>
+<tr><td>Test_ListingsPDFController</td><td>ListingsPDFControllerTest</td><td class="pass">Pass</td><td>1508</td></tr>
+<tr><td>Test_Batch_LinkedListCreationFrmListing</td><td>testListingInsert</td><td class="fail">Fail</td><td>0</td></tr>
+<tr><td>EnquiryTriggerHandler_Test</td><td>handleEnquiryContactSharingTest</td><td class="fail">Fail</td><td>915</td></tr>
+<tr><td>ListingTriggerHandler_Test</td><td>testAfterInsertCreatesContactShare</td><td class="pass">Pass</td><td>1010</td></tr>
+<tr><td>ListingTriggerHandler_Test</td><td>testAfterUpdateWithOwnerChangeCreatesNewShare</td><td class="pass">Pass</td><td>996</td></tr>
+<tr><td>ListingTriggerHandler_Test</td><td>testBeforeUpdatePriceReductionLogic</td><td class="pass">Pass</td><td>470</td></tr>
+<tr><td>ListingTriggerHandler_Test</td><td>testUnlinkInvalidMatch</td><td class="pass">Pass</td><td>980</td></tr>
+<tr><td>ListingTriggerHandler_Test</td><td>testValidMatchRemainsLinked</td><td class="pass">Pass</td><td>739</td></tr>
+<tr><td>Test_PFWhatsappAPICallout</td><td>Test</td><td class="pass">Pass</td><td>2530</td></tr>
+<tr><td>Test_PFCallLogAPiCallout</td><td>Test</td><td class="pass">Pass</td><td>2123</td></tr>
+<tr><td>EnquiryRoutingHandler_Test</td><td>testEnquiryRouting</td><td class="fail">Fail</td><td>2215</td></tr>
+<tr><td>EnquiryRoutingHandler_Test</td><td>testUnlinkInvalidMatchFromEnquiry</td><td class="pass">Pass</td><td>1170</td></tr>
+<tr><td>BatchLauncherTest</td><td>testRunBatchEnquiry</td><td class="pass">Pass</td><td>85</td></tr>
+<tr><td>BatchLauncherTest</td><td>testRunBatchListing</td><td class="pass">Pass</td><td>64</td></tr>
+<tr><td>Test_UpdateListingLongDescriptions</td><td>testUpdateListings_Success</td><td class="pass">Pass</td><td>191</td></tr>
+<tr><td>Test_UpdateListingLongDescriptions</td><td>test_Error</td><td class="pass">Pass</td><td>33</td></tr>
+<tr><td>dealTriggerHandler_Test</td><td>testMoveFilesToPipeline</td><td class="pass">Pass</td><td>2773</td></tr>
+<tr><td>ListingPDFreraController_Test</td><td>ListingsPDFControllerTest</td><td class="pass">Pass</td><td>1397</td></tr>
+<tr><td>Test_AWSFileUploadController</td><td>fetchDocuments_Test</td><td class="pass">Pass</td><td>1089</td></tr>
+<tr><td>Test_AWSFileUploadController</td><td>testCalloutupload</td><td class="pass">Pass</td><td>2324</td></tr>
+<tr><td>Test_AWSFileUploadController</td><td>testController</td><td class="pass">Pass</td><td>170</td></tr>
+<tr><td>Test_AWSFileUploadController</td><td>test_extractFileName</td><td class="pass">Pass</td><td>3</td></tr>
+<tr><td>Test_AWSFileUploadController</td><td>test_getZipFileUrl</td><td class="pass">Pass</td><td>601</td></tr>
+<tr><td>Test_ContactTriggerHandler</td><td>testNoDuplicates</td><td class="pass">Pass</td><td>52</td></tr>
+<tr><td>Test_ContactTriggerHandler</td><td>testWithDuplicates</td><td class="pass">Pass</td><td>999</td></tr>
+<tr><td>Test_Bayut_EmailLogAPI_Callout</td><td>Test</td><td class="pass">Pass</td><td>1453</td></tr>
+<tr><td>Test_PF_User_Callout</td><td>Test</td><td class="fail">Fail</td><td>591</td></tr>
+<tr><td>CreateEnquiryWebLeads_Test</td><td>createEnquiryWithListings</td><td class="fail">Fail</td><td>0</td></tr>
+<tr><td>CreateEnquiryWebLeads_Test</td><td>createEnquiryWithoutListings</td><td class="fail">Fail</td><td>0</td></tr>
+<tr><td>ListingsControllerExtensionTest</td><td>testListingsControllerExtension</td><td class="fail">Fail</td><td>0</td></tr>
+<tr><td>Test_BayutWhatsappAPICallout</td><td>Test</td><td class="pass">Pass</td><td>2890</td></tr>
+<tr><td>CommissionTrigger_Test</td><td>insertTask</td><td class="pass">Pass</td><td>494</td></tr>
+<tr><td>Test_Batch_LinkedListingMatchingfromEnq</td><td>testMatchingListing</td><td class="pass">Pass</td><td>716</td></tr>
+<tr><td>CloneListingControllerTest</td><td>testCloneListing</td><td class="pass">Pass</td><td>1705</td></tr>
+</table>
+<h2>Class-wise Code Coverage</h2>
+  <table>
+    <tr>
+      <th>Class Name</th>
+      <th>Coverage %</th>
+    </tr>
+<tr><td>EasySearchController</td><td class="coverage-good">90%</td></tr>
+<tr><td>LookupSearchComponentController</td><td class="coverage-good">79%</td></tr>
+<tr><td>Schedule_BatchPortalXMLGeneratorBD</td><td class="coverage-good">75%</td></tr>
+<tr><td>filterConditionWrapper</td><td class="coverage-good">83%</td></tr>
+<tr><td>ListingImageDisplayList</td><td class="coverage-good">100%</td></tr>
+<tr><td>AWSFileUploadController</td><td class="coverage-good">87%</td></tr>
+<tr><td>ListingTriggerHandler</td><td class="coverage-good">80%</td></tr>
+<tr><td>Schedule_BatchPortalXMLGeneratorPF</td><td class="coverage-good">75%</td></tr>
+<tr><td>ListingsXMLForPortals</td><td class="coverage-good">100%</td></tr>
+<tr><td>Batch_PortalXMLGeneratorBD</td><td class="coverage-good">90%</td></tr>
+<tr><td>Batch_PortalXMLGenerator</td><td class="coverage-good">93%</td></tr>
+<tr><td>EnquiryTriggerHandler</td><td class="coverage-warning">67%</td></tr>
+<tr><td>AWSS3Controller</td><td class="coverage-good">90%</td></tr>
+<tr><td>ReorderController</td><td class="coverage-good">100%</td></tr>
+<tr><td>MockGoogledriverespupload</td><td class="coverage-good">100%</td></tr>
+<tr><td>ListingTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>CommissionsTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>EnquiryTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>ChangePasswordController</td><td class="coverage-good">100%</td></tr>
+<tr><td>SiteRegisterController</td><td class="coverage-good">81%</td></tr>
+<tr><td>MyProfilePageController</td><td class="coverage-good">88%</td></tr>
+<tr><td>SiteLoginController</td><td class="coverage-good">100%</td></tr>
+<tr><td>ForgotPasswordController</td><td class="coverage-good">89%</td></tr>
+<tr><td>UpdateListingLongDescriptions</td><td class="coverage-good">91%</td></tr>
+<tr><td>Sch_Batch_WebsiteXMLGenerator</td><td class="coverage-good">75%</td></tr>
+<tr><td>Batch_WebsiteXMLGenerator</td><td class="coverage-good">93%</td></tr>
+<tr><td>Schedule_BatchLuxuryPortalXMLGenerator</td><td class="coverage-good">100%</td></tr>
+<tr><td>Batch_LuxuryRealEstatePortalXMLGenerator</td><td class="coverage-good">91%</td></tr>
+<tr><td>Batch_PBImageMigration_OT</td><td class="coverage-good">96%</td></tr>
+<tr><td>Batch_InternationalPortalXMLGenerator</td><td class="coverage-good">93%</td></tr>
+<tr><td>Sch_Batch_InternationPortalXMLGenerator</td><td class="coverage-good">75%</td></tr>
+<tr><td>Batch_BarnesDocumentMigration_OT</td><td class="coverage-good">95%</td></tr>
+<tr><td>CloneListingController</td><td class="coverage-good">88%</td></tr>
+<tr><td>Scheduled_ApplicantToListingMatchingJob</td><td class="coverage-good">100%</td></tr>
+<tr><td>Batch_LinkedListCreationfromEnquiry</td><td class="coverage-good">79%</td></tr>
+<tr><td>LinkedListEnquiryHandler</td><td class="coverage-good">94%</td></tr>
+<tr><td>LinkedListingHandler</td><td class="coverage-warning">52%</td></tr>
+<tr><td>Batch_LinkedListCreationFromListing</td><td class="coverage-bad">22%</td></tr>
+<tr><td>ListingsPDFControllerExtension</td><td class="coverage-good">83%</td></tr>
+<tr><td>ListingPDFreraController</td><td class="coverage-good">91%</td></tr>
+<tr><td>dealTriggerHandler</td><td class="coverage-good">96%</td></tr>
+<tr><td>dealTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>Batch_MoveOfferFilesIntoDeals_OT</td><td class="coverage-good">100%</td></tr>
+<tr><td>PF_GenerateAccessTokenController</td><td class="coverage-good">100%</td></tr>
+<tr><td>PF_CallLogRecord_Helper</td><td class="coverage-good">100%</td></tr>
+<tr><td>PF_CallLog_Callout</td><td class="coverage-good">96%</td></tr>
+<tr><td>Scheduled_PFCallLogImportJob</td><td class="coverage-good">100%</td></tr>
+<tr><td>PFAPICallLogTriggerController</td><td class="coverage-good">80%</td></tr>
+<tr><td>PFAPICallLogTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>PF_EmailApi_Log_Helper</td><td class="coverage-good">100%</td></tr>
+<tr><td>Scheduled_PFEmailLogImportJob</td><td class="coverage-good">100%</td></tr>
+<tr><td>PFAPIEmailLogTriggerController</td><td class="coverage-good">75%</td></tr>
+<tr><td>PF_EmailApi_Callout_Controller</td><td class="coverage-good">95%</td></tr>
+<tr><td>PF_Email_API_Log_Trigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>Bayut_CallLog_Callout</td><td class="coverage-good">99%</td></tr>
+<tr><td>Bayut_CallLogRecordHelper</td><td class="coverage-good">100%</td></tr>
+<tr><td>Scheduled_BayutCallLogImportJob</td><td class="coverage-good">100%</td></tr>
+<tr><td>BayutCallLogController</td><td class="coverage-good">87%</td></tr>
+<tr><td>BayutCallLogTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>PF_Whatsapp_Log_Trigger_Controller</td><td class="coverage-good">80%</td></tr>
+<tr><td>PF_Whatsapp_API_Callout</td><td class="coverage-good">93%</td></tr>
+<tr><td>Scheduled_PFWhatsappImportJOb</td><td class="coverage-good">100%</td></tr>
+<tr><td>PF_Whatsapp_Log_Helper</td><td class="coverage-good">100%</td></tr>
+<tr><td>PF_WhatsappLead_Trigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>Bayut_Email_Log_Callout</td><td class="coverage-good">98%</td></tr>
+<tr><td>Bayut_EmailLogRecordHelper</td><td class="coverage-good">100%</td></tr>
+<tr><td>Scheduled_BayutEmailLogJob</td><td class="coverage-good">100%</td></tr>
+<tr><td>BayutEmailLogTriggerHandler</td><td class="coverage-good">77%</td></tr>
+<tr><td>BayutEmailLogTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>Bayut_WhatsLogRecordHelper</td><td class="coverage-good">100%</td></tr>
+<tr><td>Scheduled_BayutWhatsappLogJob</td><td class="coverage-good">100%</td></tr>
+<tr><td>Bayut_Whatspp_Log_Callout</td><td class="coverage-good">98%</td></tr>
+<tr><td>BayutWhatsappLogTriggerHandler</td><td class="coverage-good">81%</td></tr>
+<tr><td>BayutWhatsappLog_Trigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>ContactTriggerHandler</td><td class="coverage-good">95%</td></tr>
+<tr><td>ContactTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>BatchLauncher</td><td class="coverage-good">100%</td></tr>
 </table>
 </body></html>
