@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Apex Tests - arabian-estates</title>
+  <style>
+    body { font-family: Arial; margin: 20px }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 30px }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left }
+    th { background-color: #f0f0f0 }
+    .pass { color: green; font-weight: bold }
+    .fail { color: red; font-weight: bold }
+    .summary {
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .coverage-good { color: green; font-weight: bold }
+    .coverage-warning { color: orange; font-weight: bold }
+    .coverage-bad { color: red; font-weight: bold }
+  </style>
+</head>
+<body>
+<h1>Apex Test Results - arabian-estates</h1>
+<div class="summary">
+    <h2>Summary</h2>
+    <p>
+      Tests: 93 |
+      Passed: <span class="pass">89</span> |
+      Failed: <span class="fail">4</span>
+    </p>
+    <p><strong>Overall Code Coverage:</strong> 0%</p>
+  </div>
+<h2>Test Method Results</h2>
+  <table>
+    <tr>
+      <th>Class</th>
+      <th>Method</th>
+      <th>Status</th>
+      <th>Time (ms)</th>
+    </tr>
+<tr><td>EnquiryTriggerHandler_Test</td><td>handleEnquiryContactSharingTest</td><td class="pass">Pass</td><td>5674</td></tr>
+<tr><td>ListingDetailImport_Test</td><td>testMainCallout</td><td class="pass">Pass</td><td>141</td></tr>
+<tr><td>ListingsControllerExtension_test</td><td>testMehod1</td><td class="fail">Fail</td><td>299</td></tr>
+<tr><td>CommissionTrigger_Test</td><td>insertTask</td><td class="fail">Fail</td><td>233</td></tr>
+<tr><td>Test_GetListingAPICallout</td><td>testGetListings_fullCoverage</td><td class="pass">Pass</td><td>40</td></tr>
+<tr><td>Test_GetListingAPICallout</td><td>testPaginationDefaults</td><td class="pass">Pass</td><td>413</td></tr>
+<tr><td>Test_WebsiteCalloutAPI</td><td>createEnquiryWithoutExistingRecords</td><td class="pass">Pass</td><td>1222</td></tr>
+<tr><td>Test_WebsiteCalloutAPI</td><td>createEnquiryWithoutListings</td><td class="pass">Pass</td><td>1151</td></tr>
+<tr><td>Test_WebsiteCalloutAPI</td><td>setup</td><td class="pass">Pass</td><td>95</td></tr>
+<tr><td>Test_OmnixisCalloutAPI</td><td>createEnquiryWithoutExistingRecords</td><td class="pass">Pass</td><td>1291</td></tr>
+<tr><td>Test_OmnixisCalloutAPI</td><td>createEnquiryWithoutListings</td><td class="pass">Pass</td><td>1062</td></tr>
+<tr><td>Test_OmnixisCalloutAPI</td><td>setup</td><td class="pass">Pass</td><td>91</td></tr>
+<tr><td>Test_PFserviceClone</td><td>testCheckCompliance</td><td class="pass">Pass</td><td>71</td></tr>
+<tr><td>Test_PFserviceClone</td><td>testListingUpdate_ToggleStatus</td><td class="pass">Pass</td><td>418</td></tr>
+<tr><td>Test_PFserviceClone</td><td>testPortalInsert</td><td class="pass">Pass</td><td>56</td></tr>
+<tr><td>Test_PropertyMediaTriggerHandler</td><td>createListing</td><td class="pass">Pass</td><td>10340</td></tr>
+<tr><td>Test_PFService</td><td>PublishListings</td><td class="pass">Pass</td><td>646</td></tr>
+<tr><td>Test_PFService</td><td>testPFService</td><td class="pass">Pass</td><td>743</td></tr>
+<tr><td>Test_ViewingAPIForLeaderBoard</td><td>testGetEvents_basic</td><td class="pass">Pass</td><td>44</td></tr>
+<tr><td>Test_DoveHeroCalloutAPI</td><td>createEnquiryWithoutExistingRecords</td><td class="pass">Pass</td><td>1321</td></tr>
+<tr><td>Test_DoveHeroCalloutAPI</td><td>createEnquiryWithoutListings</td><td class="pass">Pass</td><td>1735</td></tr>
+<tr><td>Test_DoveHeroCalloutAPI</td><td>setup</td><td class="pass">Pass</td><td>109</td></tr>
+<tr><td>Test_ListingsXMLForPortals</td><td>ListingsForBD</td><td class="pass">Pass</td><td>3135</td></tr>
+<tr><td>Test_ListingsXMLForPortals</td><td>ListingsForPF</td><td class="pass">Pass</td><td>518</td></tr>
+<tr><td>Test_OfferAPIForLeaderBoard</td><td>testGetDeals_basic</td><td class="pass">Pass</td><td>45</td></tr>
+<tr><td>Test_PFUserIntegration</td><td>testCountCallout</td><td class="pass">Pass</td><td>115</td></tr>
+<tr><td>Test_PFUserIntegration</td><td>testDataCallout</td><td class="pass">Pass</td><td>249</td></tr>
+<tr><td>Test_PFUserIntegration</td><td>testPfUserTriggerHandler_AfterInsert</td><td class="pass">Pass</td><td>157</td></tr>
+<tr><td>Test_PFUserIntegration</td><td>testScheduledGetPFUserCountJob</td><td class="pass">Pass</td><td>46</td></tr>
+<tr><td>Test_PFUserIntegration</td><td>testScheduledPFUserImportJob</td><td class="pass">Pass</td><td>150</td></tr>
+<tr><td>Test_PFUserIntegration</td><td>testWrapperDeserialization</td><td class="pass">Pass</td><td>5</td></tr>
+<tr><td>Test_DealAPIForLeaderBoard</td><td>testGetDeals_basic</td><td class="pass">Pass</td><td>77</td></tr>
+<tr><td>Test_GuidedApiFlowController</td><td>PublishListings</td><td class="pass">Pass</td><td>1513</td></tr>
+<tr><td>Test_CommissionAPIForLeaderBoard</td><td>testGetCommissions_basic</td><td class="pass">Pass</td><td>57</td></tr>
+<tr><td>Test_PFComplianceBatchAndJobs</td><td>test1Integrationlog</td><td class="pass">Pass</td><td>12</td></tr>
+<tr><td>Test_PFComplianceBatchAndJobs</td><td>testElsePathCovered</td><td class="pass">Pass</td><td>549</td></tr>
+<tr><td>Test_PFComplianceBatchAndJobs</td><td>testPermitValidation_ExcludesIsValid</td><td class="pass">Pass</td><td>371</td></tr>
+<tr><td>Test_PFComplianceBatchAndJobs</td><td>testPermitValidation_ExcludesIsValid2</td><td class="pass">Pass</td><td>349</td></tr>
+<tr><td>Test_PFComplianceBatchAndJobs</td><td>testScheduleExecution</td><td class="pass">Pass</td><td>847</td></tr>
+<tr><td>Test_PFComplianceBatchAndJobs</td><td>testServiceQueueable_ErrorHandling</td><td class="pass">Pass</td><td>494</td></tr>
+<tr><td>Test_PFComplianceBatchAndJobs</td><td>testServiceQueueable_ErrorHandling1</td><td class="pass">Pass</td><td>542</td></tr>
+<tr><td>MyProfilePageControllerTest</td><td>testSave</td><td class="pass">Pass</td><td>385</td></tr>
+<tr><td>Test_Batch_LinkedListCreationFrmListing</td><td>testMatchingListing</td><td class="pass">Pass</td><td>568</td></tr>
+<tr><td>ForgotPasswordControllerTest</td><td>testForgotPasswordController</td><td class="pass">Pass</td><td>21</td></tr>
+<tr><td>PFTokenCacheHelperTest</td><td>testGetTokenWhenNotPresent</td><td class="pass">Pass</td><td>17</td></tr>
+<tr><td>PFTokenCacheHelperTest</td><td>testStoreAndRetrieveToken</td><td class="pass">Pass</td><td>5</td></tr>
+<tr><td>ChangePasswordControllerTest</td><td>testChangePasswordController</td><td class="pass">Pass</td><td>26</td></tr>
+<tr><td>SiteRegisterControllerTest</td><td>testRegistration</td><td class="pass">Pass</td><td>31</td></tr>
+<tr><td>Test_PFLeadsTriggerController</td><td>testPFLeadsApiCalloutFlow</td><td class="pass">Pass</td><td>2283</td></tr>
+<tr><td>Test_PFLeadsTriggerController</td><td>testPFLeadsApiCalloutFlow1</td><td class="pass">Pass</td><td>1484</td></tr>
+<tr><td>Test_PFLeadsTriggerController</td><td>testPFLeadsCountCalloutAPI_MainCallout</td><td class="pass">Pass</td><td>1409</td></tr>
+<tr><td>Test_batch_UpdateListingwithMedia</td><td>testCalloutupload</td><td class="pass">Pass</td><td>826</td></tr>
+<tr><td>Test_ErrorLogger</td><td>testErrorLoggerMethod</td><td class="pass">Pass</td><td>104</td></tr>
+<tr><td>contentDocumentTriggerHandler_Test</td><td>testRestrictedUserCannotDeleteFile</td><td class="fail">Fail</td><td>0</td></tr>
+<tr><td>Test_Batch_SharkTankUpdateForEnquiry</td><td>test</td><td class="pass">Pass</td><td>368</td></tr>
+<tr><td>Test_Batch_SharkTankUpdateForListings</td><td>test</td><td class="pass">Pass</td><td>304</td></tr>
+<tr><td>Test_ContactTriggerHandler</td><td>testNoDuplicates</td><td class="pass">Pass</td><td>28</td></tr>
+<tr><td>Test_ContactTriggerHandler</td><td>testWithDuplicates</td><td class="pass">Pass</td><td>508</td></tr>
+<tr><td>Test_PortalXMLGenerator</td><td>ListingsForPF</td><td class="pass">Pass</td><td>1979</td></tr>
+<tr><td>PF_loc_Update_BatchTest</td><td>testBatchExecution</td><td class="pass">Pass</td><td>195</td></tr>
+<tr><td>PropertyFinderLocationService_Test</td><td>PublishListings</td><td class="pass">Pass</td><td>3122</td></tr>
+<tr><td>PropertyFinderLocationService_Test</td><td>testFetchExternalId_Success</td><td class="pass">Pass</td><td>8</td></tr>
+<tr><td>LocationTriggerHandler_Test</td><td>insertTask</td><td class="pass">Pass</td><td>235</td></tr>
+<tr><td>ListingTriggerHandler_Test</td><td>insertTask</td><td class="pass">Pass</td><td>2745</td></tr>
+<tr><td>Batch_LinkedListingCreationfromApp_Test</td><td>testMatchingListing</td><td class="pass">Pass</td><td>488</td></tr>
+<tr><td>SiteLoginControllerTest</td><td>testSiteLoginController</td><td class="pass">Pass</td><td>34</td></tr>
+<tr><td>Test_LookupSearchComponentController</td><td>testgetResults</td><td class="pass">Pass</td><td>589</td></tr>
+<tr><td>Test_ReorderController</td><td>PropMediaReorderTest</td><td class="pass">Pass</td><td>1042</td></tr>
+<tr><td>Test_Batch_PBImgaeMigration_OT</td><td>testCalloutupload</td><td class="pass">Pass</td><td>1003</td></tr>
+<tr><td>Test_EasySearchController</td><td>createTaskTest</td><td class="pass">Pass</td><td>1833</td></tr>
+<tr><td>Test_EasySearchController</td><td>getObjectNames</td><td class="pass">Pass</td><td>1456</td></tr>
+<tr><td>Test_ListingImageDisplayList</td><td>testQueryImages</td><td class="pass">Pass</td><td>12899</td></tr>
+<tr><td>UserTriggerHandler_Test</td><td>pfPhoneChangeTest</td><td class="pass">Pass</td><td>221</td></tr>
+<tr><td>UserTriggerHandler_Test</td><td>testhandleUserIdChange</td><td class="pass">Pass</td><td>304</td></tr>
+<tr><td>UserTriggerHandler_Test</td><td>pfPhoneChangeErrorTest</td><td class="pass">Pass</td><td>1976</td></tr>
+<tr><td>Test_AWSFileUploadController</td><td>testCalloutupload</td><td class="pass">Pass</td><td>3568</td></tr>
+<tr><td>Test_AWSFileUploadController</td><td>testController</td><td class="pass">Pass</td><td>301</td></tr>
+<tr><td>Test_AWSFileUploadController</td><td>testDeleteAll</td><td class="pass">Pass</td><td>1196</td></tr>
+</table>
+<h2>Class-wise Code Coverage</h2>
+  <table>
+    <tr>
+      <th>Class Name</th>
+      <th>Coverage %</th>
+    </tr>
+<tr><td>PfPhoneCalloutQueueable</td><td class="coverage-good">100%</td></tr>
+<tr><td>UserTriggerUtility</td><td class="coverage-good">91%</td></tr>
+<tr><td>UserTriggerHandler</td><td class="coverage-good">100%</td></tr>
+<tr><td>Scheduled_ListingToApplicantMatchingJob</td><td class="coverage-good">100%</td></tr>
+<tr><td>Sch_Batch_SharkTankUpdateEnquiry</td><td class="coverage-good">100%</td></tr>
+<tr><td>Batch_LinkedListCreationfromApplicant</td><td class="coverage-good">84%</td></tr>
+<tr><td>Batch_SharkTankUpdateForListings</td><td class="coverage-good">94%</td></tr>
+<tr><td>Sch_Batch_SharkTankUpdateListings</td><td class="coverage-good">100%</td></tr>
+<tr><td>LinkedListEnquiryHandler</td><td class="coverage-good">100%</td></tr>
+<tr><td>Batch_LinkedListCreationFromListing</td><td class="coverage-good">76%</td></tr>
+<tr><td>Scheduled_ApplicantToListingMatchingJob</td><td class="coverage-good">100%</td></tr>
+<tr><td>LinkedListingHandler</td><td class="coverage-good">100%</td></tr>
+<tr><td>Batch_SharkTankUpdateforEnquiry</td><td class="coverage-good">79%</td></tr>
+<tr><td>ViewingAPIForLeaderBoard</td><td class="coverage-good">100%</td></tr>
+<tr><td>CommissionAPIForLeaderBoard</td><td class="coverage-good">100%</td></tr>
+<tr><td>OfferAPIForLeaderBoard</td><td class="coverage-good">100%</td></tr>
+<tr><td>DealAPIForLeaderBoard</td><td class="coverage-good">100%</td></tr>
+<tr><td>WebsiteCalloutAPI</td><td class="coverage-good">88%</td></tr>
+<tr><td>IntegrationLogTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>IntegrationLogTriggerHandler</td><td class="coverage-good">100%</td></tr>
+<tr><td>IntegrationLogTriggerUtility</td><td class="coverage-good">97%</td></tr>
+<tr><td>GetListingAPICallout</td><td class="coverage-good">97%</td></tr>
+<tr><td>Batch_UpdateListingwithmediaImages</td><td class="coverage-good">100%</td></tr>
+<tr><td>Batch_EnquiryReRoutingController</td><td class="coverage-good">100%</td></tr>
+<tr><td>EnquiryRoutingController</td><td class="coverage-good">78%</td></tr>
+<tr><td>Schedule_Batch_OffPlan_Routing_Flow</td><td class="coverage-good">100%</td></tr>
+<tr><td>DoveHeroCallout_API</td><td class="coverage-good">90%</td></tr>
+<tr><td>UnpublishListingJob</td><td class="coverage-good">100%</td></tr>
+<tr><td>SiteLoginController</td><td class="coverage-good">100%</td></tr>
+<tr><td>MyProfilePageController</td><td class="coverage-good">88%</td></tr>
+<tr><td>SiteRegisterController</td><td class="coverage-good">81%</td></tr>
+<tr><td>ChangePasswordController</td><td class="coverage-good">100%</td></tr>
+<tr><td>ForgotPasswordController</td><td class="coverage-good">89%</td></tr>
+<tr><td>AWSFileUploadController</td><td class="coverage-good">90%</td></tr>
+<tr><td>filterConditionWrapper</td><td class="coverage-good">82%</td></tr>
+<tr><td>ReorderController</td><td class="coverage-good">87%</td></tr>
+<tr><td>ListingImageDisplayList</td><td class="coverage-good">100%</td></tr>
+<tr><td>EasySearchController</td><td class="coverage-good">81%</td></tr>
+<tr><td>LookupSearchComponentController</td><td class="coverage-good">79%</td></tr>
+<tr><td>PFLeadsTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>MockGoogledriverespupload</td><td class="coverage-good">100%</td></tr>
+<tr><td>Batch_PBImageMigration_OT</td><td class="coverage-good">91%</td></tr>
+<tr><td>Batch_ValidateMigratedImages</td><td class="coverage-good">90%</td></tr>
+<tr><td>PF_loc_Update_Batch</td><td class="coverage-good">92%</td></tr>
+<tr><td>LocationUtility</td><td class="coverage-good">100%</td></tr>
+<tr><td>LocationTriggerHandler</td><td class="coverage-good">100%</td></tr>
+<tr><td>LocationCalloutQueueable</td><td class="coverage-good">96%</td></tr>
+<tr><td>LocationTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>PFUserImportCalloutAPI</td><td class="coverage-good">88%</td></tr>
+<tr><td>PFUserPaginationWrapper</td><td class="coverage-good">100%</td></tr>
+<tr><td>PFUserQueueableClass</td><td class="coverage-good">100%</td></tr>
+<tr><td>ListingsXMLForPortals</td><td class="coverage-good">100%</td></tr>
+<tr><td>UserTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>PFTokenCacheHelper</td><td class="coverage-good">100%</td></tr>
+<tr><td>OmnixisCalloutAPI</td><td class="coverage-good">93%</td></tr>
+<tr><td>Schedule_PFUserCountJob</td><td class="coverage-good">100%</td></tr>
+<tr><td>PFserviceClone</td><td class="coverage-good">100%</td></tr>
+<tr><td>PFService</td><td class="coverage-good">83%</td></tr>
+<tr><td>PropertyFinderLocationService</td><td class="coverage-good">100%</td></tr>
+<tr><td>Batch_PFComplianceService</td><td class="coverage-good">88%</td></tr>
+<tr><td>PFServiceJob</td><td class="coverage-good">81%</td></tr>
+<tr><td>PropertyFinderService</td><td class="coverage-good">100%</td></tr>
+<tr><td>PropertyFinderComplianceService</td><td class="coverage-good">93%</td></tr>
+<tr><td>GuidedApiFlowController</td><td class="coverage-good">89%</td></tr>
+<tr><td>PFComplianceValidationJob</td><td class="coverage-good">90%</td></tr>
+<tr><td>Scheduled_PropertyFinderUserImortJob</td><td class="coverage-good">100%</td></tr>
+<tr><td>PFUserCountController</td><td class="coverage-good">92%</td></tr>
+<tr><td>PfuserTriggerHandler</td><td class="coverage-good">90%</td></tr>
+<tr><td>ListingDetailImport</td><td class="coverage-good">93%</td></tr>
+<tr><td>PropertyMediaTriggerHandler</td><td class="coverage-good">100%</td></tr>
+<tr><td>ListingImportWrapper</td><td class="coverage-good">100%</td></tr>
+<tr><td>PFUserReponseWrapper</td><td class="coverage-good">100%</td></tr>
+<tr><td>PortalTrackerService</td><td class="coverage-good">87%</td></tr>
+<tr><td>PropertyFinderUserService</td><td class="coverage-good">84%</td></tr>
+<tr><td>ErrorLogger</td><td class="coverage-good">100%</td></tr>
+<tr><td>Schedule_BatchPFUpdateListing</td><td class="coverage-good">100%</td></tr>
+<tr><td>PropertyMediaTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>PfuserTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>PFLeadsTriggerController</td><td class="coverage-good">85%</td></tr>
+<tr><td>PFLeadResponseWrapper</td><td class="coverage-good">100%</td></tr>
+<tr><td>PFLeadsQueueableClass</td><td class="coverage-good">100%</td></tr>
+<tr><td>PFLeadsCountCalloutAPI</td><td class="coverage-good">90%</td></tr>
+<tr><td>PF_Leads_Callout</td><td class="coverage-good">92%</td></tr>
+<tr><td>Scheduled_PFLeadsLogImportJob</td><td class="coverage-good">100%</td></tr>
+<tr><td>ListingTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>ContactTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>EnquiryTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>CommissionTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>EnquiryTriggerHandler</td><td class="coverage-good">100%</td></tr>
+<tr><td>ContactTriggerHandler</td><td class="coverage-good">100%</td></tr>
+<tr><td>CommissionTriggerUtility</td><td class="coverage-good">100%</td></tr>
+<tr><td>Batch_PFPortalXMLGenerator</td><td class="coverage-good">85%</td></tr>
+<tr><td>Schedule_BatchPortalXMLforWebsite</td><td class="coverage-good">100%</td></tr>
+<tr><td>ListingTriggerUtility</td><td class="coverage-good">87%</td></tr>
+<tr><td>Schedule_BatchPortalXMLGeneratorBD</td><td class="coverage-good">75%</td></tr>
+<tr><td>EnquiryTriggerUtility</td><td class="coverage-good">100%</td></tr>
+<tr><td>Schedule_BatchPortalXMLGeneratorPF</td><td class="coverage-good">75%</td></tr>
+<tr><td>ListingTriggerHandler</td><td class="coverage-good">100%</td></tr>
+<tr><td>Batch_BDPortalXMLGenerator</td><td class="coverage-good">87%</td></tr>
+<tr><td>CommissionTriggerHandler</td><td class="coverage-warning">67%</td></tr>
+<tr><td>ContactTriggerUtility</td><td class="coverage-good">95%</td></tr>
+<tr><td>Batch_PortalXMLforWebsite</td><td class="coverage-good">84%</td></tr>
+<tr><td>TriggerDispatcher</td><td class="coverage-good">88%</td></tr>
+</table>
+</body></html>
