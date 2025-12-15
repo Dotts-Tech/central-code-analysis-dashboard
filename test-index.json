@@ -1,6 +1,6 @@
 {
   "aeon-and-trisl": {
-    "updated": "2025-12-15T03:58:21+00:00",
+    "updated": "2025-12-15T04:01:04+00:00",
     "apex": {
       "json": "data/aeon-and-trisl-apex.json",
       "html": "data/aeon-and-trisl-apex.html"
@@ -12,7 +12,7 @@
   }
 ,
   "barnes": {
-    "updated": "2025-12-15T03:58:21+00:00",
+    "updated": "2025-12-15T04:01:04+00:00",
     "apex": {
       "json": "data/barnes-apex.json",
       "html": "data/barnes-apex.html"
@@ -24,7 +24,7 @@
   }
 ,
   "elysian": {
-    "updated": "2025-12-15T03:58:21+00:00",
+    "updated": "2025-12-15T04:01:04+00:00",
     "apex": {
       "json": "data/elysian-apex.json",
       "html": "data/elysian-apex.html"
@@ -36,7 +36,7 @@
   }
 ,
   "gta-properties": {
-    "updated": "2025-12-15T03:58:21+00:00",
+    "updated": "2025-12-15T04:01:04+00:00",
     "apex": {
       "json": "data/gta-properties-apex.json",
       "html": "data/gta-properties-apex.html"
@@ -48,7 +48,7 @@
   }
 ,
   "strada": {
-    "updated": "2025-12-15T03:58:21+00:00",
+    "updated": "2025-12-15T04:01:04+00:00",
     "apex": {
       "json": "data/strada-apex.json",
       "html": "data/strada-apex.html"
@@ -60,7 +60,7 @@
   }
 ,
   "vivid-living": {
-    "updated": "2025-12-15T03:58:21+00:00",
+    "updated": "2025-12-15T04:01:04+00:00",
     "apex": {
       "json": "data/vivid-living-apex.json",
       "html": "data/vivid-living-apex.html"
@@ -72,7 +72,7 @@
   }
 ,
   "we-are-propoerty": {
-    "updated": "2025-12-15T03:58:21+00:00",
+    "updated": "2025-12-15T04:01:04+00:00",
     "apex": {
       "json": "data/we-are-propoerty-apex.json",
       "html": "data/we-are-propoerty-apex.html"
