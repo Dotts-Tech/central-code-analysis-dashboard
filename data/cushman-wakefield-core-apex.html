@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Apex Tests - cushman-wakefield-core</title>
+  <style>
+    body { font-family: Arial; margin: 20px }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 30px }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left }
+    th { background-color: #f0f0f0 }
+    .pass { color: green; font-weight: bold }
+    .fail { color: red; font-weight: bold }
+    .summary {
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .coverage-good { color: green; font-weight: bold }
+    .coverage-warning { color: orange; font-weight: bold }
+    .coverage-bad { color: red; font-weight: bold }
+  </style>
+</head>
+<body>
+<h1>Apex Test Results - cushman-wakefield-core</h1>
+<div class="summary">
+    <h2>Summary</h2>
+    <p>
+      Tests: 66 |
+      Passed: <span class="pass">23</span> |
+      Failed: <span class="fail">43</span>
+    </p>
+    <p><strong>Overall Code Coverage:</strong> 0%</p>
+  </div>
+<h2>Test Method Results</h2>
+  <table>
+    <tr>
+      <th>Class</th>
+      <th>Method</th>
+      <th>Status</th>
+      <th>Time (ms)</th>
+    </tr>
+<tr><td>CommissionBatchSchedulerTest</td><td>CommissionBatchScheduler_commission</td><td class="pass">Pass</td><td>274</td></tr>
+<tr><td>SiteLoginControllerTest</td><td>testSiteLoginController</td><td class="pass">Pass</td><td>29</td></tr>
+<tr><td>Test_Batch_GeoLocationfield_update</td><td>testListingInsert</td><td class="fail">Fail</td><td>0</td></tr>
+<tr><td>EnquiryTriggerTest</td><td>testCreateEnquiry</td><td class="fail">Fail</td><td>2654</td></tr>
+<tr><td>EnquiryTriggerTest</td><td>testEnquiryRouting</td><td class="fail">Fail</td><td>111</td></tr>
+<tr><td>SM004_CommissionBatchTest</td><td>testCreateCommissionSlips</td><td class="fail">Fail</td><td>0</td></tr>
+<tr><td>SM004_CommissionBatchTest</td><td>testLock</td><td class="fail">Fail</td><td>0</td></tr>
+<tr><td>SiteRegisterControllerTest</td><td>testRegistration</td><td class="pass">Pass</td><td>16</td></tr>
+<tr><td>Test_LookupSearchComponentController</td><td>testgetResults</td><td class="pass">Pass</td><td>2002</td></tr>
+<tr><td>DealStatusRestControlerTest</td><td>testbuyer</td><td class="fail">Fail</td><td>2307</td></tr>
+<tr><td>DealStatusRestControlerTest</td><td>testlandlord</td><td class="fail">Fail</td><td>1734</td></tr>
+<tr><td>DealStatusRestControlerTest</td><td>testseller</td><td class="fail">Fail</td><td>2336</td></tr>
+<tr><td>DealStatusRestControlerTest</td><td>testtenant</td><td class="fail">Fail</td><td>2082</td></tr>
+<tr><td>LeadOwnerAssignedTriggerTest</td><td>testTriggrWithMockCallout</td><td class="fail">Fail</td><td>29</td></tr>
+<tr><td>CommissionTrigger_Test</td><td>insertTask</td><td class="pass">Pass</td><td>3053</td></tr>
+<tr><td>Scheduled_KPI_Cloning_Test</td><td>test</td><td class="pass">Pass</td><td>230</td></tr>
+<tr><td>CommissionTypeController_Test</td><td>testCreateCommissionRecords</td><td class="pass">Pass</td><td>1570</td></tr>
+<tr><td>CommissionTypeController_Test</td><td>testGetCommissionRecordTypeId</td><td class="pass">Pass</td><td>26</td></tr>
+<tr><td>CommissionTypeController_Test</td><td>testgetRecordUser</td><td class="fail">Fail</td><td>76</td></tr>
+<tr><td>CommissionTypeController_Test</td><td>testgetRecordUser1</td><td class="fail">Fail</td><td>30</td></tr>
+<tr><td>CommissionTypeController_Test</td><td>testgetRecordUser2</td><td class="fail">Fail</td><td>28</td></tr>
+<tr><td>CommissionTypeController_Test</td><td>testgetRecordUser3</td><td class="fail">Fail</td><td>32</td></tr>
+<tr><td>CommissionTypeController_Test</td><td>testgetRecordUser4</td><td class="fail">Fail</td><td>26</td></tr>
+<tr><td>CommissionTypeController_Test</td><td>testgetRecords</td><td class="pass">Pass</td><td>343</td></tr>
+<tr><td>APS001_KpiHandlerTest</td><td>testScheduledJob</td><td class="fail">Fail</td><td>0</td></tr>
+<tr><td>UserRestControlerTest</td><td>testUserCreate</td><td class="fail">Fail</td><td>201</td></tr>
+<tr><td>UserRestControlerTest</td><td>testUserUpdate</td><td class="fail">Fail</td><td>42</td></tr>
+<tr><td>Test_Batch_LinkedListCreationFrmListing</td><td>testListingInsert</td><td class="fail">Fail</td><td>0</td></tr>
+<tr><td>Test_EasySearchController</td><td>createTaskTest</td><td class="fail">Fail</td><td>3246</td></tr>
+<tr><td>Test_EasySearchController</td><td>getObjectNames</td><td class="fail">Fail</td><td>1825</td></tr>
+<tr><td>Test_Batch_AgentCommissionGeneration</td><td>commissionBatchTest</td><td class="fail">Fail</td><td>2101</td></tr>
+<tr><td>OrderCalloutClasstest</td><td>testOrderCalloutSB</td><td class="fail">Fail</td><td>3838</td></tr>
+<tr><td>OrderCalloutClasstest</td><td>testOrderCalloutTL</td><td class="fail">Fail</td><td>2792</td></tr>
+<tr><td>CWC_PortalFeedPartialTest</td><td>testGenerateFeed</td><td class="pass">Pass</td><td>6337</td></tr>
+<tr><td>BatchCommissionCalloutClasstest</td><td>testCallout</td><td class="fail">Fail</td><td>155</td></tr>
+<tr><td>SMSManagerTest</td><td>testSendNewLeadNotificationMissingCountryCode</td><td class="pass">Pass</td><td>32</td></tr>
+<tr><td>SMSManagerTest</td><td>testSendNewLeadNotificationMissingCountryCodeAndFirstDigit</td><td class="pass">Pass</td><td>10</td></tr>
+<tr><td>WS001_SurveyTest</td><td>myUnitTest</td><td class="pass">Pass</td><td>78</td></tr>
+<tr><td>MyProfilePageControllerTest</td><td>testSave</td><td class="fail">Fail</td><td>183</td></tr>
+<tr><td>SM005_DealTriggerHandlerTest</td><td>DealApexSharingInsertTest</td><td class="fail">Fail</td><td>0</td></tr>
+<tr><td>SM005_DealTriggerHandlerTest</td><td>oAUTHTest</td><td class="fail">Fail</td><td>0</td></tr>
+<tr><td>SM003_CommissionTest</td><td>insertNewCommission</td><td class="fail">Fail</td><td>0</td></tr>
+<tr><td>SM003_CommissionTest</td><td>testGetCommissions</td><td class="fail">Fail</td><td>0</td></tr>
+<tr><td>SM003_CommissionTest</td><td>testGetDeals</td><td class="fail">Fail</td><td>0</td></tr>
+<tr><td>ChangePasswordControllerTest</td><td>testChangePasswordController</td><td class="pass">Pass</td><td>39</td></tr>
+<tr><td>ListingTemplate_Controller_Test</td><td>assignAgentTest</td><td class="fail">Fail</td><td>0</td></tr>
+<tr><td>Test_BatchCleanupDescription</td><td>testListingInsert</td><td class="fail">Fail</td><td>0</td></tr>
+<tr><td>CloneListingController_Test</td><td>CloneListingTest</td><td class="pass">Pass</td><td>1469</td></tr>
+<tr><td>ForgotPasswordControllerTest</td><td>testForgotPasswordController</td><td class="pass">Pass</td><td>29</td></tr>
+<tr><td>PaymentRestControlerTest</td><td>testPaymentCreate</td><td class="fail">Fail</td><td>2960</td></tr>
+<tr><td>PaymentRestControlerTest</td><td>testPaymentUpdate</td><td class="fail">Fail</td><td>2564</td></tr>
+<tr><td>cls_CSV_test</td><td>csv_file</td><td class="pass">Pass</td><td>89</td></tr>
+<tr><td>CWC_PortalFeedFullTest</td><td>testGenerateFeed</td><td class="pass">Pass</td><td>5837</td></tr>
+<tr><td>Batch_LinkedListingCreationfromApp_Test</td><td>testMatchingListing</td><td class="pass">Pass</td><td>523</td></tr>
+<tr><td>Test_DealIsClosedCalloutAPI</td><td>updateRatings</td><td class="pass">Pass</td><td>359</td></tr>
+</table>
+<h2>Class-wise Code Coverage</h2>
+  <table>
+    <tr>
+      <th>Class Name</th>
+      <th>Coverage %</th>
+    </tr>
+<tr><td>CWC_PortalFeedFull</td><td class="coverage-good">99%</td></tr>
+<tr><td>SMSManager</td><td class="coverage-good">100%</td></tr>
+<tr><td>LeadOwnerAssignedTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>Schedule_Batch_AgentCommissionGeneration</td><td class="coverage-bad">0%</td></tr>
+<tr><td>Batch_AgentCommissionGeneration</td><td class="coverage-bad">27%</td></tr>
+<tr><td>CommissionTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>TestDataFactory</td><td class="coverage-bad">46%</td></tr>
+<tr><td>EnquiryTriggerHandler</td><td class="coverage-warning">65%</td></tr>
+<tr><td>WS001_Survey</td><td class="coverage-warning">52%</td></tr>
+<tr><td>ListingTriggerHandler</td><td class="coverage-warning">74%</td></tr>
+<tr><td>EnquiryTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>DealTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>ListingTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>MyProfilePageController</td><td class="coverage-good">96%</td></tr>
+<tr><td>ChangePasswordController</td><td class="coverage-good">100%</td></tr>
+<tr><td>SiteLoginController</td><td class="coverage-good">100%</td></tr>
+<tr><td>SiteRegisterController</td><td class="coverage-good">81%</td></tr>
+<tr><td>ForgotPasswordController</td><td class="coverage-good">89%</td></tr>
+<tr><td>KPIsDataLayer</td><td class="coverage-good">90%</td></tr>
+<tr><td>Scheduled_KPI_Cloning</td><td class="coverage-good">100%</td></tr>
+<tr><td>KPIsServices</td><td class="coverage-good">100%</td></tr>
+<tr><td>cls_CSV</td><td class="coverage-good">91%</td></tr>
+<tr><td>LookupSearchComponentController</td><td class="coverage-good">79%</td></tr>
+<tr><td>Batch_LinkedListCreationfromApplicant</td><td class="coverage-good">91%</td></tr>
+<tr><td>LinkedListEnquiryHandler</td><td class="coverage-good">79%</td></tr>
+<tr><td>Scheduled_ApplicantToListingMatchingJob</td><td class="coverage-good">100%</td></tr>
+<tr><td>CWC_PortalFeedPartial_v8</td><td class="coverage-good">93%</td></tr>
+<tr><td>CommissionBatchScheduler</td><td class="coverage-good">100%</td></tr>
+<tr><td>BatchCommissionCalloutClass</td><td class="coverage-bad">11%</td></tr>
+<tr><td>CalloutVariable</td><td class="coverage-good">100%</td></tr>
+<tr><td>CommissionBatchCalloutTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>OrderCalloutTrigger</td><td class="coverage-warning">53%</td></tr>
+<tr><td>CloneListingController</td><td class="coverage-good">86%</td></tr>
+<tr><td>CommissionTypeController</td><td class="coverage-warning">67%</td></tr>
+<tr><td>DealIsClosedCalloutAPI</td><td class="coverage-good">88%</td></tr>
+<tr><td>DealTriggerHandler</td><td class="coverage-good">100%</td></tr>
+</table>
+</body></html>
