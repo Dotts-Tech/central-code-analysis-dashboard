@@ -118,8 +118,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     const summary = apexJson.result.summary;
                     statsDiv.innerHTML = `
                         <strong>Quick Stats:</strong> <span class="pass">${summary.passing || 0} Passed</span> | 
-                        <span class="fail">${summary.failing || 0} Failed</span> | 
-                        Coverage: <span>${summary.coveredPercent || 0}%</span>
+                        <span class="fail">${summary.failing || 0} Failed</span> 
+                        
                     `;
                 })
                 .catch(err => {
