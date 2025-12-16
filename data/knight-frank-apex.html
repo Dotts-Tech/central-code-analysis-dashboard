@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Apex Tests - knight-frank</title>
+  <style>
+    body { font-family: Arial; margin: 20px }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 30px }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left }
+    th { background-color: #f0f0f0 }
+    .pass { color: green; font-weight: bold }
+    .fail { color: red; font-weight: bold }
+    .summary {
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .coverage-good { color: green; font-weight: bold }
+    .coverage-warning { color: orange; font-weight: bold }
+    .coverage-bad { color: red; font-weight: bold }
+  </style>
+</head>
+<body>
+<h1>Apex Test Results - knight-frank</h1>
+<div class="summary">
+    <h2>Summary</h2>
+    <p>
+      Tests: 84 |
+      Passed: <span class="pass">73</span> |
+      Failed: <span class="fail">11</span>
+    </p>
+    <p><strong>Overall Code Coverage:</strong> 0%</p>
+  </div>
+<h2>Test Method Results</h2>
+  <table>
+    <tr>
+      <th>Class</th>
+      <th>Method</th>
+      <th>Status</th>
+      <th>Time (ms)</th>
+    </tr>
+<tr><td>ForgotPasswordControllerTest</td><td>testForgotPasswordController</td><td class="pass">Pass</td><td>30</td></tr>
+<tr><td>ers_DatatableControllerTest</td><td>test</td><td class="pass">Pass</td><td>1703</td></tr>
+<tr><td>ers_DatatableControllerTest</td><td>testGetIconName</td><td class="pass">Pass</td><td>109</td></tr>
+<tr><td>ers_DatatableControllerTest</td><td>testGetNameUniqueField</td><td class="pass">Pass</td><td>227</td></tr>
+<tr><td>ers_DatatableControllerTest</td><td>testMultiCurrency</td><td class="pass">Pass</td><td>92</td></tr>
+<tr><td>ers_DatatableControllerTest</td><td>testUnknownFieldException</td><td class="pass">Pass</td><td>64</td></tr>
+<tr><td>PropertyTriggerHandler_Test</td><td>insertTask</td><td class="fail">Fail</td><td>2116</td></tr>
+<tr><td>KnsWatermarkControllerTest</td><td>testFileHandling</td><td class="pass">Pass</td><td>1053</td></tr>
+<tr><td>KnsWatermarkControllerTest</td><td>testGetWatermarks</td><td class="pass">Pass</td><td>89</td></tr>
+<tr><td>Test_PortalTrackerService</td><td>createListing</td><td class="pass">Pass</td><td>929</td></tr>
+<tr><td>LuxHabitatEnquiryWebhookTest</td><td>testSaveEnquiryErrorHandling</td><td class="pass">Pass</td><td>128</td></tr>
+<tr><td>LuxHabitatEnquiryWebhookTest</td><td>testSaveEnquiryMissingLead</td><td class="pass">Pass</td><td>245</td></tr>
+<tr><td>LuxHabitatEnquiryWebhookTest</td><td>testSaveEnquirySuccess</td><td class="pass">Pass</td><td>121</td></tr>
+<tr><td>ChangePasswordControllerTest</td><td>testChangePasswordController</td><td class="pass">Pass</td><td>118</td></tr>
+<tr><td>SiteLoginControllerTest</td><td>testSiteLoginController</td><td class="pass">Pass</td><td>29</td></tr>
+<tr><td>CC_onPropertySearchRequirementsTest</td><td>testGetPicklistValues</td><td class="pass">Pass</td><td>81</td></tr>
+<tr><td>CC_onPropertySearchRequirementsTest</td><td>testGetPicklistValues2</td><td class="pass">Pass</td><td>70</td></tr>
+<tr><td>CC_onPropertySearchRequirementsTest</td><td>testPropertyFilters2</td><td class="pass">Pass</td><td>1382</td></tr>
+<tr><td>CC_onPropertySearchRequirementsTest</td><td>testPropertyFilters3</td><td class="pass">Pass</td><td>731</td></tr>
+<tr><td>CC_onPropertySearchRequirementsTest</td><td>testSearchRequirements</td><td class="pass">Pass</td><td>791</td></tr>
+<tr><td>ers_QueryNRecordsTest</td><td>test</td><td class="pass">Pass</td><td>434</td></tr>
+<tr><td>IntegrationUtilityTest</td><td>testLogRequest</td><td class="pass">Pass</td><td>300</td></tr>
+<tr><td>MyProfilePageControllerTest</td><td>testSave</td><td class="pass">Pass</td><td>1182</td></tr>
+<tr><td>AccountSearchController_Test</td><td>testMethod1</td><td class="pass">Pass</td><td>82</td></tr>
+<tr><td>LuxHabitatCalloutAPI_Test</td><td>testCreateLead_ExistingContact</td><td class="pass">Pass</td><td>1477</td></tr>
+<tr><td>LuxHabitatCalloutAPI_Test</td><td>testCreateLead_NewContact_NewListing</td><td class="pass">Pass</td><td>1413</td></tr>
+<tr><td>LuxHabitatCalloutAPI_Test</td><td>testExceptionScenario</td><td class="pass">Pass</td><td>16</td></tr>
+<tr><td>LuxHabitatCalloutAPI_Test</td><td>testMissingRequiredFields</td><td class="pass">Pass</td><td>17</td></tr>
+<tr><td>GeneratePublicURLContentVersionTest</td><td>testTriggerCoverage</td><td class="pass">Pass</td><td>1722</td></tr>
+<tr><td>Test_PFService</td><td>testPFService2</td><td class="fail">Fail</td><td>1234</td></tr>
+<tr><td>MultiSelectControllerTest</td><td>testHandleMultiSelectValues</td><td class="pass">Pass</td><td>887</td></tr>
+<tr><td>ListingDetailImport_Test</td><td>testMainCallout</td><td class="pass">Pass</td><td>140</td></tr>
+<tr><td>CreateFileTest</td><td>test</td><td class="pass">Pass</td><td>864</td></tr>
+<tr><td>PropertyFinderLocationService_Test</td><td>testBatch_PropertyFinderIdmatching_Success</td><td class="fail">Fail</td><td>1414</td></tr>
+<tr><td>PropertyFinderLocationService_Test</td><td>testFetchExternalId_Success</td><td class="pass">Pass</td><td>37</td></tr>
+<tr><td>GetLuxhabitatPropertyTst</td><td>testDoPost</td><td class="fail">Fail</td><td>1851</td></tr>
+<tr><td>ListingLocationCalloutQueueable_Test</td><td>updateLocationNegative_NoLocationId</td><td class="pass">Pass</td><td>1013</td></tr>
+<tr><td>ListingLocationCalloutQueueable_Test</td><td>updateLocationPositive</td><td class="pass">Pass</td><td>817</td></tr>
+<tr><td>ListingLocationCalloutQueueable_Test</td><td>updateLocation_UpdateError</td><td class="pass">Pass</td><td>861</td></tr>
+<tr><td>CC_SearchRequirementsControllerTest</td><td>testGetPicklistValues</td><td class="pass">Pass</td><td>120</td></tr>
+<tr><td>CC_SearchRequirementsControllerTest</td><td>testPropertyFilters</td><td class="pass">Pass</td><td>1909</td></tr>
+<tr><td>CC_SearchRequirementsControllerTest</td><td>testPropertyFilters2</td><td class="pass">Pass</td><td>939</td></tr>
+<tr><td>CC_SearchRequirementsControllerTest</td><td>testPropertyFilters3</td><td class="pass">Pass</td><td>925</td></tr>
+<tr><td>Test_ErrorLogger</td><td>testErrorLoggerMethod</td><td class="pass">Pass</td><td>327</td></tr>
+<tr><td>RetrieveFileTest</td><td>test</td><td class="pass">Pass</td><td>796</td></tr>
+<tr><td>Test_LeadTriggerHandler</td><td>handleEnquiryContactSharingTest</td><td class="pass">Pass</td><td>2690</td></tr>
+<tr><td>Test_LeadTriggerHandler</td><td>testCompareMethod</td><td class="pass">Pass</td><td>7</td></tr>
+<tr><td>Test_LeadTriggerHandler</td><td>testCreateContactShare</td><td class="pass">Pass</td><td>988</td></tr>
+<tr><td>Test_LeadTriggerHandler</td><td>testEnquiryRouting</td><td class="pass">Pass</td><td>3725</td></tr>
+<tr><td>Test_PFComplianceBatchAndJobs</td><td>testElsePathCovered</td><td class="pass">Pass</td><td>2564</td></tr>
+<tr><td>Test_PFComplianceBatchAndJobs</td><td>testPermitValidation_ExcludesIsValid</td><td class="pass">Pass</td><td>1420</td></tr>
+<tr><td>Test_PFComplianceBatchAndJobs</td><td>testPermitValidation_ExcludesIsValid2</td><td class="pass">Pass</td><td>1044</td></tr>
+<tr><td>Test_PFComplianceBatchAndJobs</td><td>testScheduleExecution</td><td class="pass">Pass</td><td>3111</td></tr>
+<tr><td>Test_PFComplianceBatchAndJobs</td><td>testServiceQueueable_ErrorHandling</td><td class="pass">Pass</td><td>1489</td></tr>
+<tr><td>Test_PFComplianceBatchAndJobs</td><td>testServiceQueueable_ErrorHandling1</td><td class="pass">Pass</td><td>2027</td></tr>
+<tr><td>ers_EncodeDecodeURLTest</td><td>testEncodeDecode</td><td class="pass">Pass</td><td>123</td></tr>
+<tr><td>GetPropertyFinderXmlTst</td><td>testDoPost</td><td class="fail">Fail</td><td>451</td></tr>
+<tr><td>ContactSearchController_Test</td><td>testMethod1</td><td class="pass">Pass</td><td>83</td></tr>
+<tr><td>GetLuxhabitatPropertiesXmlTest</td><td>testAmenitiesMapping</td><td class="fail">Fail</td><td>0</td></tr>
+<tr><td>GetLuxhabitatPropertiesXmlTest</td><td>testConstructionStatusMapping</td><td class="fail">Fail</td><td>0</td></tr>
+<tr><td>GetLuxhabitatPropertiesXmlTest</td><td>testEmptyPropertyFeed</td><td class="fail">Fail</td><td>0</td></tr>
+<tr><td>GetLuxhabitatPropertiesXmlTest</td><td>testErrorHandling</td><td class="fail">Fail</td><td>0</td></tr>
+<tr><td>GetLuxhabitatPropertiesXmlTest</td><td>testSuccessfulXmlGeneration</td><td class="fail">Fail</td><td>0</td></tr>
+<tr><td>Test_PFUserIntegration</td><td>testDataCallout</td><td class="pass">Pass</td><td>231</td></tr>
+<tr><td>Test_PFUserIntegration</td><td>testPfUserTriggerHandler_AfterInsert</td><td class="pass">Pass</td><td>264</td></tr>
+<tr><td>Test_PFUserIntegration</td><td>testScheduledGetPFUserCountJob</td><td class="pass">Pass</td><td>111</td></tr>
+<tr><td>Test_PFUserIntegration</td><td>testWrapperDeserialization</td><td class="pass">Pass</td><td>8</td></tr>
+<tr><td>UserTriggerHandler_Test</td><td>testhandleUserIdChange</td><td class="pass">Pass</td><td>448</td></tr>
+<tr><td>SiteRegisterControllerTest</td><td>testRegistration</td><td class="pass">Pass</td><td>117</td></tr>
+<tr><td>Test_PFLeadsTriggerController</td><td>testCreateLeads</td><td class="pass">Pass</td><td>3169</td></tr>
+<tr><td>Test_PFLeadsTriggerController</td><td>testPFLeadsApiCalloutFlow2</td><td class="pass">Pass</td><td>2050</td></tr>
+<tr><td>Test_PFLeadsTriggerController</td><td>testPFLeadsPropertyFinder1</td><td class="pass">Pass</td><td>823</td></tr>
+<tr><td>Test_PFLeadsTriggerController</td><td>testPFLeadsPropertyFinder2</td><td class="pass">Pass</td><td>738</td></tr>
+<tr><td>Test_PFLeadsTriggerController</td><td>testPFLeadsPropertyFinder_Residential</td><td class="pass">Pass</td><td>1738</td></tr>
+</table>
+<h2>Class-wise Code Coverage</h2>
+  <table>
+    <tr>
+      <th>Class Name</th>
+      <th>Coverage %</th>
+    </tr>
+<tr><td>CC_onPropertySearchRequirements</td><td class="coverage-good">81%</td></tr>
+<tr><td>AccountSearchController</td><td class="coverage-good">100%</td></tr>
+<tr><td>ContactSearchController</td><td class="coverage-good">100%</td></tr>
+<tr><td>ers_QueryNRecords</td><td class="coverage-good">88%</td></tr>
+<tr><td>ers_DatatableController</td><td class="coverage-good">86%</td></tr>
+<tr><td>ers_EncodeDecodeURL</td><td class="coverage-good">100%</td></tr>
+<tr><td>RetrieveFile</td><td class="coverage-good">100%</td></tr>
+<tr><td>CreateFile</td><td class="coverage-good">96%</td></tr>
+<tr><td>CC_SearchRequirementsController</td><td class="coverage-good">89%</td></tr>
+<tr><td>MultiSelectController</td><td class="coverage-good">100%</td></tr>
+<tr><td>LuxHabitatEnquiryWebhook</td><td class="coverage-good">88%</td></tr>
+<tr><td>GetLuxhabitatPropertiesXml</td><td class="coverage-warning">58%</td></tr>
+<tr><td>GeneratePublicURL</td><td class="coverage-good">84%</td></tr>
+<tr><td>LuxHabitatEnquiryWrapper</td><td class="coverage-good">84%</td></tr>
+<tr><td>IntegrationUtility</td><td class="coverage-good">90%</td></tr>
+<tr><td>GeneratePublicURLContentVersion</td><td class="coverage-good">100%</td></tr>
+<tr><td>SiteRegisterController</td><td class="coverage-good">81%</td></tr>
+<tr><td>MyProfilePageController</td><td class="coverage-good">88%</td></tr>
+<tr><td>ChangePasswordController</td><td class="coverage-good">100%</td></tr>
+<tr><td>ForgotPasswordController</td><td class="coverage-good">89%</td></tr>
+<tr><td>SiteLoginController</td><td class="coverage-good">100%</td></tr>
+<tr><td>KnsWatermarkController</td><td class="coverage-good">96%</td></tr>
+<tr><td>LeadRoutingController</td><td class="coverage-good">78%</td></tr>
+<tr><td>LeadTriggerHandler</td><td class="coverage-good">97%</td></tr>
+<tr><td>LeadTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>PFServiceJob</td><td class="coverage-good">79%</td></tr>
+<tr><td>PFComplianceValidationJob</td><td class="coverage-good">91%</td></tr>
+<tr><td>PropertyFinderUserService</td><td class="coverage-good">84%</td></tr>
+<tr><td>IntegrationLogTriggerUtility</td><td class="coverage-good">98%</td></tr>
+<tr><td>PFUserImportCalloutAPI</td><td class="coverage-good">88%</td></tr>
+<tr><td>IntegrationLogTriggerHandler</td><td class="coverage-good">100%</td></tr>
+<tr><td>PropertyFinderComplianceService</td><td class="coverage-good">91%</td></tr>
+<tr><td>Schedule_BatchPFUpdateListing</td><td class="coverage-good">100%</td></tr>
+<tr><td>ListingImportWrapper</td><td class="coverage-good">100%</td></tr>
+<tr><td>Batch_PFComplianceService</td><td class="coverage-good">89%</td></tr>
+<tr><td>ListingLocationCalloutQueueable</td><td class="coverage-good">100%</td></tr>
+<tr><td>PFUserQueueableClass</td><td class="coverage-good">100%</td></tr>
+<tr><td>PFUserReponseWrapper</td><td class="coverage-good">100%</td></tr>
+<tr><td>Scheduled_PropertyFinderUserImortJob</td><td class="coverage-good">100%</td></tr>
+<tr><td>PFService</td><td class="coverage-bad">8%</td></tr>
+<tr><td>ErrorLogger</td><td class="coverage-good">100%</td></tr>
+<tr><td>PortalTrackerService</td><td class="coverage-good">95%</td></tr>
+<tr><td>PropertyFinderLocationService</td><td class="coverage-good">96%</td></tr>
+<tr><td>PfuserTriggerHandler</td><td class="coverage-good">90%</td></tr>
+<tr><td>ListingDetailImport</td><td class="coverage-good">94%</td></tr>
+<tr><td>PropertyTriggerHandler</td><td class="coverage-good">86%</td></tr>
+<tr><td>PropertyFinderService</td><td class="coverage-good">98%</td></tr>
+<tr><td>PFUserPaginationWrapper</td><td class="coverage-good">100%</td></tr>
+<tr><td>IntegrationLogTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>PropertyTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>PfuserTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>PfPhoneCalloutQueueable</td><td class="coverage-good">94%</td></tr>
+<tr><td>UserTriggerHandler</td><td class="coverage-good">91%</td></tr>
+<tr><td>UserTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>Scheduled_PFLeadsLogImportJob</td><td class="coverage-good">100%</td></tr>
+<tr><td>PFLeadsCountCalloutAPI</td><td class="coverage-good">90%</td></tr>
+<tr><td>PFLeadsTriggerController</td><td class="coverage-good">85%</td></tr>
+<tr><td>PFLeadsQueueableClass</td><td class="coverage-good">100%</td></tr>
+<tr><td>PF_Leads_Callout</td><td class="coverage-good">94%</td></tr>
+<tr><td>PFLeadResponseWrapper</td><td class="coverage-good">100%</td></tr>
+<tr><td>PFLeadsTrigger</td><td class="coverage-good">100%</td></tr>
+<tr><td>LuxHabitatCalloutAPI</td><td class="coverage-good">96%</td></tr>
+</table>
+</body></html>
