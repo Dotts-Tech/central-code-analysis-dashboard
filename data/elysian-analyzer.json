@@ -1,10 +1,10 @@
 {
   "runDir": "/home/runner/work/elysian/elysian/",
   "violationCounts": {
-    "total": 2425,
+    "total": 2452,
     "sev1": 0,
-    "sev2": 131,
-    "sev3": 611,
+    "sev2": 141,
+    "sev3": 628,
     "sev4": 577,
     "sev5": 1106
   },
@@ -13,9 +13,9 @@
     "retire-js": "0.29.0",
     "regex": "0.30.0",
     "eslint": "0.37.1",
-    "flow": "0.31.0",
-    "pmd": "0.33.0",
-    "cpd": "0.33.0"
+    "flow": "0.31.1",
+    "cpd": "0.33.0",
+    "pmd": "0.33.0"
   },
   "violations": [
     {
@@ -29703,6 +29703,75 @@
       "primaryLocationIndex": 0,
       "locations": [
         {
+          "file": "force-app/main/default/flows/Lead_Process_Automation_AFTER_SAVE.flow-meta.xml",
+          "startLine": 562,
+          "startColumn": 1,
+          "comment": "By_Pass_Validation_False.By_Pass_Validation_False: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 1,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Listing_Automation_Process_AFTER_SAVE.flow-meta.xml",
+          "startLine": 431,
+          "startColumn": 1,
+          "comment": "Assign_Broker_s_Listing_ID.ListingRecord.Id: Variable Assignment"
+        },
+        {
+          "file": "force-app/main/default/flows/Listing_Automation_Process_AFTER_SAVE.flow-meta.xml",
+          "startLine": 970,
+          "startColumn": 1,
+          "comment": "Assign_Broker_s_Listing_ID.ListingRecord.Id influences Updating_Listing.Updating_Listing: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Lead_Process_Automation_AFTER_SAVE.flow-meta.xml",
+          "startLine": 562,
+          "startColumn": 1,
+          "comment": "By_Pass_Validation_False.By_Pass_Validation_False: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
           "file": "force-app/main/default/flows/Add_Water_Mark_Image.flow-meta.xml",
           "startLine": 272,
           "startColumn": 1,
@@ -29711,6 +29780,1440 @@
       ],
       "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
       "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Offer_Automation_Process_AFTER_SAVE.flow-meta.xml",
+          "startLine": 359,
+          "startColumn": 1,
+          "comment": "Update_By_Pass_Validation.Update_By_Pass_Validation: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Offer_Automation_Process_AFTER_SAVE.flow-meta.xml",
+          "startLine": 359,
+          "startColumn": 1,
+          "comment": "Update_By_Pass_Validation.Update_By_Pass_Validation: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Task_Process_Automation_AFTER_SAVE.flow-meta.xml",
+          "startLine": 1177,
+          "startColumn": 1,
+          "comment": "Update_By_Pass_Validation_False1.Update_By_Pass_Validation_False1: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Listing_Automation_Process_AFTER_SAVE.flow-meta.xml",
+          "startLine": 949,
+          "startColumn": 1,
+          "comment": "By_Pass_Validation_False.By_Pass_Validation_False: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 1,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Contact_Automation_Process_AFTER_SAVE.flow-meta.xml",
+          "startLine": 109,
+          "startColumn": 1,
+          "comment": "Assign_the_Existing_Account_on_Contact.Contact.Id: Variable Assignment"
+        },
+        {
+          "file": "force-app/main/default/flows/Contact_Automation_Process_AFTER_SAVE.flow-meta.xml",
+          "startLine": 524,
+          "startColumn": 1,
+          "comment": "Assign_the_Existing_Account_on_Contact.Contact.Id influences Updating_Contact.Updating_Contact: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 1,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Contact_Automation_Process_AFTER_SAVE.flow-meta.xml",
+          "startLine": 86,
+          "startColumn": 1,
+          "comment": "Assign_the_Created_Account_on_Contact.Contact.Id: Variable Assignment"
+        },
+        {
+          "file": "force-app/main/default/flows/Contact_Automation_Process_AFTER_SAVE.flow-meta.xml",
+          "startLine": 524,
+          "startColumn": 1,
+          "comment": "Assign_the_Created_Account_on_Contact.Contact.Id influences Updating_Contact.Updating_Contact: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Offer_Automation_Process_AFTER_SAVE.flow-meta.xml",
+          "startLine": 359,
+          "startColumn": 1,
+          "comment": "Update_By_Pass_Validation.Update_By_Pass_Validation: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Listing_Automation_Process_AFTER_SAVE.flow-meta.xml",
+          "startLine": 949,
+          "startColumn": 1,
+          "comment": "By_Pass_Validation_False.By_Pass_Validation_False: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Listing_Automation_Process_AFTER_SAVE.flow-meta.xml",
+          "startLine": 949,
+          "startColumn": 1,
+          "comment": "By_Pass_Validation_False.By_Pass_Validation_False: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Task_Process_Automation_AFTER_SAVE.flow-meta.xml",
+          "startLine": 1177,
+          "startColumn": 1,
+          "comment": "Update_By_Pass_Validation_False1.Update_By_Pass_Validation_False1: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Task_Process_Automation_AFTER_SAVE.flow-meta.xml",
+          "startLine": 1156,
+          "startColumn": 1,
+          "comment": "Update_By_Pass_Validation_False.Update_By_Pass_Validation_False: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Task_Process_Automation_AFTER_SAVE.flow-meta.xml",
+          "startLine": 1177,
+          "startColumn": 1,
+          "comment": "Update_By_Pass_Validation_False1.Update_By_Pass_Validation_False1: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_Contact_Info.flow-meta.xml",
+          "startLine": 27,
+          "startColumn": 1,
+          "comment": "Update_Contact_Info_Custom.Update_Contact_Info_Custom: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_the_Full_Location_name.flow-meta.xml",
+          "startLine": 37,
+          "startColumn": 1,
+          "comment": "Update_the_full_Location_name.Update_the_full_Location_name: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "TriggerEntryCriteria",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Task_Process_Automation_AFTER_SAVE.flow-meta.xml",
+          "startLine": 1221,
+          "startColumn": 1
+        }
+      ],
+      "message": "The record trigger flow has no entry criteria. All record trigger flows should have entry criteria specified in the flow trigger definition rather than solely in the flow's own business logic.",
+      "resources": []
+    },
+    {
+      "rule": "TriggerEntryCriteria",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Listing_Automation_Process_BEFORE_SAVE.flow-meta.xml",
+          "startLine": 470,
+          "startColumn": 1
+        }
+      ],
+      "message": "The record trigger flow has no entry criteria. All record trigger flows should have entry criteria specified in the flow trigger definition rather than solely in the flow's own business logic.",
+      "resources": []
+    },
+    {
+      "rule": "TriggerEntryCriteria",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_the_Company_name_before_saving.flow-meta.xml",
+          "startLine": 40,
+          "startColumn": 1
+        }
+      ],
+      "message": "The record trigger flow has no entry criteria. All record trigger flows should have entry criteria specified in the flow trigger definition rather than solely in the flow's own business logic.",
+      "resources": []
+    },
+    {
+      "rule": "TriggerEntryCriteria",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Lead_Process_Automation_AFTER_SAVE.flow-meta.xml",
+          "startLine": 583,
+          "startColumn": 1
+        }
+      ],
+      "message": "The record trigger flow has no entry criteria. All record trigger flows should have entry criteria specified in the flow trigger definition rather than solely in the flow's own business logic.",
+      "resources": []
+    },
+    {
+      "rule": "TriggerEntryCriteria",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Contact_Automation_Process_AFTER_SAVE.flow-meta.xml",
+          "startLine": 531,
+          "startColumn": 1
+        }
+      ],
+      "message": "The record trigger flow has no entry criteria. All record trigger flows should have entry criteria specified in the flow trigger definition rather than solely in the flow's own business logic.",
+      "resources": []
+    },
+    {
+      "rule": "TriggerEntryCriteria",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Offer_Automation_Process_AFTER_SAVE.flow-meta.xml",
+          "startLine": 400,
+          "startColumn": 1
+        }
+      ],
+      "message": "The record trigger flow has no entry criteria. All record trigger flows should have entry criteria specified in the flow trigger definition rather than solely in the flow's own business logic.",
+      "resources": []
+    },
+    {
+      "rule": "TriggerEntryCriteria",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Listing_Automation_Process_AFTER_SAVE.flow-meta.xml",
+          "startLine": 983,
+          "startColumn": 1
+        }
+      ],
+      "message": "The record trigger flow has no entry criteria. All record trigger flows should have entry criteria specified in the flow trigger definition rather than solely in the flow's own business logic.",
+      "resources": []
+    },
+    {
+      "rule": "TriggerEntryCriteria",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_the_Full_Location_name.flow-meta.xml",
+          "startLine": 50,
+          "startColumn": 1
+        }
+      ],
+      "message": "The record trigger flow has no entry criteria. All record trigger flows should have entry criteria specified in the flow trigger definition rather than solely in the flow's own business logic.",
+      "resources": []
+    },
+    {
+      "rule": "TriggerEntryCriteria",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Event_Automation_Process_AFTER_SAVE.flow-meta.xml",
+          "startLine": 145,
+          "startColumn": 1
+        }
+      ],
+      "message": "The record trigger flow has no entry criteria. All record trigger flows should have entry criteria specified in the flow trigger definition rather than solely in the flow's own business logic.",
+      "resources": []
+    },
+    {
+      "rule": "TriggerEntryCriteria",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Offer_Automation_Process_BEFORE_SAVE.flow-meta.xml",
+          "startLine": 520,
+          "startColumn": 1
+        }
+      ],
+      "message": "The record trigger flow has no entry criteria. All record trigger flows should have entry criteria specified in the flow trigger definition rather than solely in the flow's own business logic.",
+      "resources": []
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Batch_JamesEditionPortalXMLGenerator.cls",
+          "startLine": 46,
+          "startColumn": 90,
+          "endLine": 397,
+          "endColumn": 138
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_WebsitePortalXMLGenerator.cls",
+          "startLine": 46,
+          "startColumn": 99,
+          "endLine": 397,
+          "endColumn": 138
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 2881 tokens across 352 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Batch_JamesEditionPortalXMLGenerator.cls",
+          "startLine": 108,
+          "startColumn": 40,
+          "endLine": 397,
+          "endColumn": 138
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_PFPortalXMLGenerator.cls",
+          "startLine": 108,
+          "startColumn": 27,
+          "endLine": 397,
+          "endColumn": 138
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_WebsitePortalXMLGenerator.cls",
+          "startLine": 108,
+          "startColumn": 40,
+          "endLine": 397,
+          "endColumn": 138
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 3 code locations containing the same block of code consisting of 2363 tokens across 290 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/PFService.cls",
+          "startLine": 38,
+          "startColumn": 47,
+          "endLine": 165,
+          "endColumn": 73
+        },
+        {
+          "file": "force-app/main/default/classes/PFServiceJob.cls",
+          "startLine": 114,
+          "startColumn": 58,
+          "endLine": 236,
+          "endColumn": 72
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 1196 tokens across 128 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Batch_JamesEditionPortalXMLGenerator.cls",
+          "startLine": 20,
+          "startColumn": 48,
+          "endLine": 108,
+          "endColumn": 21
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_PFPortalXMLGenerator.cls",
+          "startLine": 20,
+          "startColumn": 38,
+          "endLine": 108,
+          "endColumn": 21
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 634 tokens across 89 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Batch_PFPortalXMLGenerator.cls",
+          "startLine": 46,
+          "startColumn": 90,
+          "endLine": 108,
+          "endColumn": 21
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_WebsitePortalXMLGenerator.cls",
+          "startLine": 46,
+          "startColumn": 99,
+          "endLine": 108,
+          "endColumn": 21
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 517 tokens across 63 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Batch_BDPortalXMLGenerator.cls",
+          "startLine": 66,
+          "startColumn": 101,
+          "endLine": 114,
+          "endColumn": 62
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_JamesEditionPortalXMLGenerator.cls",
+          "startLine": 52,
+          "startColumn": 97,
+          "endLine": 105,
+          "endColumn": 62
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_PFPortalXMLGenerator.cls",
+          "startLine": 52,
+          "startColumn": 97,
+          "endLine": 105,
+          "endColumn": 62
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_WebsitePortalXMLGenerator.cls",
+          "startLine": 52,
+          "startColumn": 97,
+          "endLine": 105,
+          "endColumn": 62
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 4 code locations containing the same block of code consisting of 469 tokens across 49 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/LocationTriggerHandler_Test.cls",
+          "startLine": 109,
+          "startColumn": 5,
+          "endLine": 160,
+          "endColumn": 51
+        },
+        {
+          "file": "force-app/main/default/classes/PropertyFinderLocationService_Test.cls",
+          "startLine": 4,
+          "startColumn": 5,
+          "endLine": 56,
+          "endColumn": 51
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 295 tokens across 52 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Test_ListingsXMLForPortals.cls",
+          "startLine": 40,
+          "startColumn": 56,
+          "endLine": 88,
+          "endColumn": 33
+        },
+        {
+          "file": "force-app/main/default/classes/Test_ListingsXMLForPortals.cls",
+          "startLine": 155,
+          "startColumn": 51,
+          "endLine": 202,
+          "endColumn": 33
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 256 tokens across 49 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/PFService.cls",
+          "startLine": 14,
+          "startColumn": 5,
+          "endLine": 38,
+          "endColumn": 46
+        },
+        {
+          "file": "force-app/main/default/classes/PFServiceJob.cls",
+          "startLine": 90,
+          "startColumn": 3,
+          "endLine": 114,
+          "endColumn": 47
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 230 tokens across 25 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/LocationTriggerHandler_Test.cls",
+          "startLine": 109,
+          "startColumn": 51,
+          "endLine": 136,
+          "endColumn": 32
+        },
+        {
+          "file": "force-app/main/default/classes/LocationTriggerHandler_Test.cls",
+          "startLine": 158,
+          "startColumn": 51,
+          "endLine": 185,
+          "endColumn": 36
+        },
+        {
+          "file": "force-app/main/default/classes/PropertyFinderLocationService_Test.cls",
+          "startLine": 4,
+          "startColumn": 51,
+          "endLine": 31,
+          "endColumn": 32
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 3 code locations containing the same block of code consisting of 206 tokens across 28 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Batch_BDPortalXMLGenerator.cls",
+          "startLine": 347,
+          "startColumn": 65,
+          "endLine": 372,
+          "endColumn": 55
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_JamesEditionPortalXMLGenerator.cls",
+          "startLine": 353,
+          "startColumn": 112,
+          "endLine": 378,
+          "endColumn": 55
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_PFPortalXMLGenerator.cls",
+          "startLine": 353,
+          "startColumn": 112,
+          "endLine": 378,
+          "endColumn": 55
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_WebsitePortalXMLGenerator.cls",
+          "startLine": 353,
+          "startColumn": 112,
+          "endLine": 378,
+          "endColumn": 55
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 4 code locations containing the same block of code consisting of 149 tokens across 26 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Batch_JamesEditionPortalXMLGenerator.cls",
+          "startLine": 397,
+          "startColumn": 153,
+          "endLine": 430,
+          "endColumn": 2
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_PFPortalXMLGenerator.cls",
+          "startLine": 397,
+          "startColumn": 142,
+          "endLine": 430,
+          "endColumn": 2
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_WebsitePortalXMLGenerator.cls",
+          "startLine": 397,
+          "startColumn": 147,
+          "endLine": 430,
+          "endColumn": 2
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 3 code locations containing the same block of code consisting of 145 tokens across 34 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Batch_BDPortalXMLGenerator.cls",
+          "startLine": 376,
+          "startColumn": 13,
+          "endLine": 394,
+          "endColumn": 142
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_JamesEditionPortalXMLGenerator.cls",
+          "startLine": 379,
+          "startColumn": 9,
+          "endLine": 397,
+          "endColumn": 138
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_PFPortalXMLGenerator.cls",
+          "startLine": 379,
+          "startColumn": 9,
+          "endLine": 397,
+          "endColumn": 138
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_WebsitePortalXMLGenerator.cls",
+          "startLine": 379,
+          "startColumn": 9,
+          "endLine": 397,
+          "endColumn": 138
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 4 code locations containing the same block of code consisting of 140 tokens across 19 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Batch_BDPortalXMLGenerator.cls",
+          "startLine": 404,
+          "startColumn": 9,
+          "endLine": 429,
+          "endColumn": 2
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_JamesEditionPortalXMLGenerator.cls",
+          "startLine": 402,
+          "startColumn": 9,
+          "endLine": 430,
+          "endColumn": 2
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_PFPortalXMLGenerator.cls",
+          "startLine": 402,
+          "startColumn": 9,
+          "endLine": 430,
+          "endColumn": 2
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_WebsitePortalXMLGenerator.cls",
+          "startLine": 402,
+          "startColumn": 9,
+          "endLine": 430,
+          "endColumn": 2
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 4 code locations containing the same block of code consisting of 134 tokens across 26 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/ListingDetailImport.cls",
+          "startLine": 5,
+          "startColumn": 60,
+          "endLine": 20,
+          "endColumn": 26
+        },
+        {
+          "file": "force-app/main/default/classes/PropertyFinderUserService.cls",
+          "startLine": 5,
+          "startColumn": 60,
+          "endLine": 22,
+          "endColumn": 27
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 118 tokens across 16 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Test_ListingImageDisplayList.cls",
+          "startLine": 9,
+          "startColumn": 18,
+          "endLine": 27,
+          "endColumn": 16
+        },
+        {
+          "file": "force-app/main/default/classes/Test_PFService.cls",
+          "startLine": 7,
+          "startColumn": 19,
+          "endLine": 27,
+          "endColumn": 16
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 115 tokens across 19 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Test_ListingImageDisplayList.cls",
+          "startLine": 10,
+          "startColumn": 10,
+          "endLine": 25,
+          "endColumn": 22
+        },
+        {
+          "file": "force-app/main/default/classes/Test_PFUserIntegration.cls",
+          "startLine": 8,
+          "startColumn": 9,
+          "endLine": 23,
+          "endColumn": 22
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 113 tokens across 16 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Test_PFService.cls",
+          "startLine": 9,
+          "startColumn": 9,
+          "endLine": 24,
+          "endColumn": 22
+        },
+        {
+          "file": "force-app/main/default/classes/Test_PFUserIntegration.cls",
+          "startLine": 8,
+          "startColumn": 9,
+          "endLine": 23,
+          "endColumn": 22
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 113 tokens across 16 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/ListingTriggerHandler_Test.cls",
+          "startLine": 4,
+          "startColumn": 45,
+          "endLine": 18,
+          "endColumn": 65
+        },
+        {
+          "file": "force-app/main/default/classes/Test_ListingImageDisplayList.cls",
+          "startLine": 5,
+          "startColumn": 32,
+          "endLine": 18,
+          "endColumn": 65
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 110 tokens across 15 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Test_AWSFileUploadController.cls",
+          "startLine": 9,
+          "startColumn": 31,
+          "endLine": 26,
+          "endColumn": 19
+        },
+        {
+          "file": "force-app/main/default/classes/Test_AWSFileUploadController.cls",
+          "startLine": 31,
+          "startColumn": 42,
+          "endLine": 49,
+          "endColumn": 19
+        },
+        {
+          "file": "force-app/main/default/classes/Test_AWSFileUploadController.cls",
+          "startLine": 91,
+          "startColumn": 38,
+          "endLine": 109,
+          "endColumn": 19
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 3 code locations containing the same block of code consisting of 107 tokens across 18 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/PFComplianceValidationJob.cls",
+          "startLine": 24,
+          "startColumn": 115,
+          "endLine": 38,
+          "endColumn": 34
+        },
+        {
+          "file": "force-app/main/default/classes/PFServiceJob.cls",
+          "startLine": 26,
+          "startColumn": 77,
+          "endLine": 40,
+          "endColumn": 34
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 105 tokens across 15 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/AWSFileUploadController.cls",
+          "startLine": 123,
+          "startColumn": 28,
+          "endLine": 155,
+          "endColumn": 6
+        },
+        {
+          "file": "force-app/main/default/classes/ReorderController.cls",
+          "startLine": 69,
+          "startColumn": 20,
+          "endLine": 100,
+          "endColumn": 6
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 100 tokens across 33 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Batch_JamesEditionPortalXMLGenerator.cls",
+          "startLine": 1,
+          "startColumn": 51,
+          "endLine": 20,
+          "endColumn": 11
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_PFPortalXMLGenerator.cls",
+          "startLine": 1,
+          "startColumn": 41,
+          "endLine": 20,
+          "endColumn": 11
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_WebsitePortalXMLGenerator.cls",
+          "startLine": 1,
+          "startColumn": 46,
+          "endLine": 20,
+          "endColumn": 11
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 3 code locations containing the same block of code consisting of 100 tokens across 20 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForJavascript",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Javascript"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/aura/AWSMultiFileUpload/AWSMultiFileUploadHelper.js",
+          "startLine": 24,
+          "startColumn": 71,
+          "endLine": 91,
+          "endColumn": 12
+        },
+        {
+          "file": "force-app/main/default/aura/UploadFilesToGoogledrive/UploadFilesToGoogledriveHelper.js",
+          "startLine": 36,
+          "startColumn": 52,
+          "endLine": 101,
+          "endColumn": 12
+        }
+      ],
+      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 464 tokens across 68 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForJavascript",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Javascript"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/aura/AWSMultiFileUpload/AWSMultiFileUploadHelper.js",
+          "startLine": 9,
+          "startColumn": 95,
+          "endLine": 23,
+          "endColumn": 56
+        },
+        {
+          "file": "force-app/main/default/aura/UploadFilesToGoogledrive/UploadFilesToGoogledriveHelper.js",
+          "startLine": 11,
+          "startColumn": 71,
+          "endLine": 24,
+          "endColumn": 56
+        }
+      ],
+      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 155 tokens across 15 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForJavascript",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Javascript"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/aura/AWSMultiFileUpload/AWSMultiFileUploadController.js",
+          "startLine": 30,
+          "startColumn": 18,
+          "endLine": 54,
+          "endColumn": 57
+        },
+        {
+          "file": "force-app/main/default/aura/UploadFilesToGoogledrive/UploadFilesToGoogledriveController.js",
+          "startLine": 151,
+          "startColumn": 54,
+          "endLine": 173,
+          "endColumn": 57
+        }
+      ],
+      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 150 tokens across 25 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForJavascript",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Javascript"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/lwc/multiPortalButton/multiPortalButton.js",
+          "startLine": 624,
+          "startColumn": 104,
+          "endLine": 648,
+          "endColumn": 13
+        },
+        {
+          "file": "force-app/main/default/lwc/multiPortalButton/multiPortalButton.js",
+          "startLine": 692,
+          "startColumn": 31,
+          "endLine": 715,
+          "endColumn": 13
+        }
+      ],
+      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 124 tokens across 25 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
     },
     {
       "rule": "ApexSharingViolations",
@@ -55558,934 +57061,6 @@
       "message": "Avoid unescaped user controlled content in EL",
       "resources": [
         "https://docs.pmd-code.org/pmd-doc-7.18.0/pmd_rules_visualforce_security.html#vfunescapeel"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Batch_JamesEditionPortalXMLGenerator.cls",
-          "startLine": 46,
-          "startColumn": 90,
-          "endLine": 397,
-          "endColumn": 138
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_WebsitePortalXMLGenerator.cls",
-          "startLine": 46,
-          "startColumn": 99,
-          "endLine": 397,
-          "endColumn": 138
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 2881 tokens across 352 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Batch_JamesEditionPortalXMLGenerator.cls",
-          "startLine": 108,
-          "startColumn": 40,
-          "endLine": 397,
-          "endColumn": 138
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_PFPortalXMLGenerator.cls",
-          "startLine": 108,
-          "startColumn": 27,
-          "endLine": 397,
-          "endColumn": 138
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_WebsitePortalXMLGenerator.cls",
-          "startLine": 108,
-          "startColumn": 40,
-          "endLine": 397,
-          "endColumn": 138
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 3 code locations containing the same block of code consisting of 2363 tokens across 290 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/PFService.cls",
-          "startLine": 38,
-          "startColumn": 47,
-          "endLine": 165,
-          "endColumn": 73
-        },
-        {
-          "file": "force-app/main/default/classes/PFServiceJob.cls",
-          "startLine": 114,
-          "startColumn": 58,
-          "endLine": 236,
-          "endColumn": 72
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 1196 tokens across 128 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Batch_JamesEditionPortalXMLGenerator.cls",
-          "startLine": 20,
-          "startColumn": 48,
-          "endLine": 108,
-          "endColumn": 21
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_PFPortalXMLGenerator.cls",
-          "startLine": 20,
-          "startColumn": 38,
-          "endLine": 108,
-          "endColumn": 21
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 634 tokens across 89 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Batch_PFPortalXMLGenerator.cls",
-          "startLine": 46,
-          "startColumn": 90,
-          "endLine": 108,
-          "endColumn": 21
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_WebsitePortalXMLGenerator.cls",
-          "startLine": 46,
-          "startColumn": 99,
-          "endLine": 108,
-          "endColumn": 21
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 517 tokens across 63 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Batch_BDPortalXMLGenerator.cls",
-          "startLine": 66,
-          "startColumn": 101,
-          "endLine": 114,
-          "endColumn": 62
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_JamesEditionPortalXMLGenerator.cls",
-          "startLine": 52,
-          "startColumn": 97,
-          "endLine": 105,
-          "endColumn": 62
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_PFPortalXMLGenerator.cls",
-          "startLine": 52,
-          "startColumn": 97,
-          "endLine": 105,
-          "endColumn": 62
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_WebsitePortalXMLGenerator.cls",
-          "startLine": 52,
-          "startColumn": 97,
-          "endLine": 105,
-          "endColumn": 62
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 4 code locations containing the same block of code consisting of 469 tokens across 49 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/LocationTriggerHandler_Test.cls",
-          "startLine": 109,
-          "startColumn": 5,
-          "endLine": 160,
-          "endColumn": 51
-        },
-        {
-          "file": "force-app/main/default/classes/PropertyFinderLocationService_Test.cls",
-          "startLine": 4,
-          "startColumn": 5,
-          "endLine": 56,
-          "endColumn": 51
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 295 tokens across 52 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Test_ListingsXMLForPortals.cls",
-          "startLine": 40,
-          "startColumn": 56,
-          "endLine": 88,
-          "endColumn": 33
-        },
-        {
-          "file": "force-app/main/default/classes/Test_ListingsXMLForPortals.cls",
-          "startLine": 155,
-          "startColumn": 51,
-          "endLine": 202,
-          "endColumn": 33
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 256 tokens across 49 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/PFService.cls",
-          "startLine": 14,
-          "startColumn": 5,
-          "endLine": 38,
-          "endColumn": 46
-        },
-        {
-          "file": "force-app/main/default/classes/PFServiceJob.cls",
-          "startLine": 90,
-          "startColumn": 3,
-          "endLine": 114,
-          "endColumn": 47
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 230 tokens across 25 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/LocationTriggerHandler_Test.cls",
-          "startLine": 109,
-          "startColumn": 51,
-          "endLine": 136,
-          "endColumn": 32
-        },
-        {
-          "file": "force-app/main/default/classes/LocationTriggerHandler_Test.cls",
-          "startLine": 158,
-          "startColumn": 51,
-          "endLine": 185,
-          "endColumn": 36
-        },
-        {
-          "file": "force-app/main/default/classes/PropertyFinderLocationService_Test.cls",
-          "startLine": 4,
-          "startColumn": 51,
-          "endLine": 31,
-          "endColumn": 32
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 3 code locations containing the same block of code consisting of 206 tokens across 28 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Batch_BDPortalXMLGenerator.cls",
-          "startLine": 347,
-          "startColumn": 65,
-          "endLine": 372,
-          "endColumn": 55
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_JamesEditionPortalXMLGenerator.cls",
-          "startLine": 353,
-          "startColumn": 112,
-          "endLine": 378,
-          "endColumn": 55
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_PFPortalXMLGenerator.cls",
-          "startLine": 353,
-          "startColumn": 112,
-          "endLine": 378,
-          "endColumn": 55
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_WebsitePortalXMLGenerator.cls",
-          "startLine": 353,
-          "startColumn": 112,
-          "endLine": 378,
-          "endColumn": 55
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 4 code locations containing the same block of code consisting of 149 tokens across 26 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Batch_JamesEditionPortalXMLGenerator.cls",
-          "startLine": 397,
-          "startColumn": 153,
-          "endLine": 430,
-          "endColumn": 2
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_PFPortalXMLGenerator.cls",
-          "startLine": 397,
-          "startColumn": 142,
-          "endLine": 430,
-          "endColumn": 2
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_WebsitePortalXMLGenerator.cls",
-          "startLine": 397,
-          "startColumn": 147,
-          "endLine": 430,
-          "endColumn": 2
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 3 code locations containing the same block of code consisting of 145 tokens across 34 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Batch_BDPortalXMLGenerator.cls",
-          "startLine": 376,
-          "startColumn": 13,
-          "endLine": 394,
-          "endColumn": 142
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_JamesEditionPortalXMLGenerator.cls",
-          "startLine": 379,
-          "startColumn": 9,
-          "endLine": 397,
-          "endColumn": 138
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_PFPortalXMLGenerator.cls",
-          "startLine": 379,
-          "startColumn": 9,
-          "endLine": 397,
-          "endColumn": 138
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_WebsitePortalXMLGenerator.cls",
-          "startLine": 379,
-          "startColumn": 9,
-          "endLine": 397,
-          "endColumn": 138
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 4 code locations containing the same block of code consisting of 140 tokens across 19 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Batch_BDPortalXMLGenerator.cls",
-          "startLine": 404,
-          "startColumn": 9,
-          "endLine": 429,
-          "endColumn": 2
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_JamesEditionPortalXMLGenerator.cls",
-          "startLine": 402,
-          "startColumn": 9,
-          "endLine": 430,
-          "endColumn": 2
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_PFPortalXMLGenerator.cls",
-          "startLine": 402,
-          "startColumn": 9,
-          "endLine": 430,
-          "endColumn": 2
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_WebsitePortalXMLGenerator.cls",
-          "startLine": 402,
-          "startColumn": 9,
-          "endLine": 430,
-          "endColumn": 2
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 4 code locations containing the same block of code consisting of 134 tokens across 26 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/ListingDetailImport.cls",
-          "startLine": 5,
-          "startColumn": 60,
-          "endLine": 20,
-          "endColumn": 26
-        },
-        {
-          "file": "force-app/main/default/classes/PropertyFinderUserService.cls",
-          "startLine": 5,
-          "startColumn": 60,
-          "endLine": 22,
-          "endColumn": 27
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 118 tokens across 16 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Test_ListingImageDisplayList.cls",
-          "startLine": 9,
-          "startColumn": 18,
-          "endLine": 27,
-          "endColumn": 16
-        },
-        {
-          "file": "force-app/main/default/classes/Test_PFService.cls",
-          "startLine": 7,
-          "startColumn": 19,
-          "endLine": 27,
-          "endColumn": 16
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 115 tokens across 19 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Test_ListingImageDisplayList.cls",
-          "startLine": 10,
-          "startColumn": 10,
-          "endLine": 25,
-          "endColumn": 22
-        },
-        {
-          "file": "force-app/main/default/classes/Test_PFUserIntegration.cls",
-          "startLine": 8,
-          "startColumn": 9,
-          "endLine": 23,
-          "endColumn": 22
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 113 tokens across 16 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Test_PFService.cls",
-          "startLine": 9,
-          "startColumn": 9,
-          "endLine": 24,
-          "endColumn": 22
-        },
-        {
-          "file": "force-app/main/default/classes/Test_PFUserIntegration.cls",
-          "startLine": 8,
-          "startColumn": 9,
-          "endLine": 23,
-          "endColumn": 22
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 113 tokens across 16 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/ListingTriggerHandler_Test.cls",
-          "startLine": 4,
-          "startColumn": 45,
-          "endLine": 18,
-          "endColumn": 65
-        },
-        {
-          "file": "force-app/main/default/classes/Test_ListingImageDisplayList.cls",
-          "startLine": 5,
-          "startColumn": 32,
-          "endLine": 18,
-          "endColumn": 65
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 110 tokens across 15 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Test_AWSFileUploadController.cls",
-          "startLine": 9,
-          "startColumn": 31,
-          "endLine": 26,
-          "endColumn": 19
-        },
-        {
-          "file": "force-app/main/default/classes/Test_AWSFileUploadController.cls",
-          "startLine": 31,
-          "startColumn": 42,
-          "endLine": 49,
-          "endColumn": 19
-        },
-        {
-          "file": "force-app/main/default/classes/Test_AWSFileUploadController.cls",
-          "startLine": 91,
-          "startColumn": 38,
-          "endLine": 109,
-          "endColumn": 19
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 3 code locations containing the same block of code consisting of 107 tokens across 18 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/PFComplianceValidationJob.cls",
-          "startLine": 24,
-          "startColumn": 115,
-          "endLine": 38,
-          "endColumn": 34
-        },
-        {
-          "file": "force-app/main/default/classes/PFServiceJob.cls",
-          "startLine": 26,
-          "startColumn": 77,
-          "endLine": 40,
-          "endColumn": 34
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 105 tokens across 15 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/AWSFileUploadController.cls",
-          "startLine": 123,
-          "startColumn": 28,
-          "endLine": 155,
-          "endColumn": 6
-        },
-        {
-          "file": "force-app/main/default/classes/ReorderController.cls",
-          "startLine": 69,
-          "startColumn": 20,
-          "endLine": 100,
-          "endColumn": 6
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 100 tokens across 33 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Batch_JamesEditionPortalXMLGenerator.cls",
-          "startLine": 1,
-          "startColumn": 51,
-          "endLine": 20,
-          "endColumn": 11
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_PFPortalXMLGenerator.cls",
-          "startLine": 1,
-          "startColumn": 41,
-          "endLine": 20,
-          "endColumn": 11
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_WebsitePortalXMLGenerator.cls",
-          "startLine": 1,
-          "startColumn": 46,
-          "endLine": 20,
-          "endColumn": 11
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 3 code locations containing the same block of code consisting of 100 tokens across 20 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForJavascript",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Javascript"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/aura/AWSMultiFileUpload/AWSMultiFileUploadHelper.js",
-          "startLine": 24,
-          "startColumn": 71,
-          "endLine": 91,
-          "endColumn": 12
-        },
-        {
-          "file": "force-app/main/default/aura/UploadFilesToGoogledrive/UploadFilesToGoogledriveHelper.js",
-          "startLine": 36,
-          "startColumn": 52,
-          "endLine": 101,
-          "endColumn": 12
-        }
-      ],
-      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 464 tokens across 68 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForJavascript",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Javascript"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/aura/AWSMultiFileUpload/AWSMultiFileUploadHelper.js",
-          "startLine": 9,
-          "startColumn": 95,
-          "endLine": 23,
-          "endColumn": 56
-        },
-        {
-          "file": "force-app/main/default/aura/UploadFilesToGoogledrive/UploadFilesToGoogledriveHelper.js",
-          "startLine": 11,
-          "startColumn": 71,
-          "endLine": 24,
-          "endColumn": 56
-        }
-      ],
-      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 155 tokens across 15 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForJavascript",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Javascript"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/aura/AWSMultiFileUpload/AWSMultiFileUploadController.js",
-          "startLine": 30,
-          "startColumn": 18,
-          "endLine": 54,
-          "endColumn": 57
-        },
-        {
-          "file": "force-app/main/default/aura/UploadFilesToGoogledrive/UploadFilesToGoogledriveController.js",
-          "startLine": 151,
-          "startColumn": 54,
-          "endLine": 173,
-          "endColumn": 57
-        }
-      ],
-      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 150 tokens across 25 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForJavascript",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Javascript"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/lwc/multiPortalButton/multiPortalButton.js",
-          "startLine": 624,
-          "startColumn": 104,
-          "endLine": 648,
-          "endColumn": 13
-        },
-        {
-          "file": "force-app/main/default/lwc/multiPortalButton/multiPortalButton.js",
-          "startLine": 692,
-          "startColumn": 31,
-          "endLine": 715,
-          "endColumn": 13
-        }
-      ],
-      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 124 tokens across 25 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
       ]
     }
   ]
