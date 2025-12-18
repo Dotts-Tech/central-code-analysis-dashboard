@@ -1,48 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dotts Salesforce Analysis Dashboard</title>
-    <!-- Link to the external CSS file -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Salesforce Code Analyzer Dashboard</title>
     <link rel="stylesheet" href="test-style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+   <header>
+      <div class="header-left">
+        <h1>Salesforce Code Analyzer Dashboard</h1>
+      </div>
+      <div class="header-right">
+        <img src="dotts.png" class="logo" />
+      </div>
+    </header>
 
-    <div class="container">
-        <!-- NEW: Header with Logo and Title -->
-        <div class="dashboard-header">
-            <img class="dashboard-logo" src="dotts.png" alt="Dotts Logo">
-            <h1>Dotts Salesforce Analysis Dashboard</h1>
-        </div>
-        
-        <!-- Debug View Toggle Button -->
-        <div class="debug-toggle-container">
-            <button id="debug-toggle-btn">Show Debug View</button>
-        </div>
+    <main id="results">
+      <div class="loading-container">
+        <div class="loading-spinner"></div>
+        <p>Loading dashboard...</p>
+      </div>
+    </main>
 
-        <div id="dashboard-content" class="loading">
-            Loading analysis results...
-        </div>
-
-        <!-- Debug Information Container -->
-        <div id="debug-view" class="debug-view" style="display: none;">
-            <h2>Debug Information</h2>
-            <p><strong>Data Source URL:</strong> <code id="debug-url"></code></p>
-            <p><strong>Raw test-index.json content:</strong></p>
-            <pre id="debug-json"></pre>
-        </div>
-    </div>
-
-    <!-- Modal for viewing reports -->
+    <!-- Modal for reports -->
     <div id="report-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <iframe id="report-frame" src="" title="Analysis Report"></iframe>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="modal-title">Report</h2>
+          <div class="modal-actions">
+            <button id="modal-download-btn" class="download-btn">
+              <i class="fas fa-download"></i> Download
+            </button>
+            <button class="close-button">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
         </div>
+        <div class="modal-body">
+          <iframe id="report-frame"></iframe>
+        </div>
+      </div>
     </div>
 
-    <!-- Link to the external JavaScript file -->
     <script src="test-script.js"></script>
-</body>
+  </body>
 </html>
