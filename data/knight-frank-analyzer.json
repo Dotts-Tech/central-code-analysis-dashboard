@@ -1,10 +1,10 @@
 {
   "runDir": "/home/runner/work/knight-frank/knight-frank/",
   "violationCounts": {
-    "total": 2288,
-    "sev1": 1,
-    "sev2": 138,
-    "sev3": 467,
+    "total": 2327,
+    "sev1": 0,
+    "sev2": 153,
+    "sev3": 492,
     "sev4": 687,
     "sev5": 995
   },
@@ -13,7 +13,7 @@
     "retire-js": "0.29.0",
     "regex": "0.30.0",
     "eslint": "0.37.1",
-    "flow": "0.31.0",
+    "flow": "0.31.1",
     "pmd": "0.33.0",
     "cpd": "0.33.0"
   },
@@ -24440,18 +24440,903 @@
       ]
     },
     {
-      "rule": "UnexpectedEngineError",
+      "rule": "DefaultCopy",
       "engine": "flow",
-      "severity": 1,
-      "tags": [],
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "comment": "Undefined Code Location"
+          "file": "force-app/main/default/flows/Lead_Process_Automation_Process.flow-meta.xml",
+          "startLine": 85,
+          "startColumn": 1
         }
       ],
-      "message": "The engine with name 'flow' threw an unexpected error: Error: Developer error: invalid query id HardcodedId\n    at getRuleNameFromQueryId (/home/runner/.local/share/sf/node_modules/@salesforce/plugin-code-analyzer/node_modules/@salesforce/code-analyzer-flow-engine/dist/hardcoded-catalog.js:150:15)\n    at toEngineRunResults (/home/runner/.local/share/sf/node_modules/@salesforce/plugin-code-analyzer/node_modules/@salesforce/code-analyzer-flow-engine/dist/engine.js:150:77)\n    at FlowScannerEngine.runRules (/home/runner/.local/share/sf/node_modules/@salesforce/plugin-code-analyzer/node_modules/@salesforce/code-analyzer-flow-engine/dist/engine.js:104:34)\n    at async CodeAnalyzer.runEngineAndValidateResults (/home/runner/.local/share/sf/node_modules/@salesforce/plugin-code-analyzer/node_modules/@salesforce/code-analyzer-core/dist/code-analyzer.js:389:35)\n    at async /home/runner/.local/share/sf/node_modules/@salesforce/plugin-code-analyzer/node_modules/@salesforce/code-analyzer-core/dist/code-analyzer.js:276:29\n    at async Promise.all (index 3)\n    at async CodeAnalyzer.run (/home/runner/.local/share/sf/node_modules/@salesforce/plugin-code-analyzer/node_modules/@salesforce/code-analyzer-core/dist/code-analyzer.js:283:38)\n    at async RunAction.execute (file:///home/runner/.local/share/sf/node_modules/@salesforce/plugin-code-analyzer/lib/lib/actions/RunAction.js:39:25)\n    at async RunCommand.run (file:///home/runner/.local/share/sf/node_modules/@salesforce/plugin-code-analyzer/lib/commands/code-analyzer/run.js:86:9)\n    at async RunCommand._run (/home/runner/.local/share/sf/node_modules/@salesforce/plugin-code-analyzer/node_modules/@oclif/core/lib/command.js:182:22)",
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
       "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Lead_Process_Automation_Process.flow-meta.xml",
+          "startLine": 21,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Lead_Process_Automation_Process.flow-meta.xml",
+          "startLine": 76,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Contact_Phone_Update.flow-meta.xml",
+          "startLine": 27,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Contact_Owner_should_be_same_as_lead_owner.flow-meta.xml",
+          "startLine": 27,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DbInLoop",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 1,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Datatable_Configuration_Wizard5.flow-meta.xml",
+          "startLine": 1261,
+          "startColumn": 1,
+          "comment": "Loop_Previously_Selected_Fields.Loop_Previously_Selected_Fields: Loop"
+        },
+        {
+          "file": "force-app/main/default/flows/Datatable_Configuration_Wizard5.flow-meta.xml",
+          "startLine": 1304,
+          "startColumn": 1,
+          "comment": "Loop_Previously_Selected_Fields.Loop_Previously_Selected_Fields influences Check_For_Existing_Config_Record.Check_For_Existing_Config_Record: Database Operation recordLookups performed within the Loop Loop_Previously_Selected_Fields"
+        }
+      ],
+      "message": "A Database operation (RecordLookups, RecordCreates, RecordUpdates, RecordDeletes) is being performed within a loop. To avoid excessive Database calls, the operation should be bulkified by using collection variables and the 'IN' operator.",
+      "resources": []
+    },
+    {
+      "rule": "DbInLoop",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 1,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Mark_false_unavailable_Agent.flow-meta.xml",
+          "startLine": 38,
+          "startColumn": 1,
+          "comment": "Loop_Through_Users.Loop_Through_Users: Loop"
+        },
+        {
+          "file": "force-app/main/default/flows/Mark_false_unavailable_Agent.flow-meta.xml",
+          "startLine": 99,
+          "startColumn": 1,
+          "comment": "Loop_Through_Users.Loop_Through_Users influences Update_Records_1.Update_Records_1: Database Operation recordUpdates performed within the Loop Loop_Through_Users"
+        }
+      ],
+      "message": "A Database operation (RecordLookups, RecordCreates, RecordUpdates, RecordDeletes) is being performed within a loop. To avoid excessive Database calls, the operation should be bulkified by using collection variables and the 'IN' operator.",
+      "resources": []
+    },
+    {
+      "rule": "DbInLoop",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 1,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Datatable_Configuration_Wizard5.flow-meta.xml",
+          "startLine": 1261,
+          "startColumn": 1,
+          "comment": "Loop_Previously_Selected_Fields.Loop_Previously_Selected_Fields: Loop"
+        },
+        {
+          "file": "force-app/main/default/flows/Datatable_Configuration_Wizard5.flow-meta.xml",
+          "startLine": 1355,
+          "startColumn": 1,
+          "comment": "Loop_Previously_Selected_Fields.Loop_Previously_Selected_Fields influences Save_Config_Record.Save_Config_Record: Database Operation recordUpdates performed within the Loop Loop_Previously_Selected_Fields"
+        }
+      ],
+      "message": "A Database operation (RecordLookups, RecordCreates, RecordUpdates, RecordDeletes) is being performed within a loop. To avoid excessive Database calls, the operation should be bulkified by using collection variables and the 'IN' operator.",
+      "resources": []
+    },
+    {
+      "rule": "DbInLoop",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 1,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Datatable_Configuration_Wizard5.flow-meta.xml",
+          "startLine": 1261,
+          "startColumn": 1,
+          "comment": "Loop_Previously_Selected_Fields.Loop_Previously_Selected_Fields: Loop"
+        },
+        {
+          "file": "force-app/main/default/flows/Datatable_Configuration_Wizard5.flow-meta.xml",
+          "startLine": 1294,
+          "startColumn": 1,
+          "comment": "Loop_Previously_Selected_Fields.Loop_Previously_Selected_Fields influences Create_New_Config_Record.Create_New_Config_Record: Database Operation recordCreates performed within the Loop Loop_Previously_Selected_Fields"
+        }
+      ],
+      "message": "A Database operation (RecordLookups, RecordCreates, RecordUpdates, RecordDeletes) is being performed within a loop. To avoid excessive Database calls, the operation should be bulkified by using collection variables and the 'IN' operator.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Parse_Email_Fields_to_Case_Fields.flow-meta.xml",
+          "startLine": 479,
+          "startColumn": 1,
+          "comment": "Update_Enquiry_Fields.Update_Enquiry_Fields: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_a_Follow_Up_Task.flow-meta.xml",
+          "startLine": 142,
+          "startColumn": 1,
+          "comment": "Update_the_By_pass_as_False.Update_the_By_pass_as_False: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Lead_Process_Automation_Process.flow-meta.xml",
+          "startLine": 452,
+          "startColumn": 1,
+          "comment": "By_Pass_False.By_Pass_False: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_the_Property_Reference_ids_while_creating_the_Properties.flow-meta.xml",
+          "startLine": 262,
+          "startColumn": 1,
+          "comment": "Update_the_UAE_reference_is.Update_the_UAE_reference_is: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_the_Property_Reference_ids_while_creating_the_Properties.flow-meta.xml",
+          "startLine": 275,
+          "startColumn": 1,
+          "comment": "Updateb_Qatar_Property_Ref_ids.Updateb_Qatar_Property_Ref_ids: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Number_of_digits_for_Contact_numbers_should_be_matched_with_actual.flow-meta.xml",
+          "startLine": 452,
+          "startColumn": 1,
+          "comment": "Update_WhatsApp.Update_WhatsApp: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Lead_Process_Automation_Process.flow-meta.xml",
+          "startLine": 465,
+          "startColumn": 1,
+          "comment": "Updating_Current_Lead_Record.Updating_Current_Lead_Record: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Number_of_digits_for_Contact_numbers_should_be_matched_with_actual.flow-meta.xml",
+          "startLine": 436,
+          "startColumn": 1,
+          "comment": "Update_Secondary_mobile.Update_Secondary_mobile: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Contact_Phone_Update.flow-meta.xml",
+          "startLine": 27,
+          "startColumn": 1,
+          "comment": "Copy_1_of_Update_the_contact.Copy_1_of_Update_the_contact: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_the_Property_Reference_ids_while_creating_the_Properties.flow-meta.xml",
+          "startLine": 249,
+          "startColumn": 1,
+          "comment": "Update_Saudi_Reference_Ids.Update_Saudi_Reference_Ids: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Account_from_Contact.flow-meta.xml",
+          "startLine": 50,
+          "startColumn": 1,
+          "comment": "Upadte_account_record.Upadte_account_record: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Number_of_digits_for_Contact_numbers_should_be_matched_with_actual.flow-meta.xml",
+          "startLine": 404,
+          "startColumn": 1,
+          "comment": "Update_buisness_phone.Update_buisness_phone: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Contact_Phone_Update.flow-meta.xml",
+          "startLine": 40,
+          "startColumn": 1,
+          "comment": "Update_the_contact.Update_the_contact: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Number_of_digits_for_Contact_numbers_should_be_matched_with_actual.flow-meta.xml",
+          "startLine": 420,
+          "startColumn": 1,
+          "comment": "Update_Mobile.Update_Mobile: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Creating_Reassignment_History_based_on_ownership_changed.flow-meta.xml",
+          "startLine": 75,
+          "startColumn": 1,
+          "comment": "By_pass_as_True.By_pass_as_True: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_a_Follow_Up_Task.flow-meta.xml",
+          "startLine": 104,
+          "startColumn": 1,
+          "comment": "Close_the_Current_Task.Close_the_Current_Task: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Creating_Reassignment_History_based_on_ownership_changed.flow-meta.xml",
+          "startLine": 62,
+          "startColumn": 1,
+          "comment": "By_pass_as_false.By_pass_as_false: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Update_Last_Call_Date_Status_of_the_Enquiry.flow-meta.xml",
+          "startLine": 85,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_Vieiwng.flow-meta.xml",
+          "startLine": 79,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Update_Last_Call_Date_Status_of_the_Enquiry.flow-meta.xml",
+          "startLine": 49,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "TriggerEntryCriteria",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Number_of_digits_for_Contact_numbers_should_be_matched_with_actual.flow-meta.xml",
+          "startLine": 465,
+          "startColumn": 1
+        }
+      ],
+      "message": "The record trigger flow has no entry criteria. All record trigger flows should have entry criteria specified in the flow trigger definition rather than solely in the flow's own business logic.",
+      "resources": []
+    },
+    {
+      "rule": "TriggerEntryCriteria",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Price_Update_Record.flow-meta.xml",
+          "startLine": 47,
+          "startColumn": 1
+        }
+      ],
+      "message": "The record trigger flow has no entry criteria. All record trigger flows should have entry criteria specified in the flow trigger definition rather than solely in the flow's own business logic.",
+      "resources": []
+    },
+    {
+      "rule": "TriggerEntryCriteria",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/New_Lead_Notification.flow-meta.xml",
+          "startLine": 152,
+          "startColumn": 1
+        }
+      ],
+      "message": "The record trigger flow has no entry criteria. All record trigger flows should have entry criteria specified in the flow trigger definition rather than solely in the flow's own business logic.",
+      "resources": []
+    },
+    {
+      "rule": "TriggerEntryCriteria",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Contact_Phone_Update.flow-meta.xml",
+          "startLine": 62,
+          "startColumn": 1
+        }
+      ],
+      "message": "The record trigger flow has no entry criteria. All record trigger flows should have entry criteria specified in the flow trigger definition rather than solely in the flow's own business logic.",
+      "resources": []
+    },
+    {
+      "rule": "TriggerEntryCriteria",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Lead_Process_Automation_Process.flow-meta.xml",
+          "startLine": 475,
+          "startColumn": 1
+        }
+      ],
+      "message": "The record trigger flow has no entry criteria. All record trigger flows should have entry criteria specified in the flow trigger definition rather than solely in the flow's own business logic.",
+      "resources": []
+    },
+    {
+      "rule": "PreventPassingUserDataIntoElementWithoutSharing",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 1,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Property_Creation_Flow.flow-meta.xml",
+          "startLine": 363,
+          "startColumn": 1,
+          "comment": "Property_Name.Property_Name: Initialization"
+        },
+        {
+          "file": "force-app/main/default/flows/Property_Creation_Flow.flow-meta.xml",
+          "startLine": 96,
+          "startColumn": 1,
+          "comment": "Property_Name.Property_Name influences Create_Property.Name: flow into recordCreates via influence over Name in run mode SystemModeWithoutSharing"
+        }
+      ],
+      "message": "User controlled data is sent to a DB Element (RecordLookups, RecordCreates, RecordUpdates, RecordDeletes) in System context without sharing. This can result in privilege escalation if the user does not have permission to access the underlying record.",
+      "resources": [
+        "https://developer.salesforce.com/docs/platform/salesforce-code-analyzer/guide/rules-flow.html#preventpassinguserdataintoelementwithoutsharing"
+      ]
+    },
+    {
+      "rule": "PreventPassingUserDataIntoElementWithoutSharing",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 1,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Property_Creation_Flow_Sales_Only.flow-meta.xml",
+          "startLine": 485,
+          "startColumn": 1,
+          "comment": "recordId.recordId: Initialization"
+        },
+        {
+          "file": "force-app/main/default/flows/Property_Creation_Flow_Sales_Only.flow-meta.xml",
+          "startLine": 187,
+          "startColumn": 1,
+          "comment": "recordId.recordId influences Property.Opportunity__c: flow into recordLookups via influence over Opportunity__c in run mode SystemModeWithoutSharing"
+        }
+      ],
+      "message": "User controlled data is sent to a DB Element (RecordLookups, RecordCreates, RecordUpdates, RecordDeletes) in System context without sharing. This can result in privilege escalation if the user does not have permission to access the underlying record.",
+      "resources": [
+        "https://developer.salesforce.com/docs/platform/salesforce-code-analyzer/guide/rules-flow.html#preventpassinguserdataintoelementwithoutsharing"
+      ]
+    },
+    {
+      "rule": "PreventPassingUserDataIntoElementWithoutSharing",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 1,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Property_Creation_Flow.flow-meta.xml",
+          "startLine": 452,
+          "startColumn": 1,
+          "comment": "recordId.recordId: Initialization"
+        },
+        {
+          "file": "force-app/main/default/flows/Property_Creation_Flow.flow-meta.xml",
+          "startLine": 152,
+          "startColumn": 1,
+          "comment": "recordId.recordId influences Property.Opportunity__c: flow into recordLookups via influence over Opportunity__c in run mode SystemModeWithoutSharing"
+        }
+      ],
+      "message": "User controlled data is sent to a DB Element (RecordLookups, RecordCreates, RecordUpdates, RecordDeletes) in System context without sharing. This can result in privilege escalation if the user does not have permission to access the underlying record.",
+      "resources": [
+        "https://developer.salesforce.com/docs/platform/salesforce-code-analyzer/guide/rules-flow.html#preventpassinguserdataintoelementwithoutsharing"
+      ]
+    },
+    {
+      "rule": "PreventPassingUserDataIntoElementWithoutSharing",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 1,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Property_Creation_Flow_Sales_Only.flow-meta.xml",
+          "startLine": 485,
+          "startColumn": 1,
+          "comment": "recordId.recordId: Initialization"
+        },
+        {
+          "file": "force-app/main/default/flows/Property_Creation_Flow_Sales_Only.flow-meta.xml",
+          "startLine": 131,
+          "startColumn": 1,
+          "comment": "recordId.recordId influences Get_Opp_Data.Id: flow into recordLookups via influence over Id in run mode SystemModeWithoutSharing"
+        }
+      ],
+      "message": "User controlled data is sent to a DB Element (RecordLookups, RecordCreates, RecordUpdates, RecordDeletes) in System context without sharing. This can result in privilege escalation if the user does not have permission to access the underlying record.",
+      "resources": [
+        "https://developer.salesforce.com/docs/platform/salesforce-code-analyzer/guide/rules-flow.html#preventpassinguserdataintoelementwithoutsharing"
+      ]
+    },
+    {
+      "rule": "PreventPassingUserDataIntoElementWithoutSharing",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 1,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Property_Creation_Flow_Sales_Only.flow-meta.xml",
+          "startLine": 411,
+          "startColumn": 1,
+          "comment": "Property_Name.Property_Name: Initialization"
+        },
+        {
+          "file": "force-app/main/default/flows/Property_Creation_Flow_Sales_Only.flow-meta.xml",
+          "startLine": 96,
+          "startColumn": 1,
+          "comment": "Property_Name.Property_Name influences Create_Property.Name: flow into recordCreates via influence over Name in run mode SystemModeWithoutSharing"
+        }
+      ],
+      "message": "User controlled data is sent to a DB Element (RecordLookups, RecordCreates, RecordUpdates, RecordDeletes) in System context without sharing. This can result in privilege escalation if the user does not have permission to access the underlying record.",
+      "resources": [
+        "https://developer.salesforce.com/docs/platform/salesforce-code-analyzer/guide/rules-flow.html#preventpassinguserdataintoelementwithoutsharing"
+      ]
+    },
+    {
+      "rule": "PreventPassingUserDataIntoElementWithoutSharing",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 1,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Property_Creation_Flow.flow-meta.xml",
+          "startLine": 452,
+          "startColumn": 1,
+          "comment": "recordId.recordId: Initialization"
+        },
+        {
+          "file": "force-app/main/default/flows/Property_Creation_Flow.flow-meta.xml",
+          "startLine": 131,
+          "startColumn": 1,
+          "comment": "recordId.recordId influences Get_Opp_Data.Id: flow into recordLookups via influence over Id in run mode SystemModeWithoutSharing"
+        }
+      ],
+      "message": "User controlled data is sent to a DB Element (RecordLookups, RecordCreates, RecordUpdates, RecordDeletes) in System context without sharing. This can result in privilege escalation if the user does not have permission to access the underlying record.",
+      "resources": [
+        "https://developer.salesforce.com/docs/platform/salesforce-code-analyzer/guide/rules-flow.html#preventpassinguserdataintoelementwithoutsharing"
+      ]
     },
     {
       "rule": "ApexDoc",
