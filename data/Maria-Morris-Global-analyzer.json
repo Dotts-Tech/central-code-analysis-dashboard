@@ -13,8 +13,8 @@
     "retire-js": "0.29.0",
     "regex": "0.30.0",
     "eslint": "0.37.1",
-    "cpd": "0.33.0",
-    "pmd": "0.33.0"
+    "pmd": "0.33.0",
+    "cpd": "0.33.0"
   },
   "violations": [
     {
@@ -60982,1964 +60982,6 @@
       ]
     },
     {
-      "rule": "DetectCopyPasteForVisualforce",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Visualforce"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/pages/ChangePassword.page",
-          "startLine": 1,
-          "startColumn": 125,
-          "endLine": 15,
-          "endColumn": 76
-        },
-        {
-          "file": "force-app/main/default/pages/ForgotPassword.page",
-          "startLine": 1,
-          "startColumn": 125,
-          "endLine": 15,
-          "endColumn": 76
-        },
-        {
-          "file": "force-app/main/default/pages/ForgotPasswordConfirm.page",
-          "startLine": 1,
-          "startColumn": 80,
-          "endLine": 15,
-          "endColumn": 76
-        },
-        {
-          "file": "force-app/main/default/pages/SiteLogin.page",
-          "startLine": 1,
-          "startColumn": 77,
-          "endLine": 15,
-          "endColumn": 76
-        },
-        {
-          "file": "force-app/main/default/pages/SiteRegister.page",
-          "startLine": 1,
-          "startColumn": 114,
-          "endLine": 15,
-          "endColumn": 76
-        }
-      ],
-      "message": "Duplicate code detected for language 'visualforce'. Found 5 code locations containing the same block of code consisting of 160 tokens across 15 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForVisualforce",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Visualforce"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/pages/FileNotFound.page",
-          "startLine": 1,
-          "startColumn": 67,
-          "endLine": 13,
-          "endColumn": 65
-        },
-        {
-          "file": "force-app/main/default/pages/Unauthorized.page",
-          "startLine": 1,
-          "startColumn": 93,
-          "endLine": 13,
-          "endColumn": 65
-        }
-      ],
-      "message": "Duplicate code detected for language 'visualforce'. Found 2 code locations containing the same block of code consisting of 155 tokens across 13 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForVisualforce",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Visualforce"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/pages/Exception.page",
-          "startLine": 5,
-          "startColumn": 74,
-          "endLine": 15,
-          "endColumn": 76
-        },
-        {
-          "file": "force-app/main/default/pages/FileNotFound.page",
-          "startLine": 5,
-          "startColumn": 51,
-          "endLine": 15,
-          "endColumn": 76
-        }
-      ],
-      "message": "Duplicate code detected for language 'visualforce'. Found 2 code locations containing the same block of code consisting of 137 tokens across 11 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForVisualforce",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Visualforce"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/pages/ChangePassword.page",
-          "startLine": 1,
-          "startColumn": 126,
-          "endLine": 11,
-          "endColumn": 100
-        },
-        {
-          "file": "force-app/main/default/pages/FileNotFound.page",
-          "startLine": 1,
-          "startColumn": 81,
-          "endLine": 11,
-          "endColumn": 100
-        },
-        {
-          "file": "force-app/main/default/pages/ForgotPassword.page",
-          "startLine": 1,
-          "startColumn": 126,
-          "endLine": 11,
-          "endColumn": 100
-        },
-        {
-          "file": "force-app/main/default/pages/ForgotPasswordConfirm.page",
-          "startLine": 1,
-          "startColumn": 81,
-          "endLine": 11,
-          "endColumn": 100
-        },
-        {
-          "file": "force-app/main/default/pages/SiteLogin.page",
-          "startLine": 1,
-          "startColumn": 78,
-          "endLine": 11,
-          "endColumn": 100
-        },
-        {
-          "file": "force-app/main/default/pages/SiteRegister.page",
-          "startLine": 1,
-          "startColumn": 115,
-          "endLine": 11,
-          "endColumn": 100
-        },
-        {
-          "file": "force-app/main/default/pages/Unauthorized.page",
-          "startLine": 1,
-          "startColumn": 107,
-          "endLine": 11,
-          "endColumn": 100
-        }
-      ],
-      "message": "Duplicate code detected for language 'visualforce'. Found 7 code locations containing the same block of code consisting of 118 tokens across 11 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForVisualforce",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Visualforce"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/pages/FileNotFound.page",
-          "startLine": 4,
-          "startColumn": 7,
-          "endLine": 13,
-          "endColumn": 18
-        },
-        {
-          "file": "force-app/main/default/pages/StdExceptionTemplate.page",
-          "startLine": 3,
-          "startColumn": 3,
-          "endLine": 12,
-          "endColumn": 12
-        },
-        {
-          "file": "force-app/main/default/pages/Unauthorized.page",
-          "startLine": 4,
-          "startColumn": 7,
-          "endLine": 13,
-          "endColumn": 18
-        }
-      ],
-      "message": "Duplicate code detected for language 'visualforce'. Found 3 code locations containing the same block of code consisting of 117 tokens across 10 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForVisualforce",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Visualforce"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/pages/Exception.page",
-          "startLine": 5,
-          "startColumn": 74,
-          "endLine": 13,
-          "endColumn": 65
-        },
-        {
-          "file": "force-app/main/default/pages/Unauthorized.page",
-          "startLine": 5,
-          "startColumn": 51,
-          "endLine": 13,
-          "endColumn": 65
-        }
-      ],
-      "message": "Duplicate code detected for language 'visualforce'. Found 2 code locations containing the same block of code consisting of 114 tokens across 9 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForVisualforce",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Visualforce"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/pages/Exception.page",
-          "startLine": 5,
-          "startColumn": 74,
-          "endLine": 13,
-          "endColumn": 18
-        },
-        {
-          "file": "force-app/main/default/pages/StdExceptionTemplate.page",
-          "startLine": 4,
-          "startColumn": 45,
-          "endLine": 12,
-          "endColumn": 12
-        }
-      ],
-      "message": "Duplicate code detected for language 'visualforce'. Found 2 code locations containing the same block of code consisting of 103 tokens across 9 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/PFService.cls",
-          "startLine": 63,
-          "startColumn": 47,
-          "endLine": 203,
-          "endColumn": 73
-        },
-        {
-          "file": "force-app/main/default/classes/PFServiceJob.cls",
-          "startLine": 137,
-          "startColumn": 58,
-          "endLine": 274,
-          "endColumn": 72
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 1220 tokens across 141 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/BayutWhatsappLogTriggerHandler.cls",
-          "startLine": 259,
-          "startColumn": 56,
-          "endLine": 287,
-          "endColumn": 45
-        },
-        {
-          "file": "force-app/main/default/classes/PF_Whatsapp_Log_Trigger_Controller.cls",
-          "startLine": 276,
-          "startColumn": 51,
-          "endLine": 305,
-          "endColumn": 45
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 309 tokens across 29 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Batch_PortalXMLGenerator.cls",
-          "startLine": 48,
-          "startColumn": 84,
-          "endLine": 83,
-          "endColumn": 98
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_PortalXMLGeneratorBD.cls",
-          "startLine": 46,
-          "startColumn": 71,
-          "endLine": 82,
-          "endColumn": 98
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 291 tokens across 36 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/PFService.cls",
-          "startLine": 16,
-          "startColumn": 103,
-          "endLine": 63,
-          "endColumn": 46
-        },
-        {
-          "file": "force-app/main/default/classes/PFServiceJob.cls",
-          "startLine": 90,
-          "startColumn": 122,
-          "endLine": 137,
-          "endColumn": 47
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 287 tokens across 48 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/BayutCallLogController.cls",
-          "startLine": 336,
-          "startColumn": 112,
-          "endLine": 349,
-          "endColumn": 19
-        },
-        {
-          "file": "force-app/main/default/classes/BayutEmailLogTriggerHandler.cls",
-          "startLine": 277,
-          "startColumn": 45,
-          "endLine": 290,
-          "endColumn": 19
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 187 tokens across 14 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/BayutWhatsappLogTriggerHandler.cls",
-          "startLine": 73,
-          "startColumn": 30,
-          "endLine": 94,
-          "endColumn": 55
-        },
-        {
-          "file": "force-app/main/default/classes/PF_Whatsapp_Log_Trigger_Controller.cls",
-          "startLine": 84,
-          "startColumn": 63,
-          "endLine": 105,
-          "endColumn": 55
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 183 tokens across 22 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/BayutCallLogController.cls",
-          "startLine": 337,
-          "startColumn": 45,
-          "endLine": 348,
-          "endColumn": 159
-        },
-        {
-          "file": "force-app/main/default/classes/PFLeadsTriggerController.cls",
-          "startLine": 532,
-          "startColumn": 63,
-          "endLine": 543,
-          "endColumn": 159
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 177 tokens across 12 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/BayutEmailLogTriggerHandler.cls",
-          "startLine": 278,
-          "startColumn": 45,
-          "endLine": 289,
-          "endColumn": 159
-        },
-        {
-          "file": "force-app/main/default/classes/PFLeadsTriggerController.cls",
-          "startLine": 532,
-          "startColumn": 63,
-          "endLine": 543,
-          "endColumn": 159
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 177 tokens across 12 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/ListingLocationCalloutQueueable_Test.cls",
-          "startLine": 5,
-          "startColumn": 46,
-          "endLine": 37,
-          "endColumn": 48
-        },
-        {
-          "file": "force-app/main/default/classes/ListingLocationCalloutQueueable_Test.cls",
-          "startLine": 54,
-          "startColumn": 59,
-          "endLine": 87,
-          "endColumn": 48
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 172 tokens across 33 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/BayutEmailLogTriggerHandler.cls",
-          "startLine": 92,
-          "startColumn": 135,
-          "endLine": 112,
-          "endColumn": 47
-        },
-        {
-          "file": "force-app/main/default/classes/PFLeadsTriggerController.cls",
-          "startLine": 192,
-          "startColumn": 143,
-          "endLine": 213,
-          "endColumn": 47
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 167 tokens across 21 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Test_PFLeadsTriggerController.cls",
-          "startLine": 86,
-          "startColumn": 50,
-          "endLine": 125,
-          "endColumn": 32
-        },
-        {
-          "file": "force-app/main/default/classes/Test_PFLeadsTriggerController.cls",
-          "startLine": 147,
-          "startColumn": 50,
-          "endLine": 186,
-          "endColumn": 32
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 163 tokens across 40 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/PFLeadsCountCalloutAPI.cls",
-          "startLine": 29,
-          "startColumn": 41,
-          "endLine": 48,
-          "endColumn": 135
-        },
-        {
-          "file": "force-app/main/default/classes/PF_Leads_Callout.cls",
-          "startLine": 28,
-          "startColumn": 39,
-          "endLine": 47,
-          "endColumn": 135
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 156 tokens across 20 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Test_ListingsXMLForPortals.cls",
-          "startLine": 49,
-          "startColumn": 46,
-          "endLine": 70,
-          "endColumn": 39
-        },
-        {
-          "file": "force-app/main/default/classes/Test_ListingsXMLForPortals.cls",
-          "startLine": 121,
-          "startColumn": 48,
-          "endLine": 142,
-          "endColumn": 39
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 155 tokens across 22 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/BayutCallLogController.cls",
-          "startLine": 123,
-          "startColumn": 9,
-          "endLine": 148,
-          "endColumn": 27
-        },
-        {
-          "file": "force-app/main/default/classes/PF_Whatsapp_Log_Trigger_Controller.cls",
-          "startLine": 109,
-          "startColumn": 9,
-          "endLine": 130,
-          "endColumn": 27
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 153 tokens across 26 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/BayutWhatsappLogTriggerHandler.cls",
-          "startLine": 94,
-          "startColumn": 55,
-          "endLine": 121,
-          "endColumn": 10
-        },
-        {
-          "file": "force-app/main/default/classes/PF_Whatsapp_Log_Trigger_Controller.cls",
-          "startLine": 105,
-          "startColumn": 64,
-          "endLine": 128,
-          "endColumn": 10
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 153 tokens across 28 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/PFAPICallLogTriggerController.cls",
-          "startLine": 84,
-          "startColumn": 43,
-          "endLine": 109,
-          "endColumn": 18
-        },
-        {
-          "file": "force-app/main/default/classes/PF_Whatsapp_Log_Trigger_Controller.cls",
-          "startLine": 93,
-          "startColumn": 62,
-          "endLine": 118,
-          "endColumn": 18
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 150 tokens across 26 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/BayutCallLogController.cls",
-          "startLine": 123,
-          "startColumn": 9,
-          "endLine": 147,
-          "endColumn": 10
-        },
-        {
-          "file": "force-app/main/default/classes/BayutWhatsappLogTriggerHandler.cls",
-          "startLine": 98,
-          "startColumn": 9,
-          "endLine": 121,
-          "endColumn": 10
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 147 tokens across 25 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/PFUserCountController.cls",
-          "startLine": 21,
-          "startColumn": 67,
-          "endLine": 39,
-          "endColumn": 116
-        },
-        {
-          "file": "force-app/main/default/classes/PF_GetUserCountCallout.cls",
-          "startLine": 10,
-          "startColumn": 80,
-          "endLine": 27,
-          "endColumn": 116
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 145 tokens across 19 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/PFAPICallLogTriggerController.cls",
-          "startLine": 174,
-          "startColumn": 90,
-          "endLine": 197,
-          "endColumn": 85
-        },
-        {
-          "file": "force-app/main/default/classes/PFAPIEmailLogTriggerController.cls",
-          "startLine": 192,
-          "startColumn": 93,
-          "endLine": 218,
-          "endColumn": 86
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 142 tokens across 24 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/PF_CallLog_Callout.cls",
-          "startLine": 11,
-          "startColumn": 50,
-          "endLine": 31,
-          "endColumn": 49
-        },
-        {
-          "file": "force-app/main/default/classes/PF_Whatsapp_API_Callout.cls",
-          "startLine": 11,
-          "startColumn": 46,
-          "endLine": 30,
-          "endColumn": 49
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 140 tokens across 21 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Batch_PortalXMLGenerator.cls",
-          "startLine": 39,
-          "startColumn": 9,
-          "endLine": 48,
-          "endColumn": 72
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_PortalXMLGeneratorBD.cls",
-          "startLine": 37,
-          "startColumn": 9,
-          "endLine": 46,
-          "endColumn": 72
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 138 tokens across 10 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/ListingLocationCalloutQueueable_Test.cls",
-          "startLine": 5,
-          "startColumn": 46,
-          "endLine": 29,
-          "endColumn": 24
-        },
-        {
-          "file": "force-app/main/default/classes/ListingLocationCalloutQueueable_Test.cls",
-          "startLine": 102,
-          "startColumn": 50,
-          "endLine": 127,
-          "endColumn": 24
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 134 tokens across 25 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/GuidedApiFlowController.cls",
-          "startLine": 58,
-          "startColumn": 71,
-          "endLine": 67,
-          "endColumn": 12
-        },
-        {
-          "file": "force-app/main/default/classes/PFService.cls",
-          "startLine": 537,
-          "startColumn": 96,
-          "endLine": 547,
-          "endColumn": 7
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 129 tokens across 10 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/BayutWhatsappLogTriggerHandler.cls",
-          "startLine": 169,
-          "startColumn": 94,
-          "endLine": 192,
-          "endColumn": 85
-        },
-        {
-          "file": "force-app/main/default/classes/PF_Whatsapp_Log_Trigger_Controller.cls",
-          "startLine": 190,
-          "startColumn": 93,
-          "endLine": 212,
-          "endColumn": 85
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 128 tokens across 24 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Batch_PortalXMLGenerator.cls",
-          "startLine": 176,
-          "startColumn": 67,
-          "endLine": 204,
-          "endColumn": 2
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_PortalXMLGeneratorBD.cls",
-          "startLine": 152,
-          "startColumn": 120,
-          "endLine": 176,
-          "endColumn": 2
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 124 tokens across 29 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/BayutEmailLogTriggerHandler.cls",
-          "startLine": 163,
-          "startColumn": 26,
-          "endLine": 183,
-          "endColumn": 93
-        },
-        {
-          "file": "force-app/main/default/classes/PFLeadsTriggerController.cls",
-          "startLine": 326,
-          "startColumn": 21,
-          "endLine": 345,
-          "endColumn": 93
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 122 tokens across 21 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/BayutEmailLogTriggerHandler.cls",
-          "startLine": 7,
-          "startColumn": 66,
-          "endLine": 25,
-          "endColumn": 20
-        },
-        {
-          "file": "force-app/main/default/classes/PFLeadsTriggerController.cls",
-          "startLine": 27,
-          "startColumn": 52,
-          "endLine": 37,
-          "endColumn": 20
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 120 tokens across 19 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Test_ListingsXMLForPortals.cls",
-          "startLine": 23,
-          "startColumn": 56,
-          "endLine": 46,
-          "endColumn": 26
-        },
-        {
-          "file": "force-app/main/default/classes/Test_ListingsXMLForPortals.cls",
-          "startLine": 95,
-          "startColumn": 66,
-          "endLine": 118,
-          "endColumn": 26
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 120 tokens across 24 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/ListingDetailImport.cls",
-          "startLine": 5,
-          "startColumn": 60,
-          "endLine": 20,
-          "endColumn": 26
-        },
-        {
-          "file": "force-app/main/default/classes/PropertyFinderUserService.cls",
-          "startLine": 5,
-          "startColumn": 60,
-          "endLine": 22,
-          "endColumn": 27
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 118 tokens across 16 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/ListingTriggerHandler_Test.cls",
-          "startLine": 9,
-          "startColumn": 18,
-          "endLine": 27,
-          "endColumn": 16
-        },
-        {
-          "file": "force-app/main/default/classes/Test_PFLeadsTriggerController.cls",
-          "startLine": 7,
-          "startColumn": 19,
-          "endLine": 27,
-          "endColumn": 16
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 115 tokens across 19 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Test_PFLeadsTriggerController.cls",
-          "startLine": 92,
-          "startColumn": 119,
-          "endLine": 123,
-          "endColumn": 38
-        },
-        {
-          "file": "force-app/main/default/classes/Test_PFLeadsTriggerController.cls",
-          "startLine": 215,
-          "startColumn": 118,
-          "endLine": 246,
-          "endColumn": 38
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 115 tokens across 32 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Test_PFLeadsTriggerController.cls",
-          "startLine": 153,
-          "startColumn": 119,
-          "endLine": 184,
-          "endColumn": 38
-        },
-        {
-          "file": "force-app/main/default/classes/Test_PFLeadsTriggerController.cls",
-          "startLine": 215,
-          "startColumn": 118,
-          "endLine": 246,
-          "endColumn": 38
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 115 tokens across 32 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/ListingTriggerHandler_Test.cls",
-          "startLine": 10,
-          "startColumn": 10,
-          "endLine": 25,
-          "endColumn": 22
-        },
-        {
-          "file": "force-app/main/default/classes/Test_PFUserIntegration.cls",
-          "startLine": 8,
-          "startColumn": 9,
-          "endLine": 23,
-          "endColumn": 22
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 113 tokens across 16 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/Test_PFLeadsTriggerController.cls",
-          "startLine": 8,
-          "startColumn": 9,
-          "endLine": 23,
-          "endColumn": 22
-        },
-        {
-          "file": "force-app/main/default/classes/Test_PFUserIntegration.cls",
-          "startLine": 8,
-          "startColumn": 9,
-          "endLine": 23,
-          "endColumn": 22
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 113 tokens across 16 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/BayutCallLogController.cls",
-          "startLine": 349,
-          "startColumn": 105,
-          "endLine": 361,
-          "endColumn": 10
-        },
-        {
-          "file": "force-app/main/default/classes/BayutEmailLogTriggerHandler.cls",
-          "startLine": 290,
-          "startColumn": 66,
-          "endLine": 302,
-          "endColumn": 10
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 112 tokens across 13 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/BayutWhatsappLogTriggerHandler.cls",
-          "startLine": 74,
-          "startColumn": 45,
-          "endLine": 81,
-          "endColumn": 44
-        },
-        {
-          "file": "force-app/main/default/classes/PFAPICallLogTriggerController.cls",
-          "startLine": 75,
-          "startColumn": 30,
-          "endLine": 83,
-          "endColumn": 44
-        },
-        {
-          "file": "force-app/main/default/classes/PF_Whatsapp_Log_Trigger_Controller.cls",
-          "startLine": 85,
-          "startColumn": 45,
-          "endLine": 92,
-          "endColumn": 44
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 3 code locations containing the same block of code consisting of 112 tokens across 8 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/BayutEmailLogTriggerHandler.cls",
-          "startLine": 168,
-          "startColumn": 59,
-          "endLine": 183,
-          "endColumn": 64
-        },
-        {
-          "file": "force-app/main/default/classes/BayutWhatsappLogTriggerHandler.cls",
-          "startLine": 175,
-          "startColumn": 49,
-          "endLine": 192,
-          "endColumn": 66
-        },
-        {
-          "file": "force-app/main/default/classes/PFLeadsTriggerController.cls",
-          "startLine": 330,
-          "startColumn": 59,
-          "endLine": 345,
-          "endColumn": 64
-        },
-        {
-          "file": "force-app/main/default/classes/PF_Whatsapp_Log_Trigger_Controller.cls",
-          "startLine": 195,
-          "startColumn": 49,
-          "endLine": 212,
-          "endColumn": 66
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 4 code locations containing the same block of code consisting of 111 tokens across 16 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/PFAPICallLogTriggerController.cls",
-          "startLine": 108,
-          "startColumn": 21,
-          "endLine": 130,
-          "endColumn": 27
-        },
-        {
-          "file": "force-app/main/default/classes/PFAPIEmailLogTriggerController.cls",
-          "startLine": 137,
-          "startColumn": 21,
-          "endLine": 159,
-          "endColumn": 27
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 111 tokens across 23 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/PF_GetUserCountCallout.cls",
-          "startLine": 17,
-          "startColumn": 64,
-          "endLine": 30,
-          "endColumn": 18
-        },
-        {
-          "file": "force-app/main/default/classes/PF_GetUser_Callout.cls",
-          "startLine": 18,
-          "startColumn": 37,
-          "endLine": 32,
-          "endColumn": 18
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 109 tokens across 14 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/PFComplianceValidationJob.cls",
-          "startLine": 24,
-          "startColumn": 115,
-          "endLine": 38,
-          "endColumn": 34
-        },
-        {
-          "file": "force-app/main/default/classes/PFServiceJob.cls",
-          "startLine": 26,
-          "startColumn": 77,
-          "endLine": 40,
-          "endColumn": 34
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 105 tokens across 15 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/PFLeadsTriggerController.cls",
-          "startLine": 257,
-          "startColumn": 78,
-          "endLine": 266,
-          "endColumn": 18
-        },
-        {
-          "file": "force-app/main/default/classes/PFLeadsTriggerController.cls",
-          "startLine": 271,
-          "startColumn": 25,
-          "endLine": 280,
-          "endColumn": 18
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 103 tokens across 10 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/PF_CallLog_Callout.cls",
-          "startLine": 17,
-          "startColumn": 95,
-          "endLine": 31,
-          "endColumn": 49
-        },
-        {
-          "file": "force-app/main/default/classes/PF_EmailApi_Callout_Controller.cls",
-          "startLine": 15,
-          "startColumn": 100,
-          "endLine": 29,
-          "endColumn": 49
-        },
-        {
-          "file": "force-app/main/default/classes/PF_Whatsapp_API_Callout.cls",
-          "startLine": 17,
-          "startColumn": 95,
-          "endLine": 30,
-          "endColumn": 49
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 3 code locations containing the same block of code consisting of 103 tokens across 15 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/BayutCallLogController.cls",
-          "startLine": 349,
-          "startColumn": 105,
-          "endLine": 358,
-          "endColumn": 10
-        },
-        {
-          "file": "force-app/main/default/classes/PFLeadsTriggerController.cls",
-          "startLine": 543,
-          "startColumn": 158,
-          "endLine": 552,
-          "endColumn": 10
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 101 tokens across 10 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/PF_CallLog_Callout.cls",
-          "startLine": 17,
-          "startColumn": 108,
-          "endLine": 31,
-          "endColumn": 49
-        },
-        {
-          "file": "force-app/main/default/classes/PF_GetUser_Callout.cls",
-          "startLine": 14,
-          "startColumn": 55,
-          "endLine": 27,
-          "endColumn": 49
-        },
-        {
-          "file": "force-app/main/default/classes/PF_Whatsapp_API_Callout.cls",
-          "startLine": 17,
-          "startColumn": 108,
-          "endLine": 30,
-          "endColumn": 49
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 3 code locations containing the same block of code consisting of 101 tokens across 15 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Apex"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/classes/PF_EmailApi_Callout_Controller.cls",
-          "startLine": 15,
-          "startColumn": 112,
-          "endLine": 29,
-          "endColumn": 49
-        },
-        {
-          "file": "force-app/main/default/classes/PF_GetUser_Callout.cls",
-          "startLine": 14,
-          "startColumn": 55,
-          "endLine": 27,
-          "endColumn": 49
-        }
-      ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 101 tokens across 15 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForJavascript",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Javascript"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/aura/EasySearch/EasySearchHelper.js",
-          "startLine": 155,
-          "startColumn": 91,
-          "endLine": 216,
-          "endColumn": 35
-        },
-        {
-          "file": "force-app/main/default/aura/EasySearch/EasySearchHelper.js",
-          "startLine": 394,
-          "startColumn": 63,
-          "endLine": 473,
-          "endColumn": 23
-        }
-      ],
-      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 444 tokens across 62 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForJavascript",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Javascript"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
-          "startLine": 441,
-          "startColumn": 13,
-          "endLine": 462,
-          "endColumn": 65
-        },
-        {
-          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
-          "startLine": 861,
-          "startColumn": 13,
-          "endLine": 882,
-          "endColumn": 65
-        }
-      ],
-      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 191 tokens across 22 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForJavascript",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Javascript"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
-          "startLine": 903,
-          "startColumn": 13,
-          "endLine": 925,
-          "endColumn": 61
-        },
-        {
-          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
-          "startLine": 1322,
-          "startColumn": 13,
-          "endLine": 1344,
-          "endColumn": 61
-        }
-      ],
-      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 172 tokens across 23 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForJavascript",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Javascript"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/lwc/listingPublishButton/listingPublishButton.js",
-          "startLine": 498,
-          "startColumn": 64,
-          "endLine": 522,
-          "endColumn": 6
-        },
-        {
-          "file": "force-app/main/default/lwc/listingPublishButton/listingPublishButton.js",
-          "startLine": 582,
-          "startColumn": 32,
-          "endLine": 605,
-          "endColumn": 6
-        }
-      ],
-      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 150 tokens across 25 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForJavascript",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Javascript"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
-          "startLine": 286,
-          "startColumn": 49,
-          "endLine": 295,
-          "endColumn": 63
-        },
-        {
-          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
-          "startLine": 313,
-          "startColumn": 53,
-          "endLine": 322,
-          "endColumn": 63
-        }
-      ],
-      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 138 tokens across 10 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForJavascript",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Javascript"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/aura/EasySearch/EasySearchController.js",
-          "startLine": 361,
-          "startColumn": 9,
-          "endLine": 373,
-          "endColumn": 57
-        },
-        {
-          "file": "force-app/main/default/aura/LogACall/LogACallController.js",
-          "startLine": 59,
-          "startColumn": 9,
-          "endLine": 71,
-          "endColumn": 57
-        }
-      ],
-      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 116 tokens across 13 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForJavascript",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Javascript"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
-          "startLine": 760,
-          "startColumn": 15,
-          "endLine": 771,
-          "endColumn": 14
-        },
-        {
-          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
-          "startLine": 781,
-          "startColumn": 19,
-          "endLine": 792,
-          "endColumn": 16
-        }
-      ],
-      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 108 tokens across 12 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
-      "rule": "DetectCopyPasteForJavascript",
-      "engine": "cpd",
-      "severity": 5,
-      "tags": [
-        "Recommended",
-        "Design",
-        "Javascript"
-      ],
-      "primaryLocationIndex": 0,
-      "locations": [
-        {
-          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
-          "startLine": 935,
-          "startColumn": 29,
-          "endLine": 953,
-          "endColumn": 34
-        },
-        {
-          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
-          "startLine": 1132,
-          "startColumn": 27,
-          "endLine": 1142,
-          "endColumn": 34
-        }
-      ],
-      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 102 tokens across 19 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
-    },
-    {
       "rule": "ApexSharingViolations",
       "engine": "pmd",
       "severity": 3,
@@ -111561,6 +109603,1964 @@
       "message": "Avoid unescaped user controlled content in EL",
       "resources": [
         "https://docs.pmd-code.org/pmd-doc-7.18.0/pmd_rules_visualforce_security.html#vfunescapeel"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForVisualforce",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Visualforce"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/pages/ChangePassword.page",
+          "startLine": 1,
+          "startColumn": 125,
+          "endLine": 15,
+          "endColumn": 76
+        },
+        {
+          "file": "force-app/main/default/pages/ForgotPassword.page",
+          "startLine": 1,
+          "startColumn": 125,
+          "endLine": 15,
+          "endColumn": 76
+        },
+        {
+          "file": "force-app/main/default/pages/ForgotPasswordConfirm.page",
+          "startLine": 1,
+          "startColumn": 80,
+          "endLine": 15,
+          "endColumn": 76
+        },
+        {
+          "file": "force-app/main/default/pages/SiteLogin.page",
+          "startLine": 1,
+          "startColumn": 77,
+          "endLine": 15,
+          "endColumn": 76
+        },
+        {
+          "file": "force-app/main/default/pages/SiteRegister.page",
+          "startLine": 1,
+          "startColumn": 114,
+          "endLine": 15,
+          "endColumn": 76
+        }
+      ],
+      "message": "Duplicate code detected for language 'visualforce'. Found 5 code locations containing the same block of code consisting of 160 tokens across 15 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForVisualforce",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Visualforce"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/pages/FileNotFound.page",
+          "startLine": 1,
+          "startColumn": 67,
+          "endLine": 13,
+          "endColumn": 65
+        },
+        {
+          "file": "force-app/main/default/pages/Unauthorized.page",
+          "startLine": 1,
+          "startColumn": 93,
+          "endLine": 13,
+          "endColumn": 65
+        }
+      ],
+      "message": "Duplicate code detected for language 'visualforce'. Found 2 code locations containing the same block of code consisting of 155 tokens across 13 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForVisualforce",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Visualforce"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/pages/Exception.page",
+          "startLine": 5,
+          "startColumn": 74,
+          "endLine": 15,
+          "endColumn": 76
+        },
+        {
+          "file": "force-app/main/default/pages/FileNotFound.page",
+          "startLine": 5,
+          "startColumn": 51,
+          "endLine": 15,
+          "endColumn": 76
+        }
+      ],
+      "message": "Duplicate code detected for language 'visualforce'. Found 2 code locations containing the same block of code consisting of 137 tokens across 11 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForVisualforce",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Visualforce"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/pages/ChangePassword.page",
+          "startLine": 1,
+          "startColumn": 126,
+          "endLine": 11,
+          "endColumn": 100
+        },
+        {
+          "file": "force-app/main/default/pages/FileNotFound.page",
+          "startLine": 1,
+          "startColumn": 81,
+          "endLine": 11,
+          "endColumn": 100
+        },
+        {
+          "file": "force-app/main/default/pages/ForgotPassword.page",
+          "startLine": 1,
+          "startColumn": 126,
+          "endLine": 11,
+          "endColumn": 100
+        },
+        {
+          "file": "force-app/main/default/pages/ForgotPasswordConfirm.page",
+          "startLine": 1,
+          "startColumn": 81,
+          "endLine": 11,
+          "endColumn": 100
+        },
+        {
+          "file": "force-app/main/default/pages/SiteLogin.page",
+          "startLine": 1,
+          "startColumn": 78,
+          "endLine": 11,
+          "endColumn": 100
+        },
+        {
+          "file": "force-app/main/default/pages/SiteRegister.page",
+          "startLine": 1,
+          "startColumn": 115,
+          "endLine": 11,
+          "endColumn": 100
+        },
+        {
+          "file": "force-app/main/default/pages/Unauthorized.page",
+          "startLine": 1,
+          "startColumn": 107,
+          "endLine": 11,
+          "endColumn": 100
+        }
+      ],
+      "message": "Duplicate code detected for language 'visualforce'. Found 7 code locations containing the same block of code consisting of 118 tokens across 11 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForVisualforce",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Visualforce"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/pages/FileNotFound.page",
+          "startLine": 4,
+          "startColumn": 7,
+          "endLine": 13,
+          "endColumn": 18
+        },
+        {
+          "file": "force-app/main/default/pages/StdExceptionTemplate.page",
+          "startLine": 3,
+          "startColumn": 3,
+          "endLine": 12,
+          "endColumn": 12
+        },
+        {
+          "file": "force-app/main/default/pages/Unauthorized.page",
+          "startLine": 4,
+          "startColumn": 7,
+          "endLine": 13,
+          "endColumn": 18
+        }
+      ],
+      "message": "Duplicate code detected for language 'visualforce'. Found 3 code locations containing the same block of code consisting of 117 tokens across 10 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForVisualforce",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Visualforce"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/pages/Exception.page",
+          "startLine": 5,
+          "startColumn": 74,
+          "endLine": 13,
+          "endColumn": 65
+        },
+        {
+          "file": "force-app/main/default/pages/Unauthorized.page",
+          "startLine": 5,
+          "startColumn": 51,
+          "endLine": 13,
+          "endColumn": 65
+        }
+      ],
+      "message": "Duplicate code detected for language 'visualforce'. Found 2 code locations containing the same block of code consisting of 114 tokens across 9 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForVisualforce",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Visualforce"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/pages/Exception.page",
+          "startLine": 5,
+          "startColumn": 74,
+          "endLine": 13,
+          "endColumn": 18
+        },
+        {
+          "file": "force-app/main/default/pages/StdExceptionTemplate.page",
+          "startLine": 4,
+          "startColumn": 45,
+          "endLine": 12,
+          "endColumn": 12
+        }
+      ],
+      "message": "Duplicate code detected for language 'visualforce'. Found 2 code locations containing the same block of code consisting of 103 tokens across 9 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/PFService.cls",
+          "startLine": 63,
+          "startColumn": 47,
+          "endLine": 203,
+          "endColumn": 73
+        },
+        {
+          "file": "force-app/main/default/classes/PFServiceJob.cls",
+          "startLine": 137,
+          "startColumn": 58,
+          "endLine": 274,
+          "endColumn": 72
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 1220 tokens across 141 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/BayutWhatsappLogTriggerHandler.cls",
+          "startLine": 259,
+          "startColumn": 56,
+          "endLine": 287,
+          "endColumn": 45
+        },
+        {
+          "file": "force-app/main/default/classes/PF_Whatsapp_Log_Trigger_Controller.cls",
+          "startLine": 276,
+          "startColumn": 51,
+          "endLine": 305,
+          "endColumn": 45
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 309 tokens across 29 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Batch_PortalXMLGenerator.cls",
+          "startLine": 48,
+          "startColumn": 84,
+          "endLine": 83,
+          "endColumn": 98
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_PortalXMLGeneratorBD.cls",
+          "startLine": 46,
+          "startColumn": 71,
+          "endLine": 82,
+          "endColumn": 98
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 291 tokens across 36 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/PFService.cls",
+          "startLine": 16,
+          "startColumn": 103,
+          "endLine": 63,
+          "endColumn": 46
+        },
+        {
+          "file": "force-app/main/default/classes/PFServiceJob.cls",
+          "startLine": 90,
+          "startColumn": 122,
+          "endLine": 137,
+          "endColumn": 47
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 287 tokens across 48 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/BayutCallLogController.cls",
+          "startLine": 336,
+          "startColumn": 112,
+          "endLine": 349,
+          "endColumn": 19
+        },
+        {
+          "file": "force-app/main/default/classes/BayutEmailLogTriggerHandler.cls",
+          "startLine": 277,
+          "startColumn": 45,
+          "endLine": 290,
+          "endColumn": 19
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 187 tokens across 14 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/BayutWhatsappLogTriggerHandler.cls",
+          "startLine": 73,
+          "startColumn": 30,
+          "endLine": 94,
+          "endColumn": 55
+        },
+        {
+          "file": "force-app/main/default/classes/PF_Whatsapp_Log_Trigger_Controller.cls",
+          "startLine": 84,
+          "startColumn": 63,
+          "endLine": 105,
+          "endColumn": 55
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 183 tokens across 22 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/BayutCallLogController.cls",
+          "startLine": 337,
+          "startColumn": 45,
+          "endLine": 348,
+          "endColumn": 159
+        },
+        {
+          "file": "force-app/main/default/classes/PFLeadsTriggerController.cls",
+          "startLine": 532,
+          "startColumn": 63,
+          "endLine": 543,
+          "endColumn": 159
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 177 tokens across 12 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/BayutEmailLogTriggerHandler.cls",
+          "startLine": 278,
+          "startColumn": 45,
+          "endLine": 289,
+          "endColumn": 159
+        },
+        {
+          "file": "force-app/main/default/classes/PFLeadsTriggerController.cls",
+          "startLine": 532,
+          "startColumn": 63,
+          "endLine": 543,
+          "endColumn": 159
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 177 tokens across 12 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/ListingLocationCalloutQueueable_Test.cls",
+          "startLine": 5,
+          "startColumn": 46,
+          "endLine": 37,
+          "endColumn": 48
+        },
+        {
+          "file": "force-app/main/default/classes/ListingLocationCalloutQueueable_Test.cls",
+          "startLine": 54,
+          "startColumn": 59,
+          "endLine": 87,
+          "endColumn": 48
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 172 tokens across 33 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/BayutEmailLogTriggerHandler.cls",
+          "startLine": 92,
+          "startColumn": 135,
+          "endLine": 112,
+          "endColumn": 47
+        },
+        {
+          "file": "force-app/main/default/classes/PFLeadsTriggerController.cls",
+          "startLine": 192,
+          "startColumn": 143,
+          "endLine": 213,
+          "endColumn": 47
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 167 tokens across 21 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Test_PFLeadsTriggerController.cls",
+          "startLine": 86,
+          "startColumn": 50,
+          "endLine": 125,
+          "endColumn": 32
+        },
+        {
+          "file": "force-app/main/default/classes/Test_PFLeadsTriggerController.cls",
+          "startLine": 147,
+          "startColumn": 50,
+          "endLine": 186,
+          "endColumn": 32
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 163 tokens across 40 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/PFLeadsCountCalloutAPI.cls",
+          "startLine": 29,
+          "startColumn": 41,
+          "endLine": 48,
+          "endColumn": 135
+        },
+        {
+          "file": "force-app/main/default/classes/PF_Leads_Callout.cls",
+          "startLine": 28,
+          "startColumn": 39,
+          "endLine": 47,
+          "endColumn": 135
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 156 tokens across 20 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Test_ListingsXMLForPortals.cls",
+          "startLine": 49,
+          "startColumn": 46,
+          "endLine": 70,
+          "endColumn": 39
+        },
+        {
+          "file": "force-app/main/default/classes/Test_ListingsXMLForPortals.cls",
+          "startLine": 121,
+          "startColumn": 48,
+          "endLine": 142,
+          "endColumn": 39
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 155 tokens across 22 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/BayutCallLogController.cls",
+          "startLine": 123,
+          "startColumn": 9,
+          "endLine": 148,
+          "endColumn": 27
+        },
+        {
+          "file": "force-app/main/default/classes/PF_Whatsapp_Log_Trigger_Controller.cls",
+          "startLine": 109,
+          "startColumn": 9,
+          "endLine": 130,
+          "endColumn": 27
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 153 tokens across 26 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/BayutWhatsappLogTriggerHandler.cls",
+          "startLine": 94,
+          "startColumn": 55,
+          "endLine": 121,
+          "endColumn": 10
+        },
+        {
+          "file": "force-app/main/default/classes/PF_Whatsapp_Log_Trigger_Controller.cls",
+          "startLine": 105,
+          "startColumn": 64,
+          "endLine": 128,
+          "endColumn": 10
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 153 tokens across 28 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/PFAPICallLogTriggerController.cls",
+          "startLine": 84,
+          "startColumn": 43,
+          "endLine": 109,
+          "endColumn": 18
+        },
+        {
+          "file": "force-app/main/default/classes/PF_Whatsapp_Log_Trigger_Controller.cls",
+          "startLine": 93,
+          "startColumn": 62,
+          "endLine": 118,
+          "endColumn": 18
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 150 tokens across 26 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/BayutCallLogController.cls",
+          "startLine": 123,
+          "startColumn": 9,
+          "endLine": 147,
+          "endColumn": 10
+        },
+        {
+          "file": "force-app/main/default/classes/BayutWhatsappLogTriggerHandler.cls",
+          "startLine": 98,
+          "startColumn": 9,
+          "endLine": 121,
+          "endColumn": 10
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 147 tokens across 25 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/PFUserCountController.cls",
+          "startLine": 21,
+          "startColumn": 67,
+          "endLine": 39,
+          "endColumn": 116
+        },
+        {
+          "file": "force-app/main/default/classes/PF_GetUserCountCallout.cls",
+          "startLine": 10,
+          "startColumn": 80,
+          "endLine": 27,
+          "endColumn": 116
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 145 tokens across 19 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/PFAPICallLogTriggerController.cls",
+          "startLine": 174,
+          "startColumn": 90,
+          "endLine": 197,
+          "endColumn": 85
+        },
+        {
+          "file": "force-app/main/default/classes/PFAPIEmailLogTriggerController.cls",
+          "startLine": 192,
+          "startColumn": 93,
+          "endLine": 218,
+          "endColumn": 86
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 142 tokens across 24 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/PF_CallLog_Callout.cls",
+          "startLine": 11,
+          "startColumn": 50,
+          "endLine": 31,
+          "endColumn": 49
+        },
+        {
+          "file": "force-app/main/default/classes/PF_Whatsapp_API_Callout.cls",
+          "startLine": 11,
+          "startColumn": 46,
+          "endLine": 30,
+          "endColumn": 49
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 140 tokens across 21 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Batch_PortalXMLGenerator.cls",
+          "startLine": 39,
+          "startColumn": 9,
+          "endLine": 48,
+          "endColumn": 72
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_PortalXMLGeneratorBD.cls",
+          "startLine": 37,
+          "startColumn": 9,
+          "endLine": 46,
+          "endColumn": 72
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 138 tokens across 10 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/ListingLocationCalloutQueueable_Test.cls",
+          "startLine": 5,
+          "startColumn": 46,
+          "endLine": 29,
+          "endColumn": 24
+        },
+        {
+          "file": "force-app/main/default/classes/ListingLocationCalloutQueueable_Test.cls",
+          "startLine": 102,
+          "startColumn": 50,
+          "endLine": 127,
+          "endColumn": 24
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 134 tokens across 25 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/GuidedApiFlowController.cls",
+          "startLine": 58,
+          "startColumn": 71,
+          "endLine": 67,
+          "endColumn": 12
+        },
+        {
+          "file": "force-app/main/default/classes/PFService.cls",
+          "startLine": 537,
+          "startColumn": 96,
+          "endLine": 547,
+          "endColumn": 7
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 129 tokens across 10 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/BayutWhatsappLogTriggerHandler.cls",
+          "startLine": 169,
+          "startColumn": 94,
+          "endLine": 192,
+          "endColumn": 85
+        },
+        {
+          "file": "force-app/main/default/classes/PF_Whatsapp_Log_Trigger_Controller.cls",
+          "startLine": 190,
+          "startColumn": 93,
+          "endLine": 212,
+          "endColumn": 85
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 128 tokens across 24 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Batch_PortalXMLGenerator.cls",
+          "startLine": 176,
+          "startColumn": 67,
+          "endLine": 204,
+          "endColumn": 2
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_PortalXMLGeneratorBD.cls",
+          "startLine": 152,
+          "startColumn": 120,
+          "endLine": 176,
+          "endColumn": 2
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 124 tokens across 29 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/BayutEmailLogTriggerHandler.cls",
+          "startLine": 163,
+          "startColumn": 26,
+          "endLine": 183,
+          "endColumn": 93
+        },
+        {
+          "file": "force-app/main/default/classes/PFLeadsTriggerController.cls",
+          "startLine": 326,
+          "startColumn": 21,
+          "endLine": 345,
+          "endColumn": 93
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 122 tokens across 21 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/BayutEmailLogTriggerHandler.cls",
+          "startLine": 7,
+          "startColumn": 66,
+          "endLine": 25,
+          "endColumn": 20
+        },
+        {
+          "file": "force-app/main/default/classes/PFLeadsTriggerController.cls",
+          "startLine": 27,
+          "startColumn": 52,
+          "endLine": 37,
+          "endColumn": 20
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 120 tokens across 19 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Test_ListingsXMLForPortals.cls",
+          "startLine": 23,
+          "startColumn": 56,
+          "endLine": 46,
+          "endColumn": 26
+        },
+        {
+          "file": "force-app/main/default/classes/Test_ListingsXMLForPortals.cls",
+          "startLine": 95,
+          "startColumn": 66,
+          "endLine": 118,
+          "endColumn": 26
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 120 tokens across 24 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/ListingDetailImport.cls",
+          "startLine": 5,
+          "startColumn": 60,
+          "endLine": 20,
+          "endColumn": 26
+        },
+        {
+          "file": "force-app/main/default/classes/PropertyFinderUserService.cls",
+          "startLine": 5,
+          "startColumn": 60,
+          "endLine": 22,
+          "endColumn": 27
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 118 tokens across 16 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/ListingTriggerHandler_Test.cls",
+          "startLine": 9,
+          "startColumn": 18,
+          "endLine": 27,
+          "endColumn": 16
+        },
+        {
+          "file": "force-app/main/default/classes/Test_PFLeadsTriggerController.cls",
+          "startLine": 7,
+          "startColumn": 19,
+          "endLine": 27,
+          "endColumn": 16
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 115 tokens across 19 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Test_PFLeadsTriggerController.cls",
+          "startLine": 92,
+          "startColumn": 119,
+          "endLine": 123,
+          "endColumn": 38
+        },
+        {
+          "file": "force-app/main/default/classes/Test_PFLeadsTriggerController.cls",
+          "startLine": 215,
+          "startColumn": 118,
+          "endLine": 246,
+          "endColumn": 38
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 115 tokens across 32 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Test_PFLeadsTriggerController.cls",
+          "startLine": 153,
+          "startColumn": 119,
+          "endLine": 184,
+          "endColumn": 38
+        },
+        {
+          "file": "force-app/main/default/classes/Test_PFLeadsTriggerController.cls",
+          "startLine": 215,
+          "startColumn": 118,
+          "endLine": 246,
+          "endColumn": 38
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 115 tokens across 32 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/ListingTriggerHandler_Test.cls",
+          "startLine": 10,
+          "startColumn": 10,
+          "endLine": 25,
+          "endColumn": 22
+        },
+        {
+          "file": "force-app/main/default/classes/Test_PFUserIntegration.cls",
+          "startLine": 8,
+          "startColumn": 9,
+          "endLine": 23,
+          "endColumn": 22
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 113 tokens across 16 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Test_PFLeadsTriggerController.cls",
+          "startLine": 8,
+          "startColumn": 9,
+          "endLine": 23,
+          "endColumn": 22
+        },
+        {
+          "file": "force-app/main/default/classes/Test_PFUserIntegration.cls",
+          "startLine": 8,
+          "startColumn": 9,
+          "endLine": 23,
+          "endColumn": 22
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 113 tokens across 16 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/BayutCallLogController.cls",
+          "startLine": 349,
+          "startColumn": 105,
+          "endLine": 361,
+          "endColumn": 10
+        },
+        {
+          "file": "force-app/main/default/classes/BayutEmailLogTriggerHandler.cls",
+          "startLine": 290,
+          "startColumn": 66,
+          "endLine": 302,
+          "endColumn": 10
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 112 tokens across 13 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/BayutWhatsappLogTriggerHandler.cls",
+          "startLine": 74,
+          "startColumn": 45,
+          "endLine": 81,
+          "endColumn": 44
+        },
+        {
+          "file": "force-app/main/default/classes/PFAPICallLogTriggerController.cls",
+          "startLine": 75,
+          "startColumn": 30,
+          "endLine": 83,
+          "endColumn": 44
+        },
+        {
+          "file": "force-app/main/default/classes/PF_Whatsapp_Log_Trigger_Controller.cls",
+          "startLine": 85,
+          "startColumn": 45,
+          "endLine": 92,
+          "endColumn": 44
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 3 code locations containing the same block of code consisting of 112 tokens across 8 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/BayutEmailLogTriggerHandler.cls",
+          "startLine": 168,
+          "startColumn": 59,
+          "endLine": 183,
+          "endColumn": 64
+        },
+        {
+          "file": "force-app/main/default/classes/BayutWhatsappLogTriggerHandler.cls",
+          "startLine": 175,
+          "startColumn": 49,
+          "endLine": 192,
+          "endColumn": 66
+        },
+        {
+          "file": "force-app/main/default/classes/PFLeadsTriggerController.cls",
+          "startLine": 330,
+          "startColumn": 59,
+          "endLine": 345,
+          "endColumn": 64
+        },
+        {
+          "file": "force-app/main/default/classes/PF_Whatsapp_Log_Trigger_Controller.cls",
+          "startLine": 195,
+          "startColumn": 49,
+          "endLine": 212,
+          "endColumn": 66
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 4 code locations containing the same block of code consisting of 111 tokens across 16 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/PFAPICallLogTriggerController.cls",
+          "startLine": 108,
+          "startColumn": 21,
+          "endLine": 130,
+          "endColumn": 27
+        },
+        {
+          "file": "force-app/main/default/classes/PFAPIEmailLogTriggerController.cls",
+          "startLine": 137,
+          "startColumn": 21,
+          "endLine": 159,
+          "endColumn": 27
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 111 tokens across 23 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/PF_GetUserCountCallout.cls",
+          "startLine": 17,
+          "startColumn": 64,
+          "endLine": 30,
+          "endColumn": 18
+        },
+        {
+          "file": "force-app/main/default/classes/PF_GetUser_Callout.cls",
+          "startLine": 18,
+          "startColumn": 37,
+          "endLine": 32,
+          "endColumn": 18
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 109 tokens across 14 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/PFComplianceValidationJob.cls",
+          "startLine": 24,
+          "startColumn": 115,
+          "endLine": 38,
+          "endColumn": 34
+        },
+        {
+          "file": "force-app/main/default/classes/PFServiceJob.cls",
+          "startLine": 26,
+          "startColumn": 77,
+          "endLine": 40,
+          "endColumn": 34
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 105 tokens across 15 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/PFLeadsTriggerController.cls",
+          "startLine": 257,
+          "startColumn": 78,
+          "endLine": 266,
+          "endColumn": 18
+        },
+        {
+          "file": "force-app/main/default/classes/PFLeadsTriggerController.cls",
+          "startLine": 271,
+          "startColumn": 25,
+          "endLine": 280,
+          "endColumn": 18
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 103 tokens across 10 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/PF_CallLog_Callout.cls",
+          "startLine": 17,
+          "startColumn": 95,
+          "endLine": 31,
+          "endColumn": 49
+        },
+        {
+          "file": "force-app/main/default/classes/PF_EmailApi_Callout_Controller.cls",
+          "startLine": 15,
+          "startColumn": 100,
+          "endLine": 29,
+          "endColumn": 49
+        },
+        {
+          "file": "force-app/main/default/classes/PF_Whatsapp_API_Callout.cls",
+          "startLine": 17,
+          "startColumn": 95,
+          "endLine": 30,
+          "endColumn": 49
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 3 code locations containing the same block of code consisting of 103 tokens across 15 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/BayutCallLogController.cls",
+          "startLine": 349,
+          "startColumn": 105,
+          "endLine": 358,
+          "endColumn": 10
+        },
+        {
+          "file": "force-app/main/default/classes/PFLeadsTriggerController.cls",
+          "startLine": 543,
+          "startColumn": 158,
+          "endLine": 552,
+          "endColumn": 10
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 101 tokens across 10 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/PF_CallLog_Callout.cls",
+          "startLine": 17,
+          "startColumn": 108,
+          "endLine": 31,
+          "endColumn": 49
+        },
+        {
+          "file": "force-app/main/default/classes/PF_GetUser_Callout.cls",
+          "startLine": 14,
+          "startColumn": 55,
+          "endLine": 27,
+          "endColumn": 49
+        },
+        {
+          "file": "force-app/main/default/classes/PF_Whatsapp_API_Callout.cls",
+          "startLine": 17,
+          "startColumn": 108,
+          "endLine": 30,
+          "endColumn": 49
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 3 code locations containing the same block of code consisting of 101 tokens across 15 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/PF_EmailApi_Callout_Controller.cls",
+          "startLine": 15,
+          "startColumn": 112,
+          "endLine": 29,
+          "endColumn": 49
+        },
+        {
+          "file": "force-app/main/default/classes/PF_GetUser_Callout.cls",
+          "startLine": 14,
+          "startColumn": 55,
+          "endLine": 27,
+          "endColumn": 49
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 101 tokens across 15 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForJavascript",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Javascript"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/aura/EasySearch/EasySearchHelper.js",
+          "startLine": 155,
+          "startColumn": 91,
+          "endLine": 216,
+          "endColumn": 35
+        },
+        {
+          "file": "force-app/main/default/aura/EasySearch/EasySearchHelper.js",
+          "startLine": 394,
+          "startColumn": 63,
+          "endLine": 473,
+          "endColumn": 23
+        }
+      ],
+      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 444 tokens across 62 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForJavascript",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Javascript"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
+          "startLine": 441,
+          "startColumn": 13,
+          "endLine": 462,
+          "endColumn": 65
+        },
+        {
+          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
+          "startLine": 861,
+          "startColumn": 13,
+          "endLine": 882,
+          "endColumn": 65
+        }
+      ],
+      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 191 tokens across 22 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForJavascript",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Javascript"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
+          "startLine": 903,
+          "startColumn": 13,
+          "endLine": 925,
+          "endColumn": 61
+        },
+        {
+          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
+          "startLine": 1322,
+          "startColumn": 13,
+          "endLine": 1344,
+          "endColumn": 61
+        }
+      ],
+      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 172 tokens across 23 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForJavascript",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Javascript"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/lwc/listingPublishButton/listingPublishButton.js",
+          "startLine": 498,
+          "startColumn": 64,
+          "endLine": 522,
+          "endColumn": 6
+        },
+        {
+          "file": "force-app/main/default/lwc/listingPublishButton/listingPublishButton.js",
+          "startLine": 582,
+          "startColumn": 32,
+          "endLine": 605,
+          "endColumn": 6
+        }
+      ],
+      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 150 tokens across 25 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForJavascript",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Javascript"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
+          "startLine": 286,
+          "startColumn": 49,
+          "endLine": 295,
+          "endColumn": 63
+        },
+        {
+          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
+          "startLine": 313,
+          "startColumn": 53,
+          "endLine": 322,
+          "endColumn": 63
+        }
+      ],
+      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 138 tokens across 10 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForJavascript",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Javascript"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/aura/EasySearch/EasySearchController.js",
+          "startLine": 361,
+          "startColumn": 9,
+          "endLine": 373,
+          "endColumn": 57
+        },
+        {
+          "file": "force-app/main/default/aura/LogACall/LogACallController.js",
+          "startLine": 59,
+          "startColumn": 9,
+          "endLine": 71,
+          "endColumn": 57
+        }
+      ],
+      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 116 tokens across 13 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForJavascript",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Javascript"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
+          "startLine": 760,
+          "startColumn": 15,
+          "endLine": 771,
+          "endColumn": 14
+        },
+        {
+          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
+          "startLine": 781,
+          "startColumn": 19,
+          "endLine": 792,
+          "endColumn": 16
+        }
+      ],
+      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 108 tokens across 12 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForJavascript",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Javascript"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
+          "startLine": 935,
+          "startColumn": 29,
+          "endLine": 953,
+          "endColumn": 34
+        },
+        {
+          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
+          "startLine": 1132,
+          "startColumn": 27,
+          "endLine": 1142,
+          "endColumn": 34
+        }
+      ],
+      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 102 tokens across 19 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
       ]
     }
   ]
