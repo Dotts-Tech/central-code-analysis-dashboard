@@ -1,10 +1,10 @@
 {
   "runDir": "/home/runner/work/we-are-propoerty/we-are-propoerty/",
   "violationCounts": {
-    "total": 2470,
-    "sev1": 1,
-    "sev2": 205,
-    "sev3": 880,
+    "total": 2604,
+    "sev1": 0,
+    "sev2": 218,
+    "sev3": 1002,
     "sev4": 493,
     "sev5": 891
   },
@@ -13,9 +13,9 @@
     "retire-js": "0.29.0",
     "regex": "0.30.0",
     "eslint": "0.37.1",
-    "flow": "0.31.0",
-    "cpd": "0.33.0",
-    "pmd": "0.33.0"
+    "flow": "0.31.1",
+    "pmd": "0.33.0",
+    "cpd": "0.33.0"
   },
   "violations": [
     {
@@ -35904,887 +35904,2787 @@
       ]
     },
     {
-      "rule": "UnexpectedEngineError",
+      "rule": "DefaultCopy",
       "engine": "flow",
-      "severity": 1,
-      "tags": [],
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "comment": "Undefined Code Location"
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 1056,
+          "startColumn": 1
         }
       ],
-      "message": "The engine with name 'flow' threw an unexpected error: Error: Developer error: invalid query id HardcodedId\n    at getRuleNameFromQueryId (/home/runner/.local/share/sf/node_modules/@salesforce/plugin-code-analyzer/node_modules/@salesforce/code-analyzer-flow-engine/dist/hardcoded-catalog.js:150:15)\n    at toEngineRunResults (/home/runner/.local/share/sf/node_modules/@salesforce/plugin-code-analyzer/node_modules/@salesforce/code-analyzer-flow-engine/dist/engine.js:150:77)\n    at FlowScannerEngine.runRules (/home/runner/.local/share/sf/node_modules/@salesforce/plugin-code-analyzer/node_modules/@salesforce/code-analyzer-flow-engine/dist/engine.js:104:34)\n    at async CodeAnalyzer.runEngineAndValidateResults (/home/runner/.local/share/sf/node_modules/@salesforce/plugin-code-analyzer/node_modules/@salesforce/code-analyzer-core/dist/code-analyzer.js:389:35)\n    at async /home/runner/.local/share/sf/node_modules/@salesforce/plugin-code-analyzer/node_modules/@salesforce/code-analyzer-core/dist/code-analyzer.js:276:29\n    at async Promise.all (index 3)\n    at async CodeAnalyzer.run (/home/runner/.local/share/sf/node_modules/@salesforce/plugin-code-analyzer/node_modules/@salesforce/code-analyzer-core/dist/code-analyzer.js:283:38)\n    at async RunAction.execute (file:///home/runner/.local/share/sf/node_modules/@salesforce/plugin-code-analyzer/lib/lib/actions/RunAction.js:39:25)\n    at async RunCommand.run (file:///home/runner/.local/share/sf/node_modules/@salesforce/plugin-code-analyzer/lib/commands/code-analyzer/run.js:86:9)\n    at async RunCommand._run (/home/runner/.local/share/sf/node_modules/@salesforce/plugin-code-analyzer/node_modules/@oclif/core/lib/command.js:182:22)",
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
       "resources": []
     },
     {
-      "rule": "DetectCopyPasteForVisualforce",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Visualforce"
+        "CodeStyle",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/pages/ChangePassword.page",
-          "startLine": 1,
-          "startColumn": 125,
-          "endLine": 15,
-          "endColumn": 76
-        },
-        {
-          "file": "force-app/main/default/pages/ForgotPassword.page",
-          "startLine": 1,
-          "startColumn": 125,
-          "endLine": 15,
-          "endColumn": 76
-        },
-        {
-          "file": "force-app/main/default/pages/ForgotPasswordConfirm.page",
-          "startLine": 1,
-          "startColumn": 80,
-          "endLine": 15,
-          "endColumn": 76
-        },
-        {
-          "file": "force-app/main/default/pages/SiteLogin.page",
-          "startLine": 1,
-          "startColumn": 77,
-          "endLine": 15,
-          "endColumn": 76
-        },
-        {
-          "file": "force-app/main/default/pages/SiteRegister.page",
-          "startLine": 1,
-          "startColumn": 114,
-          "endLine": 15,
-          "endColumn": 76
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 1069,
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'visualforce'. Found 5 code locations containing the same block of code consisting of 160 tokens across 15 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForVisualforce",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Visualforce"
+        "CodeStyle",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/pages/FileNotFound.page",
-          "startLine": 1,
-          "startColumn": 67,
-          "endLine": 13,
-          "endColumn": 65
-        },
-        {
-          "file": "force-app/main/default/pages/Unauthorized.page",
-          "startLine": 1,
-          "startColumn": 93,
-          "endLine": 13,
-          "endColumn": 65
+          "file": "force-app/main/default/flows/Create_Follow_Up_Task.flow-meta.xml",
+          "startLine": 94,
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'visualforce'. Found 2 code locations containing the same block of code consisting of 155 tokens across 13 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForVisualforce",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Visualforce"
+        "CodeStyle",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/pages/ListingSinglePagePDF.page",
-          "startLine": 127,
-          "startColumn": 42,
-          "endLine": 127,
-          "endColumn": 194
-        },
-        {
-          "file": "force-app/main/default/pages/ListingSinglePagePDF.page",
-          "startLine": 129,
-          "startColumn": 111,
-          "endLine": 129,
-          "endColumn": 263
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 1441,
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'visualforce'. Found 2 code locations containing the same block of code consisting of 152 tokens across 1 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForVisualforce",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Visualforce"
+        "CodeStyle",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/pages/Exception.page",
-          "startLine": 5,
-          "startColumn": 74,
-          "endLine": 15,
-          "endColumn": 76
-        },
-        {
-          "file": "force-app/main/default/pages/FileNotFound.page",
-          "startLine": 5,
-          "startColumn": 51,
-          "endLine": 15,
-          "endColumn": 76
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 800,
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'visualforce'. Found 2 code locations containing the same block of code consisting of 137 tokens across 11 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForVisualforce",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Visualforce"
+        "CodeStyle",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/pages/ChangePassword.page",
-          "startLine": 1,
-          "startColumn": 126,
-          "endLine": 11,
-          "endColumn": 100
-        },
-        {
-          "file": "force-app/main/default/pages/FileNotFound.page",
-          "startLine": 1,
-          "startColumn": 81,
-          "endLine": 11,
-          "endColumn": 100
-        },
-        {
-          "file": "force-app/main/default/pages/ForgotPassword.page",
-          "startLine": 1,
-          "startColumn": 126,
-          "endLine": 11,
-          "endColumn": 100
-        },
-        {
-          "file": "force-app/main/default/pages/ForgotPasswordConfirm.page",
-          "startLine": 1,
-          "startColumn": 81,
-          "endLine": 11,
-          "endColumn": 100
-        },
-        {
-          "file": "force-app/main/default/pages/SiteLogin.page",
-          "startLine": 1,
-          "startColumn": 78,
-          "endLine": 11,
-          "endColumn": 100
-        },
-        {
-          "file": "force-app/main/default/pages/SiteRegister.page",
-          "startLine": 1,
-          "startColumn": 115,
-          "endLine": 11,
-          "endColumn": 100
-        },
-        {
-          "file": "force-app/main/default/pages/Unauthorized.page",
-          "startLine": 1,
-          "startColumn": 107,
-          "endLine": 11,
-          "endColumn": 100
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 1208,
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'visualforce'. Found 7 code locations containing the same block of code consisting of 118 tokens across 11 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForVisualforce",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Visualforce"
+        "CodeStyle",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/pages/FileNotFound.page",
-          "startLine": 4,
-          "startColumn": 7,
-          "endLine": 13,
-          "endColumn": 18
-        },
-        {
-          "file": "force-app/main/default/pages/StdExceptionTemplate.page",
-          "startLine": 3,
-          "startColumn": 3,
-          "endLine": 12,
-          "endColumn": 12
-        },
-        {
-          "file": "force-app/main/default/pages/Unauthorized.page",
-          "startLine": 4,
-          "startColumn": 7,
-          "endLine": 13,
-          "endColumn": 18
+          "file": "force-app/main/default/flows/Create_Follow_Up_Task.flow-meta.xml",
+          "startLine": 431,
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'visualforce'. Found 3 code locations containing the same block of code consisting of 117 tokens across 10 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForVisualforce",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Visualforce"
+        "CodeStyle",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/pages/Exception.page",
-          "startLine": 5,
-          "startColumn": 74,
-          "endLine": 13,
-          "endColumn": 65
-        },
-        {
-          "file": "force-app/main/default/pages/Unauthorized.page",
-          "startLine": 5,
-          "startColumn": 51,
-          "endLine": 13,
-          "endColumn": 65
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 1048,
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'visualforce'. Found 2 code locations containing the same block of code consisting of 114 tokens across 9 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForVisualforce",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Visualforce"
+        "CodeStyle",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/pages/ListingSinglePagePDF.page",
-          "startLine": 9,
-          "startColumn": 25,
-          "endLine": 9,
-          "endColumn": 134
-        },
-        {
-          "file": "force-app/main/default/pages/ListingSinglePagePDF.page",
-          "startLine": 127,
-          "startColumn": 40,
-          "endLine": 127,
-          "endColumn": 149
+          "file": "force-app/main/default/flows/Updating_the_Portal_Offering_Types.flow-meta.xml",
+          "startLine": 107,
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'visualforce'. Found 2 code locations containing the same block of code consisting of 109 tokens across 1 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForVisualforce",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Visualforce"
+        "CodeStyle",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/pages/ListingSinglePagePDF.page",
-          "startLine": 9,
-          "startColumn": 27,
-          "endLine": 9,
-          "endColumn": 134
-        },
-        {
-          "file": "force-app/main/default/pages/ListingSinglePagePDF.page",
-          "startLine": 129,
-          "startColumn": 111,
-          "endLine": 129,
-          "endColumn": 218
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 920,
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'visualforce'. Found 2 code locations containing the same block of code consisting of 107 tokens across 1 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForVisualforce",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Visualforce"
+        "CodeStyle",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/pages/Exception.page",
-          "startLine": 5,
-          "startColumn": 74,
-          "endLine": 13,
-          "endColumn": 18
-        },
-        {
-          "file": "force-app/main/default/pages/StdExceptionTemplate.page",
-          "startLine": 4,
-          "startColumn": 45,
-          "endLine": 12,
-          "endColumn": 12
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 968,
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'visualforce'. Found 2 code locations containing the same block of code consisting of 103 tokens across 9 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Apex"
+        "CodeStyle",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/classes/Batch_PortalXMLGenerator.cls",
-          "startLine": 48,
-          "startColumn": 84,
-          "endLine": 83,
-          "endColumn": 98
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_PortalXMLGeneratorBD.cls",
-          "startLine": 46,
-          "startColumn": 71,
-          "endLine": 82,
-          "endColumn": 98
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 824,
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 291 tokens across 36 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Apex"
+        "CodeStyle",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/classes/BayutCallLogController.cls",
-          "startLine": 332,
-          "startColumn": 62,
-          "endLine": 364,
-          "endColumn": 159
-        },
-        {
-          "file": "force-app/main/default/classes/BayutEmailLogTriggerHandler.cls",
-          "startLine": 310,
-          "startColumn": 61,
-          "endLine": 340,
-          "endColumn": 159
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 1489,
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 285 tokens across 33 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Apex"
+        "CodeStyle",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/classes/Test_ListingsXMLForPortals.cls",
-          "startLine": 49,
-          "startColumn": 46,
-          "endLine": 70,
-          "endColumn": 39
-        },
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 728,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
         {
-          "file": "force-app/main/default/classes/Test_ListingsXMLForPortals.cls",
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 135,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 872,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 1149,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Follow_Up_Task.flow-meta.xml",
+          "startLine": 399,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 160,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 169,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/File_Upload_Rental_Offer.flow-meta.xml",
+          "startLine": 21,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 776,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 144,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Follow_Up_Task.flow-meta.xml",
+          "startLine": 386,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/File_Upload_Sales_offer.flow-meta.xml",
+          "startLine": 21,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_the_Portal_Offering_Types.flow-meta.xml",
+          "startLine": 94,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 1136,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/File_Upload_Off_Plan.flow-meta.xml",
+          "startLine": 21,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_the_Portal_Offering_Types.flow-meta.xml",
+          "startLine": 120,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Follow_Up_Task.flow-meta.xml",
+          "startLine": 171,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Follow_Up_Task.flow-meta.xml",
+          "startLine": 444,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 976,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Follow_Up_Task.flow-meta.xml",
+          "startLine": 460,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Follow_Up_Task.flow-meta.xml",
+          "startLine": 415,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 752,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 848,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 194,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 1465,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 896,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 1128,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 989,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "DefaultCopy",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "CodeStyle",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 1216,
+          "startColumn": 1
+        }
+      ],
+      "message": "An element has the auto-assigned copy name and/or label. These names and labels should be changed to make the flow comprehensible to maintainers.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_Portal_fields_once_a_full_location_is_changed.flow-meta.xml",
+          "startLine": 27,
+          "startColumn": 1,
+          "comment": "Update_the_portal_location_fields.Update_the_portal_location_fields: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_Propery_type_bayut_dubizzle_base_on_Property_type.flow-meta.xml",
+          "startLine": 101,
+          "startColumn": 1,
+          "comment": "Update_Commercial_bayut_dubizzle_property_type.Update_Commercial_bayut_dubizzle_property_type: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Offer_Creation_Update_Listing_Enquiry_Status.flow-meta.xml",
           "startLine": 121,
-          "startColumn": 48,
-          "endLine": 142,
-          "endColumn": 39
+          "startColumn": 1,
+          "comment": "Update_by_pass_for_rental_listing_as_false.Update_by_pass_for_rental_listing_as_false: record value flows into record update"
         }
       ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 155 tokens across 22 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Apex"
+        "Security",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/classes/BayutCallLogController.cls",
-          "startLine": 132,
-          "startColumn": 9,
-          "endLine": 151,
-          "endColumn": 10
-        },
-        {
-          "file": "force-app/main/default/classes/BayutWhatsappLogTriggerHandler.cls",
-          "startLine": 117,
-          "startColumn": 9,
-          "endLine": 141,
-          "endColumn": 10
+          "file": "force-app/main/default/flows/Updating_the_status_based_on_related_to.flow-meta.xml",
+          "startLine": 264,
+          "startColumn": 1,
+          "comment": "Update_the_Ownerdatabse_subject.Update_the_Ownerdatabse_subject: record value flows into record update"
         }
       ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 147 tokens across 20 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Apex"
+        "Security",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/classes/Batch_PortalXMLGenerator.cls",
-          "startLine": 39,
-          "startColumn": 9,
-          "endLine": 48,
-          "endColumn": 72
-        },
+          "file": "force-app/main/default/flows/Add_Water_Mark_Image.flow-meta.xml",
+          "startLine": 256,
+          "startColumn": 1,
+          "comment": "Update_Order_Number.Update_Order_Number: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
         {
-          "file": "force-app/main/default/classes/Batch_PortalXMLGeneratorBD.cls",
+          "file": "force-app/main/default/flows/Updating_Portal_Furnished_status_absed_on_furnished_status.flow-meta.xml",
+          "startLine": 56,
+          "startColumn": 1,
+          "comment": "Update_portal_furnished_status.Update_portal_furnished_status: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Offer_Status_Automation.flow-meta.xml",
+          "startLine": 300,
+          "startColumn": 1,
+          "comment": "Update_by_Pass_as_false_for_off_plan.Update_by_Pass_as_false_for_off_plan: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_Last_Viewing_date_and_marking_the_status_as_Viewing.flow-meta.xml",
+          "startLine": 27,
+          "startColumn": 1,
+          "comment": "Update_the_by_pass_as_false.Update_the_by_pass_as_false: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_the_status_based_on_related_to.flow-meta.xml",
+          "startLine": 277,
+          "startColumn": 1,
+          "comment": "Update_the_stattus.Update_the_stattus: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Update_Portal_Location_Fields.flow-meta.xml",
+          "startLine": 27,
+          "startColumn": 1,
+          "comment": "Update_Locations.Update_Locations: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Offer_Creation_Update_Listing_Enquiry_Status.flow-meta.xml",
+          "startLine": 277,
+          "startColumn": 1,
+          "comment": "Update_tenant_Enquiry_By_Pass_as_false.Update_tenant_Enquiry_By_Pass_as_false: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_the_status_based_on_related_to.flow-meta.xml",
+          "startLine": 251,
+          "startColumn": 1,
+          "comment": "Update_the_follow_up_subject_for_applicant.Update_the_follow_up_subject_for_applicant: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_the_status_based_on_related_to.flow-meta.xml",
+          "startLine": 238,
+          "startColumn": 1,
+          "comment": "Update_the_Applicant_task_status.Update_the_Applicant_task_status: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Creating_a_follow_up_Task.flow-meta.xml",
+          "startLine": 40,
+          "startColumn": 1,
+          "comment": "Update_the_Due_date.Update_the_Due_date: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Follow_Up_Task.flow-meta.xml",
+          "startLine": 460,
+          "startColumn": 1,
+          "comment": "Copy_1_of_Copy_1_of_Close_the_current_task.Copy_1_of_Copy_1_of_Close_the_current_task: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Creating_a_follow_up_Task.flow-meta.xml",
+          "startLine": 27,
+          "startColumn": 1,
+          "comment": "Update_by_Pass_as_false.Update_by_Pass_as_false: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_account_record_from_new_contact.flow-meta.xml",
+          "startLine": 50,
+          "startColumn": 1,
+          "comment": "Update_account_on_contact.Update_account_on_contact: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Follow_Up_Task.flow-meta.xml",
+          "startLine": 415,
+          "startColumn": 1,
+          "comment": "Copy_1_of_Close_the_current_task.Copy_1_of_Close_the_current_task: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_the_status_based_on_related_to.flow-meta.xml",
+          "startLine": 225,
+          "startColumn": 1,
+          "comment": "Update_follow_up_subject_for_ownerdatabase.Update_follow_up_subject_for_ownerdatabase: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_Full_Location_Name.flow-meta.xml",
           "startLine": 37,
-          "startColumn": 9,
-          "endLine": 46,
-          "endColumn": 72
+          "startColumn": 1,
+          "comment": "Update_the_full_location_field.Update_the_full_location_field: record value flows into record update"
         }
       ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 138 tokens across 10 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Apex"
+        "Security",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/classes/Batch_PortalXMLGenerator.cls",
+          "file": "force-app/main/default/flows/Updating_the_Portal_Offering_Types.flow-meta.xml",
+          "startLine": 94,
+          "startColumn": 1,
+          "comment": "Copy_1_of_Update_Offering_type.Copy_1_of_Update_Offering_type: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Offer_Creation_Update_Listing_Enquiry_Status.flow-meta.xml",
+          "startLine": 381,
+          "startColumn": 1,
+          "comment": "Update_the_Seller_details.Update_the_Seller_details: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Follow_Up_Task.flow-meta.xml",
+          "startLine": 431,
+          "startColumn": 1,
+          "comment": "Copy_1_of_Copy_1_of_By_Pass_as_false_in_task.Copy_1_of_Copy_1_of_By_Pass_as_false_in_task: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_the_Portal_Offering_Types.flow-meta.xml",
+          "startLine": 133,
+          "startColumn": 1,
+          "comment": "Update_Offering_type.Update_Offering_type: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Reset_Portal_Field_When_Status_Is_Not_Live_or_Progressing.flow-meta.xml",
+          "startLine": 40,
+          "startColumn": 1,
+          "comment": "Bypass_True.Bypass_True: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Offer_Creation_Update_Listing_Enquiry_Status.flow-meta.xml",
+          "startLine": 323,
+          "startColumn": 1,
+          "comment": "Update_the_landlord_details.Update_the_landlord_details: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_Portal_Furnished_status_absed_on_furnished_status.flow-meta.xml",
+          "startLine": 40,
+          "startColumn": 1,
+          "comment": "Update_by_Pass_as_true.Update_by_Pass_as_true: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Follow_Up_Task.flow-meta.xml",
+          "startLine": 370,
+          "startColumn": 1,
+          "comment": "Close_the_current_task.Close_the_current_task: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Follow_Up_Task.flow-meta.xml",
+          "startLine": 476,
+          "startColumn": 1,
+          "comment": "Update_the_By_pass_in_task_as_true.Update_the_By_pass_in_task_as_true: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Update_the_Owner_Database_Address.flow-meta.xml",
+          "startLine": 27,
+          "startColumn": 1,
+          "comment": "Update_Address.Update_Address: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Reset_Portal_Field_When_Status_Is_Not_Live_or_Progressing.flow-meta.xml",
+          "startLine": 56,
+          "startColumn": 1,
+          "comment": "Update_portal_Filed_to_Empty.Update_portal_Filed_to_Empty: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Reset_Portal_Field_When_Status_Is_Not_Live_or_Progressing.flow-meta.xml",
+          "startLine": 27,
+          "startColumn": 1,
+          "comment": "Bypass_False.Bypass_False: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_Portal_Furnished_status_absed_on_furnished_status.flow-meta.xml",
+          "startLine": 27,
+          "startColumn": 1,
+          "comment": "By_Pass_as_false.By_Pass_as_false: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_the_Portal_Offering_Types.flow-meta.xml",
+          "startLine": 120,
+          "startColumn": 1,
+          "comment": "Copy_3_of_Update_Offering_type.Copy_3_of_Update_Offering_type: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Offer_Status_Automation.flow-meta.xml",
+          "startLine": 426,
+          "startColumn": 1,
+          "comment": "Update_Is_Deal_Created_True.Update_Is_Deal_Created_True: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Remove_listings_from_portal_feed.flow-meta.xml",
+          "startLine": 27,
+          "startColumn": 1,
+          "comment": "Emptying_out_the_portal_fields.Emptying_out_the_portal_fields: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_the_Portal_Offering_Types.flow-meta.xml",
+          "startLine": 107,
+          "startColumn": 1,
+          "comment": "Copy_2_of_Update_Offering_type.Copy_2_of_Update_Offering_type: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_the_status_based_on_related_to.flow-meta.xml",
+          "startLine": 212,
+          "startColumn": 1,
+          "comment": "Update_follow_up_subject_for_listing.Update_follow_up_subject_for_listing: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Follow_Up_Task.flow-meta.xml",
+          "startLine": 325,
+          "startColumn": 1,
+          "comment": "By_Pass_as_false_in_task.By_Pass_as_false_in_task: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Follow_Up_Task.flow-meta.xml",
+          "startLine": 386,
+          "startColumn": 1,
+          "comment": "Copy_1_of_By_Pass_as_false_in_task.Copy_1_of_By_Pass_as_false_in_task: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "SameRecordUpdate",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "Security",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_Propery_type_bayut_dubizzle_base_on_Property_type.flow-meta.xml",
+          "startLine": 88,
+          "startColumn": 1,
+          "comment": "Upadte_the_Residential_Bayut_Dubizzle_property_Type.Upadte_the_Residential_Bayut_Dubizzle_property_Type: record value flows into record update"
+        }
+      ],
+      "message": "An AfterSave record trigger is modifying the same record. Record modifications should be done in BeforeSave triggers, not AfterSave triggers. The trigger definition may be in a parent flow that calls the current flow as a subflow, passing in the recordId of the trigger record.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Offer_Status_Automation.flow-meta.xml",
+          "startLine": 116,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 10,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 290,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 18,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 519,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Offer_Creation_Update_Listing_Enquiry_Status.flow-meta.xml",
+          "startLine": 18,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_the_Portal_Offering_Types.flow-meta.xml",
+          "startLine": 33,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Update_Contact_on_Enquiry_Creation.flow-meta.xml",
+          "startLine": 48,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 360,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 673,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Creating_a_duplicate_viewing_based_on_related_objects.flow-meta.xml",
+          "startLine": 193,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_Propery_type_bayut_dubizzle_base_on_Property_type.flow-meta.xml",
+          "startLine": 18,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 26,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 442,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Offer_Creation_Update_Listing_Enquiry_Status.flow-meta.xml",
+          "startLine": 48,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_Last_Viewing_date_and_marking_the_status_as_Viewing.flow-meta.xml",
+          "startLine": 53,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_the_Portal_Offering_Types.flow-meta.xml",
+          "startLine": 18,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Creating_a_duplicate_viewing_based_on_related_objects.flow-meta.xml",
           "startLine": 176,
-          "startColumn": 67,
-          "endLine": 204,
-          "endColumn": 2
-        },
-        {
-          "file": "force-app/main/default/classes/Batch_PortalXMLGeneratorBD.cls",
-          "startLine": 152,
-          "startColumn": 120,
-          "endLine": 176,
-          "endColumn": 2
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 124 tokens across 29 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Apex"
+        "BestPractices",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/classes/Test_ListingsXMLForPortals.cls",
-          "startLine": 23,
-          "startColumn": 56,
-          "endLine": 46,
-          "endColumn": 26
-        },
-        {
-          "file": "force-app/main/default/classes/Test_ListingsXMLForPortals.cls",
-          "startLine": 95,
-          "startColumn": 66,
-          "endLine": 118,
-          "endColumn": 26
+          "file": "force-app/main/default/flows/Last_Call_Date_Update_on_Enquiry.flow-meta.xml",
+          "startLine": 28,
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 120 tokens across 24 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Apex"
+        "BestPractices",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/classes/BayutCallLogController.cls",
-          "startLine": 72,
-          "startColumn": 22,
-          "endLine": 86,
-          "endColumn": 59
-        },
-        {
-          "file": "force-app/main/default/classes/BayutEmailLogTriggerHandler.cls",
-          "startLine": 83,
-          "startColumn": 22,
-          "endLine": 97,
-          "endColumn": 59
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 34,
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 118 tokens across 15 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Apex"
+        "BestPractices",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/classes/BayutCallLogController.cls",
-          "startLine": 365,
-          "startColumn": 105,
-          "endLine": 378,
-          "endColumn": 28
-        },
-        {
-          "file": "force-app/main/default/classes/BayutEmailLogTriggerHandler.cls",
-          "startLine": 340,
-          "startColumn": 158,
-          "endLine": 352,
-          "endColumn": 28
+          "file": "force-app/main/default/flows/Updating_Propery_type_bayut_dubizzle_base_on_Property_type.flow-meta.xml",
+          "startLine": 25,
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 107 tokens across 14 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForApex",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Apex"
+        "BestPractices",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/classes/BayutCallLogController.cls",
-          "startLine": 2,
-          "startColumn": 58,
-          "endLine": 16,
-          "endColumn": 23
-        },
-        {
-          "file": "force-app/main/default/classes/BayutEmailLogTriggerHandler.cls",
-          "startLine": 12,
-          "startColumn": 59,
-          "endLine": 19,
-          "endColumn": 23
+          "file": "force-app/main/default/flows/Offer_Status_Automation.flow-meta.xml",
+          "startLine": 32,
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 106 tokens across 15 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForJavascript",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Javascript"
+        "BestPractices",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/aura/EasySearch/EasySearchHelper.js",
-          "startLine": 151,
-          "startColumn": 91,
-          "endLine": 204,
-          "endColumn": 35
-        },
-        {
-          "file": "force-app/main/default/aura/EasySearch/EasySearchHelper.js",
-          "startLine": 371,
-          "startColumn": 63,
-          "endLine": 426,
-          "endColumn": 23
+          "file": "force-app/main/default/flows/Offer_Status_Automation.flow-meta.xml",
+          "startLine": 25,
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 441 tokens across 54 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForJavascript",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Javascript"
+        "BestPractices",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
-          "startLine": 441,
-          "startColumn": 13,
-          "endLine": 462,
-          "endColumn": 65
-        },
-        {
-          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
-          "startLine": 861,
-          "startColumn": 13,
-          "endLine": 882,
-          "endColumn": 65
+          "file": "force-app/main/default/flows/Offer_Status_Automation.flow-meta.xml",
+          "startLine": 190,
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 191 tokens across 22 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForJavascript",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Javascript"
+        "BestPractices",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
-          "startLine": 903,
-          "startColumn": 13,
-          "endLine": 925,
-          "endColumn": 61
-        },
-        {
-          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
-          "startLine": 1322,
-          "startColumn": 13,
-          "endLine": 1344,
-          "endColumn": 61
+          "file": "force-app/main/default/flows/Creating_a_duplicate_viewing_based_on_related_objects.flow-meta.xml",
+          "startLine": 120,
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 172 tokens across 23 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForJavascript",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Javascript"
+        "BestPractices",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
-          "startLine": 286,
-          "startColumn": 49,
-          "endLine": 295,
-          "endColumn": 63
-        },
-        {
-          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
-          "startLine": 313,
-          "startColumn": 53,
-          "endLine": 322,
-          "endColumn": 63
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 596,
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 138 tokens across 10 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForJavascript",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Javascript"
+        "BestPractices",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
-          "startLine": 760,
-          "startColumn": 15,
-          "endLine": 771,
-          "endColumn": 14
-        },
-        {
-          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
-          "startLine": 781,
-          "startColumn": 19,
-          "endLine": 792,
-          "endColumn": 16
+          "file": "force-app/main/default/flows/Update_Contact_on_Enquiry_Creation.flow-meta.xml",
+          "startLine": 63,
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 108 tokens across 12 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
     },
     {
-      "rule": "DetectCopyPasteForJavascript",
-      "engine": "cpd",
-      "severity": 5,
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
       "tags": [
         "Recommended",
-        "Design",
-        "Javascript"
+        "BestPractices",
+        "XML"
       ],
       "primaryLocationIndex": 0,
       "locations": [
         {
-          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
-          "startLine": 935,
-          "startColumn": 29,
-          "endLine": 953,
-          "endColumn": 34
-        },
-        {
-          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
-          "startLine": 1132,
-          "startColumn": 27,
-          "endLine": 1142,
-          "endColumn": 34
+          "file": "force-app/main/default/flows/Update_Contact_on_Enquiry_Creation.flow-meta.xml",
+          "startLine": 33,
+          "startColumn": 1
         }
       ],
-      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 102 tokens across 19 lines.",
-      "resources": [
-        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
-      ]
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Update_Contact_on_Enquiry_Creation.flow-meta.xml",
+          "startLine": 18,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Add_Account_to_the_Contact.flow-meta.xml",
+          "startLine": 35,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Offer_Status_Automation.flow-meta.xml",
+          "startLine": 231,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Offer_Status_Automation.flow-meta.xml",
+          "startLine": 278,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 325,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_the_Portal_Offering_Types.flow-meta.xml",
+          "startLine": 48,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_the_Portal_Offering_Types.flow-meta.xml",
+          "startLine": 63,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Offer_Creation_Update_Listing_Enquiry_Status.flow-meta.xml",
+          "startLine": 33,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_Propery_type_bayut_dubizzle_base_on_Property_type.flow-meta.xml",
+          "startLine": 47,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Create_Listing_from_Owner_Database.flow-meta.xml",
+          "startLine": 255,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "HardcodedId",
+      "engine": "flow",
+      "severity": 3,
+      "tags": [
+        "Recommended",
+        "BestPractices",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_Propery_type_bayut_dubizzle_base_on_Property_type.flow-meta.xml",
+          "startLine": 40,
+          "startColumn": 1
+        }
+      ],
+      "message": "The flow has a hardcoded Id. Hardcoded Ids are a bad practice, and flows with hardcoded Ids are not appropriate for distribution.",
+      "resources": []
+    },
+    {
+      "rule": "TriggerEntryCriteria",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Update_Contact_on_Enquiry_Creation.flow-meta.xml",
+          "startLine": 146,
+          "startColumn": 1
+        }
+      ],
+      "message": "The record trigger flow has no entry criteria. All record trigger flows should have entry criteria specified in the flow trigger definition rather than solely in the flow's own business logic.",
+      "resources": []
+    },
+    {
+      "rule": "TriggerEntryCriteria",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/New_Enquiry_notification.flow-meta.xml",
+          "startLine": 132,
+          "startColumn": 1
+        }
+      ],
+      "message": "The record trigger flow has no entry criteria. All record trigger flows should have entry criteria specified in the flow trigger definition rather than solely in the flow's own business logic.",
+      "resources": []
+    },
+    {
+      "rule": "TriggerEntryCriteria",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Call_outcome_is_mandatory_for_Type_Call.flow-meta.xml",
+          "startLine": 172,
+          "startColumn": 1
+        }
+      ],
+      "message": "The record trigger flow has no entry criteria. All record trigger flows should have entry criteria specified in the flow trigger definition rather than solely in the flow's own business logic.",
+      "resources": []
+    },
+    {
+      "rule": "TriggerEntryCriteria",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_Full_Location_Name.flow-meta.xml",
+          "startLine": 50,
+          "startColumn": 1
+        }
+      ],
+      "message": "The record trigger flow has no entry criteria. All record trigger flows should have entry criteria specified in the flow trigger definition rather than solely in the flow's own business logic.",
+      "resources": []
+    },
+    {
+      "rule": "TriggerEntryCriteria",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_the_status_based_on_related_to.flow-meta.xml",
+          "startLine": 290,
+          "startColumn": 1
+        }
+      ],
+      "message": "The record trigger flow has no entry criteria. All record trigger flows should have entry criteria specified in the flow trigger definition rather than solely in the flow's own business logic.",
+      "resources": []
+    },
+    {
+      "rule": "TriggerEntryCriteria",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Offer_Creation_Update_Listing_Enquiry_Status.flow-meta.xml",
+          "startLine": 409,
+          "startColumn": 1
+        }
+      ],
+      "message": "The record trigger flow has no entry criteria. All record trigger flows should have entry criteria specified in the flow trigger definition rather than solely in the flow's own business logic.",
+      "resources": []
+    },
+    {
+      "rule": "TriggerEntryCriteria",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/Updating_the_Portal_Offering_Types.flow-meta.xml",
+          "startLine": 146,
+          "startColumn": 1
+        }
+      ],
+      "message": "The record trigger flow has no entry criteria. All record trigger flows should have entry criteria specified in the flow trigger definition rather than solely in the flow's own business logic.",
+      "resources": []
+    },
+    {
+      "rule": "DbInLoop",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 1,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/File_Upload_Rental_Offer.flow-meta.xml",
+          "startLine": 132,
+          "startColumn": 1,
+          "comment": "Loop1.Loop1: Loop"
+        },
+        {
+          "file": "force-app/main/default/flows/File_Upload_Rental_Offer.flow-meta.xml",
+          "startLine": 186,
+          "startColumn": 1,
+          "comment": "Loop1.Loop1 influences Update.Update: Database Operation recordUpdates performed within the Loop Loop1"
+        }
+      ],
+      "message": "A Database operation (RecordLookups, RecordCreates, RecordUpdates, RecordDeletes) is being performed within a loop. To avoid excessive Database calls, the operation should be bulkified by using collection variables and the 'IN' operator.",
+      "resources": []
+    },
+    {
+      "rule": "DbInLoop",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 1,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/File_Upload_Off_Plan.flow-meta.xml",
+          "startLine": 89,
+          "startColumn": 1,
+          "comment": "Loop1.Loop1: Loop"
+        },
+        {
+          "file": "force-app/main/default/flows/File_Upload_Off_Plan.flow-meta.xml",
+          "startLine": 143,
+          "startColumn": 1,
+          "comment": "Loop1.Loop1 influences Update_Content_Document_Records.Update_Content_Document_Records: Database Operation recordUpdates performed within the Loop Loop1"
+        }
+      ],
+      "message": "A Database operation (RecordLookups, RecordCreates, RecordUpdates, RecordDeletes) is being performed within a loop. To avoid excessive Database calls, the operation should be bulkified by using collection variables and the 'IN' operator.",
+      "resources": []
+    },
+    {
+      "rule": "DbInLoop",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 1,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/File_Upload_Off_Plan.flow-meta.xml",
+          "startLine": 89,
+          "startColumn": 1,
+          "comment": "Loop1.Loop1: Loop"
+        },
+        {
+          "file": "force-app/main/default/flows/File_Upload_Off_Plan.flow-meta.xml",
+          "startLine": 167,
+          "startColumn": 1,
+          "comment": "Loop1.Loop1 influences Update_Documents.Update_Documents: Database Operation recordUpdates performed within the Loop Loop1"
+        }
+      ],
+      "message": "A Database operation (RecordLookups, RecordCreates, RecordUpdates, RecordDeletes) is being performed within a loop. To avoid excessive Database calls, the operation should be bulkified by using collection variables and the 'IN' operator.",
+      "resources": []
+    },
+    {
+      "rule": "DbInLoop",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 1,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/File_Upload_Sales_offer.flow-meta.xml",
+          "startLine": 164,
+          "startColumn": 1,
+          "comment": "Loop1.Loop1: Loop"
+        },
+        {
+          "file": "force-app/main/default/flows/File_Upload_Sales_offer.flow-meta.xml",
+          "startLine": 218,
+          "startColumn": 1,
+          "comment": "Loop1.Loop1 influences Update_Content_Document_Records.Update_Content_Document_Records: Database Operation recordUpdates performed within the Loop Loop1"
+        }
+      ],
+      "message": "A Database operation (RecordLookups, RecordCreates, RecordUpdates, RecordDeletes) is being performed within a loop. To avoid excessive Database calls, the operation should be bulkified by using collection variables and the 'IN' operator.",
+      "resources": []
+    },
+    {
+      "rule": "DbInLoop",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 1,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/File_Upload_Sales_offer.flow-meta.xml",
+          "startLine": 164,
+          "startColumn": 1,
+          "comment": "Loop1.Loop1: Loop"
+        },
+        {
+          "file": "force-app/main/default/flows/File_Upload_Sales_offer.flow-meta.xml",
+          "startLine": 242,
+          "startColumn": 1,
+          "comment": "Loop1.Loop1 influences Update_document.Update_document: Database Operation recordUpdates performed within the Loop Loop1"
+        }
+      ],
+      "message": "A Database operation (RecordLookups, RecordCreates, RecordUpdates, RecordDeletes) is being performed within a loop. To avoid excessive Database calls, the operation should be bulkified by using collection variables and the 'IN' operator.",
+      "resources": []
+    },
+    {
+      "rule": "DbInLoop",
+      "engine": "flow",
+      "severity": 2,
+      "tags": [
+        "Recommended",
+        "Performance",
+        "XML"
+      ],
+      "primaryLocationIndex": 1,
+      "locations": [
+        {
+          "file": "force-app/main/default/flows/File_Upload_Rental_Offer.flow-meta.xml",
+          "startLine": 132,
+          "startColumn": 1,
+          "comment": "Loop1.Loop1: Loop"
+        },
+        {
+          "file": "force-app/main/default/flows/File_Upload_Rental_Offer.flow-meta.xml",
+          "startLine": 196,
+          "startColumn": 1,
+          "comment": "Loop1.Loop1 influences Update_Content_Document_Records.Update_Content_Document_Records: Database Operation recordUpdates performed within the Loop Loop1"
+        }
+      ],
+      "message": "A Database operation (RecordLookups, RecordCreates, RecordUpdates, RecordDeletes) is being performed within a loop. To avoid excessive Database calls, the operation should be bulkified by using collection variables and the 'IN' operator.",
+      "resources": []
     },
     {
       "rule": "ApexSharingViolations",
@@ -58216,6 +60116,875 @@
       "message": "Avoid logic in triggers",
       "resources": [
         "https://docs.pmd-code.org/pmd-doc-7.18.0/pmd_rules_apex_bestpractices.html#avoidlogicintrigger"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForVisualforce",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Visualforce"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/pages/ChangePassword.page",
+          "startLine": 1,
+          "startColumn": 125,
+          "endLine": 15,
+          "endColumn": 76
+        },
+        {
+          "file": "force-app/main/default/pages/ForgotPassword.page",
+          "startLine": 1,
+          "startColumn": 125,
+          "endLine": 15,
+          "endColumn": 76
+        },
+        {
+          "file": "force-app/main/default/pages/ForgotPasswordConfirm.page",
+          "startLine": 1,
+          "startColumn": 80,
+          "endLine": 15,
+          "endColumn": 76
+        },
+        {
+          "file": "force-app/main/default/pages/SiteLogin.page",
+          "startLine": 1,
+          "startColumn": 77,
+          "endLine": 15,
+          "endColumn": 76
+        },
+        {
+          "file": "force-app/main/default/pages/SiteRegister.page",
+          "startLine": 1,
+          "startColumn": 114,
+          "endLine": 15,
+          "endColumn": 76
+        }
+      ],
+      "message": "Duplicate code detected for language 'visualforce'. Found 5 code locations containing the same block of code consisting of 160 tokens across 15 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForVisualforce",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Visualforce"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/pages/FileNotFound.page",
+          "startLine": 1,
+          "startColumn": 67,
+          "endLine": 13,
+          "endColumn": 65
+        },
+        {
+          "file": "force-app/main/default/pages/Unauthorized.page",
+          "startLine": 1,
+          "startColumn": 93,
+          "endLine": 13,
+          "endColumn": 65
+        }
+      ],
+      "message": "Duplicate code detected for language 'visualforce'. Found 2 code locations containing the same block of code consisting of 155 tokens across 13 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForVisualforce",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Visualforce"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/pages/ListingSinglePagePDF.page",
+          "startLine": 127,
+          "startColumn": 42,
+          "endLine": 127,
+          "endColumn": 194
+        },
+        {
+          "file": "force-app/main/default/pages/ListingSinglePagePDF.page",
+          "startLine": 129,
+          "startColumn": 111,
+          "endLine": 129,
+          "endColumn": 263
+        }
+      ],
+      "message": "Duplicate code detected for language 'visualforce'. Found 2 code locations containing the same block of code consisting of 152 tokens across 1 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForVisualforce",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Visualforce"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/pages/Exception.page",
+          "startLine": 5,
+          "startColumn": 74,
+          "endLine": 15,
+          "endColumn": 76
+        },
+        {
+          "file": "force-app/main/default/pages/FileNotFound.page",
+          "startLine": 5,
+          "startColumn": 51,
+          "endLine": 15,
+          "endColumn": 76
+        }
+      ],
+      "message": "Duplicate code detected for language 'visualforce'. Found 2 code locations containing the same block of code consisting of 137 tokens across 11 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForVisualforce",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Visualforce"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/pages/ChangePassword.page",
+          "startLine": 1,
+          "startColumn": 126,
+          "endLine": 11,
+          "endColumn": 100
+        },
+        {
+          "file": "force-app/main/default/pages/FileNotFound.page",
+          "startLine": 1,
+          "startColumn": 81,
+          "endLine": 11,
+          "endColumn": 100
+        },
+        {
+          "file": "force-app/main/default/pages/ForgotPassword.page",
+          "startLine": 1,
+          "startColumn": 126,
+          "endLine": 11,
+          "endColumn": 100
+        },
+        {
+          "file": "force-app/main/default/pages/ForgotPasswordConfirm.page",
+          "startLine": 1,
+          "startColumn": 81,
+          "endLine": 11,
+          "endColumn": 100
+        },
+        {
+          "file": "force-app/main/default/pages/SiteLogin.page",
+          "startLine": 1,
+          "startColumn": 78,
+          "endLine": 11,
+          "endColumn": 100
+        },
+        {
+          "file": "force-app/main/default/pages/SiteRegister.page",
+          "startLine": 1,
+          "startColumn": 115,
+          "endLine": 11,
+          "endColumn": 100
+        },
+        {
+          "file": "force-app/main/default/pages/Unauthorized.page",
+          "startLine": 1,
+          "startColumn": 107,
+          "endLine": 11,
+          "endColumn": 100
+        }
+      ],
+      "message": "Duplicate code detected for language 'visualforce'. Found 7 code locations containing the same block of code consisting of 118 tokens across 11 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForVisualforce",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Visualforce"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/pages/FileNotFound.page",
+          "startLine": 4,
+          "startColumn": 7,
+          "endLine": 13,
+          "endColumn": 18
+        },
+        {
+          "file": "force-app/main/default/pages/StdExceptionTemplate.page",
+          "startLine": 3,
+          "startColumn": 3,
+          "endLine": 12,
+          "endColumn": 12
+        },
+        {
+          "file": "force-app/main/default/pages/Unauthorized.page",
+          "startLine": 4,
+          "startColumn": 7,
+          "endLine": 13,
+          "endColumn": 18
+        }
+      ],
+      "message": "Duplicate code detected for language 'visualforce'. Found 3 code locations containing the same block of code consisting of 117 tokens across 10 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForVisualforce",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Visualforce"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/pages/Exception.page",
+          "startLine": 5,
+          "startColumn": 74,
+          "endLine": 13,
+          "endColumn": 65
+        },
+        {
+          "file": "force-app/main/default/pages/Unauthorized.page",
+          "startLine": 5,
+          "startColumn": 51,
+          "endLine": 13,
+          "endColumn": 65
+        }
+      ],
+      "message": "Duplicate code detected for language 'visualforce'. Found 2 code locations containing the same block of code consisting of 114 tokens across 9 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForVisualforce",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Visualforce"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/pages/ListingSinglePagePDF.page",
+          "startLine": 9,
+          "startColumn": 25,
+          "endLine": 9,
+          "endColumn": 134
+        },
+        {
+          "file": "force-app/main/default/pages/ListingSinglePagePDF.page",
+          "startLine": 127,
+          "startColumn": 40,
+          "endLine": 127,
+          "endColumn": 149
+        }
+      ],
+      "message": "Duplicate code detected for language 'visualforce'. Found 2 code locations containing the same block of code consisting of 109 tokens across 1 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForVisualforce",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Visualforce"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/pages/ListingSinglePagePDF.page",
+          "startLine": 9,
+          "startColumn": 27,
+          "endLine": 9,
+          "endColumn": 134
+        },
+        {
+          "file": "force-app/main/default/pages/ListingSinglePagePDF.page",
+          "startLine": 129,
+          "startColumn": 111,
+          "endLine": 129,
+          "endColumn": 218
+        }
+      ],
+      "message": "Duplicate code detected for language 'visualforce'. Found 2 code locations containing the same block of code consisting of 107 tokens across 1 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForVisualforce",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Visualforce"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/pages/Exception.page",
+          "startLine": 5,
+          "startColumn": 74,
+          "endLine": 13,
+          "endColumn": 18
+        },
+        {
+          "file": "force-app/main/default/pages/StdExceptionTemplate.page",
+          "startLine": 4,
+          "startColumn": 45,
+          "endLine": 12,
+          "endColumn": 12
+        }
+      ],
+      "message": "Duplicate code detected for language 'visualforce'. Found 2 code locations containing the same block of code consisting of 103 tokens across 9 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Batch_PortalXMLGenerator.cls",
+          "startLine": 48,
+          "startColumn": 84,
+          "endLine": 83,
+          "endColumn": 98
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_PortalXMLGeneratorBD.cls",
+          "startLine": 46,
+          "startColumn": 71,
+          "endLine": 82,
+          "endColumn": 98
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 291 tokens across 36 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/BayutCallLogController.cls",
+          "startLine": 332,
+          "startColumn": 62,
+          "endLine": 364,
+          "endColumn": 159
+        },
+        {
+          "file": "force-app/main/default/classes/BayutEmailLogTriggerHandler.cls",
+          "startLine": 310,
+          "startColumn": 61,
+          "endLine": 340,
+          "endColumn": 159
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 285 tokens across 33 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Test_ListingsXMLForPortals.cls",
+          "startLine": 49,
+          "startColumn": 46,
+          "endLine": 70,
+          "endColumn": 39
+        },
+        {
+          "file": "force-app/main/default/classes/Test_ListingsXMLForPortals.cls",
+          "startLine": 121,
+          "startColumn": 48,
+          "endLine": 142,
+          "endColumn": 39
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 155 tokens across 22 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/BayutCallLogController.cls",
+          "startLine": 132,
+          "startColumn": 9,
+          "endLine": 151,
+          "endColumn": 10
+        },
+        {
+          "file": "force-app/main/default/classes/BayutWhatsappLogTriggerHandler.cls",
+          "startLine": 117,
+          "startColumn": 9,
+          "endLine": 141,
+          "endColumn": 10
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 147 tokens across 20 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Batch_PortalXMLGenerator.cls",
+          "startLine": 39,
+          "startColumn": 9,
+          "endLine": 48,
+          "endColumn": 72
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_PortalXMLGeneratorBD.cls",
+          "startLine": 37,
+          "startColumn": 9,
+          "endLine": 46,
+          "endColumn": 72
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 138 tokens across 10 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Batch_PortalXMLGenerator.cls",
+          "startLine": 176,
+          "startColumn": 67,
+          "endLine": 204,
+          "endColumn": 2
+        },
+        {
+          "file": "force-app/main/default/classes/Batch_PortalXMLGeneratorBD.cls",
+          "startLine": 152,
+          "startColumn": 120,
+          "endLine": 176,
+          "endColumn": 2
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 124 tokens across 29 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/Test_ListingsXMLForPortals.cls",
+          "startLine": 23,
+          "startColumn": 56,
+          "endLine": 46,
+          "endColumn": 26
+        },
+        {
+          "file": "force-app/main/default/classes/Test_ListingsXMLForPortals.cls",
+          "startLine": 95,
+          "startColumn": 66,
+          "endLine": 118,
+          "endColumn": 26
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 120 tokens across 24 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/BayutCallLogController.cls",
+          "startLine": 72,
+          "startColumn": 22,
+          "endLine": 86,
+          "endColumn": 59
+        },
+        {
+          "file": "force-app/main/default/classes/BayutEmailLogTriggerHandler.cls",
+          "startLine": 83,
+          "startColumn": 22,
+          "endLine": 97,
+          "endColumn": 59
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 118 tokens across 15 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/BayutCallLogController.cls",
+          "startLine": 365,
+          "startColumn": 105,
+          "endLine": 378,
+          "endColumn": 28
+        },
+        {
+          "file": "force-app/main/default/classes/BayutEmailLogTriggerHandler.cls",
+          "startLine": 340,
+          "startColumn": 158,
+          "endLine": 352,
+          "endColumn": 28
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 107 tokens across 14 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForApex",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Apex"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/classes/BayutCallLogController.cls",
+          "startLine": 2,
+          "startColumn": 58,
+          "endLine": 16,
+          "endColumn": 23
+        },
+        {
+          "file": "force-app/main/default/classes/BayutEmailLogTriggerHandler.cls",
+          "startLine": 12,
+          "startColumn": 59,
+          "endLine": 19,
+          "endColumn": 23
+        }
+      ],
+      "message": "Duplicate code detected for language 'apex'. Found 2 code locations containing the same block of code consisting of 106 tokens across 15 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForJavascript",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Javascript"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/aura/EasySearch/EasySearchHelper.js",
+          "startLine": 151,
+          "startColumn": 91,
+          "endLine": 204,
+          "endColumn": 35
+        },
+        {
+          "file": "force-app/main/default/aura/EasySearch/EasySearchHelper.js",
+          "startLine": 371,
+          "startColumn": 63,
+          "endLine": 426,
+          "endColumn": 23
+        }
+      ],
+      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 441 tokens across 54 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForJavascript",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Javascript"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
+          "startLine": 441,
+          "startColumn": 13,
+          "endLine": 462,
+          "endColumn": 65
+        },
+        {
+          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
+          "startLine": 861,
+          "startColumn": 13,
+          "endLine": 882,
+          "endColumn": 65
+        }
+      ],
+      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 191 tokens across 22 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForJavascript",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Javascript"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
+          "startLine": 903,
+          "startColumn": 13,
+          "endLine": 925,
+          "endColumn": 61
+        },
+        {
+          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
+          "startLine": 1322,
+          "startColumn": 13,
+          "endLine": 1344,
+          "endColumn": 61
+        }
+      ],
+      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 172 tokens across 23 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForJavascript",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Javascript"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
+          "startLine": 286,
+          "startColumn": 49,
+          "endLine": 295,
+          "endColumn": 63
+        },
+        {
+          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
+          "startLine": 313,
+          "startColumn": 53,
+          "endLine": 322,
+          "endColumn": 63
+        }
+      ],
+      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 138 tokens across 10 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForJavascript",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Javascript"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
+          "startLine": 760,
+          "startColumn": 15,
+          "endLine": 771,
+          "endColumn": 14
+        },
+        {
+          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
+          "startLine": 781,
+          "startColumn": 19,
+          "endLine": 792,
+          "endColumn": 16
+        }
+      ],
+      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 108 tokens across 12 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
+      ]
+    },
+    {
+      "rule": "DetectCopyPasteForJavascript",
+      "engine": "cpd",
+      "severity": 5,
+      "tags": [
+        "Recommended",
+        "Design",
+        "Javascript"
+      ],
+      "primaryLocationIndex": 0,
+      "locations": [
+        {
+          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
+          "startLine": 935,
+          "startColumn": 29,
+          "endLine": 953,
+          "endColumn": 34
+        },
+        {
+          "file": "force-app/main/default/lwc/dateRangePicker/dateRangePicker.js",
+          "startLine": 1132,
+          "startColumn": 27,
+          "endLine": 1142,
+          "endColumn": 34
+        }
+      ],
+      "message": "Duplicate code detected for language 'javascript'. Found 2 code locations containing the same block of code consisting of 102 tokens across 19 lines.",
+      "resources": [
+        "https://docs.pmd-code.org/latest/pmd_userdocs_cpd.html#refactoring-duplicates"
       ]
     }
   ]
