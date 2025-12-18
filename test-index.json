@@ -9,8 +9,7 @@
       "json": "data/Maria-Morris-Global-analyzer.json",
       "html": "data/Maria-Morris-Global-analyzer.html"
     }
-  }
-,
+  },
   "aeon-and-trisl": {
     "updated": "2025-12-18T09:43:10+00:00",
     "apex": {
@@ -21,8 +20,7 @@
       "json": "data/aeon-and-trisl-analyzer.json",
       "html": "data/aeon-and-trisl-analyzer.html"
     }
-  }
-,
+  },
   "arabian-estates": {
     "updated": "2025-12-18T09:43:10+00:00",
     "apex": {
@@ -33,10 +31,9 @@
       "json": "data/arabian-estates-analyzer.json",
       "html": "data/arabian-estates-analyzer.html"
     }
-  }
-,
+  },
   "barnes": {
-    "updated": "2025-12-18T09:43:10+00:00",
+    "updated": "2025-12-18T16:02:14+00:00",
     "apex": {
       "json": "data/barnes-apex.json",
       "html": "data/barnes-apex.html"
@@ -44,9 +41,12 @@
     "analyzer": {
       "json": "data/barnes-analyzer.json",
       "html": "data/barnes-analyzer.html"
+    },
+    "objects": {
+      "json": "data/barnes-objects.json",
+      "html": "data/barnes-objects.html"
     }
-  }
-,
+  },
   "capstone-property": {
     "updated": "2025-12-18T09:43:10+00:00",
     "apex": {
@@ -57,8 +57,7 @@
       "json": "data/capstone-property-analyzer.json",
       "html": "data/capstone-property-analyzer.html"
     }
-  }
-,
+  },
   "cushman-wakefield-core": {
     "updated": "2025-12-18T09:43:10+00:00",
     "apex": {
@@ -69,8 +68,7 @@
       "json": "data/cushman-wakefield-core-analyzer.json",
       "html": "data/cushman-wakefield-core-analyzer.html"
     }
-  }
-,
+  },
   "elysian": {
     "updated": "2025-12-18T09:43:10+00:00",
     "apex": {
@@ -81,8 +79,7 @@
       "json": "data/elysian-analyzer.json",
       "html": "data/elysian-analyzer.html"
     }
-  }
-,
+  },
   "equity": {
     "updated": "2025-12-18T09:43:10+00:00",
     "apex": {
@@ -93,8 +90,7 @@
       "json": "data/equity-analyzer.json",
       "html": "data/equity-analyzer.html"
     }
-  }
-,
+  },
   "gta-properties": {
     "updated": "2025-12-18T09:43:10+00:00",
     "apex": {
@@ -105,8 +101,7 @@
       "json": "data/gta-properties-analyzer.json",
       "html": "data/gta-properties-analyzer.html"
     }
-  }
-,
+  },
   "hyde": {
     "updated": "2025-12-18T09:43:10+00:00",
     "apex": {
@@ -117,8 +112,7 @@
       "json": "data/hyde-analyzer.json",
       "html": "data/hyde-analyzer.html"
     }
-  }
-,
+  },
   "knight-frank": {
     "updated": "2025-12-18T09:43:10+00:00",
     "apex": {
@@ -129,8 +123,7 @@
       "json": "data/knight-frank-analyzer.json",
       "html": "data/knight-frank-analyzer.html"
     }
-  }
-,
+  },
   "mc-cone": {
     "updated": "2025-12-18T09:43:10+00:00",
     "apex": {
@@ -141,8 +134,7 @@
       "json": "data/mc-cone-analyzer.json",
       "html": "data/mc-cone-analyzer.html"
     }
-  }
-,
+  },
   "pangea": {
     "updated": "2025-12-18T09:43:10+00:00",
     "apex": {
@@ -153,8 +145,7 @@
       "json": "data/pangea-analyzer.json",
       "html": "data/pangea-analyzer.html"
     }
-  }
-,
+  },
   "puregold": {
     "updated": "2025-12-18T09:43:10+00:00",
     "apex": {
@@ -165,8 +156,7 @@
       "json": "data/puregold-analyzer.json",
       "html": "data/puregold-analyzer.html"
     }
-  }
-,
+  },
   "strada": {
     "updated": "2025-12-18T09:43:10+00:00",
     "apex": {
@@ -177,8 +167,7 @@
       "json": "data/strada-analyzer.json",
       "html": "data/strada-analyzer.html"
     }
-  }
-,
+  },
   "tyron-ash-real-estate": {
     "updated": "2025-12-18T09:43:10+00:00",
     "apex": {
@@ -189,8 +178,7 @@
       "json": "data/tyron-ash-real-estate-analyzer.json",
       "html": "data/tyron-ash-real-estate-analyzer.html"
     }
-  }
-,
+  },
   "vivid-living": {
     "updated": "2025-12-18T09:43:10+00:00",
     "apex": {
@@ -201,8 +189,7 @@
       "json": "data/vivid-living-analyzer.json",
       "html": "data/vivid-living-analyzer.html"
     }
-  }
-,
+  },
   "we-are-propoerty": {
     "updated": "2025-12-18T09:43:10+00:00",
     "apex": {
@@ -213,8 +200,7 @@
       "json": "data/we-are-propoerty-analyzer.json",
       "html": "data/we-are-propoerty-analyzer.html"
     }
-  }
-,
+  },
   "white-and-co": {
     "updated": "2025-12-18T09:43:10+00:00",
     "apex": {
