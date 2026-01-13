@@ -1,7 +1,15 @@
 {
   "IFA": { "json": "IFA.json", "html": "IFA.html" }
 ,
+  "Maria-Morris-Global-analyzer": { "json": "Maria-Morris-Global-analyzer.json", "html": "Maria-Morris-Global-analyzer.html" }
+,
+  "Maria-Morris-Global-apex": { "json": "Maria-Morris-Global-apex.json", "html": "Maria-Morris-Global-apex.html" }
+,
   "Maria-Morris-Global": { "json": "Maria-Morris-Global.json", "html": "Maria-Morris-Global.html" }
+,
+  "aeon-and-trisl-analyzer": { "json": "aeon-and-trisl-analyzer.json", "html": "aeon-and-trisl-analyzer.html" }
+,
+  "aeon-and-trisl-apex": { "json": "aeon-and-trisl-apex.json", "html": "aeon-and-trisl-apex.html" }
 ,
   "aeon-and-trisl": { "json": "aeon-and-trisl.json", "html": "aeon-and-trisl.html" }
 ,
@@ -11,11 +19,21 @@
 ,
   "apex-test": { "json": "apex-test.json" }
 ,
+  "arabian-estates-analyzer": { "json": "arabian-estates-analyzer.json", "html": "arabian-estates-analyzer.html" }
+,
+  "arabian-estates-apex": { "json": "arabian-estates-apex.json", "html": "arabian-estates-apex.html" }
+,
   "arabian-estates": { "json": "arabian-estates.json", "html": "arabian-estates.html" }
 ,
   "azco": { "json": "azco.json", "html": "azco.html" }
 ,
+  "barnes-analyzer": { "json": "barnes-analyzer.json", "html": "barnes-analyzer.html" }
+,
+  "barnes-apex": { "json": "barnes-apex.json", "html": "barnes-apex.html" }
+,
   "barnes-coverage": { "json": "barnes-coverage.json", "html": "barnes-coverage.html" }
+,
+  "barnes-objects": { "json": "barnes-objects.json", "html": "barnes-objects.html" }
 ,
   "barnes-results": { "json": "barnes-results.json" }
 ,
@@ -25,15 +43,39 @@
 ,
   "bw-real-estate": { "json": "bw-real-estate.json", "html": "bw-real-estate.html" }
 ,
+  "capstone-property-analyzer": { "json": "capstone-property-analyzer.json", "html": "capstone-property-analyzer.html" }
+,
+  "capstone-property-apex": { "json": "capstone-property-apex.json", "html": "capstone-property-apex.html" }
+,
   "capstone-property": { "json": "capstone-property.json", "html": "capstone-property.html" }
+,
+  "cushman-wakefield-core-analyzer": { "json": "cushman-wakefield-core-analyzer.json", "html": "cushman-wakefield-core-analyzer.html" }
+,
+  "cushman-wakefield-core-apex": { "json": "cushman-wakefield-core-apex.json", "html": "cushman-wakefield-core-apex.html" }
+,
+  "elysian-analyzer": { "json": "elysian-analyzer.json", "html": "elysian-analyzer.html" }
+,
+  "elysian-apex": { "json": "elysian-apex.json", "html": "elysian-apex.html" }
 ,
   "elysian-brok": { "json": "elysian-brok.json", "html": "elysian-brok.html" }
 ,
   "elysian": { "json": "elysian.json", "html": "elysian.html" }
 ,
+  "equity-analyzer": { "json": "equity-analyzer.json", "html": "equity-analyzer.html" }
+,
+  "equity-apex": { "json": "equity-apex.json", "html": "equity-apex.html" }
+,
   "equity": { "json": "equity.json", "html": "equity.html" }
 ,
+  "gta-properties-analyzer": { "json": "gta-properties-analyzer.json", "html": "gta-properties-analyzer.html" }
+,
+  "gta-properties-apex": { "json": "gta-properties-apex.json", "html": "gta-properties-apex.html" }
+,
   "gta-properties": { "json": "gta-properties.json", "html": "gta-properties.html" }
+,
+  "hyde-analyzer": { "json": "hyde-analyzer.json", "html": "hyde-analyzer.html" }
+,
+  "hyde-apex": { "json": "hyde-apex.json", "html": "hyde-apex.html" }
 ,
   "hyde": { "json": "hyde.json", "html": "hyde.html" }
 ,
@@ -47,15 +89,31 @@
 ,
   "kgi": { "json": "kgi.json", "html": "kgi.html" }
 ,
+  "knight-frank-analyzer": { "json": "knight-frank-analyzer.json", "html": "knight-frank-analyzer.html" }
+,
+  "knight-frank-apex": { "json": "knight-frank-apex.json", "html": "knight-frank-apex.html" }
+,
   "knight-frank": { "json": "knight-frank.json", "html": "knight-frank.html" }
 ,
   "luxfolio": { "json": "luxfolio.json", "html": "luxfolio.html" }
+,
+  "mc-cone-analyzer": { "json": "mc-cone-analyzer.json", "html": "mc-cone-analyzer.html" }
+,
+  "mc-cone-apex": { "json": "mc-cone-apex.json", "html": "mc-cone-apex.html" }
 ,
   "mc-cone": { "json": "mc-cone.json", "html": "mc-cone.html" }
 ,
   "octa": { "json": "octa.json", "html": "octa.html" }
 ,
+  "pangea-analyzer": { "json": "pangea-analyzer.json", "html": "pangea-analyzer.html" }
+,
+  "pangea-apex": { "json": "pangea-apex.json", "html": "pangea-apex.html" }
+,
   "pangea": { "json": "pangea.json", "html": "pangea.html" }
+,
+  "puregold-analyzer": { "json": "puregold-analyzer.json", "html": "puregold-analyzer.html" }
+,
+  "puregold-apex": { "json": "puregold-apex.json", "html": "puregold-apex.html" }
 ,
   "puregold": { "json": "puregold.json", "html": "puregold.html" }
 ,
@@ -63,15 +121,35 @@
 ,
   "soueast": { "json": "soueast.json", "html": "soueast.html" }
 ,
+  "strada-analyzer": { "json": "strada-analyzer.json", "html": "strada-analyzer.html" }
+,
+  "strada-apex": { "json": "strada-apex.json", "html": "strada-apex.html" }
+,
   "strada": { "json": "strada.json", "html": "strada.html" }
 ,
   "tabeer": { "json": "tabeer.json", "html": "tabeer.html" }
 ,
+  "tyron-ash-real-estate-analyzer": { "json": "tyron-ash-real-estate-analyzer.json", "html": "tyron-ash-real-estate-analyzer.html" }
+,
+  "tyron-ash-real-estate-apex": { "json": "tyron-ash-real-estate-apex.json", "html": "tyron-ash-real-estate-apex.html" }
+,
   "tyron-ash-real-estate": { "json": "tyron-ash-real-estate.json", "html": "tyron-ash-real-estate.html" }
+,
+  "vivid-living-analyzer": { "json": "vivid-living-analyzer.json", "html": "vivid-living-analyzer.html" }
+,
+  "vivid-living-apex": { "json": "vivid-living-apex.json", "html": "vivid-living-apex.html" }
 ,
   "vivid-living": { "json": "vivid-living.json", "html": "vivid-living.html" }
 ,
+  "we-are-propoerty-analyzer": { "json": "we-are-propoerty-analyzer.json", "html": "we-are-propoerty-analyzer.html" }
+,
+  "we-are-propoerty-apex": { "json": "we-are-propoerty-apex.json", "html": "we-are-propoerty-apex.html" }
+,
   "we-are-propoerty": { "json": "we-are-propoerty.json", "html": "we-are-propoerty.html" }
+,
+  "white-and-co-analyzer": { "json": "white-and-co-analyzer.json", "html": "white-and-co-analyzer.html" }
+,
+  "white-and-co-apex": { "json": "white-and-co-apex.json", "html": "white-and-co-apex.html" }
 ,
   "white-and-co": { "json": "white-and-co.json", "html": "white-and-co.html" }
 ,
