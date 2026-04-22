@@ -1,6 +1,6 @@
 {
   "Maria-Morris-Global": {
-    "updated": "2025-12-18T09:43:10+00:00",
+    "updated": "2026-04-22T08:27:37+00:00",
     "apex": {
       "json": "data/Maria-Morris-Global-apex.json",
       "html": "data/Maria-Morris-Global-apex.html"
@@ -9,9 +9,10 @@
       "json": "data/Maria-Morris-Global-analyzer.json",
       "html": "data/Maria-Morris-Global-analyzer.html"
     }
-  },
+  }
+,
   "aeon-and-trisl": {
-    "updated": "2025-12-18T09:43:10+00:00",
+    "updated": "2026-04-22T08:27:37+00:00",
     "apex": {
       "json": "data/aeon-and-trisl-apex.json",
       "html": "data/aeon-and-trisl-apex.html"
@@ -20,9 +21,10 @@
       "json": "data/aeon-and-trisl-analyzer.json",
       "html": "data/aeon-and-trisl-analyzer.html"
     }
-  },
+  }
+,
   "arabian-estates": {
-    "updated": "2025-12-18T09:43:10+00:00",
+    "updated": "2026-04-22T08:27:37+00:00",
     "apex": {
       "json": "data/arabian-estates-apex.json",
       "html": "data/arabian-estates-apex.html"
@@ -31,9 +33,10 @@
       "json": "data/arabian-estates-analyzer.json",
       "html": "data/arabian-estates-analyzer.html"
     }
-  },
+  }
+,
   "barnes": {
-    "updated": "2025-12-18T16:53:03+00:00",
+    "updated": "2026-04-22T08:27:37+00:00",
     "apex": {
       "json": "data/barnes-apex.json",
       "html": "data/barnes-apex.html"
@@ -41,14 +44,11 @@
     "analyzer": {
       "json": "data/barnes-analyzer.json",
       "html": "data/barnes-analyzer.html"
-    },
-    "objects": {
-      "json": "data/barnes-objects.json",
-      "html": "data/barnes-objects.html"
     }
-  },
+  }
+,
   "capstone-property": {
-    "updated": "2025-12-18T09:43:10+00:00",
+    "updated": "2026-04-22T08:27:37+00:00",
     "apex": {
       "json": "data/capstone-property-apex.json",
       "html": "data/capstone-property-apex.html"
@@ -57,9 +57,10 @@
       "json": "data/capstone-property-analyzer.json",
       "html": "data/capstone-property-analyzer.html"
     }
-  },
+  }
+,
   "cushman-wakefield-core": {
-    "updated": "2025-12-18T09:43:10+00:00",
+    "updated": "2026-04-22T08:27:37+00:00",
     "apex": {
       "json": "data/cushman-wakefield-core-apex.json",
       "html": "data/cushman-wakefield-core-apex.html"
@@ -68,9 +69,10 @@
       "json": "data/cushman-wakefield-core-analyzer.json",
       "html": "data/cushman-wakefield-core-analyzer.html"
     }
-  },
+  }
+,
   "elysian": {
-    "updated": "2025-12-18T09:43:10+00:00",
+    "updated": "2026-04-22T08:27:37+00:00",
     "apex": {
       "json": "data/elysian-apex.json",
       "html": "data/elysian-apex.html"
@@ -79,9 +81,10 @@
       "json": "data/elysian-analyzer.json",
       "html": "data/elysian-analyzer.html"
     }
-  },
+  }
+,
   "equity": {
-    "updated": "2025-12-18T09:43:10+00:00",
+    "updated": "2026-04-22T08:27:37+00:00",
     "apex": {
       "json": "data/equity-apex.json",
       "html": "data/equity-apex.html"
@@ -90,9 +93,10 @@
       "json": "data/equity-analyzer.json",
       "html": "data/equity-analyzer.html"
     }
-  },
+  }
+,
   "gta-properties": {
-    "updated": "2025-12-18T09:43:10+00:00",
+    "updated": "2026-04-22T08:27:37+00:00",
     "apex": {
       "json": "data/gta-properties-apex.json",
       "html": "data/gta-properties-apex.html"
@@ -101,9 +105,10 @@
       "json": "data/gta-properties-analyzer.json",
       "html": "data/gta-properties-analyzer.html"
     }
-  },
+  }
+,
   "hyde": {
-    "updated": "2025-12-18T09:43:10+00:00",
+    "updated": "2026-04-22T08:27:37+00:00",
     "apex": {
       "json": "data/hyde-apex.json",
       "html": "data/hyde-apex.html"
@@ -112,9 +117,10 @@
       "json": "data/hyde-analyzer.json",
       "html": "data/hyde-analyzer.html"
     }
-  },
+  }
+,
   "knight-frank": {
-    "updated": "2025-12-18T09:43:10+00:00",
+    "updated": "2026-04-22T08:27:37+00:00",
     "apex": {
       "json": "data/knight-frank-apex.json",
       "html": "data/knight-frank-apex.html"
@@ -123,9 +129,10 @@
       "json": "data/knight-frank-analyzer.json",
       "html": "data/knight-frank-analyzer.html"
     }
-  },
+  }
+,
   "mc-cone": {
-    "updated": "2025-12-18T09:43:10+00:00",
+    "updated": "2026-04-22T08:27:37+00:00",
     "apex": {
       "json": "data/mc-cone-apex.json",
       "html": "data/mc-cone-apex.html"
@@ -134,9 +141,10 @@
       "json": "data/mc-cone-analyzer.json",
       "html": "data/mc-cone-analyzer.html"
     }
-  },
+  }
+,
   "pangea": {
-    "updated": "2025-12-18T09:43:10+00:00",
+    "updated": "2026-04-22T08:27:37+00:00",
     "apex": {
       "json": "data/pangea-apex.json",
       "html": "data/pangea-apex.html"
@@ -145,9 +153,10 @@
       "json": "data/pangea-analyzer.json",
       "html": "data/pangea-analyzer.html"
     }
-  },
+  }
+,
   "puregold": {
-    "updated": "2025-12-18T09:43:10+00:00",
+    "updated": "2026-04-22T08:27:37+00:00",
     "apex": {
       "json": "data/puregold-apex.json",
       "html": "data/puregold-apex.html"
@@ -156,9 +165,22 @@
       "json": "data/puregold-analyzer.json",
       "html": "data/puregold-analyzer.html"
     }
-  },
+  }
+,
+  "seven-tides": {
+    "updated": "2026-04-22T08:27:37+00:00",
+    "apex": {
+      "json": "data/seven-tides-apex.json",
+      "html": "data/seven-tides-apex.html"
+    },
+    "analyzer": {
+      "json": "data/seven-tides-analyzer.json",
+      "html": "data/seven-tides-analyzer.html"
+    }
+  }
+,
   "strada": {
-    "updated": "2025-12-18T09:43:10+00:00",
+    "updated": "2026-04-22T08:27:37+00:00",
     "apex": {
       "json": "data/strada-apex.json",
       "html": "data/strada-apex.html"
@@ -167,9 +189,10 @@
       "json": "data/strada-analyzer.json",
       "html": "data/strada-analyzer.html"
     }
-  },
+  }
+,
   "tyron-ash-real-estate": {
-    "updated": "2025-12-18T09:43:10+00:00",
+    "updated": "2026-04-22T08:27:37+00:00",
     "apex": {
       "json": "data/tyron-ash-real-estate-apex.json",
       "html": "data/tyron-ash-real-estate-apex.html"
@@ -178,9 +201,10 @@
       "json": "data/tyron-ash-real-estate-analyzer.json",
       "html": "data/tyron-ash-real-estate-analyzer.html"
     }
-  },
+  }
+,
   "vivid-living": {
-    "updated": "2025-12-18T09:43:10+00:00",
+    "updated": "2026-04-22T08:27:37+00:00",
     "apex": {
       "json": "data/vivid-living-apex.json",
       "html": "data/vivid-living-apex.html"
@@ -189,9 +213,10 @@
       "json": "data/vivid-living-analyzer.json",
       "html": "data/vivid-living-analyzer.html"
     }
-  },
+  }
+,
   "we-are-propoerty": {
-    "updated": "2025-12-18T09:43:10+00:00",
+    "updated": "2026-04-22T08:27:37+00:00",
     "apex": {
       "json": "data/we-are-propoerty-apex.json",
       "html": "data/we-are-propoerty-apex.html"
@@ -200,9 +225,10 @@
       "json": "data/we-are-propoerty-analyzer.json",
       "html": "data/we-are-propoerty-analyzer.html"
     }
-  },
+  }
+,
   "white-and-co": {
-    "updated": "2025-12-18T09:43:10+00:00",
+    "updated": "2026-04-22T08:27:37+00:00",
     "apex": {
       "json": "data/white-and-co-apex.json",
       "html": "data/white-and-co-apex.html"
