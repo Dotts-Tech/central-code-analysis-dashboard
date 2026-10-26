@@ -1,0 +1,70 @@
+name: Close Stale PRs
+
+# Every PR gets 2 days from when it was opened:
+#   24h -> warning comment @mentioning the author and reviewers (GitHub emails them)
+#   48h -> PR is closed (branch is kept)
+# Add the 'keep-open' label to a PR to exempt it.
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # hourly
+  workflow_dispatch:
+
+permissions:
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: close-stale-prs
+  cancel-in-progress: false
+
+jobs:
+  close-stale:
+    name: Warn and close PRs older than 2 days
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const WARN_HOURS = 24;
+            const CLOSE_HOURS = 48;
+            const WARNED_LABEL = 'closing-soon';
+            const KEEP_LABEL = 'keep-open';
+            const { owner, repo } = context.repo;
+            const now = Date.now();
+
+            const prs = await github.paginate(github.rest.pulls.list, { owner, repo, state: 'open', per_page: 100 });
+
+            for (const pr of prs) {
+              const labels = pr.labels.map(l => l.name);
+              if (labels.includes(KEEP_LABEL)) continue;
+
+              const created = new Date(pr.created_at).getTime();
+              const ageHours = (now - created) / 36e5;
+              if (ageHours < WARN_HOURS) continue;
+
+              // Author + requested reviewers/teams + anyone who already reviewed
+              const reviews = await github.paginate(github.rest.pulls.listReviews, { owner, repo, pull_number: pr.number });
+              const people = [
+                pr.user.login,
+                ...pr.requested_reviewers.map(u => u.login),
+                ...reviews.filter(r => r.user).map(r => r.user.login),
+              ].filter(login => !login.endsWith('[bot]'));
+              const mentions = [
+                ...new Set(people),
+                ...pr.requested_teams.map(t => `${owner}/${t.slug}`),
+              ].map(n => '@' + n).join(' ');
+
+              if (ageHours >= CLOSE_HOURS) {
+                await github.rest.issues.createComment({ owner, repo, issue_number: pr.number,
+                  body: `${mentions}\n\nThis PR has been open for more than 2 days and is now closed automatically. The branch \`${pr.head.ref}\` has not been deleted; reopen this PR or open a new one into \`main\` if the work is still needed.` });
+                await github.rest.pulls.update({ owner, repo, pull_number: pr.number, state: 'closed' });
+                core.info(`Closed #${pr.number}`);
+              } else if (!labels.includes(WARNED_LABEL)) {
+                const closeAt = new Date(created + CLOSE_HOURS * 36e5).toISOString().replace('T', ' ').slice(0, 16);
+                await github.rest.issues.createComment({ owner, repo, issue_number: pr.number,
+                  body: `${mentions}\n\n⚠️ This PR will be closed automatically at **${closeAt} UTC** (2 days after it was opened). Please get it reviewed and merged before then, or add the \`${KEEP_LABEL}\` label if it needs to stay open.` });
+                await github.rest.issues.addLabels({ owner, repo, issue_number: pr.number, labels: [WARNED_LABEL] });
+                core.info(`Warned #${pr.number}`);
+              }
+            }
